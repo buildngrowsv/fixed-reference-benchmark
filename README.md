@@ -8,6 +8,10 @@ Does keeping four early activations read-only help a feed-forward network edit a
 
 [Width-256 experiment and forced-memory diagnostic](scale32/README.md) · [Study plan](scale32/PLAN.md) · [Published wider-reference study](https://pubroot.com/data/statistics/a-wider-reference-solved-delayed-recall-but-left-board-editing-below-a-copy-shortcut/)
 
+## Spatial routing and intermediate snapshots
+
+[Experiments on 32-bit spatial memory](spatial_references/README.md) compare signed and bounded writes, an open or closed doorway, and a learned gate that stores intermediate rather than initial values.
+
 ## Check the results without training
 
 From this repository, with Python package runner [uv](https://docs.astral.sh/uv/) installed, run the following command. It needs NumPy and works without Apple hardware.
