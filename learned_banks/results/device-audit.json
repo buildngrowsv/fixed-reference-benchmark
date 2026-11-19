@@ -1,0 +1,71 @@
+{
+  "exact_all_counts": true,
+  "full_panel_volumes": 128,
+  "cross_engine_volumes": 8,
+  "scores_compared_per_fit": 276480,
+  "rows": [
+    {
+      "mode": "assigned",
+      "seed": 101,
+      "max_absolute_score_difference": 1.1920928955078125e-06,
+      "changed_signs": 0,
+      "max_magnitude_at_changed_sign": 0.0
+    },
+    {
+      "mode": "assigned",
+      "seed": 211,
+      "max_absolute_score_difference": 1.1324882507324219e-06,
+      "changed_signs": 0,
+      "max_magnitude_at_changed_sign": 0.0
+    },
+    {
+      "mode": "assigned",
+      "seed": 307,
+      "max_absolute_score_difference": 5.960464477539062e-07,
+      "changed_signs": 0,
+      "max_magnitude_at_changed_sign": 0.0
+    },
+    {
+      "mode": "neutral",
+      "seed": 101,
+      "max_absolute_score_difference": 0.010196268558502197,
+      "changed_signs": 46,
+      "max_magnitude_at_changed_sign": 0.0005205454071983695
+    },
+    {
+      "mode": "neutral",
+      "seed": 211,
+      "max_absolute_score_difference": 0.012710392475128174,
+      "changed_signs": 38,
+      "max_magnitude_at_changed_sign": 0.00040455893031321466
+    },
+    {
+      "mode": "neutral",
+      "seed": 307,
+      "max_absolute_score_difference": 0.01135408878326416,
+      "changed_signs": 23,
+      "max_magnitude_at_changed_sign": 0.0004567367141135037
+    },
+    {
+      "mode": "exchange",
+      "seed": 101,
+      "max_absolute_score_difference": 0.0072113871574401855,
+      "changed_signs": 28,
+      "max_magnitude_at_changed_sign": 0.00042326736729592085
+    },
+    {
+      "mode": "exchange",
+      "seed": 211,
+      "max_absolute_score_difference": 0.008130490779876709,
+      "changed_signs": 49,
+      "max_magnitude_at_changed_sign": 0.0003929131489712745
+    },
+    {
+      "mode": "exchange",
+      "seed": 307,
+      "max_absolute_score_difference": 0.008396923542022705,
+      "changed_signs": 28,
+      "max_magnitude_at_changed_sign": 0.0003506980137899518
+    }
+  ]
+}
