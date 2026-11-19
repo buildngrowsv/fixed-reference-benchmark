@@ -6,7 +6,7 @@ Does keeping four early activations read-only help a feed-forward network edit a
 
 ## Larger-scale follow-up
 
-[Width-256 experiment and forced-memory diagnostic](scale32/README.md) · [Study plan](scale32/PLAN.md) · [Pubroot submission for the wider reference](https://github.com/buildngrowsv/pubroot-website/issues/332)
+[Width-256 experiment and forced-memory diagnostic](scale32/README.md) · [Study plan](scale32/PLAN.md) · [Revised wider-reference Pubroot submission](https://github.com/buildngrowsv/pubroot-website/issues/335)
 
 ## Check the results without training
 
