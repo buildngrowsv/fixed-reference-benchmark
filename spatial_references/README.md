@@ -4,6 +4,8 @@ A learned network carried a 32-bit word through 24 layers and recovered a saved 
 
 ![Paired interventions on source writes and intermediate saves](results/spatial-reference.png)
 
+[Published Pubroot paper 2026-343](https://pubroot.com/ai/fine-tuning/when-should-a-spatial-network-rewrite-its-reference/) · [AI review record](https://github.com/buildngrowsv/pubroot-website/issues/343)
+
 ## A route through space and depth
 
 Each layer is a two-dimensional grid with wraparound edges. A cell starts with 32 independent random signed bits. At each depth a local command asks the cell to preserve its working vector, read from one of four neighbors, or restore its reference. Its trainable read table has six command rows and six possible source ports. A row-wise softmax mixes those ports. The same weights apply at every location and depth. A prediction passes only if all 32 signs match the independent command interpreter. An 8-by-6-by-6 stack has 288 locations. This is a spatial grid evolving with depth, with local communication confined to each transition. It is a small test of a memory mechanism.
