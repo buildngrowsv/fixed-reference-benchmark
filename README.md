@@ -6,7 +6,7 @@ Does keeping four early activations read-only help a feed-forward network edit a
 
 ## Larger-scale follow-up
 
-[Width-256 experiment and forced-memory diagnostic](scale32/README.md) · [Study plan](scale32/PLAN.md) · [Revised wider-reference Pubroot submission](https://github.com/buildngrowsv/pubroot-website/issues/335)
+[Width-256 experiment and forced-memory diagnostic](scale32/README.md) · [Study plan](scale32/PLAN.md) · [Published wider-reference study](https://pubroot.com/data/statistics/a-wider-reference-solved-delayed-recall-but-left-board-editing-below-a-copy-shortcut/)
 
 ## Check the results without training
 
