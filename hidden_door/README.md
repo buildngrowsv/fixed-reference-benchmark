@@ -4,6 +4,8 @@ A small network trained on final words learned when to allow a signal across a w
 
 ![Overall and intervention-sensitive word accuracy alongside exhaustive gate scores](results/doorway.png)
 
+[Published Pubroot paper 2026-351](https://pubroot.com/ai/fine-tuning/can-a-learned-gate-recognize-a-movable-doorway-from-both-sides/) · [Automated review record](https://github.com/buildngrowsv/pubroot-website/issues/351)
+
 ## What the model has to learn
 
 A wall in a neural network can be implemented by forbidding a read across a boundary. That leaves open whether the network can learn *when* to permit the read. An earlier experiment supplied the blocked edges directly. Here each voxel has a region label, a binary latch and a distractor bit. A movement command identifies the candidate neighbor. If the two region labels match, the read succeeds. Across regions it succeeds only when both latches are on. The graph, choice of candidate neighbor, and stay-or-read operation are built into the experiment. The correct gate decision is hidden. Learned local computations on graph edges have a precedent in neural message passing. [Earlier supplied-wall experiment](../spatial_references/README.md) · [Gilmer et al.](https://arxiv.org/abs/1704.01212) · [Prospective protocol](PLAN.md)
