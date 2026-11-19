@@ -4,6 +4,8 @@ Giving two interchangeable banks the same strong preference for retaining their 
 
 ![Exact recovery on the common validation and test panels](results/memory.png)
 
+[Published Pubroot paper 2026-348](https://pubroot.com/ai/fine-tuning/does-symmetric-retention-teach-two-spatial-memory-banks-different-jobs/) · [Automated review record](https://github.com/buildngrowsv/pubroot-website/issues/348)
+
 ## What was missing from the earlier comparison?
 
 A model might fail to learn a useful memory address because each update mixes too many inputs before a stable signal can travel through time. Preserving existing contents in both banks gives either bank an opportunity to acquire a distinct function. This change leaves the model symmetry intact at the level of its initialization distribution. The previous three-seed study compared interchangeable and assigned roles. Its role-biased calibration had only been scored on the smaller training-shaped task. Here we bring that checkpoint and the other controls to new, common validation and test panels. Memory architectures with learned addressing supply a broader research context. [Earlier spatial study](../learned_banks/README.md) · [Neural Turing Machines](https://arxiv.org/abs/1410.5401) · [Prospective protocol](PLAN.md)
