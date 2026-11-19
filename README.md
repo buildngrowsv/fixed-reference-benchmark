@@ -12,6 +12,10 @@ Does keeping four early activations read-only help a feed-forward network edit a
 
 [Experiments on 32-bit spatial memory](spatial_references/README.md) compare signed and bounded writes, an open or closed doorway, and a learned gate that stores intermediate rather than initial values.
 
+## Learning where to store a snapshot
+
+[Follow-up on interchangeable spatial banks](learned_banks/README.md) compares assigned and learnable bank roles at equal state capacity and measures which stored values remain causally available.
+
 ## Check the results without training
 
 From this repository, with Python package runner [uv](https://docs.astral.sh/uv/) installed, run the following command. It needs NumPy and works without Apple hardware.

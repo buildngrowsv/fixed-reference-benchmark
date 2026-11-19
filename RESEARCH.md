@@ -2,7 +2,7 @@
 
 ## Next Studio experiment
 
-**Can the network learn where to keep a reference?** The 73-parameter cube learned when to save from final outputs, with the location of its 32-bit memory supplied. Give a second model the same 64 state values per voxel and local inputs, but allow it to learn the split between working and stored values. Compare with the supplied-slot controller and an equally trained control whose channel assignment changes between boards. Keep the generator, seed pairing and per-voxel input budget fixed. Measure success on new volumes, sample efficiency and exact recovery after disrupting the putative memory. Check an identity-initialized learnable split before allocating a full replication. The first falsifier is that a simple fixed split already performs identically for fewer weights. The scheduled research round should write concrete identification criteria before viewing new outcomes.
+**Does a role-neutral persistence bias rescue learnable banks?** Two neutral banks recovered 6.27% of the save-dependent words, versus 100% for the designated 73-parameter controller. The same 468-parameter architecture with role-biased initialization reached perfect accuracy in a one-seed, training-shape validation check. Start both banks with the same preference for retaining their own contents without indicating which bank is for working state or snapshot state. Use one paired pilot and an independent validation panel before committing to a replication. The key comparison is with the neutral and role-biased starts under the same budget and with the same held-out scale. Stop the architecture branch if the cheap designated controller remains dominant and there is no evidence for assigning a useful role without privileged wiring. [Learned-bank study, interventions and limitations](learned_banks/README.md)
 
 ## What opens the other paths
 
@@ -13,5 +13,7 @@
 - **Scale.** Increase volume or depth only where doing so discriminates two accounts. Depth extrapolation exposed instability that a wider grid left hidden. A full-volume benchmark should report voxels, transitions, active channels, peak memory, and elapsed seconds.
 
 ## Latest public evidence
+
+The most recent completed round used 500 updates for each of nine primary fits plus one calibration fit. The neutral models showed 1.25 percentage points of selective disruption, below the 25-point criterion, and an unannounced bank exchange reduced their exact-word accuracy further. GPU reloads reproduced all published counts. [Counts, curves and compute](learned_banks/results/summary.json)
 
 The trained fixed and convex-write arms both reproduced every word on the new static-reference panel. Disabling the SAVE gate erased all correct words on save-dependent cells. When the explicit token was removed, replacing the relevant neighbor signal reduced exact recovery from 100% to 36.32%, while replacing an irrelevant signal preserved 100%. The broader research claim remains bounded by the built-in topology, state split and synthetic rule. [Study and fixed evidence](spatial_references/README.md)
