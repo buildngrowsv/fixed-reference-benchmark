@@ -20,14 +20,29 @@ def ports(x,ref,lib):
     return (x,lib.roll(x,1,axis=1),lib.roll(x,-1,axis=1),lib.roll(x,1,axis=2),lib.roll(x,-1,axis=2),ref)
 
 
-def examples(rng,n,side,depth):
+def wall_ports(x,ref,lib,door):
+    bank=list(ports(x,ref,lib))
+    side=x.shape[2]
+    for port,blocked,opening in ((3,(0,side//2),side//2),(4,(side-1,side//2-1),side//2-1)):
+        mask=np.zeros((side,side),dtype=bool)
+        mask[:,list(blocked)]=True
+        if door:
+            mask[side//2,opening]=False
+        m=lib.array(mask)[None,...]
+        if x.ndim==4: m=m[...,None]
+        bank[port]=lib.where(m,x,bank[port])
+    return bank
+
+
+def examples(rng,n,side,depth,door=None):
     x=rng.choice(np.array([-1,1],dtype=np.float32),(n,side,side,32))
     actions=rng.integers(6,size=(depth,n,side,side),dtype=np.int32)
     start=np.broadcast_to(np.arange(side*side,dtype=np.int32).reshape(1,side,side),(n,side,side))
     def trace(mid_restore):
         h=start.copy()
         for t,a in enumerate(actions):
-            bank=ports(h,start if mid_restore or t==depth-1 else h,np)
+            ref=start if mid_restore or t==depth-1 else h
+            bank=ports(h,ref,np) if door is None else wall_ports(h,ref,np,door)
             h=np.choose(a,bank)
         return h
     source=trace(True)
@@ -41,10 +56,10 @@ class Grid(nn.Module):
         super().__init__()
         self.arm=arm
         self.read=mx.random.normal((6,6))*.05
-        if arm=="writable":
+        if arm in ("writable","convex"):
             self.write=mx.zeros((6,))
 
-    def __call__(self,x,actions,hard=False,ref=None):
+    def __call__(self,x,actions,hard=False,ref=None,door=None):
         h=x
         ref=x if ref is None else ref
         for t in range(len(actions)):
@@ -54,10 +69,12 @@ class Grid(nn.Module):
                 scores=scores+mx.array([0,0,0,0,0,-1e6])
             weights=mx.eye(6)[scores.argmax(-1)] if hard else mx.softmax(scores,axis=-1)
             w=weights[a]
-            values=ports(h,ref,mx)
+            values=ports(h,ref,mx) if door is None else wall_ports(h,ref,mx,door)
             h=sum(w[...,j:j+1]*v for j,v in enumerate(values))
-            if self.arm=="writable":
-                ref=ref+mx.tanh(self.write[a])[...,None]*(h-ref)
+            if self.arm in ("writable","convex"):
+                gate=self.write[a]
+                if self.arm=="writable": gate=mx.tanh(gate)
+                ref=ref+gate[...,None]*(h-ref)
         return h
 
 
@@ -74,6 +91,7 @@ def fit(arm,seed,steps):
     def step(x,a,y):
         loss,grads=vg(net,x,a,y)
         opt.update(net,grads)
+        if arm=="convex": net.write=mx.clip(net.write,0.,1.)
         return loss
     history=[]
     for k in range(1,steps+1):
@@ -91,10 +109,10 @@ def count(pred,y,mask):
                      (bits*mask[...,None]).sum((1,2,3))],axis=1)
 
 
-def evaluate(net,side,depth,seed):
+def evaluate(net,side,depth,seed,batches=16):
     rng=np.random.default_rng(seed)
     counts={k:[] for k in ("normal","hard","swapped","copy","all")}
-    for _ in range(16):
+    for _ in range(batches):
         x,a,y,mask=examples(rng,16,side,depth)
         xx,aa=mx.array(x),mx.array(a)
         soft=np.array(net(xx,aa))
