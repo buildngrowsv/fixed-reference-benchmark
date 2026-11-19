@@ -56,6 +56,9 @@ def main():
         "primary_fixed_minus_writable":paired(load("fixed-{s}","long_normal"),load("writable-{s}","long_normal")),
         "fresh_fixed_minus_convex":paired(load("intervention-{s}","fixed"),load("intervention-{s}","convex")),
         "event_gates_on_minus_off":paired(load("snapshot-{s}","event_24_normal"),load("snapshot-{s}","event_24_no_save"))}
+    data["cube"]={key:score(load("cube-{s}",key)) for key in
+                  ("full_full","full_missing","full_irrelevant","missing_missing")}
+    data["paired"]["cube_channel_intervention"]=paired(load("cube-{s}","full_full"),load("cube-{s}","full_missing"))
     (R/"summary.json").write_text(json.dumps(data,indent=2)+"\n")
     print(data["paired"])
     for k in data["fresh"]: print(k,data["fresh"][k])
