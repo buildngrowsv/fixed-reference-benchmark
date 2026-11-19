@@ -1,0 +1,17 @@
+# Open experiments and decisions
+
+## Next Studio experiment
+
+**Can the network learn where to keep a reference?** The 73-parameter cube learned when to save from final outputs, with the location of its 32-bit memory supplied. Give a second model the same 64 state values per voxel and local inputs, but allow it to learn the split between working and stored values. Compare with the supplied-slot controller and an equally trained control whose channel assignment changes between boards. Keep the generator, seed pairing and per-voxel input budget fixed. Measure success on new volumes, sample efficiency and exact recovery after disrupting the putative memory. Check an identity-initialized learnable split before allocating a full replication. The first falsifier is that a simple fixed split already performs identically for fewer weights. The scheduled research round should write concrete identification criteria before viewing new outcomes.
+
+## What opens the other paths
+
+- **Expert surgery.** The off-the-shelf coding donor's semantic validation lead over a task-trained host was below the prespecified threshold and disappeared on final test. A specialized donor with a demonstrated advantage on an unsaturated task would justify another transplant. The small trained spatial write controller offers an auditable donor whose input-output rule is independently verifiable. First check whether a matched fresh controller can relearn the rule at the same budget. [Semantic qualification](https://github.com/buildngrowsv/routed-expert-splice/tree/d2062a8f88e4bb82f12c442461cd1bf601dd69dd/semantic)
+- **Routing.** A confidence-based second call and a partial-verification cascade both lost to a cheaper endpoint on their respective panels. Reopen when a cheap per-example signal predicts incremental value over the strongest single-model or execution-only control. Measure prospective compute as well as solve counts.
+- **Walls and geometry.** The learned local read rule obeyed a supplied wall with one doorway. A future test should hide the crossing policy, expose only local observation, and change the doorway at evaluation. Score paired open/sealed examples alongside a classical graph interpreter.
+- **Learning 3D from views.** Internal 3D wiring and data-driven 3D reconstruction are separate empirical questions. Use generated scenes with randomized shapes, train with images alone, hold out objects and camera trajectories, and score novel-view depth against renderer ground truth used only for evaluation. A two-view geometric baseline and a single-view ambiguity control should set the bar before a model sweep.
+- **Scale.** Increase volume or depth only where doing so discriminates two accounts. Depth extrapolation exposed instability that a wider grid left hidden. A full-volume benchmark should report voxels, transitions, active channels, peak memory, and elapsed seconds.
+
+## Latest public evidence
+
+The trained fixed and convex-write arms both reproduced every word on the new static-reference panel. Disabling the SAVE gate erased all correct words on save-dependent cells. When the explicit token was removed, replacing the relevant neighbor signal reduced exact recovery from 100% to 36.32%, while replacing an irrelevant signal preserved 100%. The broader research claim remains bounded by the built-in topology, state split and synthetic rule. [Study and fixed evidence](spatial_references/README.md)
