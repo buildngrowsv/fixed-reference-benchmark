@@ -4,6 +4,8 @@ A spatial model with a designated working bank and snapshot bank recovered all *
 
 ![Validation learning curves and held-out exact-word accuracy](results/learning-bank-roles.png)
 
+[Pubroot submission and AI review record](https://github.com/buildngrowsv/pubroot-website/issues/345)
+
 ## What the experiment changes
 
 The preceding cube study showed that a model could learn *when* to write if given a place to store a reference. Here we varied the constraint on *where* to keep it. Each voxel in a periodic three-dimensional grid starts with a random 32-bit word copied into two banks. A local command specifies a move, stay or restore. The world silently saves the prior working word when a local binary sensor and a sensor in the negative-z neighbor are both on. Only final word labels supervise training. No model receives the hidden write signal, midpoint labels or a bank-role label. [Earlier spatial study](https://pubroot.com/ai/fine-tuning/when-should-a-spatial-network-rewrite-its-reference/) · [Prospective protocol](PLAN.md)
