@@ -2,7 +2,7 @@
 
 Does keeping four early activations read-only help a feed-forward network edit a board and recover its original state? A comparison across five paired seeds found **63.82%** final-color accuracy for a fixed reference and **64.21%** for an initially identical writable copy on 10,000 balanced restore-sensitive cases. The paired difference was **−0.40 percentage points**, with an approximate 95% interval from **−1.77 to +1.19**.
 
-[Read the article](paper.md) · [Experiment report](Results.md) · [Per-seed results](balanced/width-64/per-seed.csv) · [Confidence intervals](balanced/width-64/summary.json)
+[Read the article](paper.md) · [Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/330) · [Experiment report](Results.md) · [Per-seed results](balanced/width-64/per-seed.csv) · [Confidence intervals](balanced/width-64/summary.json)
 
 ## Check the results without training
 
