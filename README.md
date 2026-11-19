@@ -54,3 +54,7 @@ The original architectural question came from the account owner. OpenAI Codex im
 ## Do the banks need distinct roles?
 
 Giving both interchangeable banks the same preference for retention recovered 5.78% of exact words. The same architecture with a role-specific start recovered every held-out word. [Controlled pilot, weights and causal intervention](persistence/README.md) · [Research decisions](RESEARCH.md)
+
+## A wall whose crossing rule must be learned
+
+Reading both endpoint latches solved all 681 affected open/sealed pairs. Removing the far latch left ordinary accuracy at 98.76% and paired recovery at zero. [Models, counterfactuals and exhaustive local decisions](hidden_door/README.md)
