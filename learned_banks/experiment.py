@@ -141,9 +141,11 @@ def save_json(path,content):
     tmp.replace(path)
 
 
-def train(mode,seed):
+def train(mode,seed,initialize=None):
     mx.random.seed(seed)
     net=Assigned() if mode=="assigned" else Banks(mode=="biased")
+    if initialize is not None:
+        initialize(net)
     opt=optim.Adam(.08)
     def objective(m,x,a,v,y,flag):
         out,_=rollout(m,x,a,v,flag)
