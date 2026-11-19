@@ -4,6 +4,10 @@ Does keeping four early activations read-only help a feed-forward network edit a
 
 [Read the article](paper.md) · [Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/330) · [Experiment report](Results.md) · [Per-seed results](balanced/width-64/per-seed.csv) · [Confidence intervals](balanced/width-64/summary.json)
 
+## Larger-scale follow-up
+
+[Width-256 experiment and forced-memory diagnostic](scale32/README.md) · [Study plan](scale32/PLAN.md)
+
 ## Check the results without training
 
 From this repository, with Python package runner [uv](https://docs.astral.sh/uv/) installed, run the following command. It needs NumPy and works without Apple hardware.

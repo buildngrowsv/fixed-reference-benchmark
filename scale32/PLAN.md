@@ -9,3 +9,7 @@ Run three paired seeds. If the 32-value fixed model gains at least one percentag
 ## Diagnostic added after the board-editing screen
 
 All three models scored below the 50% shortcut on the balanced restore-sensitive set despite remembering starting colors with over 99% accuracy. To isolate the capacity question, run one forced-memory diagnostic with the same three arms. After encoding a random 16-square, eight-color board, erase the entire working state. The only surviving source information is four or 32 activations. Three fresh independent distractor boards then arrive in succession. At the end, query a randomly selected square on the original board and on the last distractor board. Keep 224 working slots plus 32 reserved slots for every arm, zero-padding unused slots in the four-value arm. Use identical training examples, 1,200 optimizer updates per arm and three paired seeds. The primary measure is exact old-color accuracy on 8,192 fresh boards. Current-color accuracy is a positive control. Improvement over four values measures useful bandwidth in a constructed bottleneck. Improvement over 32 writable values is a separate question. No additional width sweep is planned.
+
+## Reproduction
+
+From this repository root on Apple Silicon with uv installed, run `uv run --python 3.12 scale32/run.py` and then `uv run --python 3.12 scale32/bottleneck.py`. To check the published predictions without training, run `uv run --with numpy python scale32/verify.py`.
