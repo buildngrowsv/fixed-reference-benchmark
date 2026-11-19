@@ -50,3 +50,7 @@ The original protocol must run first because the follow-up excludes its board-an
 The original splits are in `data/` with predictions and learning curves in `width-64/`. The independent follow-up uses the same layout under `balanced/`. Each seed/variant directory contains a result JSON and compressed predictions. The synthetic test labels, analysis code and training scripts are included. Five seeds, one task and one network width limit the scope of the result.
 
 The original architectural question came from the account owner. OpenAI Codex implemented the experiments, ran them on the owner's Mac Studio, analyzed the predictions and assisted with the manuscript.
+
+## Do the banks need distinct roles?
+
+Giving both interchangeable banks the same preference for retention recovered 5.78% of exact words. The same architecture with a role-specific start recovered every held-out word. [Controlled pilot, weights and causal intervention](persistence/README.md) · [Research decisions](RESEARCH.md)

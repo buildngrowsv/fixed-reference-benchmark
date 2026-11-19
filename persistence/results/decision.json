@@ -1,0 +1,12 @@
+{
+  "validation": {
+    "assigned": 1.0,
+    "neutral": 0.041666666666666664,
+    "persistent": 0.0425,
+    "biased": 1.0
+  },
+  "qualified": false,
+  "seeds": [
+    101
+  ]
+}

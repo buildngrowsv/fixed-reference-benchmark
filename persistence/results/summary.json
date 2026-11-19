@@ -1,0 +1,112 @@
+{
+  "arms": {
+    "assigned": {
+      "parameters": 73,
+      "bank": 1,
+      "metrics_denominator_then_hits": {
+        "primary": [
+          18544,
+          18544
+        ],
+        "undisturbed": [
+          6711,
+          6711
+        ],
+        "selected_exchanged": [
+          6711,
+          0
+        ],
+        "other_exchanged": [
+          6711,
+          6711
+        ]
+      },
+      "validation": 1.0,
+      "training_seconds": 1.5451993142341962,
+      "mlx_peak_bytes": 22466920
+    },
+    "biased": {
+      "parameters": 468,
+      "bank": 1,
+      "metrics_denominator_then_hits": {
+        "primary": [
+          18544,
+          18544
+        ],
+        "undisturbed": [
+          6711,
+          6711
+        ],
+        "selected_exchanged": [
+          6711,
+          0
+        ],
+        "other_exchanged": [
+          6711,
+          6711
+        ]
+      },
+      "validation": 1.0,
+      "training_seconds": 3.799546380949323,
+      "mlx_peak_bytes": 37692896
+    },
+    "neutral": {
+      "parameters": 468,
+      "bank": 0,
+      "metrics_denominator_then_hits": {
+        "primary": [
+          18544,
+          1105
+        ],
+        "undisturbed": [
+          6711,
+          121
+        ],
+        "selected_exchanged": [
+          6711,
+          3
+        ],
+        "other_exchanged": [
+          6711,
+          89
+        ]
+      },
+      "validation": 0.041666666666666664,
+      "training_seconds": 1.1917606890929164,
+      "mlx_peak_bytes": 39333716
+    },
+    "persistent": {
+      "parameters": 468,
+      "bank": 0,
+      "metrics_denominator_then_hits": {
+        "primary": [
+          18544,
+          1071
+        ],
+        "undisturbed": [
+          6711,
+          121
+        ],
+        "selected_exchanged": [
+          6711,
+          8
+        ],
+        "other_exchanged": [
+          6711,
+          94
+        ]
+      },
+      "validation": 0.0425,
+      "training_seconds": 1.2375270452175755,
+      "mlx_peak_bytes": 38465076
+    }
+  },
+  "persistent_minus_neutral": {
+    "difference": -0.0018334771354616048,
+    "paired_volume_interval": [
+      -0.003776652887341092,
+      5.3856685406751165e-05
+    ],
+    "scope": "64 volume pairs conditional on training seed 101"
+  }
+}

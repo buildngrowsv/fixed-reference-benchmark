@@ -12,8 +12,8 @@ def softmax(x):
     return e/e.sum(-1,keepdims=True)
 
 
-def inputs():
-    rng=np.random.default_rng(984731)
+def inputs(seed=984731):
+    rng=np.random.default_rng(seed)
     n=8;side=6;vol=side**3
     x=rng.choice(np.array([-1,1],np.float32),(n,vol,32))
     a=rng.integers(8,size=(16,n,vol),dtype=np.int32)
