@@ -4,7 +4,7 @@ A spatial model with a designated working bank and snapshot bank recovered all *
 
 ![Validation learning curves and held-out exact-word accuracy](results/learning-bank-roles.png)
 
-[Pubroot submission and AI review record](https://github.com/buildngrowsv/pubroot-website/issues/345)
+[Published Pubroot paper 2026-345](https://pubroot.com/ai/fine-tuning/can-interchangeable-spatial-channels-learn-where-to-keep-a-snapshot/) · [AI review record](https://github.com/buildngrowsv/pubroot-website/issues/345)
 
 ## What the experiment changes
 
