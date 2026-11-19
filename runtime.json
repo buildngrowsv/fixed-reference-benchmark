@@ -1,0 +1,8 @@
+{
+  "device": "Apple M5 Ultra",
+  "os": "macOS-27.2-arm64-arm-64bit",
+  "python": "3.12.16",
+  "mlx": "0.32.4",
+  "numpy": "2.5.5",
+  "script_sha256": "c9a098fa405035d7a970df87ab82c5e942aae29f9761fed31e9af5a517c3032a"
+}

@@ -1,0 +1,297 @@
+{
+  "variant": "ordinary",
+  "seed": 307,
+  "width": 64,
+  "epochs": 24,
+  "batch": 250,
+  "examples_presented": 1200000,
+  "validation": [
+    {
+      "original": 1.0,
+      "current": 0.6194,
+      "sensitive": 0.7660256410256411,
+      "changed_current": 0.11868390129259694,
+      "log_loss": [
+        0.008492309600114822,
+        0.9871255159378052
+      ],
+      "balanced_restore": 0.4791666666666667
+    },
+    {
+      "original": 1.0,
+      "current": 0.6314,
+      "sensitive": 0.7532051282051282,
+      "changed_current": 0.1645123384253819,
+      "log_loss": [
+        0.004655712284147739,
+        0.9457702040672302
+      ],
+      "balanced_restore": 0.5333333333333333
+    },
+    {
+      "original": 1.0,
+      "current": 0.6482,
+      "sensitive": 0.7916666666666666,
+      "changed_current": 0.22796709753231492,
+      "log_loss": [
+        0.006013430189341307,
+        0.885902464389801
+      ],
+      "balanced_restore": 0.58
+    },
+    {
+      "original": 0.999,
+      "current": 0.6854,
+      "sensitive": 0.782051282051282,
+      "changed_current": 0.3301997649823737,
+      "log_loss": [
+        0.008445601910352707,
+        0.8128980994224548
+      ],
+      "balanced_restore": 0.5991666666666666
+    },
+    {
+      "original": 0.999,
+      "current": 0.6968,
+      "sensitive": 0.7339743589743589,
+      "changed_current": 0.391304347826087,
+      "log_loss": [
+        0.00978078506886959,
+        0.7519910931587219
+      ],
+      "balanced_restore": 0.60875
+    },
+    {
+      "original": 0.9982,
+      "current": 0.7072,
+      "sensitive": 0.6378205128205128,
+      "changed_current": 0.43654524089306695,
+      "log_loss": [
+        0.010187910869717598,
+        0.712813675403595
+      ],
+      "balanced_restore": 0.6070833333333333
+    },
+    {
+      "original": 0.9986,
+      "current": 0.7252,
+      "sensitive": 0.6666666666666666,
+      "changed_current": 0.4688601645123384,
+      "log_loss": [
+        0.0083988718688488,
+        0.68263179063797
+      ],
+      "balanced_restore": 0.6145833333333334
+    },
+    {
+      "original": 0.9988,
+      "current": 0.7328,
+      "sensitive": 0.657051282051282,
+      "changed_current": 0.4888366627497062,
+      "log_loss": [
+        0.008974730037152767,
+        0.6596189737319946
+      ],
+      "balanced_restore": 0.615
+    },
+    {
+      "original": 0.999,
+      "current": 0.7328,
+      "sensitive": 0.6153846153846154,
+      "changed_current": 0.4994124559341951,
+      "log_loss": [
+        0.007049991749227047,
+        0.6547561287879944
+      ],
+      "balanced_restore": 0.61375
+    },
+    {
+      "original": 0.9992,
+      "current": 0.7392,
+      "sensitive": 0.6442307692307693,
+      "changed_current": 0.4994124559341951,
+      "log_loss": [
+        0.007012456655502319,
+        0.6382636427879333
+      ],
+      "balanced_restore": 0.6170833333333333
+    },
+    {
+      "original": 0.9996,
+      "current": 0.7458,
+      "sensitive": 0.6474358974358975,
+      "changed_current": 0.5376028202115158,
+      "log_loss": [
+        0.005344226490706205,
+        0.6213979721069336
+      ],
+      "balanced_restore": 0.62125
+    },
+    {
+      "original": 0.9992,
+      "current": 0.7466,
+      "sensitive": 0.6314102564102564,
+      "changed_current": 0.5393654524089306,
+      "log_loss": [
+        0.005860940553247929,
+        0.6257376074790955
+      ],
+      "balanced_restore": 0.6304166666666666
+    },
+    {
+      "original": 0.9996,
+      "current": 0.751,
+      "sensitive": 0.6185897435897436,
+      "changed_current": 0.5499412455934195,
+      "log_loss": [
+        0.0067512900568544865,
+        0.6206649541854858
+      ],
+      "balanced_restore": 0.6179166666666667
+    },
+    {
+      "original": 0.999,
+      "current": 0.7536,
+      "sensitive": 0.5993589743589743,
+      "changed_current": 0.5499412455934195,
+      "log_loss": [
+        0.006778124254196882,
+        0.6164082884788513
+      ],
+      "balanced_restore": 0.6266666666666667
+    },
+    {
+      "original": 0.9994,
+      "current": 0.7576,
+      "sensitive": 0.6185897435897436,
+      "changed_current": 0.5628672150411281,
+      "log_loss": [
+        0.005834551062434912,
+        0.6179673075675964
+      ],
+      "balanced_restore": 0.6229166666666667
+    },
+    {
+      "original": 0.9994,
+      "current": 0.7598,
+      "sensitive": 0.6025641025641025,
+      "changed_current": 0.5734430082256169,
+      "log_loss": [
+        0.006025281734764576,
+        0.6159136891365051
+      ],
+      "balanced_restore": 0.62375
+    },
+    {
+      "original": 0.9984,
+      "current": 0.762,
+      "sensitive": 0.6410256410256411,
+      "changed_current": 0.5652173913043478,
+      "log_loss": [
+        0.006663956679403782,
+        0.6209017634391785
+      ],
+      "balanced_restore": 0.6275
+    },
+    {
+      "original": 0.9982,
+      "current": 0.7604,
+      "sensitive": 0.6282051282051282,
+      "changed_current": 0.5587544065804936,
+      "log_loss": [
+        0.0075082192197442055,
+        0.6291708946228027
+      ],
+      "balanced_restore": 0.63125
+    },
+    {
+      "original": 0.9986,
+      "current": 0.758,
+      "sensitive": 0.6378205128205128,
+      "changed_current": 0.5493537015276145,
+      "log_loss": [
+        0.0063588437624275684,
+        0.6268473863601685
+      ],
+      "balanced_restore": 0.6195833333333334
+    },
+    {
+      "original": 0.9984,
+      "current": 0.7694,
+      "sensitive": 0.6378205128205128,
+      "changed_current": 0.5763807285546416,
+      "log_loss": [
+        0.0077710929326713085,
+        0.6185294389724731
+      ],
+      "balanced_restore": 0.63625
+    },
+    {
+      "original": 0.9986,
+      "current": 0.761,
+      "sensitive": 0.6378205128205128,
+      "changed_current": 0.5552291421856639,
+      "log_loss": [
+        0.0066900476813316345,
+        0.6275634169578552
+      ],
+      "balanced_restore": 0.63375
+    },
+    {
+      "original": 0.9972,
+      "current": 0.7692,
+      "sensitive": 0.6410256410256411,
+      "changed_current": 0.5757931844888367,
+      "log_loss": [
+        0.008858687244355679,
+        0.6222314238548279
+      ],
+      "balanced_restore": 0.6316666666666667
+    },
+    {
+      "original": 0.9976,
+      "current": 0.763,
+      "sensitive": 0.625,
+      "changed_current": 0.5705052878965923,
+      "log_loss": [
+        0.00810216460376978,
+        0.6392388939857483
+      ],
+      "balanced_restore": 0.63375
+    },
+    {
+      "original": 0.9972,
+      "current": 0.7694,
+      "sensitive": 0.6730769230769231,
+      "changed_current": 0.5658049353701528,
+      "log_loss": [
+        0.009691265411674976,
+        0.6391452550888062
+      ],
+      "balanced_restore": 0.63875
+    }
+  ],
+  "training_seconds": 9.873924540013832,
+  "parameters": 159872,
+  "train_peak_mib": 45.154544830322266,
+  "test": {
+    "original": 0.9974,
+    "current": 0.7652,
+    "sensitive": 0.6630602782071098,
+    "changed_current": 0.578916197808706,
+    "log_loss": [
+      0.009117369540035725,
+      0.6351244449615479
+    ]
+  },
+  "sensitive": {
+    "original": 0.9952,
+    "current": 0.6381,
+    "sensitive": 0.6381,
+    "changed_current": 0.6192,
+    "log_loss": [
+      0.016020886600017548,
+      0.9658507704734802
+    ]
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "summary": {
+    "ordinary": {
+      "original": 0.9941999999999999,
+      "current": 0.5458999999999999,
+      "restore": 0.65794,
+      "restore_changed": 0.19805970149253732,
+      "restore_unchanged": 0.7290993071593534,
+      "current_log_loss": 2.6506871700286867,
+      "parameters": 159872.0,
+      "seconds": 2.445511417000671,
+      "peak_mib": 21.368080139160156,
+      "epochs": 16.0
+    },
+    "endpoint": {
+      "original": 0.9951599999999999,
+      "current": 0.54854,
+      "restore": 0.65942,
+      "restore_changed": 0.1974626865671642,
+      "restore_unchanged": 0.7309006928406466,
+      "current_log_loss": 2.681507873535156,
+      "parameters": 153728.0,
+      "seconds": 2.654057359001308,
+      "peak_mib": 21.618080139160156,
+      "epochs": 16.0
+    },
+    "writable": {
+      "original": 0.9932599999999999,
+      "current": 0.54432,
+      "restore": 0.65838,
+      "restore_changed": 0.19746268656716418,
+      "restore_unchanged": 0.7296997690531178,
+      "current_log_loss": 2.6525875091552735,
+      "parameters": 159872.0,
+      "seconds": 2.579190349605051,
+      "peak_mib": 22.604701232910156,
+      "epochs": 16.0
+    },
+    "fixed": {
+      "original": 0.9941799999999998,
+      "current": 0.5484,
+      "restore": 0.6652600000000001,
+      "restore_changed": 0.19582089552238807,
+      "restore_unchanged": 0.7378983833718245,
+      "current_log_loss": 2.664052724838257,
+      "parameters": 156800.0,
+      "seconds": 2.7663449163970655,
+      "peak_mib": 22.37189483642578,
+      "epochs": 16.0,
+      "both_correct": 4811.0,
+      "toward_donor": 420.2,
+      "stayed_original": 4064.6
+    }
+  },
+  "fixed_differences": {
+    "ordinary": {
+      "mean": 0.00732,
+      "seeds": [
+        0.0044,
+        -0.002,
+        0.0217,
+        0.0078,
+        0.0047
+      ],
+      "wins": 4,
+      "interval": [
+        -0.0018399999999999996,
+        0.0172
+      ],
+      "natural": 0.0025
+    },
+    "endpoint": {
+      "mean": 0.00584,
+      "seeds": [
+        0.0047,
+        0.0055,
+        0.0086,
+        0.0095,
+        0.0009
+      ],
+      "wins": 5,
+      "interval": [
+        -0.0014999999999999998,
+        0.013139999999999999
+      ],
+      "natural": -0.00014
+    },
+    "writable": {
+      "mean": 0.00688,
+      "seeds": [
+        0.01,
+        -0.0068,
+        0.0157,
+        0.0158,
+        -0.0003
+      ],
+      "wins": 3,
+      "interval": [
+        -0.0037405000000000008,
+        0.017060499999999996
+      ],
+      "natural": 0.00408
+    }
+  },
+  "copy_start_baseline": {
+    "restore": 0.866,
+    "current": 0.6542
+  },
+  "balanced": false,
+  "training_seeds": [
+    101,
+    211,
+    307,
+    401,
+    503
+  ],
+  "bootstrap_draws": 10000,
+  "boards": 10000
+}
