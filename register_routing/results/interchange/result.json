@@ -1,0 +1,32 @@
+{
+  "decision": "complete",
+  "supported": true,
+  "arms": {
+    "rotated": {
+      "pairs": 1024,
+      "clean": 1014,
+      "double_switch_init": 1014,
+      "double_switch_write": 0,
+      "delta": 0.990234375,
+      "interval": [
+        0.9833984375,
+        0.99609375
+      ],
+      "correct_after_init": 0,
+      "correct_after_write": 1014
+    },
+    "matched": {
+      "pairs": 1024,
+      "clean": 1022,
+      "double_switch_init": 1022,
+      "double_switch_write": 0,
+      "delta": 0.998046875,
+      "interval": [
+        0.9951171875,
+        1.0
+      ],
+      "correct_after_init": 0,
+      "correct_after_write": 1022
+    }
+  }
+}
