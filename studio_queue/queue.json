@@ -517,5 +517,14 @@
     "after": {
       "displaced-prefix-surgery": "replicate"
     }
+  },
+  {
+    "id": "sealed-python-rehearsal",
+    "repo": "fixed-reference-benchmark",
+    "revision": "3b89d688f3ce37d97da6632869c14d9134da94e7",
+    "script": "code_reference/rehearsal.py",
+    "after": {
+      "scientific-python-transfer": "complete"
+    }
   }
 ]
