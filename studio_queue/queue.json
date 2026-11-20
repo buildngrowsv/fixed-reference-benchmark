@@ -916,5 +916,14 @@
     "after": {
       "qwen-transfer-across-binding-contexts": "binding_sensitive"
     }
+  },
+  {
+    "id": "qwen-numeric-operand-cross-model",
+    "repo": "routed-expert-splice",
+    "revision": "3eacf5424a46a4e2efb328de5fb0ad77f391bc15",
+    "script": "nested_surgery/identifier_numeric_transfer.py",
+    "after": {
+      "qwen-numeric-computed-intervention": "computed_transfer"
+    }
   }
 ]
