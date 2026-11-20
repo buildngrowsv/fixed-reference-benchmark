@@ -1442,5 +1442,20 @@
       "spatial-direct-witness-observation-timing": "direct_samples_speed_up",
       "spatial-anchored-witness-routing-7077888": "dedicated_probes_scale"
     }
+  },
+  {
+    "id": "qwen-dictionary-table-only-key-block-72b",
+    "repo": "routed-expert-splice",
+    "revision": "d29e00dde9be0f7ea6d08a5e427c67bfd9e834ce",
+    "script": "nested_surgery/identifier_lookup_preedit_attention_72b.py",
+    "args": [
+      "--table-only"
+    ],
+    "model_snapshots": [
+      "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+    ],
+    "after": {
+      "qwen-dictionary-block-original-key-before-edit-72b": "unresolved"
+    }
   }
 ]
