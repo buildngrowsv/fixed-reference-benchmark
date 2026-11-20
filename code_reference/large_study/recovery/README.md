@@ -22,3 +22,5 @@ The 32M pair scored 1.03549 and 1.04253 at the original rate. The two widths now
 The predeclared decision now qualifies a continuation of both checkpoints with their optimizer states to 16,384 updates, followed by comparison on a separate 2,048-window test panel. The 238M sealed- versus late-copy comparison uses the recovered fixed model as its same-rate baseline. A reserved test result and direct interventions measure aggregate prediction and the channels carrying a specific answer, respectively. [Sealed comparison](../../LARGE_SEALED.md) · [Identifier exchange](../../EXCHANGE.md)
 
 The owner proposed revisiting fixed forward references at larger sizes. OpenAI Codex implemented and ran the fits on the owner's Apple M5 Ultra, reconstructed their validation results and assisted with writing. [Recorded environment](../../../runtime.json)
+
+[Published Pubroot paper](https://pubroot.com/ai/fine-tuning/a-threefold-reduction-in-learning-rate-restores-python-prediction-in-two-285m-models/) · [Public review](https://github.com/buildngrowsv/pubroot-website/issues/407)

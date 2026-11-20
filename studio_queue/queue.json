@@ -741,5 +741,14 @@
     "after": {
       "large-python-width-rate-main": "complete"
     }
+  },
+  {
+    "id": "large-qwen-native-vs-bridged-input",
+    "repo": "routed-expert-splice",
+    "revision": "4fce8c0bad0a1c6c20436e748549361fe04864c6",
+    "script": "nested_surgery/bridge_input.py",
+    "after": {
+      "large-qwen-donor-location-archive-fix": "advance"
+    }
   }
 ]
