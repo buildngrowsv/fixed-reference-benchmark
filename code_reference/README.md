@@ -39,3 +39,5 @@ At 4,096 updates two 13,111,808-parameter models processed identical batches. On
 The study used an Apple M5 Ultra, macOS 27.2, Python 3.12.16, MLX 0.32.4 and NumPy 2.5.5. The code reads the pinned archive and uses the seeds in the registered plans. The queue manifest records exact git revisions for training, checkpoint continuation and the two post-training experiments. The NumPy verifier reaggregates the saved windows, checks split membership and offsets, reproduces the grouped intervals and individual swap counts, and verifies the complete-state exchange symmetry. Run `python code_reference/verify.py code_reference/results` from the repository root. The release contains per-window and per-pair evidence. Optimizer checkpoints reside on the Studio. [Verifier](verify.py) · [Versioned run manifest](../studio_queue/queue.json)
 
 The account owner proposed testing a forward-only fixed reference within a neural network. OpenAI Codex implemented the comparisons, ran training over SSH on the owner's Studio, audited the retained evidence and assisted with the manuscript.
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/363)

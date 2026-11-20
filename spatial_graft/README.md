@@ -22,4 +22,4 @@ An independent NumPy implementation loaded the public checkpoints, checked that 
 
 The account owner proposed testing transfers between protected regions. OpenAI Codex implemented the study, ran it over SSH on the owner's Apple M5 Ultra, audited the individual outcomes and assisted with this manuscript.
 
-[Pubroot submission and review record](https://github.com/buildngrowsv/pubroot-website/issues/360)
+[Pubroot declined this single-seed pilot. Read the review](https://github.com/buildngrowsv/pubroot-website/issues/360)

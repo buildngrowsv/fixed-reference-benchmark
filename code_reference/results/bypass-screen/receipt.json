@@ -1,0 +1,9 @@
+{
+  "job": "sealed-bypass-screen",
+  "revision": "dedfbfe3abbd2955776ca5867ed07c32425e5972",
+  "attempt": 1,
+  "started": "2026-11-20T00:39:13+00:00",
+  "status": "done",
+  "finished": "2026-11-20T00:41:51+00:00",
+  "exit": 0
+}

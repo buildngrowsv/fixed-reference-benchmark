@@ -1,0 +1,24 @@
+{
+  "validation": {
+    "programs": 1024,
+    "original_queries": 5512,
+    "current_queries": 5387,
+    "balanced": {
+      "dense": 0.09074133409382314,
+      "matched": 0.9341867099017874,
+      "rotated": 0.9211800373850609,
+      "matched_switched": 0.06985550267091958
+    }
+  },
+  "test": {
+    "programs": 1024,
+    "original_queries": 5325,
+    "current_queries": 5409,
+    "balanced": {
+      "dense": 0.0884681503701447,
+      "matched": 0.9329768070430347,
+      "rotated": 0.9225706243376324,
+      "matched_switched": 0.07183176708615531
+    }
+  }
+}

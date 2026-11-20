@@ -301,5 +301,29 @@
     "after": {
       "nested-donor-full-forward": "any"
     }
+  },
+  {
+    "id": "sealed-bypass-repeat-decision",
+    "repo": "fixed-reference-benchmark",
+    "revision": "d1705d228feca1c9a2f2139eca6b91c7647c9acd",
+    "script": "code_reference/bypass_repeat.py",
+    "args": [
+      "gate"
+    ],
+    "after": {
+      "sealed-bypass-main": "any"
+    }
+  },
+  {
+    "id": "sealed-bypass-repeat",
+    "repo": "fixed-reference-benchmark",
+    "revision": "d1705d228feca1c9a2f2139eca6b91c7647c9acd",
+    "script": "code_reference/bypass_repeat.py",
+    "args": [
+      "train"
+    ],
+    "after": {
+      "sealed-bypass-repeat-decision": "replicate"
+    }
   }
 ]
