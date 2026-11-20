@@ -1738,5 +1738,17 @@
     "after": {
       "large-qwen-graft-early-exit": "unresolved"
     }
+  },
+  {
+    "id": "qwen-dictionary-alias-use-72b",
+    "repo": "routed-expert-splice",
+    "revision": "cd94356923c246be5bcbe549bfb32dd18d37cd88",
+    "script": "nested_surgery/identifier_lookup_alias_use_72b.py",
+    "model_snapshots": [
+      "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+    ],
+    "after": {
+      "qwen-dictionary-alias-depth-72b": "alias_gap_persists_at_viable_cuts"
+    }
   }
 ]
