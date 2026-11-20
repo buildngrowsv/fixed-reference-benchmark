@@ -166,5 +166,39 @@
     "repo": "fixed-reference-benchmark",
     "revision": "72280721ae3b5c6dcc4573c5e2a037b4de63a690",
     "script": "register_routing/run.py"
+  },
+  {
+    "id": "nested-donor-qualification",
+    "repo": "routed-expert-splice",
+    "revision": "0d820a490a4a744de89455127790940544630963",
+    "script": "nested_surgery/run.py",
+    "args": [
+      "qualify"
+    ],
+    "after": {}
+  },
+  {
+    "id": "nested-donor-graft",
+    "repo": "routed-expert-splice",
+    "revision": "0d820a490a4a744de89455127790940544630963",
+    "script": "nested_surgery/run.py",
+    "args": [
+      "fit"
+    ],
+    "after": {
+      "nested-donor-qualification": "graft"
+    }
+  },
+  {
+    "id": "nested-donor-replication",
+    "repo": "routed-expert-splice",
+    "revision": "0d820a490a4a744de89455127790940544630963",
+    "script": "nested_surgery/run.py",
+    "args": [
+      "repeat"
+    ],
+    "after": {
+      "nested-donor-graft": "replicate"
+    }
   }
 ]
