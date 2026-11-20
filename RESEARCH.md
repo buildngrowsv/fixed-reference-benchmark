@@ -1,5 +1,9 @@
 # Open experiments and decisions
 
+**Immediate response to staggered boundaries.** Across 24 jumps in eight fresh 192³ worlds, the sparse policy retained 72.90% on the first affected round, versus 71.44% stale and 74.48% supplied. The +1.47-point improvement missed the four-point requirement. The sampled arm reached 68.83% versus 63.89% stale at the third jump, when accumulated retention already differed. [Staggered evidence](spatial_references/witness_staggered_jumps_study/README.md)
+
+**Depth and alias sufficiency.** A paired comparison at 40 and 60 blocks is ready on the Studio. It checks whether the late copy becomes steerable while a relocated-definition control remains effective at the same depth. The one-cut Pubroot submission was declined. [Protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/346a3c0/nested_surgery/NUMERIC_LOOKUP_ALIAS_DEPTH_72B.md) · [Review](https://github.com/buildngrowsv/pubroot-website/issues/538)
+
 **New surgical test.** The exact 7B coding expert produced +2.111 matching-bracket log odds in its native model and −0.009 through the old output interface. The registered test fits a 32-feature bridge against the 14B host's final answer, with both checkpoints frozen. It requires fresh complete repairs that disappear when the expert is removed and are missed by two equal-size bridges. [New protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/a733c86/nested_surgery/LEARNED_OUTPUT_PORT.md)
 
 **Boundary shift and observer latency.** On the 192³ grid the sparse policy recovered 68.91% after the boundary jump, versus 63.25% stale and 70.46% supplied. The compiled observer matched all 48 frame decisions and reached 0.331 ms median against 1.619 ms using two device gathers. [Boundary shift](spatial_references/witness_boundary_jump_study/README.md) · [Matched latency](spatial_references/compiled_witness_timing_study/README.md)

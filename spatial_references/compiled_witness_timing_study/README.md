@@ -10,4 +10,4 @@ The timed panel used aligned and shifted frames from eight worlds, each with thr
 
 The Apple M5 Ultra job took 7.20 seconds and peaked at 0.93 GB of MLX allocation. Recompute the timing comparisons with NumPy using `python spatial_references/compiled_witness_timing_study/verify.py` from the repo root. [Receipt](results/receipt.json) · [Environment](results/studio-environment.txt)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/540)
+[Published Pubroot article](https://pubroot.com/se/performance/a-compiled-detector-cut-3d-boundary-observer-latency-to-0-33-milliseconds/) · [Public review](https://github.com/buildngrowsv/pubroot-website/issues/540)

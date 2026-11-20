@@ -10,4 +10,6 @@ Across the eight rounds after the shift, the observer's 1.55-point deficit to su
 
 This test covers one checkpoint and one simultaneous, predetermined translation of an axis-aligned partition. The follow-up uses fresh worlds, staggered changes and a first-round recovery endpoint. The Studio run took 600 seconds, peaking at 14.33 GB of MLX allocation. Reconstruct these numbers from the archives using NumPy with `python spatial_references/witness_boundary_jump_study/verify.py` from the repo root. [Receipt](results/receipt.json) · [Environment](results/studio-environment.txt) · [Staggered-change protocol](../WITNESS_STAGGERED_JUMPS.md)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/539)
+[Pubroot review, declined](https://github.com/buildngrowsv/pubroot-website/issues/539)
+
+[Matched follow-up on staggered jumps and the first affected round](../witness_staggered_jumps_study/README.md)
