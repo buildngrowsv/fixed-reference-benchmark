@@ -1,4 +1,5 @@
 """Infer translated region walls from previous-tick sensor disagreements."""
+import argparse
 from hashlib import sha256
 import json
 import os
@@ -20,6 +21,8 @@ ROUNDS = 16
 POLICIES = ("fixed", "inferred", "known")
 STIMULI = ("aligned", "shifted")
 AXES = (-3, -2, -1)
+PROBES = 64
+SOURCE = "spatial-inferred-regions-884736"
 
 
 def infer_boundaries(active):
@@ -32,6 +35,17 @@ def infer_boundaries(active):
     return np.array(cuts)
 
 
+def infer_with_probes(active, locations):
+    side = active.shape[0]
+    half = side // 2
+    cuts = []
+    for axis, pixels in enumerate(locations):
+        views = active.swapaxes(0, axis).reshape(side, -1)[:, pixels]
+        disagreement = (views != np.roll(views, 1, axis=0)).mean(axis=1)
+        cuts.append((disagreement[:half] + disagreement[half:]).argmax())
+    return np.array(cuts)
+
+
 def witness_field(current, previous, shift, distance):
     sensed = divide(np.roll(previous, -shift, axis=AXES))
     selected = overlaps(sensed, distance).argmin(axis=1)
@@ -41,8 +55,10 @@ def witness_field(current, previous, shift, distance):
     return np.roll(combine(votes), shift, axis=AXES)
 
 
-def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8):
+def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False):
     rng = np.random.default_rng(931622 + world)
+    observer = np.random.default_rng(790133 + world)
+    probes = [observer.choice(side**2, size=PROBES, replace=False) for _ in range(3)] if sparse else None
     shape = (1, side, side, side)
     size = (2, *shape[1:])
     half = side // 2
@@ -76,7 +92,8 @@ def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8):
             elif tick in (9, 10):
                 pulses = faults
                 observed = np.array(previous)
-                inferred = np.stack([infer_boundaries(active) for active in observed])
+                inferred = np.stack([infer_boundaries(active) if probes is None
+                                     else infer_with_probes(active, probes) for active in observed])
                 offsets = np.stack((np.zeros_like(known), inferred, known))
                 witness = np.stack([np.stack([
                     witness_field(fault, act, shift, distance)
@@ -133,7 +150,26 @@ def summarize(counts, shifts, side):
                                        for j, s in enumerate(STIMULI)})
 
 
+def compare_sparse(archive, counts):
+    with np.load(archive) as data:
+        full = data["counts"]
+    assert full.shape == counts.shape
+    np.testing.assert_array_equal(full[:, :, :, (0, 2)], counts[:, :, :, (0, 2)])
+    old = full[:, :, 8:, 1].sum(axis=(0, 2))
+    new = counts[:, :, 8:, 1].sum(axis=(0, 2))
+    candidates = np.random.default_rng(591340).integers(len(old), size=(4000, len(old)))
+    a, b = new[candidates].sum(axis=1), old[candidates].sum(axis=1)
+    runs = a[..., 3]/a[..., 2] - b[..., 3]/b[..., 2]
+    sum_a, sum_b = new.sum(axis=0), old.sum(axis=0)
+    change = sum_a[..., 3]/sum_a[..., 2] - sum_b[..., 3]/sum_b[..., 2]
+    ci = np.percentile(runs, [2.5, 97.5], axis=0)
+    return {s: dict(mean=float(change[i]), interval=ci[:, i].tolist()) for i, s in enumerate(STIMULI)}
+
+
 def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--sparse", action="store_true")
+    args = ap.parse_args()
     start = time.perf_counter()
     out = Path(os.environ["STUDIO_JOB_DIR"])
     mx.set_cache_limit(2 * 1024**3)
@@ -142,7 +178,7 @@ def main():
         path = HERE / "results" / f"cube-full-{seed}.json"
         hashes[str(seed)] = sha256(path.read_bytes()).hexdigest()
         compiled = recorded_step(json.loads(path.read_text()))
-        counts, shifts = map(np.stack, zip(*(evaluate(compiled, w) for w in range(WORLDS)), strict=True))
+        counts, shifts = map(np.stack, zip(*(evaluate(compiled, w, sparse=args.sparse) for w in range(WORLDS)), strict=True))
         all_counts.append(counts)
         all_shifts.append(shifts)
         print(f"Completed checkpoint {seed}", flush=True)
@@ -151,6 +187,17 @@ def main():
     summary = dict(voxels=SIDE**3, worlds=WORLDS, transitions=ROUNDS*16, frozen_checkpoints=hashes,
                    runtime_s=time.perf_counter()-start, peak_mlx_bytes=mx.get_peak_memory(),
                    **summarize(counts, shifts, SIDE))
+    if args.sparse:
+        source = Path(os.environ["STUDIO_QUEUE_ROOT"]) / "runs" / SOURCE
+        receipt = json.loads((source / "receipt.json").read_text())
+        assert receipt["revision"] == "198240fb667f2c1d2c6f5b70a9a28929d825b809" and receipt["status"] == "done"
+        contrast = compare_sparse(source / "worlds.npz", counts)
+        improvement = summary["inferred_minus_fixed"]["shifted"]
+        pass_sparse = (contrast["shifted"]["interval"][0] >= -.02 and improvement["mean"] >= .04
+                       and improvement["interval"][0] > 0 and
+                       all(r["legitimate"] >= .98 for r in summary["rates"]["inferred"].values()))
+        summary.update(decision="sparse_layout_sufficient" if pass_sparse else "unresolved",
+                       probes_per_plane=PROBES, sampled_upper_fraction=3*PROBES/SIDE**2, sparse_minus_full=contrast)
     (out / "result.json").write_text(json.dumps(summary, indent=2) + "\n")
 
 
