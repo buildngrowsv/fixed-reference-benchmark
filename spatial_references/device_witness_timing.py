@@ -78,7 +78,7 @@ def detector_frames(world, side, weights):
     return active[0],active[1]
 
 
-def compare(side, worlds, repetitions):
+def compare(side, worlds, repetitions, *, compiled_factory=None):
     timings, results, checkpoints = [], [], {}
     for seed in SEEDS:
         payload = (HERE/"results"/f"cube-full-{seed}.json").read_bytes()
@@ -89,14 +89,19 @@ def compare(side, worlds, repetitions):
             lines = line_indices(side,probes)
             mx.eval(lines)
             anchors = np.random.default_rng(918447+world).integers(side//2,size=(8,ANCHORS,3))
+            compiled = compiled_factory(side,probes,anchors,8) if compiled_factory is not None else None
             for frame in detector_frames(world,side,json.loads(payload)):
                 methods = (lambda: materialized(frame,probes,anchors,8),
                            lambda: gathered(frame,lines,anchors,8))
+                if compiled is not None:
+                    methods += (lambda: compiled(frame),)
                 outputs = [fn() for fn in methods]
-                np.testing.assert_array_equal(*outputs)
-                elapsed = np.zeros((repetitions,2),dtype=np.int64)
+                for output in outputs[1:]:
+                    np.testing.assert_array_equal(output,outputs[0])
+                elapsed = np.zeros((repetitions,len(methods)),dtype=np.int64)
                 for rep in range(repetitions):
-                    for arm in (rep%2,1-rep%2):
+                    for offset in range(len(methods)):
+                        arm = (rep+offset)%len(methods)
                         start = time.perf_counter_ns()
                         observed = methods[arm]()
                         elapsed[rep,arm] = time.perf_counter_ns()-start
