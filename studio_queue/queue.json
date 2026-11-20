@@ -536,5 +536,14 @@
       "distilled-memory-interface": "replicate",
       "displaced-independent-host": "replicate"
     }
+  },
+  {
+    "id": "large-register-dense-vs-displaced",
+    "repo": "fixed-reference-benchmark",
+    "revision": "1eab8180e52b5f0ecea0f93dff4932768ba431c0",
+    "script": "register_routing/large_revisit.py",
+    "after": {
+      "register-addressing": "any"
+    }
   }
 ]
