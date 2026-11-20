@@ -1375,5 +1375,17 @@
     "after": {
       "qwen-late-key-donor-transfer-72b": "late_key_donor_transfer"
     }
+  },
+  {
+    "id": "spatial-anchored-witness-routing-7077888",
+    "repo": "fixed-reference-benchmark",
+    "revision": "813daccd502125d79703bff8568755a65bdbade5",
+    "script": "spatial_references/anchored_witness_routing.py",
+    "args": [
+      "--large"
+    ],
+    "after": {
+      "spatial-anchored-witness-routing-884736": "dedicated_probes_restore_routing"
+    }
   }
 ]
