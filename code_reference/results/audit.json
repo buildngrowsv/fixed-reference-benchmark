@@ -1,0 +1,44 @@
+{
+  "corpus": {
+    "train": {
+      "files": 1273,
+      "bytes": 26994969,
+      "packages": 390
+    },
+    "val": {
+      "files": 140,
+      "bytes": 3846635,
+      "packages": 52
+    },
+    "test": {
+      "files": 70,
+      "bytes": 2122472,
+      "packages": 52
+    }
+  },
+  "validation": {
+    "delta": -0.0007953938071585642,
+    "interval": [
+      -0.007782914743243129,
+      0.0032310705809100036
+    ],
+    "packages": 42
+  },
+  "test": {
+    "delta": -0.0019727157966566156,
+    "interval": [
+      -0.004865771411658702,
+      0.0012796125475476026
+    ],
+    "packages": 49
+  },
+  "shared_minus_shallow": {
+    "delta": 0.001238266700171888,
+    "interval": [
+      -0.0026062518710931264,
+      0.0045205027415807855
+    ],
+    "packages": 42
+  },
+  "exchange_pairs_per_model": 1024
+}

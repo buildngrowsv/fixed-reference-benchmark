@@ -1,0 +1,17 @@
+{
+  "decision": "complete",
+  "validation_interval": [
+    -0.007782914743243129,
+    0.0032310705809100045
+  ],
+  "models": {
+    "fixed": {
+      "validation_bpb": 0.950870826649669,
+      "parameters": 31992320
+    },
+    "writable": {
+      "validation_bpb": 0.9516662204568276,
+      "parameters": 31992320
+    }
+  }
+}

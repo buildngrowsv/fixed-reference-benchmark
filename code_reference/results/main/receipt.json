@@ -1,0 +1,9 @@
+{
+  "job": "cpython-reference-main",
+  "revision": "0fd91d736acba3b015167ebf7fc4b86464b44859",
+  "attempt": 1,
+  "started": "2026-11-20T00:19:36+00:00",
+  "status": "done",
+  "finished": "2026-11-20T00:34:43+00:00",
+  "exit": 0
+}

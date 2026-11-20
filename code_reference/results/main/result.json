@@ -1,0 +1,38 @@
+{
+  "decision": "complete",
+  "phase": "main",
+  "validation_interval": [
+    -0.007782914743243129,
+    0.0032310705809100045
+  ],
+  "models": {
+    "fixed": {
+      "validation_bpb": 0.950870826649669,
+      "parameters": 31992320,
+      "test_bpb": 1.0201241785344561,
+      "byte_accuracy": 0.8089818954467773,
+      "repeated_identifier_bpb": 0.07396580706009107
+    },
+    "writable": {
+      "validation_bpb": 0.9516662204568276,
+      "parameters": 31992320,
+      "test_bpb": 1.0220968943311126,
+      "byte_accuracy": 0.8081264495849609,
+      "repeated_identifier_bpb": 0.08175429723596689
+    }
+  },
+  "validation_control": {
+    "unigram_bpb": 4.5474477846754935,
+    "suffix_bpb": null,
+    "suffix_accuracy": null
+  },
+  "test_control": {
+    "unigram_bpb": 4.619960072912937,
+    "suffix_bpb": 3.2413779758359595,
+    "suffix_accuracy": 0.5654792785644531
+  },
+  "steps": 16384,
+  "seed": 101,
+  "seconds_this_invocation": 906.2541217499966,
+  "device": "Apple M5 Ultra"
+}

@@ -1,0 +1,9 @@
+{
+  "job": "cpython-lane-exchange",
+  "revision": "fb1be61a0417a3cd2e74059274b7f739792143ee",
+  "attempt": 1,
+  "started": "2026-11-20T00:35:17+00:00",
+  "status": "done",
+  "finished": "2026-11-20T00:35:19+00:00",
+  "exit": 0
+}

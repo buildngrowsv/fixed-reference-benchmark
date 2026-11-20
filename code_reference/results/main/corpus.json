@@ -1,0 +1,7426 @@
+{
+  "archive": "37c8e18b35e659da6ff4db74caea50ed4170cf66c6d51f97d22e436e338d7b5b",
+  "files": {
+    "train": [
+      {
+        "path": "Lib/__future__.py",
+        "group": "__future__",
+        "bytes": 5218
+      },
+      {
+        "path": "Lib/_aix_support.py",
+        "group": "_aix_support",
+        "bytes": 4021
+      },
+      {
+        "path": "Lib/_android_support.py",
+        "group": "_android_support",
+        "bytes": 6716
+      },
+      {
+        "path": "Lib/_collections_abc.py",
+        "group": "_collections_abc",
+        "bytes": 32257
+      },
+      {
+        "path": "Lib/_colorize.py",
+        "group": "_colorize",
+        "bytes": 1484
+      },
+      {
+        "path": "Lib/_compat_pickle.py",
+        "group": "_compat_pickle",
+        "bytes": 8735
+      },
+      {
+        "path": "Lib/_compression.py",
+        "group": "_compression",
+        "bytes": 5681
+      },
+      {
+        "path": "Lib/_ios_support.py",
+        "group": "_ios_support",
+        "bytes": 2672
+      },
+      {
+        "path": "Lib/_osx_support.py",
+        "group": "_osx_support",
+        "bytes": 22023
+      },
+      {
+        "path": "Lib/_py_abc.py",
+        "group": "_py_abc",
+        "bytes": 6189
+      },
+      {
+        "path": "Lib/_pydatetime.py",
+        "group": "_pydatetime",
+        "bytes": 92104
+      },
+      {
+        "path": "Lib/_pydecimal.py",
+        "group": "_pydecimal",
+        "bytes": 227283
+      },
+      {
+        "path": "Lib/_pyio.py",
+        "group": "_pyio",
+        "bytes": 93286
+      },
+      {
+        "path": "Lib/_pylong.py",
+        "group": "_pylong",
+        "bytes": 11830
+      },
+      {
+        "path": "Lib/_pyrepl/__init__.py",
+        "group": "_pyrepl",
+        "bytes": 925
+      },
+      {
+        "path": "Lib/_pyrepl/_minimal_curses.py",
+        "group": "_pyrepl",
+        "bytes": 1893
+      },
+      {
+        "path": "Lib/_pyrepl/_threading_handler.py",
+        "group": "_pyrepl",
+        "bytes": 2170
+      },
+      {
+        "path": "Lib/_pyrepl/commands.py",
+        "group": "_pyrepl",
+        "bytes": 11937
+      },
+      {
+        "path": "Lib/_pyrepl/completing_reader.py",
+        "group": "_pyrepl",
+        "bytes": 9698
+      },
+      {
+        "path": "Lib/_pyrepl/console.py",
+        "group": "_pyrepl",
+        "bytes": 6308
+      },
+      {
+        "path": "Lib/_pyrepl/curses.py",
+        "group": "_pyrepl",
+        "bytes": 1241
+      },
+      {
+        "path": "Lib/_pyrepl/fancy_termios.py",
+        "group": "_pyrepl",
+        "bytes": 2017
+      },
+      {
+        "path": "Lib/_pyrepl/historical_reader.py",
+        "group": "_pyrepl",
+        "bytes": 13146
+      },
+      {
+        "path": "Lib/_pyrepl/input.py",
+        "group": "_pyrepl",
+        "bytes": 3779
+      },
+      {
+        "path": "Lib/_pyrepl/keymap.py",
+        "group": "_pyrepl",
+        "bytes": 6460
+      },
+      {
+        "path": "Lib/_pyrepl/main.py",
+        "group": "_pyrepl",
+        "bytes": 1938
+      },
+      {
+        "path": "Lib/_pyrepl/pager.py",
+        "group": "_pyrepl",
+        "bytes": 5672
+      },
+      {
+        "path": "Lib/_pyrepl/reader.py",
+        "group": "_pyrepl",
+        "bytes": 29039
+      },
+      {
+        "path": "Lib/_pyrepl/readline.py",
+        "group": "_pyrepl",
+        "bytes": 20210
+      },
+      {
+        "path": "Lib/_pyrepl/simple_interact.py",
+        "group": "_pyrepl",
+        "bytes": 5565
+      },
+      {
+        "path": "Lib/_pyrepl/unix_console.py",
+        "group": "_pyrepl",
+        "bytes": 25244
+      },
+      {
+        "path": "Lib/_pyrepl/unix_eventqueue.py",
+        "group": "_pyrepl",
+        "bytes": 5039
+      },
+      {
+        "path": "Lib/_pyrepl/utils.py",
+        "group": "_pyrepl",
+        "bytes": 600
+      },
+      {
+        "path": "Lib/_pyrepl/windows_console.py",
+        "group": "_pyrepl",
+        "bytes": 18987
+      },
+      {
+        "path": "Lib/_sitebuiltins.py",
+        "group": "_sitebuiltins",
+        "bytes": 3128
+      },
+      {
+        "path": "Lib/abc.py",
+        "group": "abc",
+        "bytes": 6538
+      },
+      {
+        "path": "Lib/ast.py",
+        "group": "ast",
+        "bytes": 65254
+      },
+      {
+        "path": "Lib/base64.py",
+        "group": "base64",
+        "bytes": 21630
+      },
+      {
+        "path": "Lib/bdb.py",
+        "group": "bdb",
+        "bytes": 34599
+      },
+      {
+        "path": "Lib/cProfile.py",
+        "group": "cProfile",
+        "bytes": 6624
+      },
+      {
+        "path": "Lib/calendar.py",
+        "group": "calendar",
+        "bytes": 25653
+      },
+      {
+        "path": "Lib/cmd.py",
+        "group": "cmd",
+        "bytes": 15316
+      },
+      {
+        "path": "Lib/code.py",
+        "group": "code",
+        "bytes": 13125
+      },
+      {
+        "path": "Lib/codecs.py",
+        "group": "codecs",
+        "bytes": 36928
+      },
+      {
+        "path": "Lib/codeop.py",
+        "group": "codeop",
+        "bytes": 5698
+      },
+      {
+        "path": "Lib/collections/__init__.py",
+        "group": "collections",
+        "bytes": 52425
+      },
+      {
+        "path": "Lib/colorsys.py",
+        "group": "colorsys",
+        "bytes": 4062
+      },
+      {
+        "path": "Lib/compileall.py",
+        "group": "compileall",
+        "bytes": 20665
+      },
+      {
+        "path": "Lib/contextlib.py",
+        "group": "contextlib",
+        "bytes": 27801
+      },
+      {
+        "path": "Lib/copyreg.py",
+        "group": "copyreg",
+        "bytes": 7614
+      },
+      {
+        "path": "Lib/csv.py",
+        "group": "csv",
+        "bytes": 19178
+      },
+      {
+        "path": "Lib/ctypes/__init__.py",
+        "group": "ctypes",
+        "bytes": 18782
+      },
+      {
+        "path": "Lib/ctypes/_aix.py",
+        "group": "ctypes",
+        "bytes": 12505
+      },
+      {
+        "path": "Lib/ctypes/_endian.py",
+        "group": "ctypes",
+        "bytes": 2557
+      },
+      {
+        "path": "Lib/ctypes/macholib/dyld.py",
+        "group": "ctypes",
+        "bytes": 5024
+      },
+      {
+        "path": "Lib/ctypes/macholib/dylib.py",
+        "group": "ctypes",
+        "bytes": 960
+      },
+      {
+        "path": "Lib/ctypes/macholib/framework.py",
+        "group": "ctypes",
+        "bytes": 1105
+      },
+      {
+        "path": "Lib/ctypes/util.py",
+        "group": "ctypes",
+        "bytes": 14252
+      },
+      {
+        "path": "Lib/ctypes/wintypes.py",
+        "group": "ctypes",
+        "bytes": 5629
+      },
+      {
+        "path": "Lib/curses/__init__.py",
+        "group": "curses",
+        "bytes": 3369
+      },
+      {
+        "path": "Lib/curses/ascii.py",
+        "group": "curses",
+        "bytes": 2543
+      },
+      {
+        "path": "Lib/curses/has_key.py",
+        "group": "curses",
+        "bytes": 5634
+      },
+      {
+        "path": "Lib/curses/textpad.py",
+        "group": "curses",
+        "bytes": 7754
+      },
+      {
+        "path": "Lib/dataclasses.py",
+        "group": "dataclasses",
+        "bytes": 64548
+      },
+      {
+        "path": "Lib/dbm/__init__.py",
+        "group": "dbm",
+        "bytes": 6024
+      },
+      {
+        "path": "Lib/dbm/dumb.py",
+        "group": "dbm",
+        "bytes": 11711
+      },
+      {
+        "path": "Lib/dbm/sqlite3.py",
+        "group": "dbm",
+        "bytes": 4082
+      },
+      {
+        "path": "Lib/decimal.py",
+        "group": "decimal",
+        "bytes": 2798
+      },
+      {
+        "path": "Lib/difflib.py",
+        "group": "difflib",
+        "bytes": 83308
+      },
+      {
+        "path": "Lib/dis.py",
+        "group": "dis",
+        "bytes": 40944
+      },
+      {
+        "path": "Lib/doctest.py",
+        "group": "doctest",
+        "bytes": 109317
+      },
+      {
+        "path": "Lib/email/__init__.py",
+        "group": "email",
+        "bytes": 1764
+      },
+      {
+        "path": "Lib/email/_encoded_words.py",
+        "group": "email",
+        "bytes": 8541
+      },
+      {
+        "path": "Lib/email/_header_value_parser.py",
+        "group": "email",
+        "bytes": 110393
+      },
+      {
+        "path": "Lib/email/_parseaddr.py",
+        "group": "email",
+        "bytes": 17895
+      },
+      {
+        "path": "Lib/email/_policybase.py",
+        "group": "email",
+        "bytes": 15535
+      },
+      {
+        "path": "Lib/email/base64mime.py",
+        "group": "email",
+        "bytes": 3551
+      },
+      {
+        "path": "Lib/email/charset.py",
+        "group": "email",
+        "bytes": 17063
+      },
+      {
+        "path": "Lib/email/contentmanager.py",
+        "group": "email",
+        "bytes": 10588
+      },
+      {
+        "path": "Lib/email/encoders.py",
+        "group": "email",
+        "bytes": 1778
+      },
+      {
+        "path": "Lib/email/errors.py",
+        "group": "email",
+        "bytes": 3814
+      },
+      {
+        "path": "Lib/email/feedparser.py",
+        "group": "email",
+        "bytes": 22898
+      },
+      {
+        "path": "Lib/email/generator.py",
+        "group": "email",
+        "bytes": 20815
+      },
+      {
+        "path": "Lib/email/header.py",
+        "group": "email",
+        "bytes": 24092
+      },
+      {
+        "path": "Lib/email/headerregistry.py",
+        "group": "email",
+        "bytes": 20819
+      },
+      {
+        "path": "Lib/email/iterators.py",
+        "group": "email",
+        "bytes": 2129
+      },
+      {
+        "path": "Lib/email/message.py",
+        "group": "email",
+        "bytes": 48109
+      },
+      {
+        "path": "Lib/email/mime/application.py",
+        "group": "email",
+        "bytes": 1321
+      },
+      {
+        "path": "Lib/email/mime/audio.py",
+        "group": "email",
+        "bytes": 3004
+      },
+      {
+        "path": "Lib/email/mime/base.py",
+        "group": "email",
+        "bytes": 914
+      },
+      {
+        "path": "Lib/email/mime/image.py",
+        "group": "email",
+        "bytes": 3726
+      },
+      {
+        "path": "Lib/email/mime/message.py",
+        "group": "email",
+        "bytes": 1315
+      },
+      {
+        "path": "Lib/email/mime/multipart.py",
+        "group": "email",
+        "bytes": 1619
+      },
+      {
+        "path": "Lib/email/mime/nonmultipart.py",
+        "group": "email",
+        "bytes": 689
+      },
+      {
+        "path": "Lib/email/mime/text.py",
+        "group": "email",
+        "bytes": 1394
+      },
+      {
+        "path": "Lib/email/parser.py",
+        "group": "email",
+        "bytes": 4975
+      },
+      {
+        "path": "Lib/email/policy.py",
+        "group": "email",
+        "bytes": 10614
+      },
+      {
+        "path": "Lib/email/quoprimime.py",
+        "group": "email",
+        "bytes": 9864
+      },
+      {
+        "path": "Lib/email/utils.py",
+        "group": "email",
+        "bytes": 16242
+      },
+      {
+        "path": "Lib/encodings/__init__.py",
+        "group": "encodings",
+        "bytes": 5884
+      },
+      {
+        "path": "Lib/encodings/aliases.py",
+        "group": "encodings",
+        "bytes": 15713
+      },
+      {
+        "path": "Lib/encodings/ascii.py",
+        "group": "encodings",
+        "bytes": 1248
+      },
+      {
+        "path": "Lib/encodings/base64_codec.py",
+        "group": "encodings",
+        "bytes": 1533
+      },
+      {
+        "path": "Lib/encodings/big5.py",
+        "group": "encodings",
+        "bytes": 1019
+      },
+      {
+        "path": "Lib/encodings/big5hkscs.py",
+        "group": "encodings",
+        "bytes": 1039
+      },
+      {
+        "path": "Lib/encodings/bz2_codec.py",
+        "group": "encodings",
+        "bytes": 2249
+      },
+      {
+        "path": "Lib/encodings/charmap.py",
+        "group": "encodings",
+        "bytes": 2084
+      },
+      {
+        "path": "Lib/encodings/cp037.py",
+        "group": "encodings",
+        "bytes": 13121
+      },
+      {
+        "path": "Lib/encodings/cp1006.py",
+        "group": "encodings",
+        "bytes": 13568
+      },
+      {
+        "path": "Lib/encodings/cp1026.py",
+        "group": "encodings",
+        "bytes": 13113
+      },
+      {
+        "path": "Lib/encodings/cp1125.py",
+        "group": "encodings",
+        "bytes": 34597
+      },
+      {
+        "path": "Lib/encodings/cp1140.py",
+        "group": "encodings",
+        "bytes": 13105
+      },
+      {
+        "path": "Lib/encodings/cp1250.py",
+        "group": "encodings",
+        "bytes": 13686
+      },
+      {
+        "path": "Lib/encodings/cp1251.py",
+        "group": "encodings",
+        "bytes": 13361
+      },
+      {
+        "path": "Lib/encodings/cp1252.py",
+        "group": "encodings",
+        "bytes": 13511
+      },
+      {
+        "path": "Lib/encodings/cp1253.py",
+        "group": "encodings",
+        "bytes": 13094
+      },
+      {
+        "path": "Lib/encodings/cp1254.py",
+        "group": "encodings",
+        "bytes": 13502
+      },
+      {
+        "path": "Lib/encodings/cp1255.py",
+        "group": "encodings",
+        "bytes": 12466
+      },
+      {
+        "path": "Lib/encodings/cp1256.py",
+        "group": "encodings",
+        "bytes": 12814
+      },
+      {
+        "path": "Lib/encodings/cp1257.py",
+        "group": "encodings",
+        "bytes": 13374
+      },
+      {
+        "path": "Lib/encodings/cp1258.py",
+        "group": "encodings",
+        "bytes": 13364
+      },
+      {
+        "path": "Lib/encodings/cp273.py",
+        "group": "encodings",
+        "bytes": 14132
+      },
+      {
+        "path": "Lib/encodings/cp424.py",
+        "group": "encodings",
+        "bytes": 12055
+      },
+      {
+        "path": "Lib/encodings/cp437.py",
+        "group": "encodings",
+        "bytes": 34564
+      },
+      {
+        "path": "Lib/encodings/cp500.py",
+        "group": "encodings",
+        "bytes": 13121
+      },
+      {
+        "path": "Lib/encodings/cp720.py",
+        "group": "encodings",
+        "bytes": 13686
+      },
+      {
+        "path": "Lib/encodings/cp737.py",
+        "group": "encodings",
+        "bytes": 34681
+      },
+      {
+        "path": "Lib/encodings/cp775.py",
+        "group": "encodings",
+        "bytes": 34476
+      },
+      {
+        "path": "Lib/encodings/cp850.py",
+        "group": "encodings",
+        "bytes": 34105
+      },
+      {
+        "path": "Lib/encodings/cp852.py",
+        "group": "encodings",
+        "bytes": 35002
+      },
+      {
+        "path": "Lib/encodings/cp855.py",
+        "group": "encodings",
+        "bytes": 33850
+      },
+      {
+        "path": "Lib/encodings/cp856.py",
+        "group": "encodings",
+        "bytes": 12423
+      },
+      {
+        "path": "Lib/encodings/cp857.py",
+        "group": "encodings",
+        "bytes": 33908
+      },
+      {
+        "path": "Lib/encodings/cp858.py",
+        "group": "encodings",
+        "bytes": 34015
+      },
+      {
+        "path": "Lib/encodings/cp860.py",
+        "group": "encodings",
+        "bytes": 34681
+      },
+      {
+        "path": "Lib/encodings/cp861.py",
+        "group": "encodings",
+        "bytes": 34633
+      },
+      {
+        "path": "Lib/encodings/cp862.py",
+        "group": "encodings",
+        "bytes": 33370
+      },
+      {
+        "path": "Lib/encodings/cp863.py",
+        "group": "encodings",
+        "bytes": 34252
+      },
+      {
+        "path": "Lib/encodings/cp864.py",
+        "group": "encodings",
+        "bytes": 33663
+      },
+      {
+        "path": "Lib/encodings/cp865.py",
+        "group": "encodings",
+        "bytes": 34618
+      },
+      {
+        "path": "Lib/encodings/cp866.py",
+        "group": "encodings",
+        "bytes": 34396
+      },
+      {
+        "path": "Lib/encodings/cp869.py",
+        "group": "encodings",
+        "bytes": 32965
+      },
+      {
+        "path": "Lib/encodings/cp874.py",
+        "group": "encodings",
+        "bytes": 12595
+      },
+      {
+        "path": "Lib/encodings/cp875.py",
+        "group": "encodings",
+        "bytes": 12854
+      },
+      {
+        "path": "Lib/encodings/cp932.py",
+        "group": "encodings",
+        "bytes": 1023
+      },
+      {
+        "path": "Lib/encodings/cp949.py",
+        "group": "encodings",
+        "bytes": 1023
+      },
+      {
+        "path": "Lib/encodings/cp950.py",
+        "group": "encodings",
+        "bytes": 1023
+      },
+      {
+        "path": "Lib/encodings/euc_jis_2004.py",
+        "group": "encodings",
+        "bytes": 1051
+      },
+      {
+        "path": "Lib/encodings/euc_jisx0213.py",
+        "group": "encodings",
+        "bytes": 1051
+      },
+      {
+        "path": "Lib/encodings/euc_jp.py",
+        "group": "encodings",
+        "bytes": 1027
+      },
+      {
+        "path": "Lib/encodings/euc_kr.py",
+        "group": "encodings",
+        "bytes": 1027
+      },
+      {
+        "path": "Lib/encodings/gb18030.py",
+        "group": "encodings",
+        "bytes": 1031
+      },
+      {
+        "path": "Lib/encodings/gb2312.py",
+        "group": "encodings",
+        "bytes": 1027
+      },
+      {
+        "path": "Lib/encodings/gbk.py",
+        "group": "encodings",
+        "bytes": 1015
+      },
+      {
+        "path": "Lib/encodings/hex_codec.py",
+        "group": "encodings",
+        "bytes": 1508
+      },
+      {
+        "path": "Lib/encodings/hp_roman8.py",
+        "group": "encodings",
+        "bytes": 13475
+      },
+      {
+        "path": "Lib/encodings/hz.py",
+        "group": "encodings",
+        "bytes": 1011
+      },
+      {
+        "path": "Lib/encodings/idna.py",
+        "group": "encodings",
+        "bytes": 13247
+      },
+      {
+        "path": "Lib/encodings/iso2022_jp.py",
+        "group": "encodings",
+        "bytes": 1053
+      },
+      {
+        "path": "Lib/encodings/iso2022_jp_1.py",
+        "group": "encodings",
+        "bytes": 1061
+      },
+      {
+        "path": "Lib/encodings/iso2022_jp_2.py",
+        "group": "encodings",
+        "bytes": 1061
+      },
+      {
+        "path": "Lib/encodings/iso2022_jp_2004.py",
+        "group": "encodings",
+        "bytes": 1073
+      },
+      {
+        "path": "Lib/encodings/iso2022_jp_3.py",
+        "group": "encodings",
+        "bytes": 1061
+      },
+      {
+        "path": "Lib/encodings/iso2022_jp_ext.py",
+        "group": "encodings",
+        "bytes": 1069
+      },
+      {
+        "path": "Lib/encodings/iso2022_kr.py",
+        "group": "encodings",
+        "bytes": 1053
+      },
+      {
+        "path": "Lib/encodings/iso8859_1.py",
+        "group": "encodings",
+        "bytes": 13176
+      },
+      {
+        "path": "Lib/encodings/iso8859_10.py",
+        "group": "encodings",
+        "bytes": 13589
+      },
+      {
+        "path": "Lib/encodings/iso8859_11.py",
+        "group": "encodings",
+        "bytes": 12335
+      },
+      {
+        "path": "Lib/encodings/iso8859_13.py",
+        "group": "encodings",
+        "bytes": 13271
+      },
+      {
+        "path": "Lib/encodings/iso8859_14.py",
+        "group": "encodings",
+        "bytes": 13652
+      },
+      {
+        "path": "Lib/encodings/iso8859_15.py",
+        "group": "encodings",
+        "bytes": 13212
+      },
+      {
+        "path": "Lib/encodings/iso8859_16.py",
+        "group": "encodings",
+        "bytes": 13557
+      },
+      {
+        "path": "Lib/encodings/iso8859_2.py",
+        "group": "encodings",
+        "bytes": 13404
+      },
+      {
+        "path": "Lib/encodings/iso8859_3.py",
+        "group": "encodings",
+        "bytes": 13089
+      },
+      {
+        "path": "Lib/encodings/iso8859_4.py",
+        "group": "encodings",
+        "bytes": 13376
+      },
+      {
+        "path": "Lib/encodings/iso8859_5.py",
+        "group": "encodings",
+        "bytes": 13015
+      },
+      {
+        "path": "Lib/encodings/iso8859_6.py",
+        "group": "encodings",
+        "bytes": 10833
+      },
+      {
+        "path": "Lib/encodings/iso8859_7.py",
+        "group": "encodings",
+        "bytes": 12844
+      },
+      {
+        "path": "Lib/encodings/iso8859_8.py",
+        "group": "encodings",
+        "bytes": 11036
+      },
+      {
+        "path": "Lib/encodings/iso8859_9.py",
+        "group": "encodings",
+        "bytes": 13156
+      },
+      {
+        "path": "Lib/encodings/johab.py",
+        "group": "encodings",
+        "bytes": 1023
+      },
+      {
+        "path": "Lib/encodings/koi8_r.py",
+        "group": "encodings",
+        "bytes": 13779
+      },
+      {
+        "path": "Lib/encodings/koi8_t.py",
+        "group": "encodings",
+        "bytes": 13193
+      },
+      {
+        "path": "Lib/encodings/koi8_u.py",
+        "group": "encodings",
+        "bytes": 13762
+      },
+      {
+        "path": "Lib/encodings/kz1048.py",
+        "group": "encodings",
+        "bytes": 13723
+      },
+      {
+        "path": "Lib/encodings/latin_1.py",
+        "group": "encodings",
+        "bytes": 1264
+      },
+      {
+        "path": "Lib/encodings/mac_arabic.py",
+        "group": "encodings",
+        "bytes": 36467
+      },
+      {
+        "path": "Lib/encodings/mac_croatian.py",
+        "group": "encodings",
+        "bytes": 13633
+      },
+      {
+        "path": "Lib/encodings/mac_cyrillic.py",
+        "group": "encodings",
+        "bytes": 13454
+      },
+      {
+        "path": "Lib/encodings/mac_farsi.py",
+        "group": "encodings",
+        "bytes": 15170
+      },
+      {
+        "path": "Lib/encodings/mac_greek.py",
+        "group": "encodings",
+        "bytes": 13721
+      },
+      {
+        "path": "Lib/encodings/mac_iceland.py",
+        "group": "encodings",
+        "bytes": 13498
+      },
+      {
+        "path": "Lib/encodings/mac_latin2.py",
+        "group": "encodings",
+        "bytes": 14118
+      },
+      {
+        "path": "Lib/encodings/mac_roman.py",
+        "group": "encodings",
+        "bytes": 13480
+      },
+      {
+        "path": "Lib/encodings/mac_romanian.py",
+        "group": "encodings",
+        "bytes": 13661
+      },
+      {
+        "path": "Lib/encodings/mac_turkish.py",
+        "group": "encodings",
+        "bytes": 13513
+      },
+      {
+        "path": "Lib/encodings/mbcs.py",
+        "group": "encodings",
+        "bytes": 1211
+      },
+      {
+        "path": "Lib/encodings/oem.py",
+        "group": "encodings",
+        "bytes": 1019
+      },
+      {
+        "path": "Lib/encodings/palmos.py",
+        "group": "encodings",
+        "bytes": 13519
+      },
+      {
+        "path": "Lib/encodings/ptcp154.py",
+        "group": "encodings",
+        "bytes": 14015
+      },
+      {
+        "path": "Lib/encodings/punycode.py",
+        "group": "encodings",
+        "bytes": 7625
+      },
+      {
+        "path": "Lib/encodings/quopri_codec.py",
+        "group": "encodings",
+        "bytes": 1525
+      },
+      {
+        "path": "Lib/encodings/raw_unicode_escape.py",
+        "group": "encodings",
+        "bytes": 1332
+      },
+      {
+        "path": "Lib/encodings/rot_13.py",
+        "group": "encodings",
+        "bytes": 2448
+      },
+      {
+        "path": "Lib/encodings/shift_jis.py",
+        "group": "encodings",
+        "bytes": 1039
+      },
+      {
+        "path": "Lib/encodings/shift_jis_2004.py",
+        "group": "encodings",
+        "bytes": 1059
+      },
+      {
+        "path": "Lib/encodings/shift_jisx0213.py",
+        "group": "encodings",
+        "bytes": 1059
+      },
+      {
+        "path": "Lib/encodings/tis_620.py",
+        "group": "encodings",
+        "bytes": 12300
+      },
+      {
+        "path": "Lib/encodings/undefined.py",
+        "group": "encodings",
+        "bytes": 1301
+      },
+      {
+        "path": "Lib/encodings/unicode_escape.py",
+        "group": "encodings",
+        "bytes": 1304
+      },
+      {
+        "path": "Lib/encodings/utf_16.py",
+        "group": "encodings",
+        "bytes": 5280
+      },
+      {
+        "path": "Lib/encodings/utf_16_be.py",
+        "group": "encodings",
+        "bytes": 1037
+      },
+      {
+        "path": "Lib/encodings/utf_16_le.py",
+        "group": "encodings",
+        "bytes": 1037
+      },
+      {
+        "path": "Lib/encodings/utf_32.py",
+        "group": "encodings",
+        "bytes": 5175
+      },
+      {
+        "path": "Lib/encodings/utf_32_be.py",
+        "group": "encodings",
+        "bytes": 930
+      },
+      {
+        "path": "Lib/encodings/utf_32_le.py",
+        "group": "encodings",
+        "bytes": 930
+      },
+      {
+        "path": "Lib/encodings/utf_7.py",
+        "group": "encodings",
+        "bytes": 946
+      },
+      {
+        "path": "Lib/encodings/utf_8.py",
+        "group": "encodings",
+        "bytes": 1005
+      },
+      {
+        "path": "Lib/encodings/utf_8_sig.py",
+        "group": "encodings",
+        "bytes": 4133
+      },
+      {
+        "path": "Lib/encodings/uu_codec.py",
+        "group": "encodings",
+        "bytes": 2851
+      },
+      {
+        "path": "Lib/encodings/zlib_codec.py",
+        "group": "encodings",
+        "bytes": 2204
+      },
+      {
+        "path": "Lib/ensurepip/__init__.py",
+        "group": "ensurepip",
+        "bytes": 8260
+      },
+      {
+        "path": "Lib/ensurepip/_uninstall.py",
+        "group": "ensurepip",
+        "bytes": 808
+      },
+      {
+        "path": "Lib/enum.py",
+        "group": "enum",
+        "bytes": 84266
+      },
+      {
+        "path": "Lib/filecmp.py",
+        "group": "filecmp",
+        "bytes": 10652
+      },
+      {
+        "path": "Lib/fileinput.py",
+        "group": "fileinput",
+        "bytes": 15717
+      },
+      {
+        "path": "Lib/fnmatch.py",
+        "group": "fnmatch",
+        "bytes": 6180
+      },
+      {
+        "path": "Lib/fractions.py",
+        "group": "fractions",
+        "bytes": 40021
+      },
+      {
+        "path": "Lib/functools.py",
+        "group": "functools",
+        "bytes": 39558
+      },
+      {
+        "path": "Lib/genericpath.py",
+        "group": "genericpath",
+        "bytes": 5976
+      },
+      {
+        "path": "Lib/getpass.py",
+        "group": "getpass",
+        "bytes": 6233
+      },
+      {
+        "path": "Lib/gettext.py",
+        "group": "gettext",
+        "bytes": 21534
+      },
+      {
+        "path": "Lib/glob.py",
+        "group": "glob",
+        "bytes": 19720
+      },
+      {
+        "path": "Lib/graphlib.py",
+        "group": "graphlib",
+        "bytes": 9656
+      },
+      {
+        "path": "Lib/gzip.py",
+        "group": "gzip",
+        "bytes": 24090
+      },
+      {
+        "path": "Lib/hashlib.py",
+        "group": "hashlib",
+        "bytes": 9349
+      },
+      {
+        "path": "Lib/heapq.py",
+        "group": "heapq",
+        "bytes": 23024
+      },
+      {
+        "path": "Lib/hmac.py",
+        "group": "hmac",
+        "bytes": 7716
+      },
+      {
+        "path": "Lib/html/__init__.py",
+        "group": "html",
+        "bytes": 4775
+      },
+      {
+        "path": "Lib/html/entities.py",
+        "group": "html",
+        "bytes": 75512
+      },
+      {
+        "path": "Lib/html/parser.py",
+        "group": "html",
+        "bytes": 17054
+      },
+      {
+        "path": "Lib/http/__init__.py",
+        "group": "http",
+        "bytes": 8446
+      },
+      {
+        "path": "Lib/http/client.py",
+        "group": "http",
+        "bytes": 57228
+      },
+      {
+        "path": "Lib/http/cookiejar.py",
+        "group": "http",
+        "bytes": 77438
+      },
+      {
+        "path": "Lib/http/cookies.py",
+        "group": "http",
+        "bytes": 19840
+      },
+      {
+        "path": "Lib/http/server.py",
+        "group": "http",
+        "bytes": 48830
+      },
+      {
+        "path": "Lib/idlelib/autocomplete.py",
+        "group": "idlelib",
+        "bytes": 9354
+      },
+      {
+        "path": "Lib/idlelib/autocomplete_w.py",
+        "group": "idlelib",
+        "bytes": 20863
+      },
+      {
+        "path": "Lib/idlelib/autoexpand.py",
+        "group": "idlelib",
+        "bytes": 3216
+      },
+      {
+        "path": "Lib/idlelib/browser.py",
+        "group": "idlelib",
+        "bytes": 8588
+      },
+      {
+        "path": "Lib/idlelib/calltip.py",
+        "group": "idlelib",
+        "bytes": 7267
+      },
+      {
+        "path": "Lib/idlelib/calltip_w.py",
+        "group": "idlelib",
+        "bytes": 7083
+      },
+      {
+        "path": "Lib/idlelib/codecontext.py",
+        "group": "idlelib",
+        "bytes": 11420
+      },
+      {
+        "path": "Lib/idlelib/colorizer.py",
+        "group": "idlelib",
+        "bytes": 14783
+      },
+      {
+        "path": "Lib/idlelib/config.py",
+        "group": "idlelib",
+        "bytes": 38403
+      },
+      {
+        "path": "Lib/idlelib/config_key.py",
+        "group": "idlelib",
+        "bytes": 15230
+      },
+      {
+        "path": "Lib/idlelib/configdialog.py",
+        "group": "idlelib",
+        "bytes": 105310
+      },
+      {
+        "path": "Lib/idlelib/debugger.py",
+        "group": "idlelib",
+        "bytes": 20991
+      },
+      {
+        "path": "Lib/idlelib/debugger_r.py",
+        "group": "idlelib",
+        "bytes": 12115
+      },
+      {
+        "path": "Lib/idlelib/debugobj.py",
+        "group": "idlelib",
+        "bytes": 4177
+      },
+      {
+        "path": "Lib/idlelib/debugobj_r.py",
+        "group": "idlelib",
+        "bytes": 1082
+      },
+      {
+        "path": "Lib/idlelib/delegator.py",
+        "group": "idlelib",
+        "bytes": 1044
+      },
+      {
+        "path": "Lib/idlelib/dynoption.py",
+        "group": "idlelib",
+        "bytes": 1993
+      },
+      {
+        "path": "Lib/idlelib/editor.py",
+        "group": "idlelib",
+        "bytes": 69561
+      },
+      {
+        "path": "Lib/idlelib/filelist.py",
+        "group": "idlelib",
+        "bytes": 3871
+      },
+      {
+        "path": "Lib/idlelib/format.py",
+        "group": "idlelib",
+        "bytes": 15777
+      },
+      {
+        "path": "Lib/idlelib/grep.py",
+        "group": "idlelib",
+        "bytes": 7521
+      },
+      {
+        "path": "Lib/idlelib/help.py",
+        "group": "idlelib",
+        "bytes": 11971
+      },
+      {
+        "path": "Lib/idlelib/help_about.py",
+        "group": "idlelib",
+        "bytes": 8975
+      },
+      {
+        "path": "Lib/idlelib/history.py",
+        "group": "idlelib",
+        "bytes": 4065
+      },
+      {
+        "path": "Lib/idlelib/hyperparser.py",
+        "group": "idlelib",
+        "bytes": 12889
+      },
+      {
+        "path": "Lib/idlelib/idle_test/__init__.py",
+        "group": "idlelib",
+        "bytes": 1250
+      },
+      {
+        "path": "Lib/idlelib/idle_test/htest.py",
+        "group": "idlelib",
+        "bytes": 15313
+      },
+      {
+        "path": "Lib/idlelib/idle_test/mock_idle.py",
+        "group": "idlelib",
+        "bytes": 1943
+      },
+      {
+        "path": "Lib/idlelib/idle_test/mock_tk.py",
+        "group": "idlelib",
+        "bytes": 11693
+      },
+      {
+        "path": "Lib/idlelib/idle_test/template.py",
+        "group": "idlelib",
+        "bytes": 642
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_autocomplete.py",
+        "group": "idlelib",
+        "bytes": 11093
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_autocomplete_w.py",
+        "group": "idlelib",
+        "bytes": 720
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_autoexpand.py",
+        "group": "idlelib",
+        "bytes": 4638
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_browser.py",
+        "group": "idlelib",
+        "bytes": 8420
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_calltip.py",
+        "group": "idlelib",
+        "bytes": 13658
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_calltip_w.py",
+        "group": "idlelib",
+        "bytes": 686
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_codecontext.py",
+        "group": "idlelib",
+        "bytes": 16082
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_colorizer.py",
+        "group": "idlelib",
+        "bytes": 22882
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_config.py",
+        "group": "idlelib",
+        "bytes": 32091
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_config_key.py",
+        "group": "idlelib",
+        "bytes": 11462
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_configdialog.py",
+        "group": "idlelib",
+        "bytes": 55389
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_debugger.py",
+        "group": "idlelib",
+        "bytes": 9727
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_debugger_r.py",
+        "group": "idlelib",
+        "bytes": 965
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_debugobj.py",
+        "group": "idlelib",
+        "bytes": 1611
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_debugobj_r.py",
+        "group": "idlelib",
+        "bytes": 545
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_delegator.py",
+        "group": "idlelib",
+        "bytes": 1567
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_editmenu.py",
+        "group": "idlelib",
+        "bytes": 2564
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_editor.py",
+        "group": "idlelib",
+        "bytes": 8151
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_filelist.py",
+        "group": "idlelib",
+        "bytes": 795
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_format.py",
+        "group": "idlelib",
+        "bytes": 23610
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_grep.py",
+        "group": "idlelib",
+        "bytes": 5072
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_help.py",
+        "group": "idlelib",
+        "bytes": 863
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_help_about.py",
+        "group": "idlelib",
+        "bytes": 5904
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_history.py",
+        "group": "idlelib",
+        "bytes": 5517
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_hyperparser.py",
+        "group": "idlelib",
+        "bytes": 9082
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_iomenu.py",
+        "group": "idlelib",
+        "bytes": 2457
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_macosx.py",
+        "group": "idlelib",
+        "bytes": 3444
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_mainmenu.py",
+        "group": "idlelib",
+        "bytes": 1638
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_multicall.py",
+        "group": "idlelib",
+        "bytes": 1317
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_outwin.py",
+        "group": "idlelib",
+        "bytes": 5669
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_parenmatch.py",
+        "group": "idlelib",
+        "bytes": 3544
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_pathbrowser.py",
+        "group": "idlelib",
+        "bytes": 2422
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_percolator.py",
+        "group": "idlelib",
+        "bytes": 4065
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_pyparse.py",
+        "group": "idlelib",
+        "bytes": 19365
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_pyshell.py",
+        "group": "idlelib",
+        "bytes": 4965
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_query.py",
+        "group": "idlelib",
+        "bytes": 15454
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_redirector.py",
+        "group": "idlelib",
+        "bytes": 4176
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_replace.py",
+        "group": "idlelib",
+        "bytes": 8299
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_rpc.py",
+        "group": "idlelib",
+        "bytes": 805
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_run.py",
+        "group": "idlelib",
+        "bytes": 15851
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_runscript.py",
+        "group": "idlelib",
+        "bytes": 777
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_search.py",
+        "group": "idlelib",
+        "bytes": 2459
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_searchbase.py",
+        "group": "idlelib",
+        "bytes": 5691
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_searchengine.py",
+        "group": "idlelib",
+        "bytes": 11588
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_sidebar.py",
+        "group": "idlelib",
+        "bytes": 26854
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_squeezer.py",
+        "group": "idlelib",
+        "bytes": 19656
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_stackviewer.py",
+        "group": "idlelib",
+        "bytes": 991
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_statusbar.py",
+        "group": "idlelib",
+        "bytes": 1133
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_text.py",
+        "group": "idlelib",
+        "bytes": 6970
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_textview.py",
+        "group": "idlelib",
+        "bytes": 7364
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_tooltip.py",
+        "group": "idlelib",
+        "bytes": 5385
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_tree.py",
+        "group": "idlelib",
+        "bytes": 1752
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_undo.py",
+        "group": "idlelib",
+        "bytes": 4228
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_warning.py",
+        "group": "idlelib",
+        "bytes": 2740
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_window.py",
+        "group": "idlelib",
+        "bytes": 1075
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_zoomheight.py",
+        "group": "idlelib",
+        "bytes": 999
+      },
+      {
+        "path": "Lib/idlelib/idle_test/test_zzdummy.py",
+        "group": "idlelib",
+        "bytes": 4455
+      },
+      {
+        "path": "Lib/idlelib/idle_test/tkinter_testing_utils.py",
+        "group": "idlelib",
+        "bytes": 2333
+      },
+      {
+        "path": "Lib/idlelib/iomenu.py",
+        "group": "idlelib",
+        "bytes": 16159
+      },
+      {
+        "path": "Lib/idlelib/macosx.py",
+        "group": "idlelib",
+        "bytes": 9290
+      },
+      {
+        "path": "Lib/idlelib/mainmenu.py",
+        "group": "idlelib",
+        "bytes": 3938
+      },
+      {
+        "path": "Lib/idlelib/multicall.py",
+        "group": "idlelib",
+        "bytes": 18652
+      },
+      {
+        "path": "Lib/idlelib/outwin.py",
+        "group": "idlelib",
+        "bytes": 5705
+      },
+      {
+        "path": "Lib/idlelib/parenmatch.py",
+        "group": "idlelib",
+        "bytes": 7204
+      },
+      {
+        "path": "Lib/idlelib/pathbrowser.py",
+        "group": "idlelib",
+        "bytes": 3093
+      },
+      {
+        "path": "Lib/idlelib/percolator.py",
+        "group": "idlelib",
+        "bytes": 3568
+      },
+      {
+        "path": "Lib/idlelib/pyparse.py",
+        "group": "idlelib",
+        "bytes": 19864
+      },
+      {
+        "path": "Lib/idlelib/pyshell.py",
+        "group": "idlelib",
+        "bytes": 62214
+      },
+      {
+        "path": "Lib/idlelib/query.py",
+        "group": "idlelib",
+        "bytes": 15067
+      },
+      {
+        "path": "Lib/idlelib/redirector.py",
+        "group": "idlelib",
+        "bytes": 6832
+      },
+      {
+        "path": "Lib/idlelib/replace.py",
+        "group": "idlelib",
+        "bytes": 9798
+      },
+      {
+        "path": "Lib/idlelib/rpc.py",
+        "group": "idlelib",
+        "bytes": 21078
+      },
+      {
+        "path": "Lib/idlelib/run.py",
+        "group": "idlelib",
+        "bytes": 21877
+      },
+      {
+        "path": "Lib/idlelib/runscript.py",
+        "group": "idlelib",
+        "bytes": 8273
+      },
+      {
+        "path": "Lib/idlelib/scrolledlist.py",
+        "group": "idlelib",
+        "bytes": 4478
+      },
+      {
+        "path": "Lib/idlelib/search.py",
+        "group": "idlelib",
+        "bytes": 5567
+      },
+      {
+        "path": "Lib/idlelib/searchbase.py",
+        "group": "idlelib",
+        "bytes": 7852
+      },
+      {
+        "path": "Lib/idlelib/searchengine.py",
+        "group": "idlelib",
+        "bytes": 7372
+      },
+      {
+        "path": "Lib/idlelib/sidebar.py",
+        "group": "idlelib",
+        "bytes": 20327
+      },
+      {
+        "path": "Lib/idlelib/squeezer.py",
+        "group": "idlelib",
+        "bytes": 12834
+      },
+      {
+        "path": "Lib/idlelib/stackviewer.py",
+        "group": "idlelib",
+        "bytes": 4016
+      },
+      {
+        "path": "Lib/idlelib/statusbar.py",
+        "group": "idlelib",
+        "bytes": 1474
+      },
+      {
+        "path": "Lib/idlelib/textview.py",
+        "group": "idlelib",
+        "bytes": 6808
+      },
+      {
+        "path": "Lib/idlelib/tooltip.py",
+        "group": "idlelib",
+        "bytes": 6665
+      },
+      {
+        "path": "Lib/idlelib/tree.py",
+        "group": "idlelib",
+        "bytes": 16483
+      },
+      {
+        "path": "Lib/idlelib/undo.py",
+        "group": "idlelib",
+        "bytes": 11016
+      },
+      {
+        "path": "Lib/idlelib/util.py",
+        "group": "idlelib",
+        "bytes": 1312
+      },
+      {
+        "path": "Lib/idlelib/window.py",
+        "group": "idlelib",
+        "bytes": 2616
+      },
+      {
+        "path": "Lib/idlelib/zoomheight.py",
+        "group": "idlelib",
+        "bytes": 4203
+      },
+      {
+        "path": "Lib/idlelib/zzdummy.py",
+        "group": "idlelib",
+        "bytes": 2005
+      },
+      {
+        "path": "Lib/imaplib.py",
+        "group": "imaplib",
+        "bytes": 53688
+      },
+      {
+        "path": "Lib/importlib/__init__.py",
+        "group": "importlib",
+        "bytes": 4757
+      },
+      {
+        "path": "Lib/importlib/_abc.py",
+        "group": "importlib",
+        "bytes": 1354
+      },
+      {
+        "path": "Lib/importlib/_bootstrap.py",
+        "group": "importlib",
+        "bytes": 57081
+      },
+      {
+        "path": "Lib/importlib/_bootstrap_external.py",
+        "group": "importlib",
+        "bytes": 72866
+      },
+      {
+        "path": "Lib/importlib/abc.py",
+        "group": "importlib",
+        "bytes": 7659
+      },
+      {
+        "path": "Lib/importlib/machinery.py",
+        "group": "importlib",
+        "bytes": 934
+      },
+      {
+        "path": "Lib/importlib/metadata/__init__.py",
+        "group": "importlib",
+        "bytes": 34091
+      },
+      {
+        "path": "Lib/importlib/metadata/_adapters.py",
+        "group": "importlib",
+        "bytes": 2407
+      },
+      {
+        "path": "Lib/importlib/metadata/_collections.py",
+        "group": "importlib",
+        "bytes": 743
+      },
+      {
+        "path": "Lib/importlib/metadata/_functools.py",
+        "group": "importlib",
+        "bytes": 2895
+      },
+      {
+        "path": "Lib/importlib/metadata/_itertools.py",
+        "group": "importlib",
+        "bytes": 2068
+      },
+      {
+        "path": "Lib/importlib/metadata/_meta.py",
+        "group": "importlib",
+        "bytes": 1801
+      },
+      {
+        "path": "Lib/importlib/metadata/_text.py",
+        "group": "importlib",
+        "bytes": 2166
+      },
+      {
+        "path": "Lib/importlib/resources/_adapters.py",
+        "group": "importlib",
+        "bytes": 4482
+      },
+      {
+        "path": "Lib/importlib/resources/_common.py",
+        "group": "importlib",
+        "bytes": 5565
+      },
+      {
+        "path": "Lib/importlib/resources/_functional.py",
+        "group": "importlib",
+        "bytes": 2651
+      },
+      {
+        "path": "Lib/importlib/resources/_itertools.py",
+        "group": "importlib",
+        "bytes": 1277
+      },
+      {
+        "path": "Lib/importlib/resources/abc.py",
+        "group": "importlib",
+        "bytes": 5203
+      },
+      {
+        "path": "Lib/importlib/resources/readers.py",
+        "group": "importlib",
+        "bytes": 5922
+      },
+      {
+        "path": "Lib/importlib/resources/simple.py",
+        "group": "importlib",
+        "bytes": 2584
+      },
+      {
+        "path": "Lib/importlib/util.py",
+        "group": "importlib",
+        "bytes": 11199
+      },
+      {
+        "path": "Lib/inspect.py",
+        "group": "inspect",
+        "bytes": 126910
+      },
+      {
+        "path": "Lib/io.py",
+        "group": "io",
+        "bytes": 3582
+      },
+      {
+        "path": "Lib/ipaddress.py",
+        "group": "ipaddress",
+        "bytes": 80428
+      },
+      {
+        "path": "Lib/json/__init__.py",
+        "group": "json",
+        "bytes": 14020
+      },
+      {
+        "path": "Lib/json/decoder.py",
+        "group": "json",
+        "bytes": 12820
+      },
+      {
+        "path": "Lib/json/encoder.py",
+        "group": "json",
+        "bytes": 16074
+      },
+      {
+        "path": "Lib/json/scanner.py",
+        "group": "json",
+        "bytes": 2425
+      },
+      {
+        "path": "Lib/json/tool.py",
+        "group": "json",
+        "bytes": 3370
+      },
+      {
+        "path": "Lib/keyword.py",
+        "group": "keyword",
+        "bytes": 1073
+      },
+      {
+        "path": "Lib/linecache.py",
+        "group": "linecache",
+        "bytes": 6366
+      },
+      {
+        "path": "Lib/locale.py",
+        "group": "locale",
+        "bytes": 77469
+      },
+      {
+        "path": "Lib/logging/__init__.py",
+        "group": "logging",
+        "bytes": 83714
+      },
+      {
+        "path": "Lib/logging/config.py",
+        "group": "logging",
+        "bytes": 42347
+      },
+      {
+        "path": "Lib/logging/handlers.py",
+        "group": "logging",
+        "bytes": 61763
+      },
+      {
+        "path": "Lib/lzma.py",
+        "group": "lzma",
+        "bytes": 13399
+      },
+      {
+        "path": "Lib/mailbox.py",
+        "group": "mailbox",
+        "bytes": 81644
+      },
+      {
+        "path": "Lib/modulefinder.py",
+        "group": "modulefinder",
+        "bytes": 23792
+      },
+      {
+        "path": "Lib/multiprocessing/__init__.py",
+        "group": "multiprocessing",
+        "bytes": 916
+      },
+      {
+        "path": "Lib/multiprocessing/connection.py",
+        "group": "multiprocessing",
+        "bytes": 41936
+      },
+      {
+        "path": "Lib/multiprocessing/context.py",
+        "group": "multiprocessing",
+        "bytes": 11673
+      },
+      {
+        "path": "Lib/multiprocessing/dummy/__init__.py",
+        "group": "multiprocessing",
+        "bytes": 3061
+      },
+      {
+        "path": "Lib/multiprocessing/dummy/connection.py",
+        "group": "multiprocessing",
+        "bytes": 1598
+      },
+      {
+        "path": "Lib/multiprocessing/forkserver.py",
+        "group": "multiprocessing",
+        "bytes": 12321
+      },
+      {
+        "path": "Lib/multiprocessing/heap.py",
+        "group": "multiprocessing",
+        "bytes": 11626
+      },
+      {
+        "path": "Lib/multiprocessing/managers.py",
+        "group": "multiprocessing",
+        "bytes": 47925
+      },
+      {
+        "path": "Lib/multiprocessing/pool.py",
+        "group": "multiprocessing",
+        "bytes": 32768
+      },
+      {
+        "path": "Lib/multiprocessing/popen_fork.py",
+        "group": "multiprocessing",
+        "bytes": 2516
+      },
+      {
+        "path": "Lib/multiprocessing/popen_forkserver.py",
+        "group": "multiprocessing",
+        "bytes": 2230
+      },
+      {
+        "path": "Lib/multiprocessing/popen_spawn_posix.py",
+        "group": "multiprocessing",
+        "bytes": 2029
+      },
+      {
+        "path": "Lib/multiprocessing/popen_spawn_win32.py",
+        "group": "multiprocessing",
+        "bytes": 4635
+      },
+      {
+        "path": "Lib/multiprocessing/process.py",
+        "group": "multiprocessing",
+        "bytes": 12055
+      },
+      {
+        "path": "Lib/multiprocessing/queues.py",
+        "group": "multiprocessing",
+        "bytes": 12668
+      },
+      {
+        "path": "Lib/multiprocessing/reduction.py",
+        "group": "multiprocessing",
+        "bytes": 9512
+      },
+      {
+        "path": "Lib/multiprocessing/resource_sharer.py",
+        "group": "multiprocessing",
+        "bytes": 5145
+      },
+      {
+        "path": "Lib/multiprocessing/resource_tracker.py",
+        "group": "multiprocessing",
+        "bytes": 11276
+      },
+      {
+        "path": "Lib/multiprocessing/shared_memory.py",
+        "group": "multiprocessing",
+        "bytes": 18911
+      },
+      {
+        "path": "Lib/multiprocessing/sharedctypes.py",
+        "group": "multiprocessing",
+        "bytes": 6306
+      },
+      {
+        "path": "Lib/multiprocessing/spawn.py",
+        "group": "multiprocessing",
+        "bytes": 9644
+      },
+      {
+        "path": "Lib/multiprocessing/synchronize.py",
+        "group": "multiprocessing",
+        "bytes": 12285
+      },
+      {
+        "path": "Lib/multiprocessing/util.py",
+        "group": "multiprocessing",
+        "bytes": 13987
+      },
+      {
+        "path": "Lib/netrc.py",
+        "group": "netrc",
+        "bytes": 6922
+      },
+      {
+        "path": "Lib/ntpath.py",
+        "group": "ntpath",
+        "bytes": 31656
+      },
+      {
+        "path": "Lib/nturl2path.py",
+        "group": "nturl2path",
+        "bytes": 2887
+      },
+      {
+        "path": "Lib/numbers.py",
+        "group": "numbers",
+        "bytes": 11467
+      },
+      {
+        "path": "Lib/opcode.py",
+        "group": "opcode",
+        "bytes": 2825
+      },
+      {
+        "path": "Lib/operator.py",
+        "group": "operator",
+        "bytes": 10980
+      },
+      {
+        "path": "Lib/os.py",
+        "group": "os",
+        "bytes": 41554
+      },
+      {
+        "path": "Lib/pdb.py",
+        "group": "pdb",
+        "bytes": 89433
+      },
+      {
+        "path": "Lib/pickletools.py",
+        "group": "pickletools",
+        "bytes": 93861
+      },
+      {
+        "path": "Lib/pkgutil.py",
+        "group": "pkgutil",
+        "bytes": 18281
+      },
+      {
+        "path": "Lib/platform.py",
+        "group": "platform",
+        "bytes": 47309
+      },
+      {
+        "path": "Lib/plistlib.py",
+        "group": "plistlib",
+        "bytes": 29794
+      },
+      {
+        "path": "Lib/poplib.py",
+        "group": "poplib",
+        "bytes": 14148
+      },
+      {
+        "path": "Lib/posixpath.py",
+        "group": "posixpath",
+        "bytes": 17450
+      },
+      {
+        "path": "Lib/pprint.py",
+        "group": "pprint",
+        "bytes": 24158
+      },
+      {
+        "path": "Lib/profile.py",
+        "group": "profile",
+        "bytes": 23140
+      },
+      {
+        "path": "Lib/pstats.py",
+        "group": "pstats",
+        "bytes": 29296
+      },
+      {
+        "path": "Lib/pty.py",
+        "group": "pty",
+        "bytes": 6137
+      },
+      {
+        "path": "Lib/py_compile.py",
+        "group": "py_compile",
+        "bytes": 7837
+      },
+      {
+        "path": "Lib/pydoc.py",
+        "group": "pydoc",
+        "bytes": 109454
+      },
+      {
+        "path": "Lib/pydoc_data/topics.py",
+        "group": "pydoc_data",
+        "bytes": 823119
+      },
+      {
+        "path": "Lib/queue.py",
+        "group": "queue",
+        "bytes": 13481
+      },
+      {
+        "path": "Lib/quopri.py",
+        "group": "quopri",
+        "bytes": 7184
+      },
+      {
+        "path": "Lib/random.py",
+        "group": "random",
+        "bytes": 37000
+      },
+      {
+        "path": "Lib/re/__init__.py",
+        "group": "re",
+        "bytes": 17876
+      },
+      {
+        "path": "Lib/re/_casefix.py",
+        "group": "re",
+        "bytes": 5444
+      },
+      {
+        "path": "Lib/re/_compiler.py",
+        "group": "re",
+        "bytes": 25980
+      },
+      {
+        "path": "Lib/re/_constants.py",
+        "group": "re",
+        "bytes": 5939
+      },
+      {
+        "path": "Lib/re/_parser.py",
+        "group": "re",
+        "bytes": 41237
+      },
+      {
+        "path": "Lib/reprlib.py",
+        "group": "reprlib",
+        "bytes": 6613
+      },
+      {
+        "path": "Lib/rlcompleter.py",
+        "group": "rlcompleter",
+        "bytes": 7918
+      },
+      {
+        "path": "Lib/secrets.py",
+        "group": "secrets",
+        "bytes": 1984
+      },
+      {
+        "path": "Lib/shlex.py",
+        "group": "shlex",
+        "bytes": 13353
+      },
+      {
+        "path": "Lib/signal.py",
+        "group": "signal",
+        "bytes": 2495
+      },
+      {
+        "path": "Lib/site.py",
+        "group": "site",
+        "bytes": 24343
+      },
+      {
+        "path": "Lib/smtplib.py",
+        "group": "smtplib",
+        "bytes": 43532
+      },
+      {
+        "path": "Lib/socket.py",
+        "group": "socket",
+        "bytes": 37608
+      },
+      {
+        "path": "Lib/socketserver.py",
+        "group": "socketserver",
+        "bytes": 27851
+      },
+      {
+        "path": "Lib/sqlite3/__init__.py",
+        "group": "sqlite3",
+        "bytes": 2501
+      },
+      {
+        "path": "Lib/sqlite3/__main__.py",
+        "group": "sqlite3",
+        "bytes": 3957
+      },
+      {
+        "path": "Lib/sqlite3/dbapi2.py",
+        "group": "sqlite3",
+        "bytes": 3631
+      },
+      {
+        "path": "Lib/sqlite3/dump.py",
+        "group": "sqlite3",
+        "bytes": 4240
+      },
+      {
+        "path": "Lib/ssl.py",
+        "group": "ssl",
+        "bytes": 52706
+      },
+      {
+        "path": "Lib/statistics.py",
+        "group": "statistics",
+        "bytes": 61831
+      },
+      {
+        "path": "Lib/string.py",
+        "group": "string",
+        "bytes": 11786
+      },
+      {
+        "path": "Lib/stringprep.py",
+        "group": "stringprep",
+        "bytes": 12917
+      },
+      {
+        "path": "Lib/subprocess.py",
+        "group": "subprocess",
+        "bytes": 89096
+      },
+      {
+        "path": "Lib/symtable.py",
+        "group": "symtable",
+        "bytes": 14207
+      },
+      {
+        "path": "Lib/tabnanny.py",
+        "group": "tabnanny",
+        "bytes": 11532
+      },
+      {
+        "path": "Lib/test/_test_atexit.py",
+        "group": "_test_atexit",
+        "bytes": 3943
+      },
+      {
+        "path": "Lib/test/_test_eintr.py",
+        "group": "_test_eintr",
+        "bytes": 18145
+      },
+      {
+        "path": "Lib/test/_test_embed_set_config.py",
+        "group": "_test_embed_set_config",
+        "bytes": 9541
+      },
+      {
+        "path": "Lib/test/_test_embed_structseq.py",
+        "group": "_test_embed_structseq",
+        "bytes": 2036
+      },
+      {
+        "path": "Lib/test/_test_monitoring_shutdown.py",
+        "group": "_test_monitoring_shutdown",
+        "bytes": 727
+      },
+      {
+        "path": "Lib/test/_test_multiprocessing.py",
+        "group": "_test_multiprocessing",
+        "bytes": 218885
+      },
+      {
+        "path": "Lib/test/_test_venv_multiprocessing.py",
+        "group": "_test_venv_multiprocessing",
+        "bytes": 796
+      },
+      {
+        "path": "Lib/test/archiver_tests.py",
+        "group": "archiver_tests",
+        "bytes": 7227
+      },
+      {
+        "path": "Lib/test/audiotests.py",
+        "group": "audiotests",
+        "bytes": 12425
+      },
+      {
+        "path": "Lib/test/bisect_cmd.py",
+        "group": "bisect_cmd",
+        "bytes": 5470
+      },
+      {
+        "path": "Lib/test/certdata/make_ssl_certs.py",
+        "group": "certdata",
+        "bytes": 9543
+      },
+      {
+        "path": "Lib/test/cov.py",
+        "group": "cov",
+        "bytes": 1294
+      },
+      {
+        "path": "Lib/test/crashers/bogus_code_obj.py",
+        "group": "crashers",
+        "bytes": 628
+      },
+      {
+        "path": "Lib/test/crashers/gc_inspection.py",
+        "group": "crashers",
+        "bytes": 1092
+      },
+      {
+        "path": "Lib/test/crashers/infinite_loop_re.py",
+        "group": "crashers",
+        "bytes": 653
+      },
+      {
+        "path": "Lib/test/crashers/mutation_inside_cyclegc.py",
+        "group": "crashers",
+        "bytes": 753
+      },
+      {
+        "path": "Lib/test/datetimetester.py",
+        "group": "datetimetester",
+        "bytes": 277351
+      },
+      {
+        "path": "Lib/test/encoded_modules/__init__.py",
+        "group": "encoded_modules",
+        "bytes": 1274
+      },
+      {
+        "path": "Lib/test/libregrtest/cmdline.py",
+        "group": "libregrtest",
+        "bytes": 23935
+      },
+      {
+        "path": "Lib/test/libregrtest/filter.py",
+        "group": "libregrtest",
+        "bytes": 2453
+      },
+      {
+        "path": "Lib/test/libregrtest/findtests.py",
+        "group": "libregrtest",
+        "bytes": 3557
+      },
+      {
+        "path": "Lib/test/libregrtest/logger.py",
+        "group": "libregrtest",
+        "bytes": 2829
+      },
+      {
+        "path": "Lib/test/libregrtest/main.py",
+        "group": "libregrtest",
+        "bytes": 27431
+      },
+      {
+        "path": "Lib/test/libregrtest/pgo.py",
+        "group": "libregrtest",
+        "bytes": 1394
+      },
+      {
+        "path": "Lib/test/libregrtest/refleak.py",
+        "group": "libregrtest",
+        "bytes": 9165
+      },
+      {
+        "path": "Lib/test/libregrtest/result.py",
+        "group": "libregrtest",
+        "bytes": 7553
+      },
+      {
+        "path": "Lib/test/libregrtest/results.py",
+        "group": "libregrtest",
+        "bytes": 9632
+      },
+      {
+        "path": "Lib/test/libregrtest/run_workers.py",
+        "group": "libregrtest",
+        "bytes": 22567
+      },
+      {
+        "path": "Lib/test/libregrtest/runtests.py",
+        "group": "libregrtest",
+        "bytes": 7049
+      },
+      {
+        "path": "Lib/test/libregrtest/save_env.py",
+        "group": "libregrtest",
+        "bytes": 13046
+      },
+      {
+        "path": "Lib/test/libregrtest/setup.py",
+        "group": "libregrtest",
+        "bytes": 5010
+      },
+      {
+        "path": "Lib/test/libregrtest/single.py",
+        "group": "libregrtest",
+        "bytes": 10863
+      },
+      {
+        "path": "Lib/test/libregrtest/testresult.py",
+        "group": "libregrtest",
+        "bytes": 6351
+      },
+      {
+        "path": "Lib/test/libregrtest/tsan.py",
+        "group": "libregrtest",
+        "bytes": 821
+      },
+      {
+        "path": "Lib/test/libregrtest/utils.py",
+        "group": "libregrtest",
+        "bytes": 24244
+      },
+      {
+        "path": "Lib/test/libregrtest/win_utils.py",
+        "group": "libregrtest",
+        "bytes": 4671
+      },
+      {
+        "path": "Lib/test/libregrtest/worker.py",
+        "group": "libregrtest",
+        "bytes": 3638
+      },
+      {
+        "path": "Lib/test/list_tests.py",
+        "group": "list_tests",
+        "bytes": 17481
+      },
+      {
+        "path": "Lib/test/memory_watchdog.py",
+        "group": "memory_watchdog",
+        "bytes": 711
+      },
+      {
+        "path": "Lib/test/mock_socket.py",
+        "group": "mock_socket",
+        "bytes": 3775
+      },
+      {
+        "path": "Lib/test/multibytecodec_support.py",
+        "group": "multibytecodec_support",
+        "bytes": 14527
+      },
+      {
+        "path": "Lib/test/pickletester.py",
+        "group": "pickletester",
+        "bytes": 175742
+      },
+      {
+        "path": "Lib/test/profilee.py",
+        "group": "profilee",
+        "bytes": 3041
+      },
+      {
+        "path": "Lib/test/pyclbr_input.py",
+        "group": "pyclbr_input",
+        "bytes": 1669
+      },
+      {
+        "path": "Lib/test/pythoninfo.py",
+        "group": "pythoninfo",
+        "bytes": 29210
+      },
+      {
+        "path": "Lib/test/re_tests.py",
+        "group": "re_tests",
+        "bytes": 26552
+      },
+      {
+        "path": "Lib/test/regrtest.py",
+        "group": "regrtest",
+        "bytes": 1300
+      },
+      {
+        "path": "Lib/test/ssl_servers.py",
+        "group": "ssl_servers",
+        "bytes": 7291
+      },
+      {
+        "path": "Lib/test/string_tests.py",
+        "group": "string_tests",
+        "bytes": 73039
+      },
+      {
+        "path": "Lib/test/support/__init__.py",
+        "group": "support",
+        "bytes": 88679
+      },
+      {
+        "path": "Lib/test/support/_hypothesis_stubs/__init__.py",
+        "group": "support",
+        "bytes": 2444
+      },
+      {
+        "path": "Lib/test/support/_hypothesis_stubs/_helpers.py",
+        "group": "support",
+        "bytes": 1298
+      },
+      {
+        "path": "Lib/test/support/_hypothesis_stubs/strategies.py",
+        "group": "support",
+        "bytes": 1857
+      },
+      {
+        "path": "Lib/test/support/ast_helper.py",
+        "group": "support",
+        "bytes": 1828
+      },
+      {
+        "path": "Lib/test/support/asynchat.py",
+        "group": "support",
+        "bytes": 11602
+      },
+      {
+        "path": "Lib/test/support/asyncore.py",
+        "group": "support",
+        "bytes": 20381
+      },
+      {
+        "path": "Lib/test/support/bytecode_helper.py",
+        "group": "support",
+        "bytes": 5761
+      },
+      {
+        "path": "Lib/test/support/hashlib_helper.py",
+        "group": "support",
+        "bytes": 1907
+      },
+      {
+        "path": "Lib/test/support/hypothesis_helper.py",
+        "group": "support",
+        "bytes": 1383
+      },
+      {
+        "path": "Lib/test/support/import_helper.py",
+        "group": "support",
+        "bytes": 10730
+      },
+      {
+        "path": "Lib/test/support/interpreters/__init__.py",
+        "group": "support",
+        "bytes": 7673
+      },
+      {
+        "path": "Lib/test/support/interpreters/_crossinterp.py",
+        "group": "support",
+        "bytes": 2819
+      },
+      {
+        "path": "Lib/test/support/interpreters/channels.py",
+        "group": "support",
+        "bytes": 7774
+      },
+      {
+        "path": "Lib/test/support/interpreters/queues.py",
+        "group": "support",
+        "bytes": 9621
+      },
+      {
+        "path": "Lib/test/support/logging_helper.py",
+        "group": "support",
+        "bytes": 916
+      },
+      {
+        "path": "Lib/test/support/os_helper.py",
+        "group": "support",
+        "bytes": 24826
+      },
+      {
+        "path": "Lib/test/support/pty_helper.py",
+        "group": "support",
+        "bytes": 3052
+      },
+      {
+        "path": "Lib/test/support/script_helper.py",
+        "group": "support",
+        "bytes": 12437
+      },
+      {
+        "path": "Lib/test/support/smtpd.py",
+        "group": "support",
+        "bytes": 30733
+      },
+      {
+        "path": "Lib/test/support/socket_helper.py",
+        "group": "support",
+        "bytes": 13549
+      },
+      {
+        "path": "Lib/test/support/testcase.py",
+        "group": "support",
+        "bytes": 2368
+      },
+      {
+        "path": "Lib/test/support/threading_helper.py",
+        "group": "support",
+        "bytes": 8049
+      },
+      {
+        "path": "Lib/test/support/warnings_helper.py",
+        "group": "support",
+        "bytes": 6853
+      },
+      {
+        "path": "Lib/test/test___all__.py",
+        "group": "__all__",
+        "bytes": 5008
+      },
+      {
+        "path": "Lib/test/test__colorize.py",
+        "group": "_colorize",
+        "bytes": 2674
+      },
+      {
+        "path": "Lib/test/test__interpchannels.py",
+        "group": "_interpchannels",
+        "bytes": 63370
+      },
+      {
+        "path": "Lib/test/test__interpreters.py",
+        "group": "_interpreters",
+        "bytes": 35124
+      },
+      {
+        "path": "Lib/test/test__locale.py",
+        "group": "_locale",
+        "bytes": 8289
+      },
+      {
+        "path": "Lib/test/test__opcode.py",
+        "group": "_opcode",
+        "bytes": 5963
+      },
+      {
+        "path": "Lib/test/test__osx_support.py",
+        "group": "_osx_support",
+        "bytes": 13947
+      },
+      {
+        "path": "Lib/test/test_abc.py",
+        "group": "abc",
+        "bytes": 24386
+      },
+      {
+        "path": "Lib/test/test_android.py",
+        "group": "android",
+        "bytes": 18209
+      },
+      {
+        "path": "Lib/test/test_array.py",
+        "group": "array",
+        "bytes": 58384
+      },
+      {
+        "path": "Lib/test/test_asdl_parser.py",
+        "group": "asdl_parser",
+        "bytes": 4549
+      },
+      {
+        "path": "Lib/test/test_ast/snippets.py",
+        "group": "ast",
+        "bytes": 54424
+      },
+      {
+        "path": "Lib/test/test_ast/test_ast.py",
+        "group": "ast",
+        "bytes": 134504
+      },
+      {
+        "path": "Lib/test/test_ast/utils.py",
+        "group": "ast",
+        "bytes": 613
+      },
+      {
+        "path": "Lib/test/test_atexit.py",
+        "group": "atexit",
+        "bytes": 3277
+      },
+      {
+        "path": "Lib/test/test_audit.py",
+        "group": "audit",
+        "bytes": 10259
+      },
+      {
+        "path": "Lib/test/test_base64.py",
+        "group": "base64",
+        "bytes": 39927
+      },
+      {
+        "path": "Lib/test/test_baseexception.py",
+        "group": "baseexception",
+        "bytes": 8107
+      },
+      {
+        "path": "Lib/test/test_bdb.py",
+        "group": "bdb",
+        "bytes": 45238
+      },
+      {
+        "path": "Lib/test/test_bigaddrspace.py",
+        "group": "bigaddrspace",
+        "bytes": 2898
+      },
+      {
+        "path": "Lib/test/test_bigmem.py",
+        "group": "bigmem",
+        "bytes": 46088
+      },
+      {
+        "path": "Lib/test/test_binascii.py",
+        "group": "binascii",
+        "bytes": 22688
+      },
+      {
+        "path": "Lib/test/test_binop.py",
+        "group": "binop",
+        "bytes": 14479
+      },
+      {
+        "path": "Lib/test/test_bool.py",
+        "group": "bool",
+        "bytes": 14589
+      },
+      {
+        "path": "Lib/test/test_bufio.py",
+        "group": "bufio",
+        "bytes": 2619
+      },
+      {
+        "path": "Lib/test/test_builtin.py",
+        "group": "builtin",
+        "bytes": 102199
+      },
+      {
+        "path": "Lib/test/test_c_locale_coercion.py",
+        "group": "c_locale_coercion",
+        "bytes": 21459
+      },
+      {
+        "path": "Lib/test/test_calendar.py",
+        "group": "calendar",
+        "bytes": 58737
+      },
+      {
+        "path": "Lib/test/test_call.py",
+        "group": "call",
+        "bytes": 40487
+      },
+      {
+        "path": "Lib/test/test_capi/check_config.py",
+        "group": "capi",
+        "bytes": 2608
+      },
+      {
+        "path": "Lib/test/test_capi/test_abstract.py",
+        "group": "capi",
+        "bytes": 42125
+      },
+      {
+        "path": "Lib/test/test_capi/test_bytearray.py",
+        "group": "capi",
+        "bytes": 6505
+      },
+      {
+        "path": "Lib/test/test_capi/test_bytes.py",
+        "group": "capi",
+        "bytes": 10909
+      },
+      {
+        "path": "Lib/test/test_capi/test_codecs.py",
+        "group": "capi",
+        "bytes": 28455
+      },
+      {
+        "path": "Lib/test/test_capi/test_complex.py",
+        "group": "capi",
+        "bytes": 9037
+      },
+      {
+        "path": "Lib/test/test_capi/test_dict.py",
+        "group": "capi",
+        "bytes": 21842
+      },
+      {
+        "path": "Lib/test/test_capi/test_eval_code_ex.py",
+        "group": "capi",
+        "bytes": 4679
+      },
+      {
+        "path": "Lib/test/test_capi/test_exceptions.py",
+        "group": "capi",
+        "bytes": 20647
+      },
+      {
+        "path": "Lib/test/test_capi/test_float.py",
+        "group": "capi",
+        "bytes": 6621
+      },
+      {
+        "path": "Lib/test/test_capi/test_getargs.py",
+        "group": "capi",
+        "bytes": 58627
+      },
+      {
+        "path": "Lib/test/test_capi/test_hash.py",
+        "group": "capi",
+        "bytes": 2834
+      },
+      {
+        "path": "Lib/test/test_capi/test_list.py",
+        "group": "capi",
+        "bytes": 12468
+      },
+      {
+        "path": "Lib/test/test_capi/test_long.py",
+        "group": "capi",
+        "bytes": 27373
+      },
+      {
+        "path": "Lib/test/test_capi/test_mem.py",
+        "group": "capi",
+        "bytes": 7227
+      },
+      {
+        "path": "Lib/test/test_capi/test_misc.py",
+        "group": "capi",
+        "bytes": 124980
+      },
+      {
+        "path": "Lib/test/test_capi/test_number.py",
+        "group": "capi",
+        "bytes": 13494
+      },
+      {
+        "path": "Lib/test/test_capi/test_object.py",
+        "group": "capi",
+        "bytes": 4733
+      },
+      {
+        "path": "Lib/test/test_capi/test_opt.py",
+        "group": "capi",
+        "bytes": 45548
+      },
+      {
+        "path": "Lib/test/test_capi/test_run.py",
+        "group": "capi",
+        "bytes": 4631
+      },
+      {
+        "path": "Lib/test/test_capi/test_set.py",
+        "group": "capi",
+        "bytes": 11089
+      },
+      {
+        "path": "Lib/test/test_capi/test_structmembers.py",
+        "group": "capi",
+        "bytes": 6352
+      },
+      {
+        "path": "Lib/test/test_capi/test_sys.py",
+        "group": "capi",
+        "bytes": 5685
+      },
+      {
+        "path": "Lib/test/test_capi/test_time.py",
+        "group": "capi",
+        "bytes": 2416
+      },
+      {
+        "path": "Lib/test/test_capi/test_tuple.py",
+        "group": "capi",
+        "bytes": 8912
+      },
+      {
+        "path": "Lib/test/test_capi/test_unicode.py",
+        "group": "capi",
+        "bytes": 79317
+      },
+      {
+        "path": "Lib/test/test_capi/test_watchers.py",
+        "group": "capi",
+        "bytes": 20323
+      },
+      {
+        "path": "Lib/test/test_cext/__init__.py",
+        "group": "cext",
+        "bytes": 4178
+      },
+      {
+        "path": "Lib/test/test_cext/setup.py",
+        "group": "cext",
+        "bytes": 3181
+      },
+      {
+        "path": "Lib/test/test_charmapcodec.py",
+        "group": "charmapcodec",
+        "bytes": 1814
+      },
+      {
+        "path": "Lib/test/test_class.py",
+        "group": "class",
+        "bytes": 26204
+      },
+      {
+        "path": "Lib/test/test_clinic.py",
+        "group": "clinic",
+        "bytes": 149840
+      },
+      {
+        "path": "Lib/test/test_cmath.py",
+        "group": "cmath",
+        "bytes": 23009
+      },
+      {
+        "path": "Lib/test/test_cmd.py",
+        "group": "cmd",
+        "bytes": 8006
+      },
+      {
+        "path": "Lib/test/test_cmd_line_script.py",
+        "group": "cmd_line_script",
+        "bytes": 36951
+      },
+      {
+        "path": "Lib/test/test_code.py",
+        "group": "code",
+        "bytes": 28075
+      },
+      {
+        "path": "Lib/test/test_code_module.py",
+        "group": "code_module",
+        "bytes": 13698
+      },
+      {
+        "path": "Lib/test/test_codeccallbacks.py",
+        "group": "codeccallbacks",
+        "bytes": 48570
+      },
+      {
+        "path": "Lib/test/test_codecencodings_cn.py",
+        "group": "codecencodings_cn",
+        "bytes": 3950
+      },
+      {
+        "path": "Lib/test/test_codecencodings_hk.py",
+        "group": "codecencodings_hk",
+        "bytes": 701
+      },
+      {
+        "path": "Lib/test/test_codecencodings_kr.py",
+        "group": "codecencodings_kr",
+        "bytes": 3028
+      },
+      {
+        "path": "Lib/test/test_codecencodings_tw.py",
+        "group": "codecencodings_tw",
+        "bytes": 681
+      },
+      {
+        "path": "Lib/test/test_codecmaps_cn.py",
+        "group": "codecmaps_cn",
+        "bytes": 746
+      },
+      {
+        "path": "Lib/test/test_codecmaps_jp.py",
+        "group": "codecmaps_jp",
+        "bytes": 1744
+      },
+      {
+        "path": "Lib/test/test_codecmaps_tw.py",
+        "group": "codecmaps_tw",
+        "bytes": 705
+      },
+      {
+        "path": "Lib/test/test_codecs.py",
+        "group": "codecs",
+        "bytes": 149576
+      },
+      {
+        "path": "Lib/test/test_codeop.py",
+        "group": "codeop",
+        "bytes": 8884
+      },
+      {
+        "path": "Lib/test/test_collections.py",
+        "group": "collections",
+        "bytes": 95698
+      },
+      {
+        "path": "Lib/test/test_colorsys.py",
+        "group": "colorsys",
+        "bytes": 4370
+      },
+      {
+        "path": "Lib/test/test_compare.py",
+        "group": "compare",
+        "bytes": 17878
+      },
+      {
+        "path": "Lib/test/test_compile.py",
+        "group": "compile",
+        "bytes": 94560
+      },
+      {
+        "path": "Lib/test/test_compileall.py",
+        "group": "compileall",
+        "bytes": 50687
+      },
+      {
+        "path": "Lib/test/test_compiler_assemble.py",
+        "group": "compiler_assemble",
+        "bytes": 4904
+      },
+      {
+        "path": "Lib/test/test_compiler_codegen.py",
+        "group": "compiler_codegen",
+        "bytes": 5208
+      },
+      {
+        "path": "Lib/test/test_complex.py",
+        "group": "complex",
+        "bytes": 35999
+      },
+      {
+        "path": "Lib/test/test_concurrent_futures/__init__.py",
+        "group": "concurrent_futures",
+        "bytes": 583
+      },
+      {
+        "path": "Lib/test/test_concurrent_futures/executor.py",
+        "group": "concurrent_futures",
+        "bytes": 4834
+      },
+      {
+        "path": "Lib/test/test_concurrent_futures/test_as_completed.py",
+        "group": "concurrent_futures",
+        "bytes": 3992
+      },
+      {
+        "path": "Lib/test/test_concurrent_futures/test_deadlock.py",
+        "group": "concurrent_futures",
+        "bytes": 12150
+      },
+      {
+        "path": "Lib/test/test_concurrent_futures/test_future.py",
+        "group": "concurrent_futures",
+        "bytes": 10239
+      },
+      {
+        "path": "Lib/test/test_concurrent_futures/test_init.py",
+        "group": "concurrent_futures",
+        "bytes": 4794
+      },
+      {
+        "path": "Lib/test/test_concurrent_futures/test_process_pool.py",
+        "group": "concurrent_futures",
+        "bytes": 9017
+      },
+      {
+        "path": "Lib/test/test_concurrent_futures/test_shutdown.py",
+        "group": "concurrent_futures",
+        "bytes": 13171
+      },
+      {
+        "path": "Lib/test/test_concurrent_futures/test_thread_pool.py",
+        "group": "concurrent_futures",
+        "bytes": 3535
+      },
+      {
+        "path": "Lib/test/test_concurrent_futures/test_wait.py",
+        "group": "concurrent_futures",
+        "bytes": 5577
+      },
+      {
+        "path": "Lib/test/test_concurrent_futures/util.py",
+        "group": "concurrent_futures",
+        "bytes": 4677
+      },
+      {
+        "path": "Lib/test/test_contains.py",
+        "group": "contains",
+        "bytes": 3432
+      },
+      {
+        "path": "Lib/test/test_context.py",
+        "group": "context",
+        "bytes": 31531
+      },
+      {
+        "path": "Lib/test/test_contextlib.py",
+        "group": "contextlib",
+        "bytes": 44393
+      },
+      {
+        "path": "Lib/test/test_contextlib_async.py",
+        "group": "contextlib_async",
+        "bytes": 24013
+      },
+      {
+        "path": "Lib/test/test_copyreg.py",
+        "group": "copyreg",
+        "bytes": 4468
+      },
+      {
+        "path": "Lib/test/test_coroutines.py",
+        "group": "coroutines",
+        "bytes": 69213
+      },
+      {
+        "path": "Lib/test/test_cppext/__init__.py",
+        "group": "cppext",
+        "bytes": 3814
+      },
+      {
+        "path": "Lib/test/test_cppext/setup.py",
+        "group": "cppext",
+        "bytes": 2888
+      },
+      {
+        "path": "Lib/test/test_cprofile.py",
+        "group": "cprofile",
+        "bytes": 9085
+      },
+      {
+        "path": "Lib/test/test_csv.py",
+        "group": "csv",
+        "bytes": 65633
+      },
+      {
+        "path": "Lib/test/test_ctypes/_support.py",
+        "group": "ctypes",
+        "bytes": 593
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_aligned_structures.py",
+        "group": "ctypes",
+        "bytes": 9907
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_anon.py",
+        "group": "ctypes",
+        "bytes": 2572
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_array_in_pointer.py",
+        "group": "ctypes",
+        "bytes": 1769
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_arrays.py",
+        "group": "ctypes",
+        "bytes": 8954
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_as_parameter.py",
+        "group": "ctypes",
+        "bytes": 7127
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_bitfields.py",
+        "group": "ctypes",
+        "bytes": 10479
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_buffers.py",
+        "group": "ctypes",
+        "bytes": 2580
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_bytes.py",
+        "group": "ctypes",
+        "bytes": 2026
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_byteswap.py",
+        "group": "ctypes",
+        "bytes": 13813
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_callbacks.py",
+        "group": "ctypes",
+        "bytes": 11517
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_cast.py",
+        "group": "ctypes",
+        "bytes": 3807
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_cfuncs.py",
+        "group": "ctypes",
+        "bytes": 7838
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_checkretval.py",
+        "group": "ctypes",
+        "bytes": 1080
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_delattr.py",
+        "group": "ctypes",
+        "bytes": 562
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_errno.py",
+        "group": "ctypes",
+        "bytes": 2305
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_find.py",
+        "group": "ctypes",
+        "bytes": 5458
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_frombuffer.py",
+        "group": "ctypes",
+        "bytes": 5278
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_funcptr.py",
+        "group": "ctypes",
+        "bytes": 4417
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_functions.py",
+        "group": "ctypes",
+        "bytes": 14814
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_incomplete.py",
+        "group": "ctypes",
+        "bytes": 1329
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_init.py",
+        "group": "ctypes",
+        "bytes": 1057
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_internals.py",
+        "group": "ctypes",
+        "bytes": 2543
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_keeprefs.py",
+        "group": "ctypes",
+        "bytes": 3212
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_libc.py",
+        "group": "ctypes",
+        "bytes": 1198
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_loading.py",
+        "group": "ctypes",
+        "bytes": 7777
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_macholib.py",
+        "group": "ctypes",
+        "bytes": 4561
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_memfunctions.py",
+        "group": "ctypes",
+        "bytes": 3374
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_numbers.py",
+        "group": "ctypes",
+        "bytes": 7111
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_objects.py",
+        "group": "ctypes",
+        "bytes": 1559
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_parameters.py",
+        "group": "ctypes",
+        "bytes": 10902
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_pep3118.py",
+        "group": "ctypes",
+        "bytes": 9162
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_pickling.py",
+        "group": "ctypes",
+        "bytes": 2444
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_pointers.py",
+        "group": "ctypes",
+        "bytes": 7861
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_prototypes.py",
+        "group": "ctypes",
+        "bytes": 7059
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_python_api.py",
+        "group": "ctypes",
+        "bytes": 2803
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_random_things.py",
+        "group": "ctypes",
+        "bytes": 2883
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_refcounts.py",
+        "group": "ctypes",
+        "bytes": 3607
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_repr.py",
+        "group": "ctypes",
+        "bytes": 1026
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_returnfuncptrs.py",
+        "group": "ctypes",
+        "bytes": 3028
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_simplesubclasses.py",
+        "group": "ctypes",
+        "bytes": 3137
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_sizes.py",
+        "group": "ctypes",
+        "bytes": 1086
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_slicing.py",
+        "group": "ctypes",
+        "bytes": 5733
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_stringptr.py",
+        "group": "ctypes",
+        "bytes": 2887
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_strings.py",
+        "group": "ctypes",
+        "bytes": 3851
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_struct_fields.py",
+        "group": "ctypes",
+        "bytes": 3505
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_structures.py",
+        "group": "ctypes",
+        "bytes": 32779
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_unaligned_structures.py",
+        "group": "ctypes",
+        "bytes": 1359
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_unicode.py",
+        "group": "ctypes",
+        "bytes": 2015
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_unions.py",
+        "group": "ctypes",
+        "bytes": 1429
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_values.py",
+        "group": "ctypes",
+        "bytes": 4194
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_varsize_struct.py",
+        "group": "ctypes",
+        "bytes": 1875
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_win32.py",
+        "group": "ctypes",
+        "bytes": 5759
+      },
+      {
+        "path": "Lib/test/test_ctypes/test_wintypes.py",
+        "group": "ctypes",
+        "bytes": 2109
+      },
+      {
+        "path": "Lib/test/test_curses.py",
+        "group": "curses",
+        "bytes": 50734
+      },
+      {
+        "path": "Lib/test/test_dataclasses/__init__.py",
+        "group": "dataclasses",
+        "bytes": 156382
+      },
+      {
+        "path": "Lib/test/test_dataclasses/dataclass_module_1.py",
+        "group": "dataclasses",
+        "bytes": 837
+      },
+      {
+        "path": "Lib/test/test_dataclasses/dataclass_module_1_str.py",
+        "group": "dataclasses",
+        "bytes": 835
+      },
+      {
+        "path": "Lib/test/test_dataclasses/dataclass_module_2.py",
+        "group": "dataclasses",
+        "bytes": 756
+      },
+      {
+        "path": "Lib/test/test_dataclasses/dataclass_module_2_str.py",
+        "group": "dataclasses",
+        "bytes": 754
+      },
+      {
+        "path": "Lib/test/test_dbm.py",
+        "group": "dbm",
+        "bytes": 8429
+      },
+      {
+        "path": "Lib/test/test_dbm_dumb.py",
+        "group": "dbm_dumb",
+        "bytes": 14637
+      },
+      {
+        "path": "Lib/test/test_dbm_gnu.py",
+        "group": "dbm_gnu",
+        "bytes": 7808
+      },
+      {
+        "path": "Lib/test/test_dbm_ndbm.py",
+        "group": "dbm_ndbm",
+        "bytes": 6453
+      },
+      {
+        "path": "Lib/test/test_dbm_sqlite3.py",
+        "group": "dbm_sqlite3",
+        "bytes": 9361
+      },
+      {
+        "path": "Lib/test/test_decimal.py",
+        "group": "decimal",
+        "bytes": 221274
+      },
+      {
+        "path": "Lib/test/test_decorators.py",
+        "group": "decorators",
+        "bytes": 10985
+      },
+      {
+        "path": "Lib/test/test_defaultdict.py",
+        "group": "defaultdict",
+        "bytes": 6248
+      },
+      {
+        "path": "Lib/test/test_deque.py",
+        "group": "deque",
+        "bytes": 33959
+      },
+      {
+        "path": "Lib/test/test_descr.py",
+        "group": "descr",
+        "bytes": 202358
+      },
+      {
+        "path": "Lib/test/test_descrtut.py",
+        "group": "descrtut",
+        "bytes": 11289
+      },
+      {
+        "path": "Lib/test/test_devpoll.py",
+        "group": "devpoll",
+        "bytes": 4549
+      },
+      {
+        "path": "Lib/test/test_dict.py",
+        "group": "dict",
+        "bytes": 52595
+      },
+      {
+        "path": "Lib/test/test_dictcomps.py",
+        "group": "dictcomps",
+        "bytes": 6705
+      },
+      {
+        "path": "Lib/test/test_dictviews.py",
+        "group": "dictviews",
+        "bytes": 15176
+      },
+      {
+        "path": "Lib/test/test_difflib.py",
+        "group": "difflib",
+        "bytes": 21990
+      },
+      {
+        "path": "Lib/test/test_dis.py",
+        "group": "dis",
+        "bytes": 105345
+      },
+      {
+        "path": "Lib/test/test_doctest/doctest_lineno.py",
+        "group": "doctest",
+        "bytes": 1587
+      },
+      {
+        "path": "Lib/test/test_doctest/sample_doctest.py",
+        "group": "doctest",
+        "bytes": 1067
+      },
+      {
+        "path": "Lib/test/test_doctest/sample_doctest_skip.py",
+        "group": "doctest",
+        "bytes": 714
+      },
+      {
+        "path": "Lib/test/test_doctest/test_doctest.py",
+        "group": "doctest",
+        "bytes": 112753
+      },
+      {
+        "path": "Lib/test/test_doctest/test_doctest2.py",
+        "group": "doctest",
+        "bytes": 2415
+      },
+      {
+        "path": "Lib/test/test_docxmlrpc.py",
+        "group": "docxmlrpc",
+        "bytes": 9317
+      },
+      {
+        "path": "Lib/test/test_dynamic.py",
+        "group": "dynamic",
+        "bytes": 6228
+      },
+      {
+        "path": "Lib/test/test_eintr.py",
+        "group": "eintr",
+        "bytes": 627
+      },
+      {
+        "path": "Lib/test/test_email/__init__.py",
+        "group": "email",
+        "bytes": 6341
+      },
+      {
+        "path": "Lib/test/test_email/test__encoded_words.py",
+        "group": "email",
+        "bytes": 7085
+      },
+      {
+        "path": "Lib/test/test_email/test__header_value_parser.py",
+        "group": "email",
+        "bytes": 132600
+      },
+      {
+        "path": "Lib/test/test_email/test_asian_codecs.py",
+        "group": "email",
+        "bytes": 3145
+      },
+      {
+        "path": "Lib/test/test_email/test_contentmanager.py",
+        "group": "email",
+        "bytes": 35100
+      },
+      {
+        "path": "Lib/test/test_email/test_defect_handling.py",
+        "group": "email",
+        "bytes": 11968
+      },
+      {
+        "path": "Lib/test/test_email/test_email.py",
+        "group": "email",
+        "bytes": 225440
+      },
+      {
+        "path": "Lib/test/test_email/test_generator.py",
+        "group": "email",
+        "bytes": 18529
+      },
+      {
+        "path": "Lib/test/test_email/test_headerregistry.py",
+        "group": "email",
+        "bytes": 65892
+      },
+      {
+        "path": "Lib/test/test_email/test_inversion.py",
+        "group": "email",
+        "bytes": 2293
+      },
+      {
+        "path": "Lib/test/test_email/test_message.py",
+        "group": "email",
+        "bytes": 36001
+      },
+      {
+        "path": "Lib/test/test_email/test_parser.py",
+        "group": "email",
+        "bytes": 4333
+      },
+      {
+        "path": "Lib/test/test_email/test_pickleable.py",
+        "group": "email",
+        "bytes": 2549
+      },
+      {
+        "path": "Lib/test/test_email/test_policy.py",
+        "group": "email",
+        "bytes": 17422
+      },
+      {
+        "path": "Lib/test/test_email/test_utils.py",
+        "group": "email",
+        "bytes": 7360
+      },
+      {
+        "path": "Lib/test/test_email/torture_test.py",
+        "group": "email",
+        "bytes": 3532
+      },
+      {
+        "path": "Lib/test/test_embed.py",
+        "group": "embed",
+        "bytes": 76544
+      },
+      {
+        "path": "Lib/test/test_ensurepip.py",
+        "group": "ensurepip",
+        "bytes": 11767
+      },
+      {
+        "path": "Lib/test/test_enum.py",
+        "group": "enum",
+        "bytes": 197818
+      },
+      {
+        "path": "Lib/test/test_enumerate.py",
+        "group": "enumerate",
+        "bytes": 9356
+      },
+      {
+        "path": "Lib/test/test_eof.py",
+        "group": "eof",
+        "bytes": 3178
+      },
+      {
+        "path": "Lib/test/test_epoll.py",
+        "group": "epoll",
+        "bytes": 9630
+      },
+      {
+        "path": "Lib/test/test_exception_hierarchy.py",
+        "group": "exception_hierarchy",
+        "bytes": 7721
+      },
+      {
+        "path": "Lib/test/test_exception_variations.py",
+        "group": "exception_variations",
+        "bytes": 14068
+      },
+      {
+        "path": "Lib/test/test_extcall.py",
+        "group": "extcall",
+        "bytes": 15042
+      },
+      {
+        "path": "Lib/test/test_external_inspection.py",
+        "group": "external_inspection",
+        "bytes": 3036
+      },
+      {
+        "path": "Lib/test/test_faulthandler.py",
+        "group": "faulthandler",
+        "bytes": 31237
+      },
+      {
+        "path": "Lib/test/test_filecmp.py",
+        "group": "filecmp",
+        "bytes": 16040
+      },
+      {
+        "path": "Lib/test/test_fileinput.py",
+        "group": "fileinput",
+        "bytes": 38773
+      },
+      {
+        "path": "Lib/test/test_fileio.py",
+        "group": "fileio",
+        "bytes": 21144
+      },
+      {
+        "path": "Lib/test/test_fileutils.py",
+        "group": "fileutils",
+        "bytes": 951
+      },
+      {
+        "path": "Lib/test/test_finalization.py",
+        "group": "finalization",
+        "bytes": 15025
+      },
+      {
+        "path": "Lib/test/test_fnmatch.py",
+        "group": "fnmatch",
+        "bytes": 10939
+      },
+      {
+        "path": "Lib/test/test_fork1.py",
+        "group": "fork1",
+        "bytes": 3384
+      },
+      {
+        "path": "Lib/test/test_format.py",
+        "group": "format",
+        "bytes": 29223
+      },
+      {
+        "path": "Lib/test/test_fractions.py",
+        "group": "fractions",
+        "bytes": 70079
+      },
+      {
+        "path": "Lib/test/test_free_threading/test_dict.py",
+        "group": "free_threading",
+        "bytes": 5062
+      },
+      {
+        "path": "Lib/test/test_free_threading/test_list.py",
+        "group": "free_threading",
+        "bytes": 1809
+      },
+      {
+        "path": "Lib/test/test_free_threading/test_monitoring.py",
+        "group": "free_threading",
+        "bytes": 6576
+      },
+      {
+        "path": "Lib/test/test_free_threading/test_slots.py",
+        "group": "free_threading",
+        "bytes": 1001
+      },
+      {
+        "path": "Lib/test/test_free_threading/test_str.py",
+        "group": "free_threading",
+        "bytes": 2014
+      },
+      {
+        "path": "Lib/test/test_free_threading/test_tokenize.py",
+        "group": "free_threading",
+        "bytes": 2213
+      },
+      {
+        "path": "Lib/test/test_free_threading/test_type.py",
+        "group": "free_threading",
+        "bytes": 3325
+      },
+      {
+        "path": "Lib/test/test_fstring.py",
+        "group": "fstring",
+        "bytes": 68698
+      },
+      {
+        "path": "Lib/test/test_functools.py",
+        "group": "functools",
+        "bytes": 117262
+      },
+      {
+        "path": "Lib/test/test_gc.py",
+        "group": "gc",
+        "bytes": 50988
+      },
+      {
+        "path": "Lib/test/test_gdb/__init__.py",
+        "group": "gdb",
+        "bytes": 1029
+      },
+      {
+        "path": "Lib/test/test_gdb/test_backtrace.py",
+        "group": "gdb",
+        "bytes": 5023
+      },
+      {
+        "path": "Lib/test/test_gdb/test_cfunction.py",
+        "group": "gdb",
+        "bytes": 2923
+      },
+      {
+        "path": "Lib/test/test_gdb/test_cfunction_full.py",
+        "group": "gdb",
+        "bytes": 1003
+      },
+      {
+        "path": "Lib/test/test_gdb/test_misc.py",
+        "group": "gdb",
+        "bytes": 7768
+      },
+      {
+        "path": "Lib/test/test_gdb/test_pretty_print.py",
+        "group": "gdb",
+        "bytes": 17776
+      },
+      {
+        "path": "Lib/test/test_gdb/util.py",
+        "group": "gdb",
+        "bytes": 10706
+      },
+      {
+        "path": "Lib/test/test_generated_cases.py",
+        "group": "generated_cases",
+        "bytes": 27796
+      },
+      {
+        "path": "Lib/test/test_generator_stop.py",
+        "group": "generator_stop",
+        "bytes": 943
+      },
+      {
+        "path": "Lib/test/test_generators.py",
+        "group": "generators",
+        "bytes": 70318
+      },
+      {
+        "path": "Lib/test/test_genericalias.py",
+        "group": "genericalias",
+        "bytes": 18369
+      },
+      {
+        "path": "Lib/test/test_genericclass.py",
+        "group": "genericclass",
+        "bytes": 9796
+      },
+      {
+        "path": "Lib/test/test_genericpath.py",
+        "group": "genericpath",
+        "bytes": 23170
+      },
+      {
+        "path": "Lib/test/test_genexps.py",
+        "group": "genexps",
+        "bytes": 7480
+      },
+      {
+        "path": "Lib/test/test_getpass.py",
+        "group": "getpass",
+        "bytes": 6516
+      },
+      {
+        "path": "Lib/test/test_getpath.py",
+        "group": "getpath",
+        "bytes": 45918
+      },
+      {
+        "path": "Lib/test/test_gettext.py",
+        "group": "gettext",
+        "bytes": 36547
+      },
+      {
+        "path": "Lib/test/test_glob.py",
+        "group": "glob",
+        "bytes": 23821
+      },
+      {
+        "path": "Lib/test/test_global.py",
+        "group": "global",
+        "bytes": 1225
+      },
+      {
+        "path": "Lib/test/test_grammar.py",
+        "group": "grammar",
+        "bytes": 67548
+      },
+      {
+        "path": "Lib/test/test_graphlib.py",
+        "group": "graphlib",
+        "bytes": 8513
+      },
+      {
+        "path": "Lib/test/test_grp.py",
+        "group": "grp",
+        "bytes": 3758
+      },
+      {
+        "path": "Lib/test/test_gzip.py",
+        "group": "gzip",
+        "bytes": 42426
+      },
+      {
+        "path": "Lib/test/test_hash.py",
+        "group": "hash",
+        "bytes": 12404
+      },
+      {
+        "path": "Lib/test/test_hashlib.py",
+        "group": "hashlib",
+        "bytes": 47829
+      },
+      {
+        "path": "Lib/test/test_heapq.py",
+        "group": "heapq",
+        "bytes": 16816
+      },
+      {
+        "path": "Lib/test/test_hmac.py",
+        "group": "hmac",
+        "bytes": 26689
+      },
+      {
+        "path": "Lib/test/test_html.py",
+        "group": "html",
+        "bytes": 4336
+      },
+      {
+        "path": "Lib/test/test_htmlparser.py",
+        "group": "htmlparser",
+        "bytes": 34168
+      },
+      {
+        "path": "Lib/test/test_http_cookiejar.py",
+        "group": "http_cookiejar",
+        "bytes": 83505
+      },
+      {
+        "path": "Lib/test/test_http_cookies.py",
+        "group": "http_cookies",
+        "bytes": 20487
+      },
+      {
+        "path": "Lib/test/test_idle.py",
+        "group": "idle",
+        "bytes": 862
+      },
+      {
+        "path": "Lib/test/test_imaplib.py",
+        "group": "imaplib",
+        "bytes": 39313
+      },
+      {
+        "path": "Lib/test/test_import/__init__.py",
+        "group": "import",
+        "bytes": 121532
+      },
+      {
+        "path": "Lib/test/test_import/data/double_const.py",
+        "group": "import",
+        "bytes": 1212
+      },
+      {
+        "path": "Lib/test/test_importlib/abc.py",
+        "group": "importlib",
+        "bytes": 2272
+      },
+      {
+        "path": "Lib/test/test_importlib/builtin/test_finder.py",
+        "group": "importlib",
+        "bytes": 1245
+      },
+      {
+        "path": "Lib/test/test_importlib/builtin/test_loader.py",
+        "group": "importlib",
+        "bytes": 3868
+      },
+      {
+        "path": "Lib/test/test_importlib/extension/_test_nonmodule_cases.py",
+        "group": "importlib",
+        "bytes": 1464
+      },
+      {
+        "path": "Lib/test/test_importlib/extension/test_case_sensitivity.py",
+        "group": "importlib",
+        "bytes": 1825
+      },
+      {
+        "path": "Lib/test/test_importlib/extension/test_finder.py",
+        "group": "importlib",
+        "bytes": 2054
+      },
+      {
+        "path": "Lib/test/test_importlib/extension/test_loader.py",
+        "group": "importlib",
+        "bytes": 15242
+      },
+      {
+        "path": "Lib/test/test_importlib/extension/test_path_hook.py",
+        "group": "importlib",
+        "bytes": 1036
+      },
+      {
+        "path": "Lib/test/test_importlib/frozen/test_finder.py",
+        "group": "importlib",
+        "bytes": 6515
+      },
+      {
+        "path": "Lib/test/test_importlib/frozen/test_loader.py",
+        "group": "importlib",
+        "bytes": 6039
+      },
+      {
+        "path": "Lib/test/test_importlib/import_/test___loader__.py",
+        "group": "importlib",
+        "bytes": 760
+      },
+      {
+        "path": "Lib/test/test_importlib/import_/test___package__.py",
+        "group": "importlib",
+        "bytes": 5340
+      },
+      {
+        "path": "Lib/test/test_importlib/import_/test_api.py",
+        "group": "importlib",
+        "bytes": 4864
+      },
+      {
+        "path": "Lib/test/test_importlib/import_/test_caching.py",
+        "group": "importlib",
+        "bytes": 3857
+      },
+      {
+        "path": "Lib/test/test_importlib/import_/test_fromlist.py",
+        "group": "importlib",
+        "bytes": 7504
+      },
+      {
+        "path": "Lib/test/test_importlib/import_/test_helpers.py",
+        "group": "importlib",
+        "bytes": 6639
+      },
+      {
+        "path": "Lib/test/test_importlib/import_/test_meta_path.py",
+        "group": "importlib",
+        "bytes": 4477
+      },
+      {
+        "path": "Lib/test/test_importlib/import_/test_packages.py",
+        "group": "importlib",
+        "bytes": 4581
+      },
+      {
+        "path": "Lib/test/test_importlib/import_/test_path.py",
+        "group": "importlib",
+        "bytes": 9020
+      },
+      {
+        "path": "Lib/test/test_importlib/import_/test_relative_imports.py",
+        "group": "importlib",
+        "bytes": 9482
+      },
+      {
+        "path": "Lib/test/test_importlib/metadata/_path.py",
+        "group": "importlib",
+        "bytes": 2908
+      },
+      {
+        "path": "Lib/test/test_importlib/metadata/fixtures.py",
+        "group": "importlib",
+        "bytes": 12040
+      },
+      {
+        "path": "Lib/test/test_importlib/metadata/test_api.py",
+        "group": "importlib",
+        "bytes": 11047
+      },
+      {
+        "path": "Lib/test/test_importlib/metadata/test_main.py",
+        "group": "importlib",
+        "bytes": 15411
+      },
+      {
+        "path": "Lib/test/test_importlib/metadata/test_zip.py",
+        "group": "importlib",
+        "bytes": 1794
+      },
+      {
+        "path": "Lib/test/test_importlib/partial/cfimport.py",
+        "group": "importlib",
+        "bytes": 825
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/_path.py",
+        "group": "importlib",
+        "bytes": 1289
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/test_compatibilty_files.py",
+        "group": "importlib",
+        "bytes": 3306
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/test_contents.py",
+        "group": "importlib",
+        "bytes": 829
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/test_custom.py",
+        "group": "importlib",
+        "bytes": 1249
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/test_files.py",
+        "group": "importlib",
+        "bytes": 3641
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/test_functional.py",
+        "group": "importlib",
+        "bytes": 8855
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/test_open.py",
+        "group": "importlib",
+        "bytes": 2673
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/test_path.py",
+        "group": "importlib",
+        "bytes": 1959
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/test_read.py",
+        "group": "importlib",
+        "bytes": 3017
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/test_reader.py",
+        "group": "importlib",
+        "bytes": 4645
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/test_resource.py",
+        "group": "importlib",
+        "bytes": 7657
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/util.py",
+        "group": "importlib",
+        "bytes": 6101
+      },
+      {
+        "path": "Lib/test/test_importlib/resources/zip.py",
+        "group": "importlib",
+        "bytes": 573
+      },
+      {
+        "path": "Lib/test/test_importlib/source/test_case_sensitivity.py",
+        "group": "importlib",
+        "bytes": 3101
+      },
+      {
+        "path": "Lib/test/test_importlib/source/test_file_loader.py",
+        "group": "importlib",
+        "bytes": 32516
+      },
+      {
+        "path": "Lib/test/test_importlib/source/test_finder.py",
+        "group": "importlib",
+        "bytes": 8091
+      },
+      {
+        "path": "Lib/test/test_importlib/source/test_path_hook.py",
+        "group": "importlib",
+        "bytes": 835
+      },
+      {
+        "path": "Lib/test/test_importlib/source/test_source_encoding.py",
+        "group": "importlib",
+        "bytes": 5348
+      },
+      {
+        "path": "Lib/test/test_importlib/test_abc.py",
+        "group": "importlib",
+        "bytes": 32227
+      },
+      {
+        "path": "Lib/test/test_importlib/test_api.py",
+        "group": "importlib",
+        "bytes": 18158
+      },
+      {
+        "path": "Lib/test/test_importlib/test_lazy.py",
+        "group": "importlib",
+        "bytes": 7974
+      },
+      {
+        "path": "Lib/test/test_importlib/test_locks.py",
+        "group": "importlib",
+        "bytes": 4786
+      },
+      {
+        "path": "Lib/test/test_importlib/test_namespace_pkgs.py",
+        "group": "importlib",
+        "bytes": 12369
+      },
+      {
+        "path": "Lib/test/test_importlib/test_pkg_import.py",
+        "group": "importlib",
+        "bytes": 2757
+      },
+      {
+        "path": "Lib/test/test_importlib/test_spec.py",
+        "group": "importlib",
+        "bytes": 26913
+      },
+      {
+        "path": "Lib/test/test_importlib/test_threaded_import.py",
+        "group": "importlib",
+        "bytes": 9592
+      },
+      {
+        "path": "Lib/test/test_importlib/test_util.py",
+        "group": "importlib",
+        "bytes": 32897
+      },
+      {
+        "path": "Lib/test/test_importlib/test_windows.py",
+        "group": "importlib",
+        "bytes": 6848
+      },
+      {
+        "path": "Lib/test/test_importlib/threaded_import_hangers.py",
+        "group": "importlib",
+        "bytes": 1484
+      },
+      {
+        "path": "Lib/test/test_importlib/util.py",
+        "group": "importlib",
+        "bytes": 13230
+      },
+      {
+        "path": "Lib/test/test_index.py",
+        "group": "index",
+        "bytes": 8572
+      },
+      {
+        "path": "Lib/test/test_inspect/inspect_fodder.py",
+        "group": "inspect",
+        "bytes": 2116
+      },
+      {
+        "path": "Lib/test/test_inspect/inspect_fodder2.py",
+        "group": "inspect",
+        "bytes": 5404
+      },
+      {
+        "path": "Lib/test/test_inspect/inspect_stringized_annotations.py",
+        "group": "inspect",
+        "bytes": 612
+      },
+      {
+        "path": "Lib/test/test_inspect/inspect_stringized_annotations_pep695.py",
+        "group": "inspect",
+        "bytes": 1658
+      },
+      {
+        "path": "Lib/test/test_inspect/test_inspect.py",
+        "group": "inspect",
+        "bytes": 246920
+      },
+      {
+        "path": "Lib/test/test_int.py",
+        "group": "int",
+        "bytes": 35039
+      },
+      {
+        "path": "Lib/test/test_int_literal.py",
+        "group": "int_literal",
+        "bytes": 7053
+      },
+      {
+        "path": "Lib/test/test_io.py",
+        "group": "io",
+        "bytes": 185458
+      },
+      {
+        "path": "Lib/test/test_ipaddress.py",
+        "group": "ipaddress",
+        "bytes": 126079
+      },
+      {
+        "path": "Lib/test/test_isinstance.py",
+        "group": "isinstance",
+        "bytes": 13268
+      },
+      {
+        "path": "Lib/test/test_iter.py",
+        "group": "iter",
+        "bytes": 39146
+      },
+      {
+        "path": "Lib/test/test_iterlen.py",
+        "group": "iterlen",
+        "bytes": 7266
+      },
+      {
+        "path": "Lib/test/test_json/__init__.py",
+        "group": "json",
+        "bytes": 2188
+      },
+      {
+        "path": "Lib/test/test_json/test_decode.py",
+        "group": "json",
+        "bytes": 5118
+      },
+      {
+        "path": "Lib/test/test_json/test_default.py",
+        "group": "json",
+        "bytes": 647
+      },
+      {
+        "path": "Lib/test/test_json/test_dump.py",
+        "group": "json",
+        "bytes": 2409
+      },
+      {
+        "path": "Lib/test/test_json/test_encode_basestring_ascii.py",
+        "group": "json",
+        "bytes": 2227
+      },
+      {
+        "path": "Lib/test/test_json/test_enum.py",
+        "group": "json",
+        "bytes": 4034
+      },
+      {
+        "path": "Lib/test/test_json/test_fail.py",
+        "group": "json",
+        "bytes": 9268
+      },
+      {
+        "path": "Lib/test/test_json/test_float.py",
+        "group": "json",
+        "bytes": 1298
+      },
+      {
+        "path": "Lib/test/test_json/test_indent.py",
+        "group": "json",
+        "bytes": 1824
+      },
+      {
+        "path": "Lib/test/test_json/test_pass1.py",
+        "group": "json",
+        "bytes": 1838
+      },
+      {
+        "path": "Lib/test/test_json/test_pass3.py",
+        "group": "json",
+        "bytes": 545
+      },
+      {
+        "path": "Lib/test/test_json/test_recursion.py",
+        "group": "json",
+        "bytes": 3364
+      },
+      {
+        "path": "Lib/test/test_json/test_scanstring.py",
+        "group": "json",
+        "bytes": 4655
+      },
+      {
+        "path": "Lib/test/test_json/test_separators.py",
+        "group": "json",
+        "bytes": 1319
+      },
+      {
+        "path": "Lib/test/test_json/test_speedups.py",
+        "group": "json",
+        "bytes": 3328
+      },
+      {
+        "path": "Lib/test/test_json/test_tool.py",
+        "group": "json",
+        "bytes": 7548
+      },
+      {
+        "path": "Lib/test/test_json/test_unicode.py",
+        "group": "json",
+        "bytes": 4298
+      },
+      {
+        "path": "Lib/test/test_keyword.py",
+        "group": "keyword",
+        "bytes": 2050
+      },
+      {
+        "path": "Lib/test/test_keywordonlyarg.py",
+        "group": "keywordonlyarg",
+        "bytes": 7058
+      },
+      {
+        "path": "Lib/test/test_kqueue.py",
+        "group": "kqueue",
+        "bytes": 9589
+      },
+      {
+        "path": "Lib/test/test_largefile.py",
+        "group": "largefile",
+        "bytes": 11283
+      },
+      {
+        "path": "Lib/test/test_launcher.py",
+        "group": "launcher",
+        "bytes": 30201
+      },
+      {
+        "path": "Lib/test/test_linecache.py",
+        "group": "linecache",
+        "bytes": 12982
+      },
+      {
+        "path": "Lib/test/test_listcomps.py",
+        "group": "listcomps",
+        "bytes": 24103
+      },
+      {
+        "path": "Lib/test/test_locale.py",
+        "group": "locale",
+        "bytes": 25824
+      },
+      {
+        "path": "Lib/test/test_logging.py",
+        "group": "logging",
+        "bytes": 263971
+      },
+      {
+        "path": "Lib/test/test_long.py",
+        "group": "long",
+        "bytes": 64925
+      },
+      {
+        "path": "Lib/test/test_lzma.py",
+        "group": "lzma",
+        "bytes": 97192
+      },
+      {
+        "path": "Lib/test/test_mailbox.py",
+        "group": "mailbox",
+        "bytes": 101380
+      },
+      {
+        "path": "Lib/test/test_marshal.py",
+        "group": "marshal",
+        "bytes": 24841
+      },
+      {
+        "path": "Lib/test/test_math.py",
+        "group": "math",
+        "bytes": 122198
+      },
+      {
+        "path": "Lib/test/test_math_property.py",
+        "group": "math_property",
+        "bytes": 1181
+      },
+      {
+        "path": "Lib/test/test_metaclass.py",
+        "group": "metaclass",
+        "bytes": 6637
+      },
+      {
+        "path": "Lib/test/test_mmap.py",
+        "group": "mmap",
+        "bytes": 45327
+      },
+      {
+        "path": "Lib/test/test_modulefinder.py",
+        "group": "modulefinder",
+        "bytes": 12503
+      },
+      {
+        "path": "Lib/test/test_monitoring.py",
+        "group": "monitoring",
+        "bytes": 70634
+      },
+      {
+        "path": "Lib/test/test_msvcrt.py",
+        "group": "msvcrt",
+        "bytes": 3474
+      },
+      {
+        "path": "Lib/test/test_multiprocessing_fork/__init__.py",
+        "group": "multiprocessing_fork",
+        "bytes": 542
+      },
+      {
+        "path": "Lib/test/test_multiprocessing_main_handling.py",
+        "group": "multiprocessing_main_handling",
+        "bytes": 11758
+      },
+      {
+        "path": "Lib/test/test_named_expressions.py",
+        "group": "named_expressions",
+        "bytes": 30333
+      },
+      {
+        "path": "Lib/test/test_netrc.py",
+        "group": "netrc",
+        "bytes": 12142
+      },
+      {
+        "path": "Lib/test/test_ntpath.py",
+        "group": "ntpath",
+        "bytes": 60931
+      },
+      {
+        "path": "Lib/test/test_numeric_tower.py",
+        "group": "numeric_tower",
+        "bytes": 8188
+      },
+      {
+        "path": "Lib/test/test_opcache.py",
+        "group": "opcache",
+        "bytes": 29713
+      },
+      {
+        "path": "Lib/test/test_opcodes.py",
+        "group": "opcodes",
+        "bytes": 3707
+      },
+      {
+        "path": "Lib/test/test_openpty.py",
+        "group": "openpty",
+        "bytes": 600
+      },
+      {
+        "path": "Lib/test/test_operator.py",
+        "group": "operator",
+        "bytes": 28273
+      },
+      {
+        "path": "Lib/test/test_ordered_dict.py",
+        "group": "ordered_dict",
+        "bytes": 40974
+      },
+      {
+        "path": "Lib/test/test_os.py",
+        "group": "os",
+        "bytes": 206061
+      },
+      {
+        "path": "Lib/test/test_osx_env.py",
+        "group": "osx_env",
+        "bytes": 1338
+      },
+      {
+        "path": "Lib/test/test_patma.py",
+        "group": "patma",
+        "bytes": 96817
+      },
+      {
+        "path": "Lib/test/test_pdb.py",
+        "group": "pdb",
+        "bytes": 127027
+      },
+      {
+        "path": "Lib/test/test_peepholer.py",
+        "group": "peepholer",
+        "bytes": 44699
+      },
+      {
+        "path": "Lib/test/test_pep646_syntax.py",
+        "group": "pep646_syntax",
+        "bytes": 7982
+      },
+      {
+        "path": "Lib/test/test_perf_profiler.py",
+        "group": "perf_profiler",
+        "bytes": 17512
+      },
+      {
+        "path": "Lib/test/test_perfmaps.py",
+        "group": "perfmaps",
+        "bytes": 773
+      },
+      {
+        "path": "Lib/test/test_pickletools.py",
+        "group": "pickletools",
+        "bytes": 14616
+      },
+      {
+        "path": "Lib/test/test_pkg.py",
+        "group": "pkg",
+        "bytes": 9824
+      },
+      {
+        "path": "Lib/test/test_pkgutil.py",
+        "group": "pkgutil",
+        "bytes": 26850
+      },
+      {
+        "path": "Lib/test/test_platform.py",
+        "group": "platform",
+        "bytes": 27397
+      },
+      {
+        "path": "Lib/test/test_plistlib.py",
+        "group": "plistlib",
+        "bytes": 46481
+      },
+      {
+        "path": "Lib/test/test_poll.py",
+        "group": "poll",
+        "bytes": 7674
+      },
+      {
+        "path": "Lib/test/test_popen.py",
+        "group": "popen",
+        "bytes": 2158
+      },
+      {
+        "path": "Lib/test/test_poplib.py",
+        "group": "poplib",
+        "bytes": 17457
+      },
+      {
+        "path": "Lib/test/test_positional_only_arg.py",
+        "group": "positional_only_arg",
+        "bytes": 18887
+      },
+      {
+        "path": "Lib/test/test_posix.py",
+        "group": "posix",
+        "bytes": 99161
+      },
+      {
+        "path": "Lib/test/test_posixpath.py",
+        "group": "posixpath",
+        "bytes": 38019
+      },
+      {
+        "path": "Lib/test/test_pprint.py",
+        "group": "pprint",
+        "bytes": 40014
+      },
+      {
+        "path": "Lib/test/test_print.py",
+        "group": "print",
+        "bytes": 7907
+      },
+      {
+        "path": "Lib/test/test_profile.py",
+        "group": "profile",
+        "bytes": 9167
+      },
+      {
+        "path": "Lib/test/test_property.py",
+        "group": "property",
+        "bytes": 20601
+      },
+      {
+        "path": "Lib/test/test_pstats.py",
+        "group": "pstats",
+        "bytes": 5511
+      },
+      {
+        "path": "Lib/test/test_pty.py",
+        "group": "pty",
+        "bytes": 16576
+      },
+      {
+        "path": "Lib/test/test_pulldom.py",
+        "group": "pulldom",
+        "bytes": 12628
+      },
+      {
+        "path": "Lib/test/test_py_compile.py",
+        "group": "py_compile",
+        "bytes": 12219
+      },
+      {
+        "path": "Lib/test/test_pydoc/pydoc_mod.py",
+        "group": "pydoc",
+        "bytes": 1000
+      },
+      {
+        "path": "Lib/test/test_pydoc/pydocfodder.py",
+        "group": "pydoc",
+        "bytes": 5361
+      },
+      {
+        "path": "Lib/test/test_pydoc/test_pydoc.py",
+        "group": "pydoc",
+        "bytes": 84906
+      },
+      {
+        "path": "Lib/test/test_pyexpat.py",
+        "group": "pyexpat",
+        "bytes": 29995
+      },
+      {
+        "path": "Lib/test/test_pyrepl/__init__.py",
+        "group": "pyrepl",
+        "bytes": 535
+      },
+      {
+        "path": "Lib/test/test_pyrepl/support.py",
+        "group": "pyrepl",
+        "bytes": 4453
+      },
+      {
+        "path": "Lib/test/test_pyrepl/test_input.py",
+        "group": "pyrepl",
+        "bytes": 3492
+      },
+      {
+        "path": "Lib/test/test_pyrepl/test_interact.py",
+        "group": "pyrepl",
+        "bytes": 7521
+      },
+      {
+        "path": "Lib/test/test_pyrepl/test_keymap.py",
+        "group": "pyrepl",
+        "bytes": 5173
+      },
+      {
+        "path": "Lib/test/test_pyrepl/test_pyrepl.py",
+        "group": "pyrepl",
+        "bytes": 44952
+      },
+      {
+        "path": "Lib/test/test_pyrepl/test_reader.py",
+        "group": "pyrepl",
+        "bytes": 10855
+      },
+      {
+        "path": "Lib/test/test_pyrepl/test_unix_console.py",
+        "group": "pyrepl",
+        "bytes": 9375
+      },
+      {
+        "path": "Lib/test/test_pyrepl/test_unix_eventqueue.py",
+        "group": "pyrepl",
+        "bytes": 4201
+      },
+      {
+        "path": "Lib/test/test_pyrepl/test_windows_console.py",
+        "group": "pyrepl",
+        "bytes": 9986
+      },
+      {
+        "path": "Lib/test/test_queue.py",
+        "group": "queue",
+        "bytes": 34184
+      },
+      {
+        "path": "Lib/test/test_quopri.py",
+        "group": "quopri",
+        "bytes": 8057
+      },
+      {
+        "path": "Lib/test/test_random.py",
+        "group": "random",
+        "bytes": 59820
+      },
+      {
+        "path": "Lib/test/test_range.py",
+        "group": "range",
+        "bytes": 27167
+      },
+      {
+        "path": "Lib/test/test_re.py",
+        "group": "re",
+        "bytes": 138492
+      },
+      {
+        "path": "Lib/test/test_readline.py",
+        "group": "readline",
+        "bytes": 15795
+      },
+      {
+        "path": "Lib/test/test_regrtest.py",
+        "group": "regrtest",
+        "bytes": 95420
+      },
+      {
+        "path": "Lib/test/test_reprlib.py",
+        "group": "reprlib",
+        "bytes": 28707
+      },
+      {
+        "path": "Lib/test/test_richcmp.py",
+        "group": "richcmp",
+        "bytes": 12232
+      },
+      {
+        "path": "Lib/test/test_rlcompleter.py",
+        "group": "rlcompleter",
+        "bytes": 7755
+      },
+      {
+        "path": "Lib/test/test_robotparser.py",
+        "group": "robotparser",
+        "bytes": 11281
+      },
+      {
+        "path": "Lib/test/test_scope.py",
+        "group": "scope",
+        "bytes": 22468
+      },
+      {
+        "path": "Lib/test/test_script_helper.py",
+        "group": "script_helper",
+        "bytes": 5960
+      },
+      {
+        "path": "Lib/test/test_secrets.py",
+        "group": "secrets",
+        "bytes": 4381
+      },
+      {
+        "path": "Lib/test/test_select.py",
+        "group": "select",
+        "bytes": 3504
+      },
+      {
+        "path": "Lib/test/test_set.py",
+        "group": "set",
+        "bytes": 72819
+      },
+      {
+        "path": "Lib/test/test_setcomps.py",
+        "group": "setcomps",
+        "bytes": 5370
+      },
+      {
+        "path": "Lib/test/test_shlex.py",
+        "group": "shlex",
+        "bytes": 13713
+      },
+      {
+        "path": "Lib/test/test_signal.py",
+        "group": "signal",
+        "bytes": 54037
+      },
+      {
+        "path": "Lib/test/test_site.py",
+        "group": "site",
+        "bytes": 32481
+      },
+      {
+        "path": "Lib/test/test_slice.py",
+        "group": "slice",
+        "bytes": 9687
+      },
+      {
+        "path": "Lib/test/test_smtplib.py",
+        "group": "smtplib",
+        "bytes": 62028
+      },
+      {
+        "path": "Lib/test/test_smtpnet.py",
+        "group": "smtpnet",
+        "bytes": 3186
+      },
+      {
+        "path": "Lib/test/test_socket.py",
+        "group": "socket",
+        "bytes": 267377
+      },
+      {
+        "path": "Lib/test/test_socketserver.py",
+        "group": "socketserver",
+        "bytes": 17812
+      },
+      {
+        "path": "Lib/test/test_sort.py",
+        "group": "sort",
+        "bytes": 14824
+      },
+      {
+        "path": "Lib/test/test_source_encoding.py",
+        "group": "source_encoding",
+        "bytes": 12965
+      },
+      {
+        "path": "Lib/test/test_sqlite3/test_backup.py",
+        "group": "sqlite3",
+        "bytes": 5605
+      },
+      {
+        "path": "Lib/test/test_sqlite3/test_cli.py",
+        "group": "sqlite3",
+        "bytes": 5606
+      },
+      {
+        "path": "Lib/test/test_sqlite3/test_dbapi.py",
+        "group": "sqlite3",
+        "bytes": 74629
+      },
+      {
+        "path": "Lib/test/test_sqlite3/test_dump.py",
+        "group": "sqlite3",
+        "bytes": 9044
+      },
+      {
+        "path": "Lib/test/test_sqlite3/test_factory.py",
+        "group": "sqlite3",
+        "bytes": 12693
+      },
+      {
+        "path": "Lib/test/test_sqlite3/test_hooks.py",
+        "group": "sqlite3",
+        "bytes": 13465
+      },
+      {
+        "path": "Lib/test/test_sqlite3/test_regression.py",
+        "group": "sqlite3",
+        "bytes": 19421
+      },
+      {
+        "path": "Lib/test/test_sqlite3/test_transactions.py",
+        "group": "sqlite3",
+        "bytes": 19967
+      },
+      {
+        "path": "Lib/test/test_sqlite3/test_types.py",
+        "group": "sqlite3",
+        "bytes": 20349
+      },
+      {
+        "path": "Lib/test/test_sqlite3/test_userfunctions.py",
+        "group": "sqlite3",
+        "bytes": 30426
+      },
+      {
+        "path": "Lib/test/test_sqlite3/util.py",
+        "group": "sqlite3",
+        "bytes": 2136
+      },
+      {
+        "path": "Lib/test/test_ssl.py",
+        "group": "ssl",
+        "bytes": 228811
+      },
+      {
+        "path": "Lib/test/test_stable_abi_ctypes.py",
+        "group": "stable_abi_ctypes",
+        "bytes": 26850
+      },
+      {
+        "path": "Lib/test/test_startfile.py",
+        "group": "startfile",
+        "bytes": 1736
+      },
+      {
+        "path": "Lib/test/test_statistics.py",
+        "group": "statistics",
+        "bytes": 133925
+      },
+      {
+        "path": "Lib/test/test_str.py",
+        "group": "str",
+        "bytes": 128753
+      },
+      {
+        "path": "Lib/test/test_strftime.py",
+        "group": "strftime",
+        "bytes": 7582
+      },
+      {
+        "path": "Lib/test/test_string.py",
+        "group": "string",
+        "bytes": 22383
+      },
+      {
+        "path": "Lib/test/test_string_literals.py",
+        "group": "string_literals",
+        "bytes": 13383
+      },
+      {
+        "path": "Lib/test/test_stringprep.py",
+        "group": "stringprep",
+        "bytes": 3113
+      },
+      {
+        "path": "Lib/test/test_strptime.py",
+        "group": "strptime",
+        "bytes": 37652
+      },
+      {
+        "path": "Lib/test/test_strtod.py",
+        "group": "strtod",
+        "bytes": 20537
+      },
+      {
+        "path": "Lib/test/test_subclassinit.py",
+        "group": "subclassinit",
+        "bytes": 8236
+      },
+      {
+        "path": "Lib/test/test_subprocess.py",
+        "group": "subprocess",
+        "bytes": 169996
+      },
+      {
+        "path": "Lib/test/test_sundry.py",
+        "group": "sundry",
+        "bytes": 1047
+      },
+      {
+        "path": "Lib/test/test_super.py",
+        "group": "super",
+        "bytes": 16056
+      },
+      {
+        "path": "Lib/test/test_support.py",
+        "group": "support",
+        "bytes": 27723
+      },
+      {
+        "path": "Lib/test/test_symtable.py",
+        "group": "symtable",
+        "bytes": 20781
+      },
+      {
+        "path": "Lib/test/test_syntax.py",
+        "group": "syntax",
+        "bytes": 81336
+      },
+      {
+        "path": "Lib/test/test_sys.py",
+        "group": "sys",
+        "bytes": 73160
+      },
+      {
+        "path": "Lib/test/test_sys_setprofile.py",
+        "group": "sys_setprofile",
+        "bytes": 15006
+      },
+      {
+        "path": "Lib/test/test_syslog.py",
+        "group": "syslog",
+        "bytes": 4817
+      },
+      {
+        "path": "Lib/test/test_tabnanny.py",
+        "group": "tabnanny",
+        "bytes": 14233
+      },
+      {
+        "path": "Lib/test/test_tcl.py",
+        "group": "tcl",
+        "bytes": 31487
+      },
+      {
+        "path": "Lib/test/test_termios.py",
+        "group": "termios",
+        "bytes": 11223
+      },
+      {
+        "path": "Lib/test/test_textwrap.py",
+        "group": "textwrap",
+        "bytes": 42891
+      },
+      {
+        "path": "Lib/test/test_threading.py",
+        "group": "threading",
+        "bytes": 75306
+      },
+      {
+        "path": "Lib/test/test_threading_local.py",
+        "group": "threading_local",
+        "bytes": 6734
+      },
+      {
+        "path": "Lib/test/test_threadsignals.py",
+        "group": "threadsignals",
+        "bytes": 10108
+      },
+      {
+        "path": "Lib/test/test_time.py",
+        "group": "time",
+        "bytes": 43959
+      },
+      {
+        "path": "Lib/test/test_timeit.py",
+        "group": "timeit",
+        "bytes": 15560
+      },
+      {
+        "path": "Lib/test/test_timeout.py",
+        "group": "timeout",
+        "bytes": 10998
+      },
+      {
+        "path": "Lib/test/test_tkinter/__init__.py",
+        "group": "tkinter",
+        "bytes": 536
+      },
+      {
+        "path": "Lib/test/test_tkinter/support.py",
+        "group": "tkinter",
+        "bytes": 4158
+      },
+      {
+        "path": "Lib/test/test_tkinter/test_colorchooser.py",
+        "group": "tkinter",
+        "bytes": 2207
+      },
+      {
+        "path": "Lib/test/test_tkinter/test_font.py",
+        "group": "tkinter",
+        "bytes": 5979
+      },
+      {
+        "path": "Lib/test/test_tkinter/test_geometry_managers.py",
+        "group": "tkinter",
+        "bytes": 41185
+      },
+      {
+        "path": "Lib/test/test_tkinter/test_images.py",
+        "group": "tkinter",
+        "bytes": 28492
+      },
+      {
+        "path": "Lib/test/test_tkinter/test_loadtk.py",
+        "group": "tkinter",
+        "bytes": 1486
+      },
+      {
+        "path": "Lib/test/test_tkinter/test_messagebox.py",
+        "group": "tkinter",
+        "bytes": 1130
+      },
+      {
+        "path": "Lib/test/test_tkinter/test_misc.py",
+        "group": "tkinter",
+        "bytes": 47490
+      },
+      {
+        "path": "Lib/test/test_tkinter/test_simpledialog.py",
+        "group": "tkinter",
+        "bytes": 1014
+      },
+      {
+        "path": "Lib/test/test_tkinter/test_text.py",
+        "group": "tkinter",
+        "bytes": 4833
+      },
+      {
+        "path": "Lib/test/test_tkinter/test_variables.py",
+        "group": "tkinter",
+        "bytes": 10909
+      },
+      {
+        "path": "Lib/test/test_tkinter/test_widgets.py",
+        "group": "tkinter",
+        "bytes": 60968
+      },
+      {
+        "path": "Lib/test/test_tkinter/widget_tests.py",
+        "group": "tkinter",
+        "bytes": 22690
+      },
+      {
+        "path": "Lib/test/test_tokenize.py",
+        "group": "tokenize",
+        "bytes": 121070
+      },
+      {
+        "path": "Lib/test/test_tomllib/burntsushi.py",
+        "group": "tomllib",
+        "bytes": 4024
+      },
+      {
+        "path": "Lib/test/test_tomllib/test_data.py",
+        "group": "tomllib",
+        "bytes": 2232
+      },
+      {
+        "path": "Lib/test/test_tomllib/test_error.py",
+        "group": "tomllib",
+        "bytes": 2122
+      },
+      {
+        "path": "Lib/test/test_tomllib/test_misc.py",
+        "group": "tomllib",
+        "bytes": 4013
+      },
+      {
+        "path": "Lib/test/test_tools/__init__.py",
+        "group": "tools",
+        "bytes": 1334
+      },
+      {
+        "path": "Lib/test/test_tools/test_freeze.py",
+        "group": "tools",
+        "bytes": 1369
+      },
+      {
+        "path": "Lib/test/test_tools/test_i18n.py",
+        "group": "tools",
+        "bytes": 12394
+      },
+      {
+        "path": "Lib/test/test_tools/test_makefile.py",
+        "group": "tools",
+        "bytes": 2795
+      },
+      {
+        "path": "Lib/test/test_tools/test_makeunicodedata.py",
+        "group": "tools",
+        "bytes": 3954
+      },
+      {
+        "path": "Lib/test/test_tools/test_reindent.py",
+        "group": "tools",
+        "bytes": 1039
+      },
+      {
+        "path": "Lib/test/test_tools/test_sundry.py",
+        "group": "tools",
+        "bytes": 910
+      },
+      {
+        "path": "Lib/test/test_tracemalloc.py",
+        "group": "tracemalloc",
+        "bytes": 40802
+      },
+      {
+        "path": "Lib/test/test_ttk/__init__.py",
+        "group": "ttk",
+        "bytes": 926
+      },
+      {
+        "path": "Lib/test/test_ttk/test_extensions.py",
+        "group": "ttk",
+        "bytes": 12054
+      },
+      {
+        "path": "Lib/test/test_ttk/test_style.py",
+        "group": "ttk",
+        "bytes": 18617
+      },
+      {
+        "path": "Lib/test/test_ttk/test_widgets.py",
+        "group": "ttk",
+        "bytes": 73187
+      },
+      {
+        "path": "Lib/test/test_ttk_textonly.py",
+        "group": "ttk_textonly",
+        "bytes": 17869
+      },
+      {
+        "path": "Lib/test/test_tty.py",
+        "group": "tty",
+        "bytes": 3717
+      },
+      {
+        "path": "Lib/test/test_tuple.py",
+        "group": "tuple",
+        "bytes": 20276
+      },
+      {
+        "path": "Lib/test/test_turtle.py",
+        "group": "turtle",
+        "bytes": 14375
+      },
+      {
+        "path": "Lib/test/test_type_aliases.py",
+        "group": "type_aliases",
+        "bytes": 13049
+      },
+      {
+        "path": "Lib/test/test_type_annotations.py",
+        "group": "type_annotations",
+        "bytes": 6383
+      },
+      {
+        "path": "Lib/test/test_type_comments.py",
+        "group": "type_comments",
+        "bytes": 11278
+      },
+      {
+        "path": "Lib/test/test_type_params.py",
+        "group": "type_params",
+        "bytes": 45512
+      },
+      {
+        "path": "Lib/test/test_typechecks.py",
+        "group": "typechecks",
+        "bytes": 2615
+      },
+      {
+        "path": "Lib/test/test_types.py",
+        "group": "types",
+        "bytes": 88074
+      },
+      {
+        "path": "Lib/test/test_typing.py",
+        "group": "typing",
+        "bytes": 376291
+      },
+      {
+        "path": "Lib/test/test_ucn.py",
+        "group": "ucn",
+        "bytes": 9748
+      },
+      {
+        "path": "Lib/test/test_unary.py",
+        "group": "unary",
+        "bytes": 1561
+      },
+      {
+        "path": "Lib/test/test_unicode_file.py",
+        "group": "unicode_file",
+        "bytes": 5856
+      },
+      {
+        "path": "Lib/test/test_unicode_file_functions.py",
+        "group": "unicode_file_functions",
+        "bytes": 7074
+      },
+      {
+        "path": "Lib/test/test_unittest/_test_warnings.py",
+        "group": "unittest",
+        "bytes": 1949
+      },
+      {
+        "path": "Lib/test/test_unittest/support.py",
+        "group": "unittest",
+        "bytes": 4038
+      },
+      {
+        "path": "Lib/test/test_unittest/test_assertions.py",
+        "group": "unittest",
+        "bytes": 17267
+      },
+      {
+        "path": "Lib/test/test_unittest/test_async_case.py",
+        "group": "unittest",
+        "bytes": 17166
+      },
+      {
+        "path": "Lib/test/test_unittest/test_break.py",
+        "group": "unittest",
+        "bytes": 10993
+      },
+      {
+        "path": "Lib/test/test_unittest/test_case.py",
+        "group": "unittest",
+        "bytes": 78436
+      },
+      {
+        "path": "Lib/test/test_unittest/test_discovery.py",
+        "group": "unittest",
+        "bytes": 33755
+      },
+      {
+        "path": "Lib/test/test_unittest/test_functiontestcase.py",
+        "group": "unittest",
+        "bytes": 5545
+      },
+      {
+        "path": "Lib/test/test_unittest/test_loader.py",
+        "group": "unittest",
+        "bytes": 59098
+      },
+      {
+        "path": "Lib/test/test_unittest/test_program.py",
+        "group": "unittest",
+        "bytes": 18144
+      },
+      {
+        "path": "Lib/test/test_unittest/test_result.py",
+        "group": "unittest",
+        "bytes": 53955
+      },
+      {
+        "path": "Lib/test/test_unittest/test_runner.py",
+        "group": "unittest",
+        "bytes": 52570
+      },
+      {
+        "path": "Lib/test/test_unittest/test_setups.py",
+        "group": "unittest",
+        "bytes": 16503
+      },
+      {
+        "path": "Lib/test/test_unittest/test_skipping.py",
+        "group": "unittest",
+        "bytes": 20085
+      },
+      {
+        "path": "Lib/test/test_unittest/test_suite.py",
+        "group": "unittest",
+        "bytes": 15189
+      },
+      {
+        "path": "Lib/test/test_unittest/test_util.py",
+        "group": "unittest",
+        "bytes": 1568
+      },
+      {
+        "path": "Lib/test/test_unittest/testmock/__main__.py",
+        "group": "unittest",
+        "bytes": 628
+      },
+      {
+        "path": "Lib/test/test_unittest/testmock/testasync.py",
+        "group": "unittest",
+        "bytes": 39437
+      },
+      {
+        "path": "Lib/test/test_unittest/testmock/testcallable.py",
+        "group": "unittest",
+        "bytes": 4272
+      },
+      {
+        "path": "Lib/test/test_unittest/testmock/testhelpers.py",
+        "group": "unittest",
+        "bytes": 34968
+      },
+      {
+        "path": "Lib/test/test_unittest/testmock/testmagicmethods.py",
+        "group": "unittest",
+        "bytes": 17725
+      },
+      {
+        "path": "Lib/test/test_unittest/testmock/testmock.py",
+        "group": "unittest",
+        "bytes": 82879
+      },
+      {
+        "path": "Lib/test/test_unittest/testmock/testpatch.py",
+        "group": "unittest",
+        "bytes": 63658
+      },
+      {
+        "path": "Lib/test/test_unittest/testmock/testsealable.py",
+        "group": "unittest",
+        "bytes": 7405
+      },
+      {
+        "path": "Lib/test/test_unittest/testmock/testsentinel.py",
+        "group": "unittest",
+        "bytes": 1325
+      },
+      {
+        "path": "Lib/test/test_unittest/testmock/testthreadingmock.py",
+        "group": "unittest",
+        "bytes": 7305
+      },
+      {
+        "path": "Lib/test/test_unittest/testmock/testwith.py",
+        "group": "unittest",
+        "bytes": 12282
+      },
+      {
+        "path": "Lib/test/test_univnewlines.py",
+        "group": "univnewlines",
+        "bytes": 3947
+      },
+      {
+        "path": "Lib/test/test_unpack.py",
+        "group": "unpack",
+        "bytes": 3591
+      },
+      {
+        "path": "Lib/test/test_unparse.py",
+        "group": "unparse",
+        "bytes": 30500
+      },
+      {
+        "path": "Lib/test/test_urllib.py",
+        "group": "urllib",
+        "bytes": 71448
+      },
+      {
+        "path": "Lib/test/test_urllib2.py",
+        "group": "urllib2",
+        "bytes": 83123
+      },
+      {
+        "path": "Lib/test/test_urllib2_localnet.py",
+        "group": "urllib2_localnet",
+        "bytes": 24787
+      },
+      {
+        "path": "Lib/test/test_urllib2net.py",
+        "group": "urllib2net",
+        "bytes": 14293
+      },
+      {
+        "path": "Lib/test/test_urllib_response.py",
+        "group": "urllib_response",
+        "bytes": 2044
+      },
+      {
+        "path": "Lib/test/test_urllibnet.py",
+        "group": "urllibnet",
+        "bytes": 9633
+      },
+      {
+        "path": "Lib/test/test_urlparse.py",
+        "group": "urlparse",
+        "bytes": 80392
+      },
+      {
+        "path": "Lib/test/test_userdict.py",
+        "group": "userdict",
+        "bytes": 8006
+      },
+      {
+        "path": "Lib/test/test_userlist.py",
+        "group": "userlist",
+        "bytes": 2280
+      },
+      {
+        "path": "Lib/test/test_userstring.py",
+        "group": "userstring",
+        "bytes": 2535
+      },
+      {
+        "path": "Lib/test/test_utf8_mode.py",
+        "group": "utf8_mode",
+        "bytes": 10559
+      },
+      {
+        "path": "Lib/test/test_venv.py",
+        "group": "venv",
+        "bytes": 39830
+      },
+      {
+        "path": "Lib/test/test_wait3.py",
+        "group": "wait3",
+        "bytes": 1781
+      },
+      {
+        "path": "Lib/test/test_wait4.py",
+        "group": "wait4",
+        "bytes": 1167
+      },
+      {
+        "path": "Lib/test/test_wave.py",
+        "group": "wave",
+        "bytes": 9002
+      },
+      {
+        "path": "Lib/test/test_weakset.py",
+        "group": "weakset",
+        "bytes": 16669
+      },
+      {
+        "path": "Lib/test/test_winapi.py",
+        "group": "winapi",
+        "bytes": 5935
+      },
+      {
+        "path": "Lib/test/test_winconsoleio.py",
+        "group": "winconsoleio",
+        "bytes": 7319
+      },
+      {
+        "path": "Lib/test/test_winreg.py",
+        "group": "winreg",
+        "bytes": 23018
+      },
+      {
+        "path": "Lib/test/test_winsound.py",
+        "group": "winsound",
+        "bytes": 5296
+      },
+      {
+        "path": "Lib/test/test_with.py",
+        "group": "with",
+        "bytes": 28445
+      },
+      {
+        "path": "Lib/test/test_wmi.py",
+        "group": "wmi",
+        "bytes": 3305
+      },
+      {
+        "path": "Lib/test/test_wsgiref.py",
+        "group": "wsgiref",
+        "bytes": 30019
+      },
+      {
+        "path": "Lib/test/test_xml_dom_minicompat.py",
+        "group": "xml_dom_minicompat",
+        "bytes": 4282
+      },
+      {
+        "path": "Lib/test/test_xml_etree.py",
+        "group": "xml_etree",
+        "bytes": 168049
+      },
+      {
+        "path": "Lib/test/test_xml_etree_c.py",
+        "group": "xml_etree_c",
+        "bytes": 9561
+      },
+      {
+        "path": "Lib/test/test_xmlrpc.py",
+        "group": "xmlrpc",
+        "bytes": 59717
+      },
+      {
+        "path": "Lib/test/test_xxtestfuzz.py",
+        "group": "xxtestfuzz",
+        "bytes": 690
+      },
+      {
+        "path": "Lib/test/test_yield_from.py",
+        "group": "yield_from",
+        "bytes": 51432
+      },
+      {
+        "path": "Lib/test/test_zipapp.py",
+        "group": "zipapp",
+        "bytes": 17103
+      },
+      {
+        "path": "Lib/test/test_zipfile/_path/_itertools.py",
+        "group": "zipfile",
+        "bytes": 2090
+      },
+      {
+        "path": "Lib/test/test_zipfile/_path/_test_params.py",
+        "group": "zipfile",
+        "bytes": 905
+      },
+      {
+        "path": "Lib/test/test_zipfile/_path/test_complexity.py",
+        "group": "zipfile",
+        "bytes": 3264
+      },
+      {
+        "path": "Lib/test/test_zipfile/_path/test_path.py",
+        "group": "zipfile",
+        "bytes": 22151
+      },
+      {
+        "path": "Lib/test/test_zipfile/test_core.py",
+        "group": "zipfile",
+        "bytes": 145135
+      },
+      {
+        "path": "Lib/test/test_zipfile64.py",
+        "group": "zipfile64",
+        "bytes": 5923
+      },
+      {
+        "path": "Lib/test/test_zipimport.py",
+        "group": "zipimport",
+        "bytes": 40154
+      },
+      {
+        "path": "Lib/test/test_zlib.py",
+        "group": "zlib",
+        "bytes": 42457
+      },
+      {
+        "path": "Lib/test/test_zoneinfo/_support.py",
+        "group": "zoneinfo",
+        "bytes": 3200
+      },
+      {
+        "path": "Lib/test/test_zoneinfo/data/update_test_data.py",
+        "group": "zoneinfo",
+        "bytes": 3166
+      },
+      {
+        "path": "Lib/test/test_zoneinfo/test_zoneinfo.py",
+        "group": "zoneinfo",
+        "bytes": 80649
+      },
+      {
+        "path": "Lib/test/test_zoneinfo/test_zoneinfo_property.py",
+        "group": "zoneinfo",
+        "bytes": 12027
+      },
+      {
+        "path": "Lib/test/tf_inherit_check.py",
+        "group": "tf_inherit_check",
+        "bytes": 714
+      },
+      {
+        "path": "Lib/test/typinganndata/_typed_dict_helper.py",
+        "group": "typinganndata",
+        "bytes": 859
+      },
+      {
+        "path": "Lib/test/typinganndata/ann_module.py",
+        "group": "typinganndata",
+        "bytes": 1120
+      },
+      {
+        "path": "Lib/test/typinganndata/ann_module2.py",
+        "group": "typinganndata",
+        "bytes": 519
+      },
+      {
+        "path": "Lib/test/typinganndata/ann_module695.py",
+        "group": "typinganndata",
+        "bytes": 1234
+      },
+      {
+        "path": "Lib/test/win_console_handler.py",
+        "group": "win_console_handler",
+        "bytes": 1416
+      },
+      {
+        "path": "Lib/textwrap.py",
+        "group": "textwrap",
+        "bytes": 19939
+      },
+      {
+        "path": "Lib/this.py",
+        "group": "this",
+        "bytes": 1003
+      },
+      {
+        "path": "Lib/threading.py",
+        "group": "threading",
+        "bytes": 55166
+      },
+      {
+        "path": "Lib/timeit.py",
+        "group": "timeit",
+        "bytes": 13464
+      },
+      {
+        "path": "Lib/tkinter/__init__.py",
+        "group": "tkinter",
+        "bytes": 187424
+      },
+      {
+        "path": "Lib/tkinter/colorchooser.py",
+        "group": "tkinter",
+        "bytes": 2660
+      },
+      {
+        "path": "Lib/tkinter/commondialog.py",
+        "group": "tkinter",
+        "bytes": 1289
+      },
+      {
+        "path": "Lib/tkinter/constants.py",
+        "group": "tkinter",
+        "bytes": 1493
+      },
+      {
+        "path": "Lib/tkinter/dialog.py",
+        "group": "tkinter",
+        "bytes": 1535
+      },
+      {
+        "path": "Lib/tkinter/dnd.py",
+        "group": "tkinter",
+        "bytes": 11644
+      },
+      {
+        "path": "Lib/tkinter/filedialog.py",
+        "group": "tkinter",
+        "bytes": 14939
+      },
+      {
+        "path": "Lib/tkinter/font.py",
+        "group": "tkinter",
+        "bytes": 7000
+      },
+      {
+        "path": "Lib/tkinter/messagebox.py",
+        "group": "tkinter",
+        "bytes": 3861
+      },
+      {
+        "path": "Lib/tkinter/scrolledtext.py",
+        "group": "tkinter",
+        "bytes": 1816
+      },
+      {
+        "path": "Lib/tkinter/simpledialog.py",
+        "group": "tkinter",
+        "bytes": 11749
+      },
+      {
+        "path": "Lib/tkinter/ttk.py",
+        "group": "tkinter",
+        "bytes": 56481
+      },
+      {
+        "path": "Lib/token.py",
+        "group": "token",
+        "bytes": 2457
+      },
+      {
+        "path": "Lib/tokenize.py",
+        "group": "tokenize",
+        "bytes": 21237
+      },
+      {
+        "path": "Lib/tomllib/_parser.py",
+        "group": "tomllib",
+        "bytes": 22631
+      },
+      {
+        "path": "Lib/tomllib/_re.py",
+        "group": "tomllib",
+        "bytes": 2943
+      },
+      {
+        "path": "Lib/tracemalloc.py",
+        "group": "tracemalloc",
+        "bytes": 18047
+      },
+      {
+        "path": "Lib/tty.py",
+        "group": "tty",
+        "bytes": 2035
+      },
+      {
+        "path": "Lib/turtle.py",
+        "group": "turtle",
+        "bytes": 145215
+      },
+      {
+        "path": "Lib/turtledemo/__main__.py",
+        "group": "turtledemo",
+        "bytes": 15433
+      },
+      {
+        "path": "Lib/turtledemo/bytedesign.py",
+        "group": "turtledemo",
+        "bytes": 4248
+      },
+      {
+        "path": "Lib/turtledemo/chaos.py",
+        "group": "turtledemo",
+        "bytes": 951
+      },
+      {
+        "path": "Lib/turtledemo/clock.py",
+        "group": "turtledemo",
+        "bytes": 3180
+      },
+      {
+        "path": "Lib/turtledemo/colormixer.py",
+        "group": "turtledemo",
+        "bytes": 1339
+      },
+      {
+        "path": "Lib/turtledemo/forest.py",
+        "group": "turtledemo",
+        "bytes": 2966
+      },
+      {
+        "path": "Lib/turtledemo/fractalcurves.py",
+        "group": "turtledemo",
+        "bytes": 3473
+      },
+      {
+        "path": "Lib/turtledemo/lindenmayer.py",
+        "group": "turtledemo",
+        "bytes": 2434
+      },
+      {
+        "path": "Lib/turtledemo/minimal_hanoi.py",
+        "group": "turtledemo",
+        "bytes": 2051
+      },
+      {
+        "path": "Lib/turtledemo/nim.py",
+        "group": "turtledemo",
+        "bytes": 6513
+      },
+      {
+        "path": "Lib/turtledemo/paint.py",
+        "group": "turtledemo",
+        "bytes": 1291
+      },
+      {
+        "path": "Lib/turtledemo/peace.py",
+        "group": "turtledemo",
+        "bytes": 1066
+      },
+      {
+        "path": "Lib/turtledemo/penrose.py",
+        "group": "turtledemo",
+        "bytes": 3380
+      },
+      {
+        "path": "Lib/turtledemo/planet_and_moon.py",
+        "group": "turtledemo",
+        "bytes": 2825
+      },
+      {
+        "path": "Lib/turtledemo/rosette.py",
+        "group": "turtledemo",
+        "bytes": 1361
+      },
+      {
+        "path": "Lib/turtledemo/round_dance.py",
+        "group": "turtledemo",
+        "bytes": 1804
+      },
+      {
+        "path": "Lib/turtledemo/sorting_animate.py",
+        "group": "turtledemo",
+        "bytes": 5052
+      },
+      {
+        "path": "Lib/turtledemo/tree.py",
+        "group": "turtledemo",
+        "bytes": 1401
+      },
+      {
+        "path": "Lib/turtledemo/two_canvases.py",
+        "group": "turtledemo",
+        "bytes": 1119
+      },
+      {
+        "path": "Lib/turtledemo/yinyang.py",
+        "group": "turtledemo",
+        "bytes": 821
+      },
+      {
+        "path": "Lib/types.py",
+        "group": "types",
+        "bytes": 11207
+      },
+      {
+        "path": "Lib/typing.py",
+        "group": "typing",
+        "bytes": 132601
+      },
+      {
+        "path": "Lib/unittest/__init__.py",
+        "group": "unittest",
+        "bytes": 3223
+      },
+      {
+        "path": "Lib/unittest/_log.py",
+        "group": "unittest",
+        "bytes": 2746
+      },
+      {
+        "path": "Lib/unittest/async_case.py",
+        "group": "unittest",
+        "bytes": 5612
+      },
+      {
+        "path": "Lib/unittest/case.py",
+        "group": "unittest",
+        "bytes": 58363
+      },
+      {
+        "path": "Lib/unittest/loader.py",
+        "group": "unittest",
+        "bytes": 19341
+      },
+      {
+        "path": "Lib/unittest/main.py",
+        "group": "unittest",
+        "bytes": 11632
+      },
+      {
+        "path": "Lib/unittest/mock.py",
+        "group": "unittest",
+        "bytes": 110626
+      },
+      {
+        "path": "Lib/unittest/result.py",
+        "group": "unittest",
+        "bytes": 9130
+      },
+      {
+        "path": "Lib/unittest/runner.py",
+        "group": "unittest",
+        "bytes": 10368
+      },
+      {
+        "path": "Lib/unittest/signals.py",
+        "group": "unittest",
+        "bytes": 2403
+      },
+      {
+        "path": "Lib/unittest/suite.py",
+        "group": "unittest",
+        "bytes": 13512
+      },
+      {
+        "path": "Lib/unittest/util.py",
+        "group": "unittest",
+        "bytes": 5215
+      },
+      {
+        "path": "Lib/urllib/error.py",
+        "group": "urllib",
+        "bytes": 2415
+      },
+      {
+        "path": "Lib/urllib/parse.py",
+        "group": "urllib",
+        "bytes": 45008
+      },
+      {
+        "path": "Lib/urllib/request.py",
+        "group": "urllib",
+        "bytes": 101549
+      },
+      {
+        "path": "Lib/urllib/response.py",
+        "group": "urllib",
+        "bytes": 2361
+      },
+      {
+        "path": "Lib/urllib/robotparser.py",
+        "group": "urllib",
+        "bytes": 9424
+      },
+      {
+        "path": "Lib/venv/__init__.py",
+        "group": "venv",
+        "bytes": 29308
+      },
+      {
+        "path": "Lib/wave.py",
+        "group": "wave",
+        "bytes": 23236
+      },
+      {
+        "path": "Lib/wsgiref/__init__.py",
+        "group": "wsgiref",
+        "bytes": 657
+      },
+      {
+        "path": "Lib/wsgiref/handlers.py",
+        "group": "wsgiref",
+        "bytes": 21664
+      },
+      {
+        "path": "Lib/wsgiref/headers.py",
+        "group": "wsgiref",
+        "bytes": 6766
+      },
+      {
+        "path": "Lib/wsgiref/simple_server.py",
+        "group": "wsgiref",
+        "bytes": 5052
+      },
+      {
+        "path": "Lib/wsgiref/types.py",
+        "group": "wsgiref",
+        "bytes": 1717
+      },
+      {
+        "path": "Lib/wsgiref/util.py",
+        "group": "wsgiref",
+        "bytes": 5489
+      },
+      {
+        "path": "Lib/wsgiref/validate.py",
+        "group": "wsgiref",
+        "bytes": 15036
+      },
+      {
+        "path": "Lib/xml/__init__.py",
+        "group": "xml",
+        "bytes": 557
+      },
+      {
+        "path": "Lib/xml/dom/NodeFilter.py",
+        "group": "xml",
+        "bytes": 936
+      },
+      {
+        "path": "Lib/xml/dom/__init__.py",
+        "group": "xml",
+        "bytes": 4019
+      },
+      {
+        "path": "Lib/xml/dom/domreg.py",
+        "group": "xml",
+        "bytes": 3451
+      },
+      {
+        "path": "Lib/xml/dom/expatbuilder.py",
+        "group": "xml",
+        "bytes": 35693
+      },
+      {
+        "path": "Lib/xml/dom/minicompat.py",
+        "group": "xml",
+        "bytes": 3367
+      },
+      {
+        "path": "Lib/xml/dom/minidom.py",
+        "group": "xml",
+        "bytes": 68614
+      },
+      {
+        "path": "Lib/xml/dom/pulldom.py",
+        "group": "xml",
+        "bytes": 11637
+      },
+      {
+        "path": "Lib/xml/dom/xmlbuilder.py",
+        "group": "xml",
+        "bytes": 12387
+      },
+      {
+        "path": "Lib/xml/etree/ElementInclude.py",
+        "group": "xml",
+        "bytes": 6952
+      },
+      {
+        "path": "Lib/xml/etree/ElementPath.py",
+        "group": "xml",
+        "bytes": 13997
+      },
+      {
+        "path": "Lib/xml/etree/ElementTree.py",
+        "group": "xml",
+        "bytes": 74309
+      },
+      {
+        "path": "Lib/xml/etree/__init__.py",
+        "group": "xml",
+        "bytes": 1605
+      },
+      {
+        "path": "Lib/xml/sax/__init__.py",
+        "group": "xml",
+        "bytes": 3238
+      },
+      {
+        "path": "Lib/xml/sax/_exceptions.py",
+        "group": "xml",
+        "bytes": 4699
+      },
+      {
+        "path": "Lib/xml/sax/expatreader.py",
+        "group": "xml",
+        "bytes": 16034
+      },
+      {
+        "path": "Lib/xml/sax/handler.py",
+        "group": "xml",
+        "bytes": 15617
+      },
+      {
+        "path": "Lib/xml/sax/saxutils.py",
+        "group": "xml",
+        "bytes": 12255
+      },
+      {
+        "path": "Lib/xml/sax/xmlreader.py",
+        "group": "xml",
+        "bytes": 12624
+      },
+      {
+        "path": "Lib/xmlrpc/client.py",
+        "group": "xmlrpc",
+        "bytes": 48561
+      },
+      {
+        "path": "Lib/xmlrpc/server.py",
+        "group": "xmlrpc",
+        "bytes": 36822
+      },
+      {
+        "path": "Lib/zipapp.py",
+        "group": "zipapp",
+        "bytes": 7584
+      },
+      {
+        "path": "Lib/zipfile/__init__.py",
+        "group": "zipfile",
+        "bytes": 88499
+      },
+      {
+        "path": "Lib/zipfile/_path/__init__.py",
+        "group": "zipfile",
+        "bytes": 11789
+      },
+      {
+        "path": "Lib/zipfile/_path/glob.py",
+        "group": "zipfile",
+        "bytes": 3315
+      },
+      {
+        "path": "Lib/zipimport.py",
+        "group": "zipimport",
+        "bytes": 32890
+      },
+      {
+        "path": "Lib/zoneinfo/__init__.py",
+        "group": "zoneinfo",
+        "bytes": 703
+      },
+      {
+        "path": "Lib/zoneinfo/_common.py",
+        "group": "zoneinfo",
+        "bytes": 5294
+      },
+      {
+        "path": "Lib/zoneinfo/_tzpath.py",
+        "group": "zoneinfo",
+        "bytes": 5388
+      },
+      {
+        "path": "Lib/zoneinfo/_zoneinfo.py",
+        "group": "zoneinfo",
+        "bytes": 24674
+      }
+    ],
+    "val": [
+      {
+        "path": "Lib/_markupbase.py",
+        "group": "_markupbase",
+        "bytes": 14653
+      },
+      {
+        "path": "Lib/_opcode_metadata.py",
+        "group": "_opcode_metadata",
+        "bytes": 9265
+      },
+      {
+        "path": "Lib/_threading_local.py",
+        "group": "_threading_local",
+        "bytes": 7220
+      },
+      {
+        "path": "Lib/asyncio/__init__.py",
+        "group": "asyncio",
+        "bytes": 1220
+      },
+      {
+        "path": "Lib/asyncio/__main__.py",
+        "group": "asyncio",
+        "bytes": 5970
+      },
+      {
+        "path": "Lib/asyncio/base_events.py",
+        "group": "asyncio",
+        "bytes": 79451
+      },
+      {
+        "path": "Lib/asyncio/base_futures.py",
+        "group": "asyncio",
+        "bytes": 1974
+      },
+      {
+        "path": "Lib/asyncio/base_subprocess.py",
+        "group": "asyncio",
+        "bytes": 9420
+      },
+      {
+        "path": "Lib/asyncio/base_tasks.py",
+        "group": "asyncio",
+        "bytes": 2672
+      },
+      {
+        "path": "Lib/asyncio/constants.py",
+        "group": "asyncio",
+        "bytes": 1413
+      },
+      {
+        "path": "Lib/asyncio/coroutines.py",
+        "group": "asyncio",
+        "bytes": 3342
+      },
+      {
+        "path": "Lib/asyncio/events.py",
+        "group": "asyncio",
+        "bytes": 29804
+      },
+      {
+        "path": "Lib/asyncio/exceptions.py",
+        "group": "asyncio",
+        "bytes": 1752
+      },
+      {
+        "path": "Lib/asyncio/format_helpers.py",
+        "group": "asyncio",
+        "bytes": 2727
+      },
+      {
+        "path": "Lib/asyncio/futures.py",
+        "group": "asyncio",
+        "bytes": 14201
+      },
+      {
+        "path": "Lib/asyncio/locks.py",
+        "group": "asyncio",
+        "bytes": 20579
+      },
+      {
+        "path": "Lib/asyncio/proactor_events.py",
+        "group": "asyncio",
+        "bytes": 33495
+      },
+      {
+        "path": "Lib/asyncio/protocols.py",
+        "group": "asyncio",
+        "bytes": 6957
+      },
+      {
+        "path": "Lib/asyncio/queues.py",
+        "group": "asyncio",
+        "bytes": 10178
+      },
+      {
+        "path": "Lib/asyncio/runners.py",
+        "group": "asyncio",
+        "bytes": 7159
+      },
+      {
+        "path": "Lib/asyncio/selector_events.py",
+        "group": "asyncio",
+        "bytes": 48082
+      },
+      {
+        "path": "Lib/asyncio/sslproto.py",
+        "group": "asyncio",
+        "bytes": 31709
+      },
+      {
+        "path": "Lib/asyncio/staggered.py",
+        "group": "asyncio",
+        "bytes": 5687
+      },
+      {
+        "path": "Lib/asyncio/streams.py",
+        "group": "asyncio",
+        "bytes": 28481
+      },
+      {
+        "path": "Lib/asyncio/subprocess.py",
+        "group": "asyncio",
+        "bytes": 7737
+      },
+      {
+        "path": "Lib/asyncio/taskgroups.py",
+        "group": "asyncio",
+        "bytes": 9239
+      },
+      {
+        "path": "Lib/asyncio/tasks.py",
+        "group": "asyncio",
+        "bytes": 39757
+      },
+      {
+        "path": "Lib/asyncio/threads.py",
+        "group": "asyncio",
+        "bytes": 790
+      },
+      {
+        "path": "Lib/asyncio/timeouts.py",
+        "group": "asyncio",
+        "bytes": 6062
+      },
+      {
+        "path": "Lib/asyncio/transports.py",
+        "group": "asyncio",
+        "bytes": 10808
+      },
+      {
+        "path": "Lib/asyncio/trsock.py",
+        "group": "asyncio",
+        "bytes": 2475
+      },
+      {
+        "path": "Lib/asyncio/unix_events.py",
+        "group": "asyncio",
+        "bytes": 54416
+      },
+      {
+        "path": "Lib/asyncio/windows_events.py",
+        "group": "asyncio",
+        "bytes": 32630
+      },
+      {
+        "path": "Lib/asyncio/windows_utils.py",
+        "group": "asyncio",
+        "bytes": 5060
+      },
+      {
+        "path": "Lib/bz2.py",
+        "group": "bz2",
+        "bytes": 11969
+      },
+      {
+        "path": "Lib/concurrent/futures/__init__.py",
+        "group": "concurrent",
+        "bytes": 1583
+      },
+      {
+        "path": "Lib/concurrent/futures/_base.py",
+        "group": "concurrent",
+        "bytes": 22833
+      },
+      {
+        "path": "Lib/concurrent/futures/process.py",
+        "group": "concurrent",
+        "bytes": 35748
+      },
+      {
+        "path": "Lib/concurrent/futures/thread.py",
+        "group": "concurrent",
+        "bytes": 8900
+      },
+      {
+        "path": "Lib/copy.py",
+        "group": "copy",
+        "bytes": 8975
+      },
+      {
+        "path": "Lib/pathlib/_abc.py",
+        "group": "pathlib",
+        "bytes": 33565
+      },
+      {
+        "path": "Lib/pathlib/_local.py",
+        "group": "pathlib",
+        "bytes": 31468
+      },
+      {
+        "path": "Lib/runpy.py",
+        "group": "runpy",
+        "bytes": 12885
+      },
+      {
+        "path": "Lib/shelve.py",
+        "group": "shelve",
+        "bytes": 8810
+      },
+      {
+        "path": "Lib/tarfile.py",
+        "group": "tarfile",
+        "bytes": 110062
+      },
+      {
+        "path": "Lib/tempfile.py",
+        "group": "tempfile",
+        "bytes": 32216
+      },
+      {
+        "path": "Lib/test/curses_tests.py",
+        "group": "curses_tests",
+        "bytes": 1242
+      },
+      {
+        "path": "Lib/test/fork_wait.py",
+        "group": "fork_wait",
+        "bytes": 2349
+      },
+      {
+        "path": "Lib/test/reperf.py",
+        "group": "reperf",
+        "bytes": 538
+      },
+      {
+        "path": "Lib/test/test_abstract_numbers.py",
+        "group": "abstract_numbers",
+        "bytes": 5952
+      },
+      {
+        "path": "Lib/test/test_asyncgen.py",
+        "group": "asyncgen",
+        "bytes": 58242
+      },
+      {
+        "path": "Lib/test/test_asyncio/functional.py",
+        "group": "asyncio",
+        "bytes": 7477
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_base_events.py",
+        "group": "asyncio",
+        "bytes": 82893
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_buffered_proto.py",
+        "group": "asyncio",
+        "bytes": 2337
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_context.py",
+        "group": "asyncio",
+        "bytes": 1069
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_eager_task_factory.py",
+        "group": "asyncio",
+        "bytes": 10691
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_events.py",
+        "group": "asyncio",
+        "bytes": 112098
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_futures.py",
+        "group": "asyncio",
+        "bytes": 31635
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_futures2.py",
+        "group": "asyncio",
+        "bytes": 2832
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_locks.py",
+        "group": "asyncio",
+        "bytes": 55105
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_pep492.py",
+        "group": "asyncio",
+        "bytes": 5529
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_proactor_events.py",
+        "group": "asyncio",
+        "bytes": 39519
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_protocols.py",
+        "group": "asyncio",
+        "bytes": 2290
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_queues.py",
+        "group": "asyncio",
+        "bytes": 21060
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_runners.py",
+        "group": "asyncio",
+        "bytes": 15474
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_selector_events.py",
+        "group": "asyncio",
+        "bytes": 53894
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_sendfile.py",
+        "group": "asyncio",
+        "bytes": 21453
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_server.py",
+        "group": "asyncio",
+        "bytes": 11477
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_sock_lowlevel.py",
+        "group": "asyncio",
+        "bytes": 25244
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_ssl.py",
+        "group": "asyncio",
+        "bytes": 54689
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_sslproto.py",
+        "group": "asyncio",
+        "bytes": 27290
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_staggered.py",
+        "group": "asyncio",
+        "bytes": 2619
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_streams.py",
+        "group": "asyncio",
+        "bytes": 47228
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_subprocess.py",
+        "group": "asyncio",
+        "bytes": 38293
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_taskgroups.py",
+        "group": "asyncio",
+        "bytes": 26349
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_tasks.py",
+        "group": "asyncio",
+        "bytes": 118208
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_threads.py",
+        "group": "asyncio",
+        "bytes": 1661
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_timeouts.py",
+        "group": "asyncio",
+        "bytes": 15267
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_transports.py",
+        "group": "asyncio",
+        "bytes": 3816
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_unix_events.py",
+        "group": "asyncio",
+        "bytes": 68489
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_waitfor.py",
+        "group": "asyncio",
+        "bytes": 10820
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_windows_events.py",
+        "group": "asyncio",
+        "bytes": 12222
+      },
+      {
+        "path": "Lib/test/test_asyncio/test_windows_utils.py",
+        "group": "asyncio",
+        "bytes": 4236
+      },
+      {
+        "path": "Lib/test/test_asyncio/utils.py",
+        "group": "asyncio",
+        "bytes": 19137
+      },
+      {
+        "path": "Lib/test/test_augassign.py",
+        "group": "augassign",
+        "bytes": 7868
+      },
+      {
+        "path": "Lib/test/test_bytes.py",
+        "group": "bytes",
+        "bytes": 82977
+      },
+      {
+        "path": "Lib/test/test_bz2.py",
+        "group": "bz2",
+        "bytes": 46337
+      },
+      {
+        "path": "Lib/test/test_codecmaps_kr.py",
+        "group": "codecmaps_kr",
+        "bytes": 1188
+      },
+      {
+        "path": "Lib/test/test_copy.py",
+        "group": "copy",
+        "bytes": 30149
+      },
+      {
+        "path": "Lib/test/test_datetime.py",
+        "group": "datetime",
+        "bytes": 2735
+      },
+      {
+        "path": "Lib/test/test_dtrace.py",
+        "group": "dtrace",
+        "bytes": 8170
+      },
+      {
+        "path": "Lib/test/test_exception_group.py",
+        "group": "exception_group",
+        "bytes": 35775
+      },
+      {
+        "path": "Lib/test/test_exceptions.py",
+        "group": "exceptions",
+        "bytes": 82847
+      },
+      {
+        "path": "Lib/test/test_file.py",
+        "group": "file",
+        "bytes": 12065
+      },
+      {
+        "path": "Lib/test/test_float.py",
+        "group": "float",
+        "bytes": 66239
+      },
+      {
+        "path": "Lib/test/test_flufl.py",
+        "group": "flufl",
+        "bytes": 1567
+      },
+      {
+        "path": "Lib/test/test_frame.py",
+        "group": "frame",
+        "bytes": 23016
+      },
+      {
+        "path": "Lib/test/test_frozen.py",
+        "group": "frozen",
+        "bytes": 2251
+      },
+      {
+        "path": "Lib/test/test_funcattrs.py",
+        "group": "funcattrs",
+        "bytes": 16877
+      },
+      {
+        "path": "Lib/test/test_future_stmt/test_future.py",
+        "group": "future_stmt",
+        "bytes": 19246
+      },
+      {
+        "path": "Lib/test/test_future_stmt/test_future_flags.py",
+        "group": "future_stmt",
+        "bytes": 2421
+      },
+      {
+        "path": "Lib/test/test_httplib.py",
+        "group": "httplib",
+        "bytes": 98751
+      },
+      {
+        "path": "Lib/test/test_httpservers.py",
+        "group": "httpservers",
+        "bytes": 58289
+      },
+      {
+        "path": "Lib/test/test_interpreters/test_api.py",
+        "group": "interpreters",
+        "bytes": 58311
+      },
+      {
+        "path": "Lib/test/test_interpreters/test_channels.py",
+        "group": "interpreters",
+        "bytes": 19714
+      },
+      {
+        "path": "Lib/test/test_interpreters/test_lifecycle.py",
+        "group": "interpreters",
+        "bytes": 6430
+      },
+      {
+        "path": "Lib/test/test_interpreters/test_queues.py",
+        "group": "interpreters",
+        "bytes": 22322
+      },
+      {
+        "path": "Lib/test/test_interpreters/test_stress.py",
+        "group": "interpreters",
+        "bytes": 1104
+      },
+      {
+        "path": "Lib/test/test_interpreters/utils.py",
+        "group": "interpreters",
+        "bytes": 20474
+      },
+      {
+        "path": "Lib/test/test_itertools.py",
+        "group": "itertools",
+        "bytes": 110440
+      },
+      {
+        "path": "Lib/test/test_list.py",
+        "group": "list",
+        "bytes": 10186
+      },
+      {
+        "path": "Lib/test/test_lltrace.py",
+        "group": "lltrace",
+        "bytes": 3795
+      },
+      {
+        "path": "Lib/test/test_pathlib/test_pathlib.py",
+        "group": "pathlib",
+        "bytes": 62610
+      },
+      {
+        "path": "Lib/test/test_pathlib/test_pathlib_abc.py",
+        "group": "pathlib",
+        "bytes": 110179
+      },
+      {
+        "path": "Lib/test/test_peg_generator/test_c_parser.py",
+        "group": "peg_generator",
+        "bytes": 19524
+      },
+      {
+        "path": "Lib/test/test_peg_generator/test_first_sets.py",
+        "group": "peg_generator",
+        "bytes": 7971
+      },
+      {
+        "path": "Lib/test/test_peg_generator/test_grammar_validator.py",
+        "group": "peg_generator",
+        "bytes": 1833
+      },
+      {
+        "path": "Lib/test/test_peg_generator/test_pegen.py",
+        "group": "peg_generator",
+        "bytes": 38465
+      },
+      {
+        "path": "Lib/test/test_picklebuffer.py",
+        "group": "picklebuffer",
+        "bytes": 5109
+      },
+      {
+        "path": "Lib/test/test_raise.py",
+        "group": "raise",
+        "bytes": 14280
+      },
+      {
+        "path": "Lib/test/test_resource.py",
+        "group": "resource",
+        "bytes": 7290
+      },
+      {
+        "path": "Lib/test/test_runpy.py",
+        "group": "runpy",
+        "bytes": 34872
+      },
+      {
+        "path": "Lib/test/test_sax.py",
+        "group": "sax",
+        "bytes": 55944
+      },
+      {
+        "path": "Lib/test/test_shelve.py",
+        "group": "shelve",
+        "bytes": 6573
+      },
+      {
+        "path": "Lib/test/test_struct.py",
+        "group": "struct",
+        "bytes": 40131
+      },
+      {
+        "path": "Lib/test/test_tarfile.py",
+        "group": "tarfile",
+        "bytes": 168532
+      },
+      {
+        "path": "Lib/test/test_tempfile.py",
+        "group": "tempfile",
+        "bytes": 76572
+      },
+      {
+        "path": "Lib/test/test_threadedtempfile.py",
+        "group": "threadedtempfile",
+        "bytes": 1975
+      },
+      {
+        "path": "Lib/test/test_trace.py",
+        "group": "trace",
+        "bytes": 22235
+      },
+      {
+        "path": "Lib/test/test_traceback.py",
+        "group": "traceback",
+        "bytes": 181700
+      },
+      {
+        "path": "Lib/test/test_unicode_identifiers.py",
+        "group": "unicode_identifiers",
+        "bytes": 997
+      },
+      {
+        "path": "Lib/test/test_unpack_ex.py",
+        "group": "unpack_ex",
+        "bytes": 10216
+      },
+      {
+        "path": "Lib/test/test_weakref.py",
+        "group": "weakref",
+        "bytes": 79989
+      },
+      {
+        "path": "Lib/test/test_webbrowser.py",
+        "group": "webbrowser",
+        "bytes": 17724
+      },
+      {
+        "path": "Lib/test/test_xxlimited.py",
+        "group": "xxlimited",
+        "bytes": 2521
+      },
+      {
+        "path": "Lib/test/testcodec.py",
+        "group": "testcodec",
+        "bytes": 1046
+      },
+      {
+        "path": "Lib/trace.py",
+        "group": "trace",
+        "bytes": 29714
+      },
+      {
+        "path": "Lib/traceback.py",
+        "group": "traceback",
+        "bytes": 65168
+      },
+      {
+        "path": "Lib/weakref.py",
+        "group": "weakref",
+        "bytes": 21513
+      },
+      {
+        "path": "Lib/webbrowser.py",
+        "group": "webbrowser",
+        "bytes": 24285
+      }
+    ],
+    "test": [
+      {
+        "path": "Lib/_strptime.py",
+        "group": "_strptime",
+        "bytes": 25508
+      },
+      {
+        "path": "Lib/_weakrefset.py",
+        "group": "_weakrefset",
+        "bytes": 5893
+      },
+      {
+        "path": "Lib/argparse.py",
+        "group": "argparse",
+        "bytes": 102236
+      },
+      {
+        "path": "Lib/bisect.py",
+        "group": "bisect",
+        "bytes": 3423
+      },
+      {
+        "path": "Lib/configparser.py",
+        "group": "configparser",
+        "bytes": 53952
+      },
+      {
+        "path": "Lib/ftplib.py",
+        "group": "ftplib",
+        "bytes": 34735
+      },
+      {
+        "path": "Lib/getopt.py",
+        "group": "getopt",
+        "bytes": 7488
+      },
+      {
+        "path": "Lib/mimetypes.py",
+        "group": "mimetypes",
+        "bytes": 23811
+      },
+      {
+        "path": "Lib/optparse.py",
+        "group": "optparse",
+        "bytes": 60369
+      },
+      {
+        "path": "Lib/pickle.py",
+        "group": "pickle",
+        "bytes": 66933
+      },
+      {
+        "path": "Lib/pyclbr.py",
+        "group": "pyclbr",
+        "bytes": 11396
+      },
+      {
+        "path": "Lib/sched.py",
+        "group": "sched",
+        "bytes": 6351
+      },
+      {
+        "path": "Lib/selectors.py",
+        "group": "selectors",
+        "bytes": 19457
+      },
+      {
+        "path": "Lib/shutil.py",
+        "group": "shutil",
+        "bytes": 57493
+      },
+      {
+        "path": "Lib/stat.py",
+        "group": "stat",
+        "bytes": 6147
+      },
+      {
+        "path": "Lib/sysconfig/__init__.py",
+        "group": "sysconfig",
+        "bytes": 25188
+      },
+      {
+        "path": "Lib/sysconfig/__main__.py",
+        "group": "sysconfig",
+        "bytes": 8331
+      },
+      {
+        "path": "Lib/test/audit-tests.py",
+        "group": "audit-tests",
+        "bytes": 14630
+      },
+      {
+        "path": "Lib/test/lock_tests.py",
+        "group": "lock_tests",
+        "bytes": 36497
+      },
+      {
+        "path": "Lib/test/mapping_tests.py",
+        "group": "mapping_tests",
+        "bytes": 22393
+      },
+      {
+        "path": "Lib/test/seq_tests.py",
+        "group": "seq_tests",
+        "bytes": 15357
+      },
+      {
+        "path": "Lib/test/signalinterproctester.py",
+        "group": "signalinterproctester",
+        "bytes": 3197
+      },
+      {
+        "path": "Lib/test/ssltests.py",
+        "group": "ssltests",
+        "bytes": 1035
+      },
+      {
+        "path": "Lib/test/subprocessdata/fd_status.py",
+        "group": "subprocessdata",
+        "bytes": 835
+      },
+      {
+        "path": "Lib/test/subprocessdata/sigchild_ignore.py",
+        "group": "subprocessdata",
+        "bytes": 757
+      },
+      {
+        "path": "Lib/test/test_argparse.py",
+        "group": "argparse",
+        "bytes": 211077
+      },
+      {
+        "path": "Lib/test/test_bisect.py",
+        "group": "bisect",
+        "bytes": 17024
+      },
+      {
+        "path": "Lib/test/test_buffer.py",
+        "group": "buffer",
+        "bytes": 176886
+      },
+      {
+        "path": "Lib/test/test_cmd_line.py",
+        "group": "cmd_line",
+        "bytes": 44283
+      },
+      {
+        "path": "Lib/test/test_codecencodings_iso2022.py",
+        "group": "codecencodings_iso2022",
+        "bytes": 3742
+      },
+      {
+        "path": "Lib/test/test_codecencodings_jp.py",
+        "group": "codecencodings_jp",
+        "bytes": 4907
+      },
+      {
+        "path": "Lib/test/test_configparser.py",
+        "group": "configparser",
+        "bytes": 87857
+      },
+      {
+        "path": "Lib/test/test_dict_version.py",
+        "group": "dict_version",
+        "bytes": 6242
+      },
+      {
+        "path": "Lib/test/test_dynamicclassattribute.py",
+        "group": "dynamicclassattribute",
+        "bytes": 9795
+      },
+      {
+        "path": "Lib/test/test_errno.py",
+        "group": "errno",
+        "bytes": 1069
+      },
+      {
+        "path": "Lib/test/test_except_star.py",
+        "group": "except_star",
+        "bytes": 39166
+      },
+      {
+        "path": "Lib/test/test_fcntl.py",
+        "group": "fcntl",
+        "bytes": 8189
+      },
+      {
+        "path": "Lib/test/test_file_eintr.py",
+        "group": "file_eintr",
+        "bytes": 10993
+      },
+      {
+        "path": "Lib/test/test_ftplib.py",
+        "group": "ftplib",
+        "bytes": 43033
+      },
+      {
+        "path": "Lib/test/test_getopt.py",
+        "group": "getopt",
+        "bytes": 6759
+      },
+      {
+        "path": "Lib/test/test_ioctl.py",
+        "group": "ioctl",
+        "bytes": 3318
+      },
+      {
+        "path": "Lib/test/test_memoryio.py",
+        "group": "memoryio",
+        "bytes": 33452
+      },
+      {
+        "path": "Lib/test/test_memoryview.py",
+        "group": "memoryview",
+        "bytes": 22763
+      },
+      {
+        "path": "Lib/test/test_mimetypes.py",
+        "group": "mimetypes",
+        "bytes": 18343
+      },
+      {
+        "path": "Lib/test/test_minidom.py",
+        "group": "minidom",
+        "bytes": 71663
+      },
+      {
+        "path": "Lib/test/test_module/__init__.py",
+        "group": "module",
+        "bytes": 14705
+      },
+      {
+        "path": "Lib/test/test_multibytecodec.py",
+        "group": "multibytecodec",
+        "bytes": 16253
+      },
+      {
+        "path": "Lib/test/test_optimizer.py",
+        "group": "optimizer",
+        "bytes": 2670
+      },
+      {
+        "path": "Lib/test/test_optparse.py",
+        "group": "optparse",
+        "bytes": 62483
+      },
+      {
+        "path": "Lib/test/test_pickle.py",
+        "group": "pickle",
+        "bytes": 22971
+      },
+      {
+        "path": "Lib/test/test_pow.py",
+        "group": "pow",
+        "bytes": 6538
+      },
+      {
+        "path": "Lib/test/test_pwd.py",
+        "group": "pwd",
+        "bytes": 4428
+      },
+      {
+        "path": "Lib/test/test_pyclbr.py",
+        "group": "pyclbr",
+        "bytes": 10581
+      },
+      {
+        "path": "Lib/test/test_repl.py",
+        "group": "repl",
+        "bytes": 9757
+      },
+      {
+        "path": "Lib/test/test_sched.py",
+        "group": "sched",
+        "bytes": 7555
+      },
+      {
+        "path": "Lib/test/test_selectors.py",
+        "group": "selectors",
+        "bytes": 20351
+      },
+      {
+        "path": "Lib/test/test_shutil.py",
+        "group": "shutil",
+        "bytes": 139797
+      },
+      {
+        "path": "Lib/test/test_stat.py",
+        "group": "stat",
+        "bytes": 13340
+      },
+      {
+        "path": "Lib/test/test_structseq.py",
+        "group": "structseq",
+        "bytes": 14528
+      },
+      {
+        "path": "Lib/test/test_sys_settrace.py",
+        "group": "sys_settrace",
+        "bytes": 88824
+      },
+      {
+        "path": "Lib/test/test_sysconfig.py",
+        "group": "sysconfig",
+        "bytes": 26182
+      },
+      {
+        "path": "Lib/test/test_thread.py",
+        "group": "thread",
+        "bytes": 14691
+      },
+      {
+        "path": "Lib/test/test_type_cache.py",
+        "group": "type_cache",
+        "bytes": 7765
+      },
+      {
+        "path": "Lib/test/test_unicodedata.py",
+        "group": "unicodedata",
+        "bytes": 18078
+      },
+      {
+        "path": "Lib/test/test_utf8source.py",
+        "group": "utf8source",
+        "bytes": 1107
+      },
+      {
+        "path": "Lib/test/test_uuid.py",
+        "group": "uuid",
+        "bytes": 45342
+      },
+      {
+        "path": "Lib/test/test_warnings/__init__.py",
+        "group": "warnings",
+        "bytes": 73611
+      },
+      {
+        "path": "Lib/test/test_zipimport_support.py",
+        "group": "zipimport_support",
+        "bytes": 10863
+      },
+      {
+        "path": "Lib/uuid.py",
+        "group": "uuid",
+        "bytes": 29141
+      },
+      {
+        "path": "Lib/warnings.py",
+        "group": "warnings",
+        "bytes": 26938
+      }
+    ]
+  }
+}

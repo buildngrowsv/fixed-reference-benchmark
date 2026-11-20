@@ -1,0 +1,91 @@
+{
+  "decision": "complete",
+  "models": {
+    "fixed": {
+      "modes": {
+        "clean": {
+          "pairs": 960,
+          "n": 1024,
+          "top1": 1421,
+          "mean_log_odds": 7.868677535559982,
+          "lost": 0,
+          "gained": 0
+        },
+        "designated": {
+          "pairs": 944,
+          "n": 1024,
+          "top1": 1345,
+          "mean_log_odds": 7.33309967815876,
+          "lost": 16,
+          "gained": 0
+        },
+        "neighbor": {
+          "pairs": 862,
+          "n": 1024,
+          "top1": 1210,
+          "mean_log_odds": 5.70246122777462,
+          "lost": 98,
+          "gained": 0
+        },
+        "whole": {
+          "pairs": 0,
+          "n": 1024,
+          "top1": 5,
+          "mean_log_odds": -7.868677535559982,
+          "lost": 960,
+          "gained": 0
+        }
+      },
+      "extra_designated_losses": -82,
+      "interval": [
+        -0.0966796875,
+        -0.064453125
+      ],
+      "qualified": false
+    },
+    "writable": {
+      "modes": {
+        "clean": {
+          "pairs": 922,
+          "n": 1024,
+          "top1": 1295,
+          "mean_log_odds": 7.227960877120495,
+          "lost": 0,
+          "gained": 0
+        },
+        "designated": {
+          "pairs": 859,
+          "n": 1024,
+          "top1": 1172,
+          "mean_log_odds": 5.766746733337641,
+          "lost": 63,
+          "gained": 0
+        },
+        "neighbor": {
+          "pairs": 837,
+          "n": 1024,
+          "top1": 1131,
+          "mean_log_odds": 5.448617562651634,
+          "lost": 85,
+          "gained": 0
+        },
+        "whole": {
+          "pairs": 0,
+          "n": 1024,
+          "top1": 14,
+          "mean_log_odds": -7.227960877120495,
+          "lost": 922,
+          "gained": 0
+        }
+      },
+      "extra_designated_losses": -22,
+      "interval": [
+        -0.0341796875,
+        -0.009765625
+      ],
+      "qualified": false
+    }
+  },
+  "pairs": 1024,
+  "seed_scheme": "cpython-ref-swap-20261119"
+}

@@ -1,0 +1,40 @@
+{
+  "decision": "complete",
+  "models": {
+    "shared": {
+      "unique_parameters": 13111808,
+      "block_applications": 10,
+      "training_seconds_this_invocation": 143.24583699999494,
+      "start_step": 0,
+      "val_bpb": 1.0857474357978356
+    },
+    "shallow": {
+      "unique_parameters": 13111808,
+      "block_applications": 4,
+      "training_seconds_this_invocation": 64.25614054199832,
+      "start_step": 0,
+      "val_bpb": 1.0845091690976636
+    }
+  },
+  "contrasts": {
+    "val": {
+      "shallow": {
+        "delta": 0.001238266700171888,
+        "interval": [
+          -0.0026062518710931264,
+          0.0045205027415807855
+        ]
+      },
+      "untied": {
+        "delta": 0.05026049961482287,
+        "interval": [
+          0.04834457394924861,
+          0.054316592154037606
+        ]
+      }
+    }
+  },
+  "steps": 4096,
+  "seed": 101,
+  "reference": "cpython-reference-mid"
+}

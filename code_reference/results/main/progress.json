@@ -1,0 +1,10 @@
+{
+  "arm": "writable",
+  "step": 16384,
+  "target": 16384,
+  "seed": 101,
+  "loss": 0.4600364565849304,
+  "tokens_per_second": 225985.5768760157,
+  "time": 1795134869.545595,
+  "parameters": 31992320
+}
