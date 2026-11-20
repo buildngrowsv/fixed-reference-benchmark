@@ -717,5 +717,17 @@
     "after": {
       "large-qwen-fresh-panel-reference": "complete"
     }
+  },
+  {
+    "id": "large-sealed-width-rate-mid",
+    "repo": "fixed-reference-benchmark",
+    "revision": "6da2ada851d959e4fc252c5bda60f49882732b20",
+    "script": "code_reference/large_sealed.py",
+    "args": [
+      "--width-rate"
+    ],
+    "after": {
+      "large-python-width-rate-mid": "advance"
+    }
   }
 ]
