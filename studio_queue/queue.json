@@ -1093,5 +1093,14 @@
       "qwen-two-operands-carry": "carry_composes",
       "qwen-one-pass-scalar-32b": "answer_free_gain"
     }
+  },
+  {
+    "id": "spatial-262144-separated-witness",
+    "repo": "fixed-reference-benchmark",
+    "revision": "447ae9d6834f2e3f632ba1b4a225c17f9bb546d6",
+    "script": "spatial_references/spatial_witness.py",
+    "after": {
+      "spatial-32768-write-confirmation": "separated_pulses_rejected"
+    }
   }
 ]
