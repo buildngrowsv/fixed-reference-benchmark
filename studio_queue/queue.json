@@ -1487,5 +1487,14 @@
     "after": {
       "qwen-late-key-donor-fresh-72b": "late_key_donor_transfer"
     }
+  },
+  {
+    "id": "spatial-witness-staggered-jumps-7077888",
+    "repo": "fixed-reference-benchmark",
+    "revision": "2782d08b0793dc280241fdcf3dc123528de82ff0",
+    "script": "spatial_references/witness_staggered_jumps.py",
+    "after": {
+      "spatial-witness-boundary-jump-7077888": "sparse_witness_recovers_boundary_jump"
+    }
   }
 ]
