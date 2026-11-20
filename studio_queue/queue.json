@@ -1050,5 +1050,14 @@
     "after": {
       "qwen-one-pass-affine-32b": "scales_to_32b"
     }
+  },
+  {
+    "id": "qwen-numeric-first-relay",
+    "repo": "routed-expert-splice",
+    "revision": "37c57362200595f8d323e3d16ae88a253ce93be3",
+    "script": "nested_surgery/identifier_numeric_relay.py",
+    "after": {
+      "qwen-numeric-identifier-route-transfer": "unresolved"
+    }
   }
 ]
