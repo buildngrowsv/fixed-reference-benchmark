@@ -398,5 +398,18 @@
     "after": {
       "displaced-register-interchange": "any"
     }
+  },
+  {
+    "id": "displaced-register-interchange-repeat",
+    "repo": "fixed-reference-benchmark",
+    "revision": "33a2783b834f4043790b1fc8088542c56a318572",
+    "script": "register_routing/relay.py",
+    "args": [
+      "repeat"
+    ],
+    "after": {
+      "register-stable-random-second-seed": "any",
+      "displaced-register-interchange": "any"
+    }
   }
 ]
