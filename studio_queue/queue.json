@@ -1637,5 +1637,21 @@
     "after": {
       "large-qwen-frozen-graft-route-smoke-mx-indices": "smoke_complete"
     }
+  },
+  {
+    "id": "large-qwen-frozen-graft-route-confirmation",
+    "revision": "17fcd359c0397b0f3ca02d067a84cedb066dbc8a",
+    "repo": "routed-expert-splice",
+    "script": "nested_surgery/frozen_graft_route.py",
+    "model_snapshots": [
+      "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+      "97e1e76335b7017d8f67c08a19d103c0504298c9"
+    ],
+    "args": [
+      "--confirmation"
+    ],
+    "after": {
+      "large-qwen-frozen-graft-route-v2": "unresolved"
+    }
   }
 ]
