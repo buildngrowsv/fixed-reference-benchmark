@@ -1,0 +1,44 @@
+{
+  "decision": "compiled_observer_latency_improves",
+  "cells": 7077888,
+  "frames": 48,
+  "repetitions": 12,
+  "worlds": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "identical_decisions": true,
+  "median_ms": [
+    6.765104,
+    1.619167,
+    0.3307705
+  ],
+  "speedup": {
+    "full_materialization": 20.695986476691928,
+    "two_gathers": 4.972705131023057
+  },
+  "paired_intervals": {
+    "full_materialization": [
+      17.877266907734295,
+      21.52207159791245
+    ],
+    "two_gathers": [
+      4.346113488934554,
+      5.156205075599052
+    ]
+  },
+  "output_scalars": 11,
+  "frozen_checkpoints": {
+    "101": "ae2a23ea08ab472b835057a9da54a845ee35f68f841a20148f6ac3eae9335fd9",
+    "211": "077cc996a3ef0d988c774b2c1a74a91ee1d1ac5c31c1a953ba2067aa44c6f060",
+    "307": "05d814c3e9d768c48454fbaf694573c1b84a8a9d89f18be059e1887f7bc980d8"
+  },
+  "elapsed_s": 7.20074304100126,
+  "peak_mlx_bytes": 927891516
+}

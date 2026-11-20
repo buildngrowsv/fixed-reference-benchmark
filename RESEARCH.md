@@ -1,5 +1,11 @@
 # Open experiments and decisions
 
+**New surgical test.** The exact 7B coding expert produced +2.111 matching-bracket log odds in its native model and −0.009 through the old output interface. The registered test fits a 32-feature bridge against the 14B host's final answer, with both checkpoints frozen. It requires fresh complete repairs that disappear when the expert is removed and are missed by two equal-size bridges. [New protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/a733c86/nested_surgery/LEARNED_OUTPUT_PORT.md)
+
+**Boundary shift and observer latency.** On the 192³ grid the sparse policy recovered 68.91% after the boundary jump, versus 63.25% stale and 70.46% supplied. The compiled observer matched all 48 frame decisions and reached 0.331 ms median against 1.619 ms using two device gathers. [Boundary shift](spatial_references/witness_boundary_jump_study/README.md) · [Matched latency](spatial_references/compiled_witness_timing_study/README.md)
+
+**Late alias.** On the same 183 correctly answered groups, an early key activation exchange switched 111 groups. Exchanging the activation at the late read of an alias switched zero. [Paired result](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_lookup_alias_72b_study)
+
 The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons, the numerical stability follow-up, the 285M Python validation result and the 7B/14B coding qualification and block-27 transplant.
 
 ## Studio queue and current evidence
