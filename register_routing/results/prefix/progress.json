@@ -1,0 +1,8 @@
+{
+  "arm": "initial_prefix",
+  "step": 1024,
+  "target": 1024,
+  "loss": 2.8709728717803955,
+  "time": 1795138887.789425,
+  "tokens_per_second": 598726.0382089809
+}

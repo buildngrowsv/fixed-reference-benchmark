@@ -1,0 +1,13 @@
+{
+  "decision": "complete",
+  "pairs": 2048,
+  "clean": 2017,
+  "source": 2015,
+  "control": 0,
+  "delta": 0.98388671875,
+  "interval": [
+    0.978515625,
+    0.9892578125
+  ],
+  "supported": true
+}

@@ -1,0 +1,9 @@
+{
+  "arm": "magnitude-exit",
+  "step": 16384,
+  "target": 16384,
+  "parameters": 26830464,
+  "time": 1795138858.340588,
+  "tokens_per_second": 209865.62699486894,
+  "loss": 0.4638316333293915
+}
