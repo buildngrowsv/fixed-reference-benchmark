@@ -1432,5 +1432,15 @@
     "after": {
       "qwen-dictionary-matched-token-gap-72b": "late_key_gain_survives_matched_gap"
     }
+  },
+  {
+    "id": "spatial-compiled-witness-parity-7077888",
+    "repo": "fixed-reference-benchmark",
+    "revision": "9dad3fd31226a763be3c11ae00c4453a30522463",
+    "script": "spatial_references/compiled_witness_parity.py",
+    "after": {
+      "spatial-direct-witness-observation-timing": "direct_samples_speed_up",
+      "spatial-anchored-witness-routing-7077888": "dedicated_probes_scale"
+    }
   }
 ]
