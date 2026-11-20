@@ -1309,5 +1309,17 @@
     "after": {
       "qwen-saved-value-vs-overwrite-72b": "unresolved"
     }
+  },
+  {
+    "id": "qwen-dictionary-key-order-72b",
+    "repo": "routed-expert-splice",
+    "revision": "2ceb1b12fdc7238065394c273ebe6be2936ed1d8",
+    "script": "nested_surgery/identifier_lookup_order_72b.py",
+    "model_snapshots": [
+      "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+    ],
+    "after": {
+      "qwen-indexed-address-72b": "unresolved"
+    }
   }
 ]
