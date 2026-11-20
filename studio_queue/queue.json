@@ -1111,5 +1111,14 @@
     "after": {
       "orthogonal-view-depth-alias": "orthogonal_resolves_alias"
     }
+  },
+  {
+    "id": "qwen-cross-width-72b",
+    "repo": "routed-expert-splice",
+    "revision": "d2609dcba899b8755b47a8862512aca8e8401326",
+    "script": "nested_surgery/identifier_numeric_width_72b.py",
+    "after": {
+      "qwen-one-pass-scalar-32b": "answer_free_gain"
+    }
   }
 ]
