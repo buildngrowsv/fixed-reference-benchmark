@@ -4,11 +4,15 @@ The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons,
 
 ## Studio queue and current evidence
 
+**Boundary and witness selection below 1%.** The 192³ dedicated-probe run retained 69.27% under shifted faults, 0.31 points below dense witness selection with the same boundaries. In a separate timing test, direct MLX gathers reproduced all 48 frame decisions and gave a 4.13× paired estimator speedup. [Retention and scale](spatial_references/anchored_witness_scale_study/README.md) · [Direct-observation timing](spatial_references/device_witness_timing_study/README.md)
+
+**Matched token gap at 72B.** The late key with an exactly matched 39-token gap switched 128 of 129 shared groups, versus 82 for the early key and 127 for the unpadded late key. The late prefix stays unchanged. A second frozen recipient is running. [Verified result](https://github.com/buildngrowsv/routed-expert-splice/blob/9d0c241/nested_surgery/numeric_lookup_gap_72b_study/README.md)
+
 **Fresh dictionary replication.** The same seven-coordinate donor switched 135 of 137 native-shared groups after the table and 86 before it, a paired 35.77-point gain. It preserved every constant-table response. The next control restores the exact early token gap while leaving the late key's causal prefix fixed. [Fresh evidence](https://github.com/buildngrowsv/routed-expert-splice/blob/b263893/nested_surgery/numeric_lookup_fresh_72b_study/README.md) · [Matched-gap protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/c2367e9/nested_surgery/NUMERIC_LOOKUP_MATCHED_GAP_72B.md) · [Published independent replication](https://pubroot.com/ai/nlp/the-relocated-dictionary-key-restored-seven-coordinate-steering-on-a-fresh-panel/)
 
 **Seven-coordinate transfer at the late key.** The same donor switched 134/139 shared groups at the relocated key, up from 71 at the early assignment. It preserved all 139 constant-table answers. The independent replication appears above. [Verified donor result](https://github.com/buildngrowsv/routed-expert-splice/blob/3b8148d/nested_surgery/numeric_lookup_transfer_72b_study/README.md)
 
-**Dedicated samples recover witness selection.** At 96³, allocating 1,024 detector anchors per inferred region raised shifted retention to 70.54% with a combined 5.79% field budget. Dense routing retained 70.74%. The same absolute sample count is running at 192³, where it uses at most 0.984% of the field. [Verified witness result](spatial_references/anchored_witness_study/README.md)
+**Dedicated samples recover witness selection.** At 96³, allocating 1,024 detector anchors per inferred region raised shifted retention to 70.54% with a combined 5.79% field budget. Dense routing retained 70.74%. The completed 192³ comparison uses at most 0.984% of the field. [Verified witness result](spatial_references/anchored_witness_study/README.md)
 
 **Dictionary key order at 72B.** The entire key state switched both mirrored lookups in 138 of 139 shared-native groups when the declaration followed the dictionary, up from 74. Native solves over the 256 groups declined from 183 to 155. The completed donor comparison appears above. [Verified dictionary comparison](https://github.com/buildngrowsv/routed-expert-splice/blob/fbd3b83/nested_surgery/numeric_lookup_order_72b_study/README.md)
 
