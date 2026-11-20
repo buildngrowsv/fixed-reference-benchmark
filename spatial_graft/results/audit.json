@@ -1,0 +1,25 @@
+{
+  "source_table_correct": 64,
+  "unchanged_donor_weights": true,
+  "individual_predictions_reproduced": true,
+  "panels": {
+    "val": {
+      "donor": 0,
+      "fresh": 512,
+      "corrupted": 512,
+      "analytic": 512,
+      "donor_disabled": 0,
+      "donor_corrupted": 130,
+      "correct_wiring": 512
+    },
+    "test": {
+      "donor": 0,
+      "fresh": 2048,
+      "corrupted": 2047,
+      "analytic": 2048,
+      "donor_disabled": 0,
+      "donor_corrupted": 664,
+      "correct_wiring": 2048
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "decision": "floor",
+  "seed": 101,
+  "phase": "pilot",
+  "models": {
+    "fixed": {
+      "validation": [
+        0.11788321167883212,
+        0.06722689075630252
+      ],
+      "parameters": 14293632
+    },
+    "writable": {
+      "validation": [
+        0.11697080291970803,
+        0.06797385620915032
+      ],
+      "parameters": 14293632
+    }
+  },
+  "validation_fixed_minus_writable": 8.272165313814861e-05,
+  "paired_interval": [
+    -0.0035231912365467615,
+    0.0035940655382535568
+  ],
+  "seconds_this_invocation": 24.792245458011166,
+  "device": "Apple M5 Ultra"
+}

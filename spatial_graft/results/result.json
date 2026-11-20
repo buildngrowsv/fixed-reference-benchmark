@@ -1,0 +1,36 @@
+{
+  "decision": "complete",
+  "seeds": {
+    "101": {
+      "val": {
+        "donor": 0,
+        "fresh": 512,
+        "corrupted": 512,
+        "analytic": 512,
+        "donor_disabled": 0,
+        "donor_corrupted": 130,
+        "oracle": 512,
+        "n": 512,
+        "disabled_losses": 0,
+        "disabled_rescues": 0,
+        "replaced_losses": 0,
+        "replaced_rescues": 130
+      },
+      "test": {
+        "donor": 0,
+        "fresh": 2048,
+        "corrupted": 2047,
+        "analytic": 2048,
+        "donor_disabled": 0,
+        "donor_corrupted": 664,
+        "oracle": 2048,
+        "n": 2048,
+        "disabled_losses": 0,
+        "disabled_rescues": 0,
+        "replaced_losses": 0,
+        "replaced_rescues": 664
+      }
+    }
+  },
+  "device": "Apple M5 Ultra"
+}
