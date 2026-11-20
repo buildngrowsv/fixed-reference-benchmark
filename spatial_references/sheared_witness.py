@@ -77,10 +77,10 @@ def paired(new, other):
     return dict(mean=delta.mean(axis=0).tolist(), interval=bounds.T.tolist())
 
 
-def benchmark(driver, side, worlds, slopes, rounds=16, distance=8):
+def benchmark(driver, side, worlds, slopes, rounds=16, distance=8, geometry_type=TiltedWorld):
     records, layouts, inferred = [], [], []
     for world, slope in zip(worlds, slopes, strict=True):
-        geometry = TiltedWorld(world, side, int(slope))
+        geometry = geometry_type(world, side, int(slope))
         counts, shifts = evaluate(driver, world, side=side, rounds=rounds, distance=distance,
                                   stratified=True, geometry=geometry)
         records.append(counts)

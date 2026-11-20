@@ -35,15 +35,19 @@ def infer_boundaries(active):
     return np.array(cuts)
 
 
-def infer_with_probes(active, locations):
+def boundary_profiles(active, locations):
     side = active.shape[0]
     half = side // 2
     cuts = []
     for axis, pixels in enumerate(locations):
         views = active.swapaxes(0, axis).reshape(side, -1)[:, pixels]
         disagreement = (views != np.roll(views, 1, axis=0)).mean(axis=1)
-        cuts.append((disagreement[:half] + disagreement[half:]).argmax())
-    return np.array(cuts)
+        cuts.append(disagreement[:half] + disagreement[half:])
+    return np.stack(cuts)
+
+
+def infer_with_probes(active, locations):
+    return boundary_profiles(active, locations).argmax(axis=1)
 
 
 def witness_field(current, previous, shift, distance, *, selected=None):
