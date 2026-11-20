@@ -1,0 +1,9 @@
+{
+  "job": "spatial-4096-long-hold",
+  "revision": "15ad0bd92a7bd0b1132aefcdfc2cbd712e030294",
+  "attempt": 1,
+  "started": "2026-11-20T09:03:36+00:00",
+  "status": "done",
+  "finished": "2026-11-20T09:03:40+00:00",
+  "exit": 0
+}

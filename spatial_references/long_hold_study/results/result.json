@@ -1,0 +1,60 @@
+{
+  "side": 16,
+  "voxels": 4096,
+  "bits": 32,
+  "timepoints": [
+    16,
+    128
+  ],
+  "volumes": 64,
+  "runtime_s": 3.9474603330018,
+  "peak_mlx_bytes": 302907876,
+  "frozen_checkpoints": {
+    "101": "ae2a23ea08ab472b835057a9da54a845ee35f68f841a20148f6ac3eae9335fd9",
+    "211": "077cc996a3ef0d988c774b2c1a74a91ee1d1ac5c31c1a953ba2067aa44c6f060",
+    "307": "05d814c3e9d768c48454fbaf694573c1b84a8a9d89f18be059e1887f7bc980d8"
+  },
+  "decision": "long_hold_leakage",
+  "by_seed": {
+    "101": {
+      "eligible": 256879,
+      "correct": {
+        "soft_short": 256878,
+        "soft_long": 0,
+        "hard_short": 256879,
+        "hard_long": 256879
+      }
+    },
+    "211": {
+      "eligible": 256879,
+      "correct": {
+        "soft_short": 256878,
+        "soft_long": 0,
+        "hard_short": 256879,
+        "hard_long": 256879
+      }
+    },
+    "307": {
+      "eligible": 256879,
+      "correct": {
+        "soft_short": 256878,
+        "soft_long": 0,
+        "hard_short": 256879,
+        "hard_long": 256879
+      }
+    }
+  },
+  "pooled_rates": {
+    "soft_short": 0.9999961071165802,
+    "soft_long": 0.0,
+    "hard_short": 1.0,
+    "hard_long": 1.0
+  },
+  "hard_minus_soft_long": {
+    "mean": 1.0,
+    "interval": [
+      1.0,
+      1.0
+    ]
+  }
+}

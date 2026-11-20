@@ -1,0 +1,100 @@
+{
+  "long_hold": {
+    "eligible": 770637,
+    "counts": {
+      "soft_short": 770634,
+      "soft_long": 0,
+      "hard_short": 770637,
+      "hard_long": 770637
+    },
+    "rates": {
+      "soft_short": 0.9999961071165802,
+      "soft_long": 0.0,
+      "hard_short": 1.0,
+      "hard_long": 1.0
+    },
+    "decision": "long_hold_leakage"
+  },
+  "timed_faults": {
+    "counts": [
+      [
+        [
+          2362782,
+          2362782,
+          18874368,
+          5615817
+        ],
+        [
+          2362782,
+          2362782,
+          18874368,
+          18645136
+        ],
+        [
+          2362782,
+          2362782,
+          18874368,
+          18874368
+        ]
+      ],
+      [
+        [
+          2362782,
+          2362782,
+          18874368,
+          5646063
+        ],
+        [
+          2362782,
+          2362782,
+          18874368,
+          5646063
+        ],
+        [
+          2362782,
+          2362782,
+          18874368,
+          5646063
+        ]
+      ]
+    ],
+    "rates": {
+      "separated": {
+        "single_hard": {
+          "after_valid_write": 1.0,
+          "after_fault_interval": 0.2975366910298665
+        },
+        "double_soft": {
+          "after_valid_write": 1.0,
+          "after_fault_interval": 0.9878548516167535
+        },
+        "double_hard": {
+          "after_valid_write": 1.0,
+          "after_fault_interval": 1.0
+        }
+      },
+      "bundled": {
+        "single_hard": {
+          "after_valid_write": 1.0,
+          "after_fault_interval": 0.29913918177286786
+        },
+        "double_soft": {
+          "after_valid_write": 1.0,
+          "after_fault_interval": 0.29913918177286786
+        },
+        "double_hard": {
+          "after_valid_write": 1.0,
+          "after_fault_interval": 0.29913918177286786
+        }
+      }
+    },
+    "contrast": {
+      "mean": 0.7024633089701335,
+      "interval": [
+        0.6990973035494485,
+        0.7057126720746358
+      ]
+    },
+    "decision": "separated_pulses_rejected"
+  }
+}

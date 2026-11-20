@@ -1,0 +1,101 @@
+{
+  "shape": [
+    3,
+    24,
+    16,
+    2,
+    3,
+    4
+  ],
+  "voxels": 32768,
+  "word_bits": 32,
+  "transitions": 256,
+  "runtime_s": 18.855981999993674,
+  "peak_mlx_bytes": 141558328,
+  "frozen_checkpoints": {
+    "101": "ae2a23ea08ab472b835057a9da54a845ee35f68f841a20148f6ac3eae9335fd9",
+    "211": "077cc996a3ef0d988c774b2c1a74a91ee1d1ac5c31c1a953ba2067aa44c6f060",
+    "307": "05d814c3e9d768c48454fbaf694573c1b84a8a9d89f18be059e1887f7bc980d8"
+  },
+  "decision": "separated_pulses_rejected",
+  "per_stimulus": {
+    "separated": {
+      "single_hard": {
+        "after_valid_write": 1.0,
+        "after_fault_interval": 0.2975366910298665
+      },
+      "double_soft": {
+        "after_valid_write": 1.0,
+        "after_fault_interval": 0.9878548516167535
+      },
+      "double_hard": {
+        "after_valid_write": 1.0,
+        "after_fault_interval": 1.0
+      }
+    },
+    "bundled": {
+      "single_hard": {
+        "after_valid_write": 1.0,
+        "after_fault_interval": 0.29913918177286786
+      },
+      "double_soft": {
+        "after_valid_write": 1.0,
+        "after_fault_interval": 0.29913918177286786
+      },
+      "double_hard": {
+        "after_valid_write": 1.0,
+        "after_fault_interval": 0.29913918177286786
+      }
+    }
+  },
+  "double_minus_single_separated": {
+    "mean": 0.7024633089701335,
+    "interval": [
+      0.6990973035494485,
+      0.7057126720746358
+    ]
+  },
+  "soft_competitive_separated": true,
+  "counts": [
+    [
+      [
+        2362782,
+        2362782,
+        18874368,
+        5615817
+      ],
+      [
+        2362782,
+        2362782,
+        18874368,
+        18645136
+      ],
+      [
+        2362782,
+        2362782,
+        18874368,
+        18874368
+      ]
+    ],
+    [
+      [
+        2362782,
+        2362782,
+        18874368,
+        5646063
+      ],
+      [
+        2362782,
+        2362782,
+        18874368,
+        5646063
+      ],
+      [
+        2362782,
+        2362782,
+        18874368,
+        5646063
+      ]
+    ]
+  ]
+}
