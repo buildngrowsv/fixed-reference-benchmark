@@ -12,6 +12,8 @@ The new comparison explicitly blocks the exact mechanism Boucher identified. A v
 
 **Two hosts and two alias hops.** One reconstructed frozen router worked in convolutional and GRU hosts on held-out 60-write programs. It substantially beat from-scratch routers with matching target supervision. Independent native locators with matched one-hop pretraining and target adaptation beat the graft by 10.0–10.5 points across all four fits. These controls bound the claimed portability to reuse under a short target budget. [Cross-host test](register_routing/chain_study/README.md) Allowing the identical starting donor to adapt recovered 10.26–10.90 points and reached within the preset margin in all four comparisons. Link-edit reliability stayed below 90%. [Controlled follow-up](register_routing/chain_study/adaptation/README.md)
 
+**Paired training and readout.** Matched edit supervision cost clean accuracy and failed both edit thresholds. Direct reading from the clean-only locator’s top write produced materially better results in this structured setting. Its conditional current-edit point estimates exceeded 90%, with intervals crossing 90% and unconditional accuracy below that mark. [Paired study and post hoc diagnostic](register_routing/chain_study/paired_edits/README.md)
+
 ## Other findings
 
 | Study | What the evidence supports | Closest work or decisive control |

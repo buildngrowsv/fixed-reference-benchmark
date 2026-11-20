@@ -1,0 +1,1703 @@
+{
+  "decision": "complete",
+  "qualifies": false,
+  "fits": {
+    "convolution-503": {
+      "held_out": {
+        "scores": {
+          "donor_clean": {
+            "clean": 0.68841552734375,
+            "edits": {
+              "current": {
+                "conditional": 0.7228381374722838,
+                "clean_correct": 1353,
+                "both_correct": 978,
+                "unconditional": 0.6962890625,
+                "edit_correct": 1426,
+                "interval": [
+                  0.6968556072310136,
+                  0.7483349335537438
+                ]
+              },
+              "stale": {
+                "conditional": 0.8994826311899483,
+                "clean_correct": 1353,
+                "both_correct": 1217,
+                "unconditional": 0.68115234375,
+                "edit_correct": 1395,
+                "interval": [
+                  0.8827890491138719,
+                  0.9151926940290916
+                ]
+              }
+            }
+          },
+          "donor_paired": {
+            "clean": 0.68060302734375,
+            "edits": {
+              "current": {
+                "conditional": 0.713229859571323,
+                "clean_correct": 1353,
+                "both_correct": 965,
+                "unconditional": 0.68359375,
+                "edit_correct": 1400,
+                "interval": [
+                  0.6869880394375303,
+                  0.7378497790868925
+                ]
+              },
+              "stale": {
+                "conditional": 0.8780487804878049,
+                "clean_correct": 1353,
+                "both_correct": 1188,
+                "unconditional": 0.66259765625,
+                "edit_correct": 1357,
+                "interval": [
+                  0.8597906904144904,
+                  0.896025742745893
+                ]
+              }
+            }
+          },
+          "scratch_clean": {
+            "clean": 0.02301025390625,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 62,
+                "both_correct": 0,
+                "unconditional": 0.0234375,
+                "edit_correct": 48,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 62,
+                "both_correct": 62,
+                "unconditional": 0.0302734375,
+                "edit_correct": 62,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "scratch_paired": {
+            "clean": 0.02423095703125,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 47,
+                "both_correct": 0,
+                "unconditional": 0.02294921875,
+                "edit_correct": 47,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 47,
+                "both_correct": 47,
+                "unconditional": 0.02294921875,
+                "edit_correct": 47,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "pretrained_clean": {
+            "clean": 0.6844482421875,
+            "edits": {
+              "current": {
+                "conditional": 0.7218100890207715,
+                "clean_correct": 1348,
+                "both_correct": 973,
+                "unconditional": 0.69287109375,
+                "edit_correct": 1419,
+                "interval": [
+                  0.6960319169487929,
+                  0.7472781806786643
+                ]
+              },
+              "stale": {
+                "conditional": 0.8983679525222552,
+                "clean_correct": 1348,
+                "both_correct": 1211,
+                "unconditional": 0.6787109375,
+                "edit_correct": 1390,
+                "interval": [
+                  0.88131776089897,
+                  0.9143944512694513
+                ]
+              }
+            }
+          },
+          "pretrained_paired": {
+            "clean": 0.67742919921875,
+            "edits": {
+              "current": {
+                "conditional": 0.7110945644080418,
+                "clean_correct": 1343,
+                "both_correct": 955,
+                "unconditional": 0.6796875,
+                "edit_correct": 1392,
+                "interval": [
+                  0.684697248609254,
+                  0.7356069252912036
+                ]
+              },
+              "stale": {
+                "conditional": 0.8734177215189873,
+                "clean_correct": 1343,
+                "both_correct": 1173,
+                "unconditional": 0.65869140625,
+                "edit_correct": 1349,
+                "interval": [
+                  0.8551511146018392,
+                  0.891971312420558
+                ]
+              }
+            }
+          }
+        },
+        "changes": {
+          "donor": {
+            "delta": -0.0078125,
+            "interval": [
+              -0.01129150390625,
+              -0.004150390625
+            ]
+          },
+          "scratch": {
+            "delta": 0.001220703125,
+            "interval": [
+              -0.00146484375,
+              0.00390625
+            ]
+          },
+          "pretrained": {
+            "delta": -0.00701904296875,
+            "interval": [
+              -0.01068115234375,
+              -0.0032943725585937444
+            ]
+          }
+        },
+        "donor_vs_paired_native": {
+          "scratch": {
+            "delta": 0.6563720703125,
+            "interval": [
+              0.6483154296875,
+              0.6641845703125
+            ]
+          },
+          "pretrained": {
+            "delta": 0.003173828125,
+            "interval": [
+              0.00225830078125,
+              0.004150390625
+            ]
+          }
+        },
+        "qualifies": false
+      },
+      "original_panel": {
+        "scores": {
+          "donor_clean": {
+            "clean": 0.69744873046875,
+            "edits": {
+              "current": {
+                "conditional": 0.7532917532917532,
+                "clean_correct": 1443,
+                "both_correct": 1087,
+                "unconditional": 0.71875,
+                "edit_correct": 1472,
+                "interval": [
+                  0.729953986107683,
+                  0.7767545556520444
+                ]
+              },
+              "stale": {
+                "conditional": 0.8856548856548857,
+                "clean_correct": 1443,
+                "both_correct": 1278,
+                "unconditional": 0.69140625,
+                "edit_correct": 1416,
+                "interval": [
+                  0.8681372390532804,
+                  0.9025072722174488
+                ]
+              }
+            }
+          },
+          "donor_paired": {
+            "clean": 0.690185546875,
+            "edits": {
+              "current": {
+                "conditional": 0.7317415730337079,
+                "clean_correct": 1424,
+                "both_correct": 1042,
+                "unconditional": 0.70458984375,
+                "edit_correct": 1443,
+                "interval": [
+                  0.707466767752263,
+                  0.7553576839951314
+                ]
+              },
+              "stale": {
+                "conditional": 0.8827247191011236,
+                "clean_correct": 1424,
+                "both_correct": 1257,
+                "unconditional": 0.68896484375,
+                "edit_correct": 1411,
+                "interval": [
+                  0.864843570574691,
+                  0.900775130610715
+                ]
+              }
+            }
+          },
+          "scratch_clean": {
+            "clean": 0.02447509765625,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 60,
+                "both_correct": 0,
+                "unconditional": 0.03125,
+                "edit_correct": 64,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 60,
+                "both_correct": 60,
+                "unconditional": 0.029296875,
+                "edit_correct": 60,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "scratch_paired": {
+            "clean": 0.02532958984375,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 51,
+                "both_correct": 0,
+                "unconditional": 0.02490234375,
+                "edit_correct": 51,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 51,
+                "both_correct": 51,
+                "unconditional": 0.02490234375,
+                "edit_correct": 51,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "pretrained_clean": {
+            "clean": 0.69366455078125,
+            "edits": {
+              "current": {
+                "conditional": 0.7526205450733753,
+                "clean_correct": 1431,
+                "both_correct": 1077,
+                "unconditional": 0.71630859375,
+                "edit_correct": 1467,
+                "interval": [
+                  0.7294415330588735,
+                  0.7760058226618785
+                ]
+              },
+              "stale": {
+                "conditional": 0.8839972047519218,
+                "clean_correct": 1431,
+                "both_correct": 1265,
+                "unconditional": 0.6904296875,
+                "edit_correct": 1414,
+                "interval": [
+                  0.8665242698643353,
+                  0.9013120249558826
+                ]
+              }
+            }
+          },
+          "pretrained_paired": {
+            "clean": 0.68707275390625,
+            "edits": {
+              "current": {
+                "conditional": 0.7287535410764873,
+                "clean_correct": 1412,
+                "both_correct": 1029,
+                "unconditional": 0.70166015625,
+                "edit_correct": 1437,
+                "interval": [
+                  0.7041326860638676,
+                  0.7526964887193076
+                ]
+              },
+              "stale": {
+                "conditional": 0.8796033994334278,
+                "clean_correct": 1412,
+                "both_correct": 1242,
+                "unconditional": 0.685546875,
+                "edit_correct": 1404,
+                "interval": [
+                  0.8616651002622185,
+                  0.8974553534696564
+                ]
+              }
+            }
+          }
+        },
+        "changes": {
+          "donor": {
+            "delta": -0.00726318359375,
+            "interval": [
+              -0.0113525390625,
+              -0.00335693359375
+            ]
+          },
+          "scratch": {
+            "delta": 0.0008544921875,
+            "interval": [
+              -0.001953125,
+              0.00347900390625
+            ]
+          },
+          "pretrained": {
+            "delta": -0.006591796875,
+            "interval": [
+              -0.0106201171875,
+              -0.00262451171875
+            ]
+          }
+        },
+        "donor_vs_paired_native": {
+          "scratch": {
+            "delta": 0.66485595703125,
+            "interval": [
+              0.656982421875,
+              0.6727294921875
+            ]
+          },
+          "pretrained": {
+            "delta": 0.00311279296875,
+            "interval": [
+              0.00213623046875,
+              0.00408935546875
+            ]
+          }
+        },
+        "qualifies": false
+      },
+      "archived_hashes": {
+        "chain_study": "48b3c7834fac75408992ed8980b7b98220aebc615f4d9074c0a83b32d1d5cadb",
+        "adaptation": "ab82dd5cd9b2b922332854df86af7a1940f530444a85f66006457c2a0eb087d3"
+      },
+      "matched_initial_router_sha256": {
+        "donor": "6486973d7cc79e399cda256f3f47f6247491e676bce3eae52281f6119e097e6a",
+        "scratch": "d5078219eb33c10a63cf8dde64deaabe275d0caa9ba0325b135992475ee6a86c",
+        "pretrained": "5995a14ceef012495b56e5bb54d947ab8aba10ebbd19e1ef80b790e69438856a"
+      }
+    },
+    "recurrent-503": {
+      "held_out": {
+        "scores": {
+          "donor_clean": {
+            "clean": 0.73681640625,
+            "edits": {
+              "current": {
+                "conditional": 0.7745429925524713,
+                "clean_correct": 1477,
+                "both_correct": 1144,
+                "unconditional": 0.74365234375,
+                "edit_correct": 1523,
+                "interval": [
+                  0.7510400072877537,
+                  0.7976606115131524
+                ]
+              },
+              "stale": {
+                "conditional": 0.8950575490859851,
+                "clean_correct": 1477,
+                "both_correct": 1322,
+                "unconditional": 0.716796875,
+                "edit_correct": 1468,
+                "interval": [
+                  0.8782430836540024,
+                  0.9111703150466679
+                ]
+              }
+            }
+          },
+          "donor_paired": {
+            "clean": 0.73199462890625,
+            "edits": {
+              "current": {
+                "conditional": 0.7665764546684709,
+                "clean_correct": 1478,
+                "both_correct": 1133,
+                "unconditional": 0.7353515625,
+                "edit_correct": 1506,
+                "interval": [
+                  0.7421055431452757,
+                  0.7905091586756778
+                ]
+              },
+              "stale": {
+                "conditional": 0.8890392422192152,
+                "clean_correct": 1478,
+                "both_correct": 1314,
+                "unconditional": 0.71435546875,
+                "edit_correct": 1463,
+                "interval": [
+                  0.872701622418879,
+                  0.9057395528762443
+                ]
+              }
+            }
+          },
+          "scratch_clean": {
+            "clean": 0.02532958984375,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 59,
+                "both_correct": 0,
+                "unconditional": 0.03076171875,
+                "edit_correct": 63,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 59,
+                "both_correct": 59,
+                "unconditional": 0.02880859375,
+                "edit_correct": 59,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "scratch_paired": {
+            "clean": 0.0242919921875,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 61,
+                "both_correct": 0,
+                "unconditional": 0.02783203125,
+                "edit_correct": 57,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 61,
+                "both_correct": 61,
+                "unconditional": 0.02978515625,
+                "edit_correct": 61,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "pretrained_clean": {
+            "clean": 0.73394775390625,
+            "edits": {
+              "current": {
+                "conditional": 0.7693351424694709,
+                "clean_correct": 1474,
+                "both_correct": 1134,
+                "unconditional": 0.73876953125,
+                "edit_correct": 1513,
+                "interval": [
+                  0.7453905730046209,
+                  0.7931040291848686
+                ]
+              },
+              "stale": {
+                "conditional": 0.89280868385346,
+                "clean_correct": 1474,
+                "both_correct": 1316,
+                "unconditional": 0.7138671875,
+                "edit_correct": 1462,
+                "interval": [
+                  0.8758524301624036,
+                  0.90921880281321
+                ]
+              }
+            }
+          },
+          "pretrained_paired": {
+            "clean": 0.7294921875,
+            "edits": {
+              "current": {
+                "conditional": 0.763550135501355,
+                "clean_correct": 1476,
+                "both_correct": 1127,
+                "unconditional": 0.732421875,
+                "edit_correct": 1500,
+                "interval": [
+                  0.7391612887625154,
+                  0.7873967964168795
+                ]
+              },
+              "stale": {
+                "conditional": 0.8841463414634146,
+                "clean_correct": 1476,
+                "both_correct": 1305,
+                "unconditional": 0.71044921875,
+                "edit_correct": 1455,
+                "interval": [
+                  0.8669328010645376,
+                  0.9011603034001068
+                ]
+              }
+            }
+          }
+        },
+        "changes": {
+          "donor": {
+            "delta": -0.00482177734375,
+            "interval": [
+              -0.00799560546875,
+              -0.0015869140625
+            ]
+          },
+          "scratch": {
+            "delta": -0.00103759765625,
+            "interval": [
+              -0.0035400390625,
+              0.00146484375
+            ]
+          },
+          "pretrained": {
+            "delta": -0.00445556640625,
+            "interval": [
+              -0.0076904296875,
+              -0.00115966796875
+            ]
+          }
+        },
+        "donor_vs_paired_native": {
+          "scratch": {
+            "delta": 0.70770263671875,
+            "interval": [
+              0.69940185546875,
+              0.7156982421875
+            ]
+          },
+          "pretrained": {
+            "delta": 0.00250244140625,
+            "interval": [
+              0.00164794921875,
+              0.00335693359375
+            ]
+          }
+        },
+        "qualifies": false
+      },
+      "original_panel": {
+        "scores": {
+          "donor_clean": {
+            "clean": 0.73760986328125,
+            "edits": {
+              "current": {
+                "conditional": 0.797225891677675,
+                "clean_correct": 1514,
+                "both_correct": 1207,
+                "unconditional": 0.76025390625,
+                "edit_correct": 1557,
+                "interval": [
+                  0.7753859521342902,
+                  0.8189666397270116
+                ]
+              },
+              "stale": {
+                "conditional": 0.8969616908850726,
+                "clean_correct": 1514,
+                "both_correct": 1358,
+                "unconditional": 0.7373046875,
+                "edit_correct": 1510,
+                "interval": [
+                  0.8802956571352065,
+                  0.9131905353924767
+                ]
+              }
+            }
+          },
+          "donor_paired": {
+            "clean": 0.73138427734375,
+            "edits": {
+              "current": {
+                "conditional": 0.7923898531375166,
+                "clean_correct": 1498,
+                "both_correct": 1187,
+                "unconditional": 0.7587890625,
+                "edit_correct": 1554,
+                "interval": [
+                  0.7706963406001887,
+                  0.8140774485948823
+                ]
+              },
+              "stale": {
+                "conditional": 0.9018691588785047,
+                "clean_correct": 1498,
+                "both_correct": 1351,
+                "unconditional": 0.728515625,
+                "edit_correct": 1492,
+                "interval": [
+                  0.8847670148080554,
+                  0.9179207689122465
+                ]
+              }
+            }
+          },
+          "scratch_clean": {
+            "clean": 0.0224609375,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 47,
+                "both_correct": 0,
+                "unconditional": 0.03125,
+                "edit_correct": 64,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 47,
+                "both_correct": 47,
+                "unconditional": 0.02294921875,
+                "edit_correct": 47,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "scratch_paired": {
+            "clean": 0.02362060546875,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 44,
+                "both_correct": 0,
+                "unconditional": 0.03125,
+                "edit_correct": 64,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 44,
+                "both_correct": 44,
+                "unconditional": 0.021484375,
+                "edit_correct": 44,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "pretrained_clean": {
+            "clean": 0.73455810546875,
+            "edits": {
+              "current": {
+                "conditional": 0.7957559681697612,
+                "clean_correct": 1508,
+                "both_correct": 1200,
+                "unconditional": 0.75732421875,
+                "edit_correct": 1551,
+                "interval": [
+                  0.7739128949869327,
+                  0.818184810581124
+                ]
+              },
+              "stale": {
+                "conditional": 0.8945623342175066,
+                "clean_correct": 1508,
+                "both_correct": 1349,
+                "unconditional": 0.73486328125,
+                "edit_correct": 1505,
+                "interval": [
+                  0.8774680230674529,
+                  0.9107388275291093
+                ]
+              }
+            }
+          },
+          "pretrained_paired": {
+            "clean": 0.72857666015625,
+            "edits": {
+              "current": {
+                "conditional": 0.7862391449565799,
+                "clean_correct": 1497,
+                "both_correct": 1177,
+                "unconditional": 0.75439453125,
+                "edit_correct": 1545,
+                "interval": [
+                  0.764473618552369,
+                  0.8085123937925707
+                ]
+              },
+              "stale": {
+                "conditional": 0.9011356045424181,
+                "clean_correct": 1497,
+                "both_correct": 1349,
+                "unconditional": 0.72509765625,
+                "edit_correct": 1485,
+                "interval": [
+                  0.8846678250905062,
+                  0.917163784162095
+                ]
+              }
+            }
+          }
+        },
+        "changes": {
+          "donor": {
+            "delta": -0.0062255859375,
+            "interval": [
+              -0.009521484375,
+              -0.00299072265625
+            ]
+          },
+          "scratch": {
+            "delta": 0.00115966796875,
+            "interval": [
+              -0.00128173828125,
+              0.003662109375
+            ]
+          },
+          "pretrained": {
+            "delta": -0.0059814453125,
+            "interval": [
+              -0.00927734375,
+              -0.002685546875
+            ]
+          }
+        },
+        "donor_vs_paired_native": {
+          "scratch": {
+            "delta": 0.707763671875,
+            "interval": [
+              0.7001953125,
+              0.7153945922851562
+            ]
+          },
+          "pretrained": {
+            "delta": 0.0028076171875,
+            "interval": [
+              0.001953125,
+              0.00372314453125
+            ]
+          }
+        },
+        "qualifies": false
+      },
+      "archived_hashes": {
+        "chain_study": "59d743f858c9482a39748e74d066009e1978375bc4c94b253e770e682e42c738",
+        "adaptation": "f28f90e144a57fca21c82a11f84715c86bd47515882a897f541415f4d7ba6513"
+      },
+      "matched_initial_router_sha256": {
+        "donor": "6486973d7cc79e399cda256f3f47f6247491e676bce3eae52281f6119e097e6a",
+        "scratch": "d5078219eb33c10a63cf8dde64deaabe275d0caa9ba0325b135992475ee6a86c",
+        "pretrained": "5995a14ceef012495b56e5bb54d947ab8aba10ebbd19e1ef80b790e69438856a"
+      }
+    },
+    "convolution-607": {
+      "held_out": {
+        "scores": {
+          "donor_clean": {
+            "clean": 0.68878173828125,
+            "edits": {
+              "current": {
+                "conditional": 0.6967095851216023,
+                "clean_correct": 1398,
+                "both_correct": 974,
+                "unconditional": 0.67626953125,
+                "edit_correct": 1385,
+                "interval": [
+                  0.6695170107937852,
+                  0.7219887955182073
+                ]
+              },
+              "stale": {
+                "conditional": 0.8862660944206009,
+                "clean_correct": 1398,
+                "both_correct": 1239,
+                "unconditional": 0.689453125,
+                "edit_correct": 1412,
+                "interval": [
+                  0.8682541299305205,
+                  0.9038322613316
+                ]
+              }
+            }
+          },
+          "donor_paired": {
+            "clean": 0.67559814453125,
+            "edits": {
+              "current": {
+                "conditional": 0.6939078751857355,
+                "clean_correct": 1346,
+                "both_correct": 934,
+                "unconditional": 0.66845703125,
+                "edit_correct": 1369,
+                "interval": [
+                  0.6664200908675277,
+                  0.7196545504409096
+                ]
+              },
+              "stale": {
+                "conditional": 0.8803863298662704,
+                "clean_correct": 1346,
+                "both_correct": 1185,
+                "unconditional": 0.66357421875,
+                "edit_correct": 1359,
+                "interval": [
+                  0.8617812636888714,
+                  0.8979135618479881
+                ]
+              }
+            }
+          },
+          "scratch_clean": {
+            "clean": 0.02484130859375,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 45,
+                "both_correct": 0,
+                "unconditional": 0.0185546875,
+                "edit_correct": 38,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 45,
+                "both_correct": 45,
+                "unconditional": 0.02197265625,
+                "edit_correct": 45,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "scratch_paired": {
+            "clean": 0.0235595703125,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 39,
+                "both_correct": 0,
+                "unconditional": 0.0185546875,
+                "edit_correct": 38,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 39,
+                "both_correct": 39,
+                "unconditional": 0.01904296875,
+                "edit_correct": 39,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "pretrained_clean": {
+            "clean": 0.68707275390625,
+            "edits": {
+              "current": {
+                "conditional": 0.6941260744985673,
+                "clean_correct": 1396,
+                "both_correct": 969,
+                "unconditional": 0.67431640625,
+                "edit_correct": 1381,
+                "interval": [
+                  0.666897490530303,
+                  0.7198860688638288
+                ]
+              },
+              "stale": {
+                "conditional": 0.8846704871060171,
+                "clean_correct": 1396,
+                "both_correct": 1235,
+                "unconditional": 0.6884765625,
+                "edit_correct": 1410,
+                "interval": [
+                  0.8667125058768218,
+                  0.9024220051228585
+                ]
+              }
+            }
+          },
+          "pretrained_paired": {
+            "clean": 0.6729736328125,
+            "edits": {
+              "current": {
+                "conditional": 0.6902457185405808,
+                "clean_correct": 1343,
+                "both_correct": 927,
+                "unconditional": 0.666015625,
+                "edit_correct": 1364,
+                "interval": [
+                  0.66284227884551,
+                  0.7162281621243886
+                ]
+              },
+              "stale": {
+                "conditional": 0.8801191362620998,
+                "clean_correct": 1343,
+                "both_correct": 1182,
+                "unconditional": 0.6611328125,
+                "edit_correct": 1354,
+                "interval": [
+                  0.8616852263768442,
+                  0.8975906895556081
+                ]
+              }
+            }
+          }
+        },
+        "changes": {
+          "donor": {
+            "delta": -0.01318359375,
+            "interval": [
+              -0.01708984375,
+              -0.00927734375
+            ]
+          },
+          "scratch": {
+            "delta": -0.00128173828125,
+            "interval": [
+              -0.003662109375,
+              0.00115966796875
+            ]
+          },
+          "pretrained": {
+            "delta": -0.01409912109375,
+            "interval": [
+              -0.01788330078125,
+              -0.01025390625
+            ]
+          }
+        },
+        "donor_vs_paired_native": {
+          "scratch": {
+            "delta": 0.65203857421875,
+            "interval": [
+              0.6439208984375,
+              0.6599746704101562
+            ]
+          },
+          "pretrained": {
+            "delta": 0.00262451171875,
+            "interval": [
+              0.0018310546875,
+              0.00341796875
+            ]
+          }
+        },
+        "qualifies": false
+      },
+      "original_panel": {
+        "scores": {
+          "donor_clean": {
+            "clean": 0.6917724609375,
+            "edits": {
+              "current": {
+                "conditional": 0.7282453637660485,
+                "clean_correct": 1402,
+                "both_correct": 1021,
+                "unconditional": 0.70166015625,
+                "edit_correct": 1437,
+                "interval": [
+                  0.7033837293016558,
+                  0.7526814579563461
+                ]
+              },
+              "stale": {
+                "conditional": 0.8922967189728959,
+                "clean_correct": 1402,
+                "both_correct": 1251,
+                "unconditional": 0.689453125,
+                "edit_correct": 1412,
+                "interval": [
+                  0.875174856527977,
+                  0.9093485959978388
+                ]
+              }
+            }
+          },
+          "donor_paired": {
+            "clean": 0.67913818359375,
+            "edits": {
+              "current": {
+                "conditional": 0.7099347353154459,
+                "clean_correct": 1379,
+                "both_correct": 979,
+                "unconditional": 0.6796875,
+                "edit_correct": 1392,
+                "interval": [
+                  0.6850022117117712,
+                  0.7352732620320855
+                ]
+              },
+              "stale": {
+                "conditional": 0.873821609862219,
+                "clean_correct": 1379,
+                "both_correct": 1205,
+                "unconditional": 0.67626953125,
+                "edit_correct": 1385,
+                "interval": [
+                  0.8555706533026509,
+                  0.8914159941305942
+                ]
+              }
+            }
+          },
+          "scratch_clean": {
+            "clean": 0.02374267578125,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 42,
+                "both_correct": 0,
+                "unconditional": 0.025390625,
+                "edit_correct": 52,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 42,
+                "both_correct": 42,
+                "unconditional": 0.0205078125,
+                "edit_correct": 42,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "scratch_paired": {
+            "clean": 0.0240478515625,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 37,
+                "both_correct": 0,
+                "unconditional": 0.02783203125,
+                "edit_correct": 57,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 37,
+                "both_correct": 37,
+                "unconditional": 0.01806640625,
+                "edit_correct": 37,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "pretrained_clean": {
+            "clean": 0.68975830078125,
+            "edits": {
+              "current": {
+                "conditional": 0.7257142857142858,
+                "clean_correct": 1400,
+                "both_correct": 1016,
+                "unconditional": 0.69873046875,
+                "edit_correct": 1431,
+                "interval": [
+                  0.7009275821382234,
+                  0.7503658890916043
+                ]
+              },
+              "stale": {
+                "conditional": 0.8885714285714286,
+                "clean_correct": 1400,
+                "both_correct": 1244,
+                "unconditional": 0.685546875,
+                "edit_correct": 1404,
+                "interval": [
+                  0.8711339278424737,
+                  0.9061829760162861
+                ]
+              }
+            }
+          },
+          "pretrained_paired": {
+            "clean": 0.676513671875,
+            "edits": {
+              "current": {
+                "conditional": 0.705753823743627,
+                "clean_correct": 1373,
+                "both_correct": 969,
+                "unconditional": 0.67724609375,
+                "edit_correct": 1387,
+                "interval": [
+                  0.6805552927075448,
+                  0.731255459570836
+                ]
+              },
+              "stale": {
+                "conditional": 0.8739985433357611,
+                "clean_correct": 1373,
+                "both_correct": 1200,
+                "unconditional": 0.6748046875,
+                "edit_correct": 1382,
+                "interval": [
+                  0.8559190070567545,
+                  0.8918129175251296
+                ]
+              }
+            }
+          }
+        },
+        "changes": {
+          "donor": {
+            "delta": -0.01263427734375,
+            "interval": [
+              -0.0164794921875,
+              -0.008787536621093744
+            ]
+          },
+          "scratch": {
+            "delta": 0.00030517578125,
+            "interval": [
+              -0.00213623046875,
+              0.00262451171875
+            ]
+          },
+          "pretrained": {
+            "delta": -0.01324462890625,
+            "interval": [
+              -0.01715087890625,
+              -0.00933837890625
+            ]
+          }
+        },
+        "donor_vs_paired_native": {
+          "scratch": {
+            "delta": 0.65509033203125,
+            "interval": [
+              0.64691162109375,
+              0.66326904296875
+            ]
+          },
+          "pretrained": {
+            "delta": 0.00262451171875,
+            "interval": [
+              0.00177001953125,
+              0.00347900390625
+            ]
+          }
+        },
+        "qualifies": false
+      },
+      "archived_hashes": {
+        "chain_study": "9c893c1460a3122133093f27c4394618dd0d38b40eeb0637f0642decd0d0ac7f",
+        "adaptation": "2c877938a4a971f949e9d2f908b69c960689a35da5d2a772b68a3fb5c5b3150c"
+      },
+      "matched_initial_router_sha256": {
+        "donor": "6486973d7cc79e399cda256f3f47f6247491e676bce3eae52281f6119e097e6a",
+        "scratch": "54c7f086b4a2a255390ac996c3636af5e453919d37d80395e10219aef09d56ea",
+        "pretrained": "7a6c4ee9566a50066b41df661ab98535ff5815dc3c16e23b7ef3e94434be5bea"
+      }
+    },
+    "recurrent-607": {
+      "held_out": {
+        "scores": {
+          "donor_clean": {
+            "clean": 0.7393798828125,
+            "edits": {
+              "current": {
+                "conditional": 0.7560160427807486,
+                "clean_correct": 1496,
+                "both_correct": 1131,
+                "unconditional": 0.72314453125,
+                "edit_correct": 1481,
+                "interval": [
+                  0.7322256349082477,
+                  0.7797635723702797
+                ]
+              },
+              "stale": {
+                "conditional": 0.8977272727272727,
+                "clean_correct": 1496,
+                "both_correct": 1343,
+                "unconditional": 0.740234375,
+                "edit_correct": 1516,
+                "interval": [
+                  0.8813644641557284,
+                  0.9139465217248657
+                ]
+              }
+            }
+          },
+          "donor_paired": {
+            "clean": 0.72772216796875,
+            "edits": {
+              "current": {
+                "conditional": 0.7399864222674813,
+                "clean_correct": 1473,
+                "both_correct": 1090,
+                "unconditional": 0.71044921875,
+                "edit_correct": 1455,
+                "interval": [
+                  0.716233248852179,
+                  0.763662710953102
+                ]
+              },
+              "stale": {
+                "conditional": 0.8920570264765784,
+                "clean_correct": 1473,
+                "both_correct": 1314,
+                "unconditional": 0.72998046875,
+                "edit_correct": 1495,
+                "interval": [
+                  0.8752534732916566,
+                  0.9084224598930482
+                ]
+              }
+            }
+          },
+          "scratch_clean": {
+            "clean": 0.02301025390625,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 54,
+                "both_correct": 0,
+                "unconditional": 0.02685546875,
+                "edit_correct": 55,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 54,
+                "both_correct": 54,
+                "unconditional": 0.0263671875,
+                "edit_correct": 54,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "scratch_paired": {
+            "clean": 0.02276611328125,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 41,
+                "both_correct": 0,
+                "unconditional": 0.02099609375,
+                "edit_correct": 43,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 41,
+                "both_correct": 41,
+                "unconditional": 0.02001953125,
+                "edit_correct": 41,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "pretrained_clean": {
+            "clean": 0.73736572265625,
+            "edits": {
+              "current": {
+                "conditional": 0.7548559946416611,
+                "clean_correct": 1493,
+                "both_correct": 1127,
+                "unconditional": 0.7216796875,
+                "edit_correct": 1478,
+                "interval": [
+                  0.7311319192802699,
+                  0.7789115646258503
+                ]
+              },
+              "stale": {
+                "conditional": 0.8975217682518419,
+                "clean_correct": 1493,
+                "both_correct": 1340,
+                "unconditional": 0.73876953125,
+                "edit_correct": 1513,
+                "interval": [
+                  0.8813440329218106,
+                  0.9137469074647022
+                ]
+              }
+            }
+          },
+          "pretrained_paired": {
+            "clean": 0.72601318359375,
+            "edits": {
+              "current": {
+                "conditional": 0.7382413087934561,
+                "clean_correct": 1467,
+                "both_correct": 1083,
+                "unconditional": 0.70849609375,
+                "edit_correct": 1451,
+                "interval": [
+                  0.7139943879345557,
+                  0.7623698465526989
+                ]
+              },
+              "stale": {
+                "conditional": 0.8916155419222904,
+                "clean_correct": 1467,
+                "both_correct": 1308,
+                "unconditional": 0.7275390625,
+                "edit_correct": 1490,
+                "interval": [
+                  0.8748250496428259,
+                  0.9080303977416176
+                ]
+              }
+            }
+          }
+        },
+        "changes": {
+          "donor": {
+            "delta": -0.01165771484375,
+            "interval": [
+              -0.0146484375,
+              -0.008544921875
+            ]
+          },
+          "scratch": {
+            "delta": -0.000244140625,
+            "interval": [
+              -0.0028076171875,
+              0.00225830078125
+            ]
+          },
+          "pretrained": {
+            "delta": -0.0113525390625,
+            "interval": [
+              -0.014404296875,
+              -0.008177185058593744
+            ]
+          }
+        },
+        "donor_vs_paired_native": {
+          "scratch": {
+            "delta": 0.7049560546875,
+            "interval": [
+              0.69720458984375,
+              0.712646484375
+            ]
+          },
+          "pretrained": {
+            "delta": 0.001708984375,
+            "interval": [
+              0.00103759765625,
+              0.00238037109375
+            ]
+          }
+        },
+        "qualifies": false
+      },
+      "original_panel": {
+        "scores": {
+          "donor_clean": {
+            "clean": 0.7352294921875,
+            "edits": {
+              "current": {
+                "conditional": 0.7479838709677419,
+                "clean_correct": 1488,
+                "both_correct": 1113,
+                "unconditional": 0.720703125,
+                "edit_correct": 1476,
+                "interval": [
+                  0.7244090508733578,
+                  0.7707622304084377
+                ]
+              },
+              "stale": {
+                "conditional": 0.8830645161290323,
+                "clean_correct": 1488,
+                "both_correct": 1314,
+                "unconditional": 0.71484375,
+                "edit_correct": 1464,
+                "interval": [
+                  0.8657217558210455,
+                  0.899729261941057
+                ]
+              }
+            }
+          },
+          "donor_paired": {
+            "clean": 0.72760009765625,
+            "edits": {
+              "current": {
+                "conditional": 0.744406779661017,
+                "clean_correct": 1475,
+                "both_correct": 1098,
+                "unconditional": 0.7177734375,
+                "edit_correct": 1470,
+                "interval": [
+                  0.7209294410055883,
+                  0.7676919864008113
+                ]
+              },
+              "stale": {
+                "conditional": 0.8833898305084745,
+                "clean_correct": 1475,
+                "both_correct": 1303,
+                "unconditional": 0.71484375,
+                "edit_correct": 1464,
+                "interval": [
+                  0.8664439721844863,
+                  0.9004694436233767
+                ]
+              }
+            }
+          },
+          "scratch_clean": {
+            "clean": 0.0238037109375,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 52,
+                "both_correct": 0,
+                "unconditional": 0.02001953125,
+                "edit_correct": 41,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 52,
+                "both_correct": 52,
+                "unconditional": 0.025390625,
+                "edit_correct": 52,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "scratch_paired": {
+            "clean": 0.0218505859375,
+            "edits": {
+              "current": {
+                "conditional": 0.0,
+                "clean_correct": 42,
+                "both_correct": 0,
+                "unconditional": 0.02490234375,
+                "edit_correct": 51,
+                "interval": [
+                  0.0,
+                  0.0
+                ]
+              },
+              "stale": {
+                "conditional": 1.0,
+                "clean_correct": 42,
+                "both_correct": 42,
+                "unconditional": 0.0205078125,
+                "edit_correct": 42,
+                "interval": [
+                  1.0,
+                  1.0
+                ]
+              }
+            }
+          },
+          "pretrained_clean": {
+            "clean": 0.73297119140625,
+            "edits": {
+              "current": {
+                "conditional": 0.7473045822102425,
+                "clean_correct": 1484,
+                "both_correct": 1109,
+                "unconditional": 0.7197265625,
+                "edit_correct": 1474,
+                "interval": [
+                  0.7238017644284778,
+                  0.7699011590280638
+                ]
+              },
+              "stale": {
+                "conditional": 0.8814016172506739,
+                "clean_correct": 1484,
+                "both_correct": 1308,
+                "unconditional": 0.71337890625,
+                "edit_correct": 1461,
+                "interval": [
+                  0.8641218562775693,
+                  0.8982159816192725
+                ]
+              }
+            }
+          },
+          "pretrained_paired": {
+            "clean": 0.7249755859375,
+            "edits": {
+              "current": {
+                "conditional": 0.7409925220938137,
+                "clean_correct": 1471,
+                "both_correct": 1090,
+                "unconditional": 0.7138671875,
+                "edit_correct": 1462,
+                "interval": [
+                  0.7174057723697878,
+                  0.7643844660009329
+                ]
+              },
+              "stale": {
+                "conditional": 0.8817131203263087,
+                "clean_correct": 1471,
+                "both_correct": 1297,
+                "unconditional": 0.712890625,
+                "edit_correct": 1460,
+                "interval": [
+                  0.8643718831844437,
+                  0.8989162316307522
+                ]
+              }
+            }
+          }
+        },
+        "changes": {
+          "donor": {
+            "delta": -0.00762939453125,
+            "interval": [
+              -0.010621643066406249,
+              -0.00457763671875
+            ]
+          },
+          "scratch": {
+            "delta": -0.001953125,
+            "interval": [
+              -0.00457763671875,
+              0.00054931640625
+            ]
+          },
+          "pretrained": {
+            "delta": -0.00799560546875,
+            "interval": [
+              -0.010986328125,
+              -0.0048828125
+            ]
+          }
+        },
+        "donor_vs_paired_native": {
+          "scratch": {
+            "delta": 0.70574951171875,
+            "interval": [
+              0.69781494140625,
+              0.7135025024414062
+            ]
+          },
+          "pretrained": {
+            "delta": 0.00262451171875,
+            "interval": [
+              0.0018310546875,
+              0.00347900390625
+            ]
+          }
+        },
+        "qualifies": false
+      },
+      "archived_hashes": {
+        "chain_study": "15536d7ada1e61e71dd4135c1d84ca286f85ec4ceba4dfd3dec6da5e1b4eb619",
+        "adaptation": "e37b3d0a15074f82efafb8ecc3034692cda1c0ef296854dad398ad55d49b3adb"
+      },
+      "matched_initial_router_sha256": {
+        "donor": "6486973d7cc79e399cda256f3f47f6247491e676bce3eae52281f6119e097e6a",
+        "scratch": "54c7f086b4a2a255390ac996c3636af5e453919d37d80395e10219aef09d56ea",
+        "pretrained": "7a6c4ee9566a50066b41df661ab98535ff5815dc3c16e23b7ef3e94434be5bea"
+      }
+    }
+  },
+  "clean_margin": 0.01,
+  "steps": 128,
+  "device": "Device(cpu, 0)",
+  "hardware": "Apple M5 Ultra",
+  "donor_witness_sha256": "8876ad242557fc3341643e502aaaf0b9a5aed31f29f46b50e513ecb71e5aa30d"
+}

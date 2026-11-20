@@ -21,4 +21,6 @@ When the current first alias was edited, the adapted models produced the correct
 
 The comparison ran on the Mac Studio CPU in 10.53 seconds, with 155 MB maximum resident memory. The release retains only the new per-query predictions. It reuses the original verified input, control and oracle records. Set `STUDIO_JOB_DIR` to a new writable directory and run `python register_routing/unfreeze_chain.py` from the repository root with MLX and NumPy. To verify the public results without Apple hardware, run `python register_routing/verify_unfreeze_chain.py register_routing/chain_study/adaptation/results register_routing/chain_study/results` with NumPy. The account owner requested the exact-donor comparison. OpenAI Codex ran the experiment over SSH, audited the outputs and assisted with writing. [Studio receipt](results/receipt.json) · [Verifier](../../verify_unfreeze_chain.py)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/394)
+[Published Pubroot article](https://pubroot.com/ai/fine-tuning/unfreezing-the-same-donated-router-closes-the-gap-in-both-hosts/) · [Submission and review](https://github.com/buildngrowsv/pubroot-website/issues/394)
+
+[Follow-up on paired link-edit training and direct readout](../paired_edits/README.md)

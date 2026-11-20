@@ -1,0 +1,42 @@
+{
+  "convolution-503": {
+    "programs": 1024,
+    "checked_counterfactuals": 2048,
+    "donor_clean": 0.68060302734375,
+    "donor_edits": {
+      "current": 0.713229859571323,
+      "stale": 0.8780487804878049
+    },
+    "qualified": false
+  },
+  "recurrent-503": {
+    "programs": 1024,
+    "checked_counterfactuals": 2048,
+    "donor_clean": 0.73199462890625,
+    "donor_edits": {
+      "current": 0.7665764546684709,
+      "stale": 0.8890392422192152
+    },
+    "qualified": false
+  },
+  "convolution-607": {
+    "programs": 1024,
+    "checked_counterfactuals": 2048,
+    "donor_clean": 0.67559814453125,
+    "donor_edits": {
+      "current": 0.6939078751857355,
+      "stale": 0.8803863298662704
+    },
+    "qualified": false
+  },
+  "recurrent-607": {
+    "programs": 1024,
+    "checked_counterfactuals": 2048,
+    "donor_clean": 0.72772216796875,
+    "donor_edits": {
+      "current": 0.7399864222674813,
+      "stale": 0.8920570264765784
+    },
+    "qualified": false
+  }
+}
