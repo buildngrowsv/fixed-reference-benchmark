@@ -49,3 +49,5 @@ Use Python 3.12 with MLX 0.32.4 and NumPy 2.5.5 on Apple Silicon. Run run.py, in
 [Regional witness routing](regional_witness_study/README.md) compares local and global decisions when different parts of a 96³ grid see different fault directions.
 
 [Inferring translated boundaries](inferred_regions_study/README.md) compares inferred, fixed and known regions at the same volume.
+
+[Limited-observation boundary inference](sparse_regions_study/README.md) changes the fields available to the location estimator and keeps the old controls paired.

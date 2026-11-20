@@ -86,6 +86,10 @@ In the smaller model, seven strict repairs disappeared in the first published do
 
 **Real-photo acquisition.** The DTU repetition cue gained 0.08 points on scan 1 and lost 2.54 on scan 6 versus the strongest fixed or gradient baseline. Retrospectively choosing the better camera had only 1.27 and 0.37 points of headroom over the best fixed direction. Close the current photo cue and matcher combination. [Real-photo pilot](https://github.com/buildngrowsv/parallax-depth-benchmark/blob/main/dtu/PILOT_RESULTS.md)
 
+**Limited observations of the boundaries.** The sparse location statistic used at most 2.08% of the detector field. It recovered 70.36% of words with shifted faults, compared with 71.78% full and 65.24% fixed. The paired lower bound versus full observation was −2.17 points, outside the registered two-point margin. [Audit and source](spatial_references/sparse_regions_study/README.md)
+
+**Subtraction qualification.** The 72B model solved both native operator variants in 27 of 64 groups, below the floor of 32. The transfer was not evaluated. A distinct matched test distinguishes whether the host reads the edited assignment. [Operator screening traces](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_carry_72b_study/operator_screen)
+
 ## What opens the other paths
 
 - **Expert surgery.** The off-the-shelf coding donor's semantic validation lead over a task-trained host was below the prespecified threshold and disappeared on final test. A specialized donor with a demonstrated advantage on an unsaturated task would justify another transplant. The small trained spatial write controller offers an auditable donor whose input-output rule is independently verifiable. First check whether a matched fresh controller can relearn the rule at the same budget. [Semantic qualification](https://github.com/buildngrowsv/routed-expert-splice/tree/d2062a8f88e4bb82f12c442461cd1bf601dd69dd/semantic)
