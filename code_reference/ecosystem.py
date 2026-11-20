@@ -82,8 +82,8 @@ def difference(a,b):
         draws.append(numer[sample].sum(1)/denom[sample].sum(1));means.append(float(diff[use].mean()))
     return dict(project_differences=means,macro=float(np.mean(means)),interval=np.quantile(np.mean(draws,axis=0),[.025,.975]).tolist())
 
-def train(model,arm,projects,rehearsal=None):
-    opt=optim.AdamW(lambda t:.0002*mx.minimum(1.,(t.astype(mx.float32)+1)/128),weight_decay=.03,bias_correction=True)
+def train(model,arm,projects,rehearsal=None,*,steps=STEPS,peak_rate=.0002,checkpoint_every=64):
+    opt=optim.AdamW(lambda t:peak_rate*mx.minimum(1.,(t.astype(mx.float32)+1)/128),weight_decay=.03,bias_correction=True)
     path=OUT/(arm+".safetensors")
     def objective(m,x,y):return nn.losses.cross_entropy(m(x,True),y,reduction="mean")
     start=restore(model,opt,path) if path.exists() else 0
@@ -92,17 +92,18 @@ def train(model,arm,projects,rehearsal=None):
     def step(x,y):
         loss,grad=vg(model,x,y);grad,_=optim.clip_grad_norm(grad,1.);opt.update(model,grad);return loss
     since=time.monotonic()
-    for t in range(start+1,STEPS+1):
+    for t in range(start+1,steps+1):
         rng=np.random.default_rng([638151,t]);names=projects.splits["adapt"]
         if rehearsal is not None and t%8==0:
             data,*_=rehearsal.batch("train",[629147,t],16)
         else:
             data,_,_=projects.sample(names[rng.integers(len(names))],rng,16)
         loss=step(mx.array(data[:,:-1]),mx.array(data[:,1:]));mx.eval(loss,state)
-        if t%64==0:
+        if t%64==0 or t==steps:
             if not np.isfinite(loss.item()):raise ValueError("nonfinite training loss")
-            snapshot(model,opt,t,path)
-            write("progress.json",dict(arm=arm,step=t,target=STEPS,time=time.time(),loss=loss.item(),tokens_per_second=(t-start)*8192/(time.monotonic()-since)))
+            if t%checkpoint_every==0 or t==steps:
+                snapshot(model,opt,t,path)
+            write("progress.json",dict(arm=arm,step=t,target=steps,time=time.time(),loss=loss.item(),tokens_per_second=(t-start)*8192/(time.monotonic()-since)))
 
 def main():
     smoke=sys.argv[1:]==["smoke"]

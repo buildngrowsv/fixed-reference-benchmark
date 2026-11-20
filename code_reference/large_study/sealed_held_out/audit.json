@@ -1,0 +1,102 @@
+{
+  "validation": {
+    "panel": "validation",
+    "windows": 1024,
+    "packages": 42,
+    "models": {
+      "sealed": {
+        "bpb": 0.9979549081242909,
+        "accuracy": 0.8178539276123047,
+        "repeated_identifier_bpb": 0.08747469279513698
+      },
+      "working": {
+        "bpb": 0.9964822161687715,
+        "accuracy": 0.8183422088623047,
+        "repeated_identifier_bpb": 0.08937907811634466
+      },
+      "readable": {
+        "bpb": 1.002804849670735,
+        "accuracy": 0.8184490203857422,
+        "repeated_identifier_bpb": 0.08375758331709894
+      }
+    },
+    "contrasts": {
+      "sealed_minus_readable": {
+        "delta": -0.0048499415464439595,
+        "interval": [
+          -0.010882767222358761,
+          -0.0013723016146349768
+        ],
+        "packages": 42
+      },
+      "sealed_minus_working": {
+        "delta": 0.0014726919555194244,
+        "interval": [
+          -0.0046159819247137334,
+          0.005362969125497159
+        ],
+        "packages": 42
+      }
+    }
+  },
+  "test": {
+    "panel": "test",
+    "windows": 2048,
+    "packages": 49,
+    "models": {
+      "sealed": {
+        "bpb": 1.0745478904252892,
+        "accuracy": 0.8067150115966797,
+        "repeated_identifier_bpb": 0.09916582572900341
+      },
+      "working": {
+        "bpb": 1.0765454012112514,
+        "accuracy": 0.8060636520385742,
+        "repeated_identifier_bpb": 0.088746167945213
+      },
+      "readable": {
+        "bpb": 1.0899156205016718,
+        "accuracy": 0.8059959411621094,
+        "repeated_identifier_bpb": 0.09965067809812019
+      }
+    },
+    "contrasts": {
+      "sealed_minus_readable": {
+        "delta": -0.015367730076382414,
+        "interval": [
+          -0.024147152609972872,
+          -0.00852817407428645
+        ],
+        "packages": 49
+      },
+      "sealed_minus_working": {
+        "delta": -0.0019975107859620546,
+        "interval": [
+          -0.0070627162215126426,
+          0.0022382839635318483
+        ],
+        "packages": 49
+      }
+    }
+  },
+  "exploratory_vs_wide_writable": {
+    "sealed": {
+      "delta": -0.005502335469845715,
+      "interval": [
+        -0.014130198118517344,
+        0.0009532351914341512
+      ],
+      "packages": 49
+    },
+    "working": {
+      "delta": -0.0035048246838836603,
+      "interval": [
+        -0.009349138383245697,
+        0.0013625444828375647
+      ],
+      "packages": 49
+    }
+  },
+  "economical_copy": true,
+  "early_copy_gain": false
+}

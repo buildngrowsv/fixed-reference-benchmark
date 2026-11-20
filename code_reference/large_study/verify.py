@@ -7,14 +7,14 @@ HERE = Path(__file__).resolve().parent
 DATA = HERE.parent / "results"
 
 
-def expected_panel():
-    records = json.loads((DATA/"main/corpus.json").read_text())["files"]["val"]
+def expected_panel(split="val", seed=881731, count=1024):
+    records = json.loads((DATA/"main/corpus.json").read_text())["files"][split]
     lengths = np.array([r["bytes"]-512 for r in records])
     ends = lengths.cumsum()
     starts = ends-lengths
     windows, groups = [], []
-    for start in range(0,1024,16):
-        locations = np.random.default_rng([881731,start]).integers(ends[-1],size=16)
+    for start in range(0,count,16):
+        locations = np.random.default_rng([seed,start]).integers(ends[-1],size=16)
         indices = np.searchsorted(ends, locations, side="right")
         windows.extend(zip(indices,locations-starts[indices]))
         groups.extend(records[i]["group"] for i in indices)

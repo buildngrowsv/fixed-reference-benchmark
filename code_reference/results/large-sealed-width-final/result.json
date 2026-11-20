@@ -1,0 +1,79 @@
+{
+  "decision": "complete",
+  "stage": "test",
+  "updates": 16384,
+  "parameters_per_compact_arm": 238269312,
+  "peak_rate": 0.00013333333333333334,
+  "baseline_run": "large-python-width-rate-main",
+  "bpb": {
+    "sealed": 1.0745478904252892,
+    "working": 1.0765454012112514,
+    "readable": 1.0899156205016718
+  },
+  "sealed_minus_readable": {
+    "delta": -0.015367730076382414,
+    "interval": [
+      -0.024147152609972872,
+      -0.00852817407428645
+    ],
+    "packages": 49
+  },
+  "sealed_minus_working": {
+    "delta": -0.0019975107859620546,
+    "interval": [
+      -0.0070627162215126426,
+      0.002238283963531849
+    ],
+    "packages": 49
+  },
+  "comparisons": {
+    "validation": {
+      "bpb": {
+        "sealed": 0.9979549081242909,
+        "working": 0.9964822161687715,
+        "readable": 1.002804849670735
+      },
+      "sealed_minus_readable": {
+        "delta": -0.0048499415464439595,
+        "interval": [
+          -0.010882767222358763,
+          -0.001372301614634977
+        ],
+        "packages": 42
+      },
+      "sealed_minus_working": {
+        "delta": 0.0014726919555194244,
+        "interval": [
+          -0.0046159819247137334,
+          0.005362969125497161
+        ],
+        "packages": 42
+      }
+    },
+    "test": {
+      "bpb": {
+        "sealed": 1.0745478904252892,
+        "working": 1.0765454012112514,
+        "readable": 1.0899156205016718
+      },
+      "sealed_minus_readable": {
+        "delta": -0.015367730076382414,
+        "interval": [
+          -0.024147152609972872,
+          -0.00852817407428645
+        ],
+        "packages": 49
+      },
+      "sealed_minus_working": {
+        "delta": -0.0019975107859620546,
+        "interval": [
+          -0.0070627162215126426,
+          0.002238283963531849
+        ],
+        "packages": 49
+      }
+    }
+  },
+  "economical_copy": true,
+  "early_copy_gain": false
+}
