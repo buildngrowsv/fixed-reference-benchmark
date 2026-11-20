@@ -558,6 +558,12 @@
     }
   },
   {
+    "id": "large-spatial-bank-controller",
+    "repo": "fixed-reference-benchmark",
+    "revision": "377405ca5bd320f82b5dea44490176820727409c",
+    "script": "persistence/large_controller.py"
+  },
+  {
     "id": "large-python-reference-mid",
     "repo": "fixed-reference-benchmark",
     "revision": "7cbf2c50f8d2d72cf372c3f9b1d81a119062d5ab",
