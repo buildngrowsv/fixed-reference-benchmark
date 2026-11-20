@@ -292,5 +292,14 @@
     "after": {
       "register-addressing": "any"
     }
+  },
+  {
+    "id": "nested-opener-intervention",
+    "repo": "routed-expert-splice",
+    "revision": "9d7ccbcfa34f1a6d7f5e2ffb34e6ff0367dc9829",
+    "script": "nested_surgery/opener.py",
+    "after": {
+      "nested-donor-full-forward": "any"
+    }
   }
 ]
