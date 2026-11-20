@@ -1,0 +1,106 @@
+{
+  "convolution-503": {
+    "programs": 2048,
+    "all_edit_queries_per_type": 4096,
+    "donor_correct": {
+      "clean": 28785,
+      "current": 3607,
+      "stale": 3570
+    },
+    "verified": {
+      "donor": {
+        "clears_both_edits": false,
+        "both_lower_bounds_above_90": false,
+        "clean_held": false
+      },
+      "scratch": {
+        "clears_both_edits": false,
+        "both_lower_bounds_above_90": false,
+        "clean_held": false
+      },
+      "pretrained": {
+        "clears_both_edits": false,
+        "both_lower_bounds_above_90": false,
+        "clean_held": false
+      }
+    }
+  },
+  "recurrent-503": {
+    "programs": 2048,
+    "all_edit_queries_per_type": 4096,
+    "donor_correct": {
+      "clean": 28784,
+      "current": 3607,
+      "stale": 3569
+    },
+    "verified": {
+      "donor": {
+        "clears_both_edits": false,
+        "both_lower_bounds_above_90": false,
+        "clean_held": false
+      },
+      "scratch": {
+        "clears_both_edits": false,
+        "both_lower_bounds_above_90": false,
+        "clean_held": true
+      },
+      "pretrained": {
+        "clears_both_edits": false,
+        "both_lower_bounds_above_90": false,
+        "clean_held": false
+      }
+    }
+  },
+  "convolution-607": {
+    "programs": 2048,
+    "all_edit_queries_per_type": 4096,
+    "donor_correct": {
+      "clean": 28702,
+      "current": 3594,
+      "stale": 3575
+    },
+    "verified": {
+      "donor": {
+        "clears_both_edits": false,
+        "both_lower_bounds_above_90": false,
+        "clean_held": false
+      },
+      "scratch": {
+        "clears_both_edits": false,
+        "both_lower_bounds_above_90": false,
+        "clean_held": true
+      },
+      "pretrained": {
+        "clears_both_edits": false,
+        "both_lower_bounds_above_90": false,
+        "clean_held": false
+      }
+    }
+  },
+  "recurrent-607": {
+    "programs": 2048,
+    "all_edit_queries_per_type": 4096,
+    "donor_correct": {
+      "clean": 28700,
+      "current": 3594,
+      "stale": 3575
+    },
+    "verified": {
+      "donor": {
+        "clears_both_edits": false,
+        "both_lower_bounds_above_90": false,
+        "clean_held": false
+      },
+      "scratch": {
+        "clears_both_edits": false,
+        "both_lower_bounds_above_90": false,
+        "clean_held": false
+      },
+      "pretrained": {
+        "clears_both_edits": false,
+        "both_lower_bounds_above_90": false,
+        "clean_held": false
+      }
+    }
+  }
+}
