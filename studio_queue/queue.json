@@ -1551,5 +1551,11 @@
     "after": {
       "large-qwen-learned-output-port": "unresolved"
     }
+  },
+  {
+    "id": "dtu-joint-photo-depth-costs",
+    "repo": "parallax-depth-benchmark",
+    "revision": "a0bffd5f97b2aff5b4f1c495058b3fd8e44287f7",
+    "script": "dtu/stereo_fusion.py"
   }
 ]
