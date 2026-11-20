@@ -24,6 +24,10 @@ ssh genflick-m5ultra '~/research/routed-expert-splice/.venv/bin/python ~/researc
 
 Each job writes in `~/research/architecture-queue/runs/<id>/` on the Studio. Its receipt records the source, attempt, timestamps and process outcome. Its result records the scientific decision. The append-only `events.jsonl` records handoffs. Model runs that implement checkpointing resume from their last complete checkpoint. A live hold defers new work. User-directed priority changes apply at the next handoff.
 
+## Memory, disk and research evidence
+
+Check memory pressure, swap and available disk on both Macs before large jobs or transfers. Review the active process, the latest checkpoint and planned consumers before reclaiming files. Keep one shared copy of pinned model downloads on the Studio. The controlling Mac can handle independent work when useful. Small portable evidence includes the predictions, panel identifiers, numerical summaries, environment and execution receipt. Verify that evidence against its pinned code before removing owned scratch data and verified superseded copies. Retain live checkpoints, resume state, pretrained sources for scheduled experiments, and weights reserved for specific causal tests. Coordinate with the owning chat before changing shared files.
+
 ## Reading the research documents
 
 From the research workspace, run `python3 fixed-reference-benchmark/studio_queue/render_documents.py` with Pandoc installed to rebuild the dark HTML editions of the local papers, protocols and results. Open `Research documents/index.html` in Chrome. Its links work offline, including links between documents and to their original figures.
