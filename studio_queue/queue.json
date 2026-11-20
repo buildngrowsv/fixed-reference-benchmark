@@ -968,5 +968,14 @@
     "repo": "parallax-depth-benchmark",
     "revision": "6e4d97bfbd639239d597fd06b78082068573d0c6",
     "script": "orthogonal/run.py"
+  },
+  {
+    "id": "qwen-identifier-edge-timing",
+    "repo": "routed-expert-splice",
+    "revision": "5040dcc0b6cea204902bcdb4b6fcfd9b10557b56",
+    "script": "nested_surgery/identifier_attention_timing.py",
+    "after": {
+      "qwen-identifier-attention-paths": "routing_resolved"
+    }
   }
 ]
