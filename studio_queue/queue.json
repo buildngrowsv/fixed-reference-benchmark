@@ -1750,5 +1750,14 @@
     "after": {
       "qwen-dictionary-alias-depth-72b": "alias_gap_persists_at_viable_cuts"
     }
+  },
+  {
+    "id": "spatial-moved-tilted-offset-reset-7077888",
+    "repo": "fixed-reference-benchmark",
+    "revision": "d485e4a8d50e84ca5a1fe2aea1944316d25874c2",
+    "script": "spatial_references/sheared_history_reset.py",
+    "after": {
+      "spatial-sheared-offset-history-7077888": "history_repairs_tilted_offsets"
+    }
   }
 ]
