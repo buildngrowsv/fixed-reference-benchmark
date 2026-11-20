@@ -1,0 +1,33 @@
+{
+  "decision": "direct_samples_speed_up",
+  "world_ids": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "frames": 48,
+  "repetitions": 12,
+  "cells": 7077888,
+  "exact": true,
+  "full_scalars": 7077888,
+  "read_scalars": 69632,
+  "median_ms": [
+    7.0544375,
+    1.6795625
+  ],
+  "paired_speedup": 4.130188731809481,
+  "speedup_interval": [
+    3.8423193149114923,
+    4.657712409621484
+  ],
+  "frozen_checkpoints": {
+    "101": "ae2a23ea08ab472b835057a9da54a845ee35f68f841a20148f6ac3eae9335fd9",
+    "211": "077cc996a3ef0d988c774b2c1a74a91ee1d1ac5c31c1a953ba2067aa44c6f060",
+    "307": "05d814c3e9d768c48454fbaf694573c1b84a8a9d89f18be059e1887f7bc980d8"
+  }
+}
