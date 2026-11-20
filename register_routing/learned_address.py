@@ -1,5 +1,6 @@
 """Transfer a payload-blind attention router trained on versioned register recall."""
 from functools import partial
+from pathlib import Path
 from typing import NamedTuple
 import json
 import os
