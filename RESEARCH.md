@@ -4,6 +4,10 @@ The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons,
 
 ## Studio queue and current evidence
 
+**Seven-coordinate transfer at the late key.** The same donor switched 134/139 shared groups at the relocated key, up from 71 at the early assignment. It preserved all 139 constant-table answers. A disjoint panel is running. [Verified donor result](https://github.com/buildngrowsv/routed-expert-splice/blob/3b8148d/nested_surgery/numeric_lookup_transfer_72b_study/README.md)
+
+**Dedicated samples recover witness selection.** At 96³, allocating 1,024 detector anchors per inferred region raised shifted retention to 70.54% with a combined 5.79% field budget. Dense routing retained 70.74%. The same absolute sample count is queued at 192³, where it uses at most 0.984% of the field. [Verified witness result](spatial_references/anchored_witness_study/README.md)
+
 **Dictionary key order at 72B.** The entire key state switched both mirrored lookups in 138 of 139 shared-native groups when the declaration followed the dictionary, up from 74. Native solves over the 256 groups declined from 183 to 155. The same donor is now being tested at the late site. [Verified dictionary comparison](https://github.com/buildngrowsv/routed-expert-splice/blob/fbd3b83/nested_surgery/numeric_lookup_order_72b_study/README.md)
 
 **Reuse of sparse boundary lines.** Estimating the witness axis from the boundary probes reduced shifted word retention by 3.02 points while boundary estimates and control counts matched exactly. The larger replication was skipped. The next comparison allocates points to the witness statistic while keeping the boundary probes fixed. [Paired outcome](spatial_references/sampled_witness_study/README.md) · [Dedicated regional samples](spatial_references/ANCHORED_WITNESS_ROUTING.md)

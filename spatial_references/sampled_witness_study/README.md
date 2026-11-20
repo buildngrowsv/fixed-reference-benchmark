@@ -25,4 +25,4 @@ The sampled-minus-dense effect was −2.99 points in aligned worlds (−3.58 to 
 
 Run `uv run --with numpy python spatial_references/sampled_witness_study/verify.py` to verify the matched archives and recompute counts and intervals. The run took 144 seconds at 1.79 GB peak MLX allocation on Apple M5 Ultra with 80 GPU cores and 256 GiB unified memory, macOS 27.2, Python 3.12.16, MLX 0.32.4 in float32, and NumPy 2.5.5. The owner proposed the spatial benchmark. OpenAI Codex implemented, ran, audited and wrote up the comparison. [Execution receipt](results/receipt.json) · [Independent verifier](verify.py) · [Dedicated regional samples follow-up](../ANCHORED_WITNESS_ROUTING.md)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/516)
+[Pubroot review declined](https://github.com/buildngrowsv/pubroot-website/issues/516) · [Expanded dedicated-sampling comparison](../anchored_witness_study/README.md)
