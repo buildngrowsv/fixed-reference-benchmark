@@ -5,9 +5,9 @@ import numpy as np
 from train_code import CodeLM,Corpus,OUT,RUNS,mx,nn,optim,tree_flatten,restore,snapshot,evaluate,write
 from verify import grouped_difference
 
-def fit(arm,corpus,phase,end):
+def fit(arm,corpus,phase,end,make_model=None):
     mx.random.seed(101)
-    model=CodeLM(width=1536,protected_width=192)
+    model=CodeLM(width=1536,protected_width=192) if make_model is None else make_model()
     count=sum(v.size for _,v in tree_flatten(model.parameters()))
     opt=optim.AdamW(lambda t:.0004*mx.minimum(1.,(t.astype(mx.float32)+1)/128),weight_decay=.03,bias_correction=True)
     path=OUT/(arm+".safetensors")

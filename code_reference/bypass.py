@@ -10,30 +10,33 @@ from mlx.utils import tree_flatten
 from train_code import CodeLM, Block, Corpus, OUT, RUNS, evaluate, interval, snapshot, restore, write
 
 class Bypass(CodeLM):
-    def __init__(self, working_exit=False, magnitude_exit=False):
-        super().__init__()
+    def __init__(self, working_exit=False, magnitude_exit=False, width=512, lane_width=64):
+        super().__init__(width, lane_width)
+        self.working_width=width-lane_width
+        self.lane_width=lane_width
+        d=self.working_width
         self.working_exit=working_exit
         self.magnitude_exit=magnitude_exit
         for i in range(2,9):
             src=self.blocks[i]
-            b=Block(False,448)
+            b=Block(False,d)
             qkv=mx.split(src.qkv.weight,3,axis=0)
-            b.qkv.weight=mx.concatenate([w[:448,:448] for w in qkv])
-            b.out.weight=src.out.weight[:448,:448]
-            b.up.weight=src.up.weight[:1792,:448]
-            b.down.weight=src.down.weight[:448,:1792]
-            b.norm1.weight=src.norm1.weight[:448]
-            b.norm2.weight=src.norm2.weight[:448]
+            b.qkv.weight=mx.concatenate([w[:d,:d] for w in qkv])
+            b.out.weight=src.out.weight[:d,:d]
+            b.up.weight=src.up.weight[:4*d,:d]
+            b.down.weight=src.down.weight[:d,:4*d]
+            b.norm1.weight=src.norm1.weight[:d]
+            b.norm2.weight=src.norm2.weight[:d]
             self.blocks[i]=b
 
     def __call__(self,ids,fixed=True):
         x=(self.tokens(ids)+self.pos(mx.arange(ids.shape[1]))).astype(mx.bfloat16)
         x=self.blocks[1](self.blocks[0](x,False),False)
-        x,lane=mx.split(x,[448],axis=-1)
+        x,lane=mx.split(x,[self.working_width],axis=-1)
         for block in self.blocks[2:9]:
             x=block(x,False)
         if self.working_exit:
-            lane=x[...,-64:]
+            lane=x[...,-self.lane_width:]
             if self.magnitude_exit:
                 lane=mx.abs(lane)
         x=self.blocks[-1](mx.concatenate([x,lane],axis=-1),False)
