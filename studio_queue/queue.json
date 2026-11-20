@@ -852,5 +852,14 @@
     "after": {
       "qwen-learned-identifier-subspace": "complete"
     }
+  },
+  {
+    "id": "qwen-transfer-identifier-subspace",
+    "repo": "routed-expert-splice",
+    "revision": "86cd5f7a5a5ae08e71973c40f44d460e861a64e4",
+    "script": "nested_surgery/identifier_transfer.py",
+    "after": {
+      "qwen-learned-identifier-subspace": "complete"
+    }
   }
 ]
