@@ -1321,5 +1321,14 @@
     "after": {
       "qwen-indexed-address-72b": "unresolved"
     }
+  },
+  {
+    "id": "spatial-sampled-witness-routing-884736",
+    "repo": "fixed-reference-benchmark",
+    "revision": "5ef2af27507aa921f79c95a22bef7dcee670ccb0",
+    "script": "spatial_references/sampled_witness_routing.py",
+    "after": {
+      "spatial-fixed-probe-count-7077888": "fixed_probe_count_scales"
+    }
   }
 ]
