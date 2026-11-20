@@ -452,5 +452,14 @@
     "after": {
       "displaced-head-surgery": "stop"
     }
+  },
+  {
+    "id": "displaced-hybrid-interchange",
+    "repo": "fixed-reference-benchmark",
+    "revision": "6911101e871f9475254cb0b22210b4f3be994f74",
+    "script": "register_routing/prefix_interchange.py",
+    "after": {
+      "displaced-prefix-surgery": "replicate"
+    }
   }
 ]
