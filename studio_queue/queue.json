@@ -953,5 +953,14 @@
       "qwen-identifier-query-relay": "unresolved",
       "qwen-binding-selective-reference": "binding_sensitive"
     }
+  },
+  {
+    "id": "qwen-two-operand-native-qualification",
+    "repo": "routed-expert-splice",
+    "revision": "39538af4cfef39c536bb695d56c8a3ec216927b6",
+    "script": "nested_surgery/identifier_numeric_qualify.py",
+    "after": {
+      "qwen-numeric-compose-two-operands": "unresolved"
+    }
   }
 ]
