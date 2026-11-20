@@ -1154,5 +1154,14 @@
     "after": {
       "spatial-262144-separated-witness": "geometry_matters"
     }
+  },
+  {
+    "id": "spatial-regional-witness-884736",
+    "repo": "fixed-reference-benchmark",
+    "revision": "f683a4bb2e0cedfe4eb4cb82e96c2dc3e46f9bf4",
+    "script": "spatial_references/regional_witness.py",
+    "after": {
+      "spatial-adaptive-witness-axis": "adapts_to_rotated_faults"
+    }
   }
 ]
