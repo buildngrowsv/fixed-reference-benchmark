@@ -1717,5 +1717,14 @@
     "after": {
       "large-qwen-graft-early-exit-smoke": "smoke_complete"
     }
+  },
+  {
+    "id": "spatial-sheared-offset-history-7077888",
+    "repo": "fixed-reference-benchmark",
+    "revision": "7406f3915ba56d3fadae35c4858ea82b5c3725c8",
+    "script": "spatial_references/sheared_history.py",
+    "after": {
+      "spatial-sheared-witness-7077888": "unresolved"
+    }
   }
 ]
