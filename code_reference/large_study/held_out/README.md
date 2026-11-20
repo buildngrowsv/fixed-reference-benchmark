@@ -27,4 +27,4 @@ An independent inference-only experiment froze 192 channels in the competent wri
 
 The owner proposed forward references and their evaluation at larger model sizes. OpenAI Codex implemented the training and causal comparisons, ran the studies on the owner’s Apple M5 Ultra, verified the archives and assisted with writing. The test concerns a particular byte-level model and data budget. The narrower matched-cost test measures a different architectural choice. [Runtime](../../../runtime.json) · [Sealed-copy protocol](../../LARGE_SEALED.md)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/412)
+[Published Pubroot study](https://pubroot.com/ai/fine-tuning/a-192-value-fixed-reference-gave-no-held-out-python-gain-at-285m-parameters/) · [Public review](https://github.com/buildngrowsv/pubroot-website/issues/412)
