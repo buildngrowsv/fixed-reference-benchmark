@@ -411,5 +411,15 @@
       "register-stable-random-second-seed": "any",
       "displaced-register-interchange": "any"
     }
+  },
+  {
+    "id": "sealed-definition-exchange",
+    "repo": "fixed-reference-benchmark",
+    "revision": "0f174b6739e2f8dced3720181fb9825e09e3a50f",
+    "script": "code_reference/sealed_exchange.py",
+    "after": {
+      "sealed-bypass-repeat": "any",
+      "working-exit-main": "any"
+    }
   }
 ]
