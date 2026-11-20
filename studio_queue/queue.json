@@ -898,5 +898,14 @@
       "qwen-binding-selective-reference": "binding_sensitive",
       "qwen-transfer-identifier-subspace-dose-fix": "transfer"
     }
+  },
+  {
+    "id": "qwen-identifier-query-relay",
+    "repo": "routed-expert-splice",
+    "revision": "9c996cb53b22253afc0c4f8dfd442bc4ef08d57d",
+    "script": "nested_surgery/identifier_query_relay.py",
+    "after": {
+      "qwen-identifier-one-token-doorway": "unresolved"
+    }
   }
 ]
