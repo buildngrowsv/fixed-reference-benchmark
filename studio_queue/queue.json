@@ -1496,5 +1496,34 @@
     "after": {
       "spatial-witness-boundary-jump-7077888": "sparse_witness_recovers_boundary_jump"
     }
+  },
+  {
+    "id": "large-qwen-learned-output-port-smoke",
+    "repo": "routed-expert-splice",
+    "revision": "a733c8662949bf34ce8c86f7d4fb17f5a945c014",
+    "script": "nested_surgery/learned_output_port.py",
+    "model_snapshots": [
+      "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+      "97e1e76335b7017d8f67c08a19d103c0504298c9"
+    ],
+    "args": [
+      "--smoke"
+    ],
+    "after": {
+      "large-qwen-donor-output-boundary": "output_below_margin"
+    }
+  },
+  {
+    "id": "large-qwen-learned-output-port",
+    "repo": "routed-expert-splice",
+    "revision": "a733c8662949bf34ce8c86f7d4fb17f5a945c014",
+    "script": "nested_surgery/learned_output_port.py",
+    "model_snapshots": [
+      "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+      "97e1e76335b7017d8f67c08a19d103c0504298c9"
+    ],
+    "after": {
+      "large-qwen-learned-output-port-smoke": "smoke_complete"
+    }
   }
 ]
