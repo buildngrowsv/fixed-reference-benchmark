@@ -60,9 +60,9 @@ class Model(nn.Module):
             x=b(x,fixed and 2<=j<7)
         return self.read(self.norm(x[:,3::4,:]).astype(x.dtype)).astype(mx.float32)
 
-def optimizer():
+def optimizer(learning_rate=None):
     schedule=lambda s:.00045*mx.minimum((s.astype(mx.float32)+1)/128,1.)
-    return optim.AdamW(learning_rate=schedule,weight_decay=.03,bias_correction=True)
+    return optim.AdamW(learning_rate=schedule if learning_rate is None else learning_rate,weight_decay=.03,bias_correction=True)
 
 def snapshot(model,opt,step,file):
     weights={"weights."+k:v for k,v in tree_flatten(model.parameters())}

@@ -17,7 +17,7 @@ class NonfiniteTrainingLoss(ValueError):
 def fit(arm,target=512,parent=None,learning_rate=None):
     mx.random.seed(101)
     model=Model(WIDTH) if arm=="dense" else RoutedModel(WIDTH)
-    opt=optimizer()
+    opt=optimizer(learning_rate)
     path=OUT/(arm+".safetensors")
     start=0
     if path.exists():
@@ -26,7 +26,7 @@ def fit(arm,target=512,parent=None,learning_rate=None):
         start=restore(model,opt,parent/path.name)
         assert start==512
     if learning_rate is not None:
-        # Restoring Adam moments also restores step and learning rate. Replace its schedule.
+        # Restoring Adam moments also restores the saved scalar step size.
         opt.learning_rate = learning_rate
     def objective(m,x,y,ops):
         logits=m(x,False) if arm=="dense" else m(x,wrong=True)
@@ -47,6 +47,8 @@ def fit(arm,target=512,parent=None,learning_rate=None):
         ids,y,ops,_,_=batch([101,27491,t])
         loss=step(mx.array(ids),mx.array(y),mx.array(ops))
         mx.eval(loss,state)
+        if t==start+1 and learning_rate is not None:
+            np.testing.assert_allclose(opt.learning_rate.item(),learning_rate,rtol=1e-6)
         if t==1 or t%16==0:
             if not np.isfinite(loss.item()):raise NonfiniteTrainingLoss(arm,t)
             if t%256==0:snapshot(model,opt,t,path)
