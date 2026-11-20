@@ -934,5 +934,14 @@
     "after": {
       "qwen-numeric-operand-cross-model": "transfer"
     }
+  },
+  {
+    "id": "qwen-numeric-operand-open-vocabulary",
+    "repo": "routed-expert-splice",
+    "revision": "1fc65de34e1236722b9fbb4956ee0a7fe71d872f",
+    "script": "nested_surgery/identifier_numeric_open.py",
+    "after": {
+      "qwen-numeric-operand-cross-model": "transfer"
+    }
   }
 ]
