@@ -1,5 +1,5 @@
 """Transfer a payload-blind attention router trained on versioned register recall."""
-from pathlib import Path
+from functools import partial
 from typing import NamedTuple
 import json
 import os
@@ -106,7 +106,7 @@ def fit(model, length, split_seed, arm):
     gradient = nn.value_and_grad(model, objective)
     state = [model.state, opt.state]
 
-    @mx.compile(inputs=state, outputs=state)
+    @partial(mx.compile, inputs=state, outputs=state)
     def step(k, v, q, op, y):
         loss, grad = gradient(model, k, v, q, op, y)
         opt.update(model, grad)
