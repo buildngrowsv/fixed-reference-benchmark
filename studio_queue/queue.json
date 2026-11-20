@@ -471,5 +471,14 @@
       "sealed-bypass-main": "any",
       "cpython-reference-main": "any"
     }
+  },
+  {
+    "id": "displaced-receiver-learning",
+    "repo": "fixed-reference-benchmark",
+    "revision": "8c58c3308c1873f2f28ebb00245ea1c532cab455",
+    "script": "register_routing/receiver_learning.py",
+    "after": {
+      "displaced-prefix-surgery": "replicate"
+    }
   }
 ]
