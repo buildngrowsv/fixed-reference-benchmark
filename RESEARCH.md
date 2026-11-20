@@ -70,9 +70,11 @@ In the smaller model, seven strict repairs disappeared in the first published do
 
 **Chronological fixed-reference comparison.** Holding both transplanted projections for seven more blocks changed complete 32B carry from 358 to 333 groups. All 512 native groups survived. The hold helped lengthening and hurt shortening on the same panel. [Audited 32B result](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_hold_32b_study)
 
-**Cross-width calibration.** The new contrast-only alignment reversed 426/507 groups in its same-width 32B control, compared with 426 for full-state replacement and 0 for matched random directions. The 72B arm is testing the same method on the same prompt panel. [Saved contrasts and audit](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_width_study)
+**Cross-width calibration.** The new contrast-only alignment reversed 426/507 groups in its same-width 32B control, compared with 426 for full-state replacement and 0 for matched random directions. On the same prompt panel the 72B aligned arm reversed 502/504, with 501 full-state reversals and zero from orthogonal edits. On 499 native-shared pairs the same method reversed 425 at 32B and 498 at 72B. [Saved contrasts and audit](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_width_study)
 
 **Adaptive write geometry.** On a 262,144-cell grid, routing the write witness using recent primary-detector co-activation retained 70.38% after the fault axis rotated. Freezing the axis from the calibration window retained 52.67%. [Adaptive geometry evidence](spatial_references/adaptive_witness_study/README.md)
+
+**Regional confirmation.** Eight separate routing decisions recovered 72.32% on an 884,736-cell volume with different fault directions across regions. A single direction recovered 59.26%. The false-write fraction fell from 10.91% to 5.32%. [Regional benchmark](spatial_references/regional_witness_study/README.md)
 
 ## What opens the other paths
 

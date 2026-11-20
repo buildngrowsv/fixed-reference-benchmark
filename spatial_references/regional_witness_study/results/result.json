@@ -1,0 +1,129 @@
+{
+  "voxels": 884736,
+  "worlds": 8,
+  "transitions": 256,
+  "frozen_checkpoints": {
+    "101": "ae2a23ea08ab472b835057a9da54a845ee35f68f841a20148f6ac3eae9335fd9",
+    "211": "077cc996a3ef0d988c774b2c1a74a91ee1d1ac5c31c1a953ba2067aa44c6f060",
+    "307": "05d814c3e9d768c48454fbaf694573c1b84a8a9d89f18be059e1887f7bc980d8"
+  },
+  "runtime_s": 152.81245595800283,
+  "peak_mlx_bytes": 1791591008,
+  "decision": "regional_beats_global",
+  "rates": {
+    "global": {
+      "homogeneous": {
+        "retention": 0.7051211286474157,
+        "legitimate": 0.9899707497273992,
+        "false_writes": 0.057698567708333336,
+        "chooses_fault_axis": 0.0
+      },
+      "heterogeneous": {
+        "retention": 0.592616010595251,
+        "legitimate": 0.9899707497273992,
+        "false_writes": 0.10914442274305555,
+        "chooses_fault_axis": 0.25
+      }
+    },
+    "regional": {
+      "homogeneous": {
+        "retention": 0.7233160160205983,
+        "legitimate": 0.9899707497273992,
+        "false_writes": 0.05319552951388889,
+        "chooses_fault_axis": 0.0
+      },
+      "heterogeneous": {
+        "retention": 0.723229726155599,
+        "legitimate": 0.9899707497273992,
+        "false_writes": 0.05320909288194445,
+        "chooses_fault_axis": 0.0
+      }
+    },
+    "orientation": {
+      "homogeneous": {
+        "retention": 0.6954962765728986,
+        "legitimate": 0.9899707497273992,
+        "false_writes": 0.06031629774305555,
+        "chooses_fault_axis": 0.0
+      },
+      "heterogeneous": {
+        "retention": 0.6939620795073332,
+        "legitimate": 0.9899707497273992,
+        "false_writes": 0.060601128472222224,
+        "chooses_fault_axis": 0.0
+      }
+    }
+  },
+  "counts": [
+    [
+      [
+        21231597,
+        21024273,
+        169869312,
+        119778441,
+        21018660,
+        9801216
+      ],
+      [
+        21231597,
+        21025392,
+        169869312,
+        100667274,
+        21018660,
+        18540288
+      ]
+    ],
+    [
+      [
+        21231597,
+        21024180,
+        169869312,
+        122869194,
+        21018660,
+        9036288
+      ],
+      [
+        21231597,
+        21024291,
+        169869312,
+        122854536,
+        21018660,
+        9038592
+      ]
+    ],
+    [
+      [
+        21231597,
+        21024384,
+        169869312,
+        118143474,
+        21018660,
+        10245888
+      ],
+      [
+        21231597,
+        21024330,
+        169869312,
+        117882861,
+        21018660,
+        10294272
+      ]
+    ]
+  ],
+  "regional_minus_global": {
+    "homogeneous": {
+      "mean": 0.018194887373182533,
+      "interval": [
+        0.015019185896273,
+        0.02112686766518482
+      ]
+    },
+    "heterogeneous": {
+      "mean": 0.13061371556034795,
+      "interval": [
+        0.12717994054158532,
+        0.13394512776975276
+      ]
+    }
+  }
+}

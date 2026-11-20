@@ -21,4 +21,4 @@ On rotated faults the adaptive policy gained **17.71 percentage points** over th
 
 Verify the checkpoint hashes, routing orientations, counts and paired bootstrap using `uv run --with numpy python spatial_references/adaptive_witness_study/verify.py`. The 74.97-second run reached 615 MB peak MLX allocation. It used an Apple M5 Ultra with 80 GPU cores, 256 GiB memory, macOS 27.2, Python 3.12.16, MLX 0.32.4 and NumPy 2.5.5. The controller evaluates states in float32. The owner proposed pursuing larger spatially structured references. OpenAI Codex designed, ran and verified the comparison and assisted with writing. [Execution receipt](results/receipt.json)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/488)
+[Published Pubroot article](https://pubroot.com/ai/fine-tuning/a-3d-write-gate-changed-confirmation-direction-when-faults-rotated/) · [Submission and review](https://github.com/buildngrowsv/pubroot-website/issues/488)

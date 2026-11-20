@@ -45,3 +45,5 @@ Use Python 3.12 with MLX 0.32.4 and NumPy 2.5.5 on Apple Silicon. Run run.py, in
 [Spatially separated confirmations](witness_study/README.md) reports the 262,144-voxel study on compact and aligned faults.
 
 [Adaptive confirmation direction](adaptive_witness_study/README.md) tests learning a new witness direction from seen sensor activity when faults rotate.
+
+[Regional witness routing](regional_witness_study/README.md) compares local and global decisions when different parts of a 96³ grid see different fault directions.
