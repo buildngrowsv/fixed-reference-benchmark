@@ -1,0 +1,9 @@
+{
+  "job": "large-sealed-python-retention",
+  "revision": "9e09a37cf000f8d9d8297781394bef90cbb19ef7",
+  "attempt": 1,
+  "started": "2026-11-20T06:50:35+00:00",
+  "status": "done",
+  "finished": "2026-11-20T07:02:46+00:00",
+  "exit": 0
+}
