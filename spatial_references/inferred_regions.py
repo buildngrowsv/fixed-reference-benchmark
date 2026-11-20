@@ -46,9 +46,10 @@ def infer_with_probes(active, locations):
     return np.array(cuts)
 
 
-def witness_field(current, previous, shift, distance):
-    sensed = divide(np.roll(previous, -shift, axis=AXES))
-    selected = overlaps(sensed, distance).argmin(axis=1)
+def witness_field(current, previous, shift, distance, *, selected=None):
+    if selected is None:
+        sensed = divide(np.roll(previous, -shift, axis=AXES))
+        selected = overlaps(sensed, distance).argmin(axis=1)
     inside = divide(np.roll(current, -shift, axis=AXES))
     choices = np.stack([np.roll(inside, distance, axis=i) for i in AXES])
     votes = choices[selected, np.arange(8)]
@@ -65,7 +66,8 @@ def distributed_positions(rng, side):
     return rows*side + columns
 
 
-def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False, stratified=False):
+def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False, stratified=False,
+             sampled_routes=None):
     rng = np.random.default_rng(931622 + world)
     observer = np.random.default_rng(790133 + world)
     probes = None
@@ -73,6 +75,16 @@ def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False
         probes = [distributed_positions(observer, side) for _ in range(3)]
     elif sparse:
         probes = [observer.choice(side**2, size=PROBES, replace=False) for _ in range(3)]
+    witness_rules = [witness_field] * len(POLICIES)
+    if sampled_routes is not None:
+        if not stratified:
+            raise ValueError("sampled routing requires stratified probes")
+
+        def sampled_witness(fault, active, shift, distance):
+            selected = sampled_routes(active, shift, probes, distance)
+            return witness_field(fault, active, shift, distance, selected=selected)
+
+        witness_rules[POLICIES.index("inferred")] = sampled_witness
     shape = (1, side, side, side)
     size = (2, *shape[1:])
     half = side // 2
@@ -110,9 +122,9 @@ def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False
                                      else infer_with_probes(active, probes) for active in observed])
                 offsets = np.stack((np.zeros_like(known), inferred, known))
                 witness = np.stack([np.stack([
-                    witness_field(fault, act, shift, distance)
+                    rule(fault, act, shift, distance)
                     for fault, act, shift in zip(faults, observed, arm, strict=True)
-                ]) for arm in offsets])
+                ]) for rule, arm in zip(witness_rules, offsets, strict=True)])
             else:
                 pulses = np.zeros(size, dtype=bool)
                 witness = unrestricted
