@@ -55,10 +55,24 @@ def witness_field(current, previous, shift, distance):
     return np.roll(combine(votes), shift, axis=AXES)
 
 
-def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False):
+def distributed_positions(rng, side):
+    strata = int(np.sqrt(PROBES))
+    size = side // strata
+    assert side % strata == 0 and strata**2 == PROBES
+    a, b = np.mgrid[:strata, :strata]
+    rows = size * a.ravel() + rng.integers(size, size=PROBES)
+    columns = size * b.ravel() + rng.integers(size, size=PROBES)
+    return rows*side + columns
+
+
+def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False, stratified=False):
     rng = np.random.default_rng(931622 + world)
     observer = np.random.default_rng(790133 + world)
-    probes = [observer.choice(side**2, size=PROBES, replace=False) for _ in range(3)] if sparse else None
+    probes = None
+    if stratified:
+        probes = [distributed_positions(observer, side) for _ in range(3)]
+    elif sparse:
+        probes = [observer.choice(side**2, size=PROBES, replace=False) for _ in range(3)]
     shape = (1, side, side, side)
     size = (2, *shape[1:])
     half = side // 2
@@ -168,7 +182,9 @@ def compare_sparse(archive, counts):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--sparse", action="store_true")
+    observations = ap.add_mutually_exclusive_group()
+    observations.add_argument("--sparse", action="store_true")
+    observations.add_argument("--stratified", action="store_true")
     args = ap.parse_args()
     start = time.perf_counter()
     out = Path(os.environ["STUDIO_JOB_DIR"])
@@ -178,7 +194,7 @@ def main():
         path = HERE / "results" / f"cube-full-{seed}.json"
         hashes[str(seed)] = sha256(path.read_bytes()).hexdigest()
         compiled = recorded_step(json.loads(path.read_text()))
-        counts, shifts = map(np.stack, zip(*(evaluate(compiled, w, sparse=args.sparse) for w in range(WORLDS)), strict=True))
+        counts, shifts = map(np.stack, zip(*(evaluate(compiled, w, sparse=args.sparse, stratified=args.stratified) for w in range(WORLDS)), strict=True))
         all_counts.append(counts)
         all_shifts.append(shifts)
         print(f"Completed checkpoint {seed}", flush=True)
@@ -187,8 +203,9 @@ def main():
     summary = dict(voxels=SIDE**3, worlds=WORLDS, transitions=ROUNDS*16, frozen_checkpoints=hashes,
                    runtime_s=time.perf_counter()-start, peak_mlx_bytes=mx.get_peak_memory(),
                    **summarize(counts, shifts, SIDE))
-    if args.sparse:
-        source = Path(os.environ["STUDIO_QUEUE_ROOT"]) / "runs" / SOURCE
+    if args.sparse or args.stratified:
+        run_root = Path(os.environ["STUDIO_QUEUE_ROOT"]) / "runs"
+        source = run_root / SOURCE
         receipt = json.loads((source / "receipt.json").read_text())
         assert receipt["revision"] == "198240fb667f2c1d2c6f5b70a9a28929d825b809" and receipt["status"] == "done"
         contrast = compare_sparse(source / "worlds.npz", counts)
@@ -198,6 +215,14 @@ def main():
                        all(r["legitimate"] >= .98 for r in summary["rates"]["inferred"].values()))
         summary.update(decision="sparse_layout_sufficient" if pass_sparse else "unresolved",
                        probes_per_plane=PROBES, sampled_upper_fraction=3*PROBES/SIDE**2, sparse_minus_full=contrast)
+    if args.stratified:
+        random_source = run_root / "spatial-sparse-inferred-regions-884736"
+        prior = json.loads((random_source / "receipt.json").read_text())
+        assert prior["status"] == "done" and prior["revision"] == "8a5f1d510a943610388c95a23d57f56ab7deae1b"
+        improvement = compare_sparse(random_source / "worlds.npz", counts)
+        rigorous = pass_sparse and improvement["shifted"]["mean"] >= .005 and improvement["shifted"]["interval"][0] > 0
+        summary.update(decision="distributed_probes_help" if rigorous else "unresolved",
+                       stratified_minus_random=improvement, strata_per_axis=8)
     (out / "result.json").write_text(json.dumps(summary, indent=2) + "\n")
 
 
