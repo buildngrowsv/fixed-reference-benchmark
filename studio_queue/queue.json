@@ -1210,5 +1210,17 @@
     "after": {
       "qwen-aligned-two-operands-72b": "carry_composes"
     }
+  },
+  {
+    "id": "spatial-sparse-inferred-regions-884736",
+    "repo": "fixed-reference-benchmark",
+    "revision": "8a5f1d510a943610388c95a23d57f56ab7deae1b",
+    "script": "spatial_references/inferred_regions.py",
+    "args": [
+      "--sparse"
+    ],
+    "after": {
+      "spatial-inferred-regions-884736": "inferred_boundaries_help"
+    }
   }
 ]
