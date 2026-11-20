@@ -1,0 +1,9 @@
+{
+  "arm": "working-exit",
+  "step": 4096,
+  "target": 4096,
+  "parameters": 26830464,
+  "time": 1795137108.7661388,
+  "tokens_per_second": 237775.88671097826,
+  "loss": 0.6460474729537964
+}

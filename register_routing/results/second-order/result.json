@@ -1,0 +1,22 @@
+{
+  "decision": "complete",
+  "train_seed": 211,
+  "test_seed": 816239,
+  "programs": 2048,
+  "accuracy": {
+    "stable": [
+      0.9892016612828796,
+      0.8632014719411224
+    ],
+    "random": [
+      0.1269958467928011,
+      0.06522539098436063
+    ]
+  },
+  "stable_minus_random": 0.8300909477234201,
+  "interval": [
+    0.824418700106112,
+    0.8354990307233735
+  ],
+  "replicated": true
+}

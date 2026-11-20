@@ -1,0 +1,30 @@
+{
+  "rotated": {
+    "pairs": 1024,
+    "clean": 1014,
+    "double_switch_init": 1014,
+    "double_switch_write": 0,
+    "correct_after_init": 0,
+    "correct_after_write": 1014
+  },
+  "matched": {
+    "pairs": 1024,
+    "clean": 1022,
+    "double_switch_init": 1022,
+    "double_switch_write": 0,
+    "correct_after_init": 0,
+    "correct_after_write": 1022
+  },
+  "independent_fit": {
+    "programs": 2048,
+    "original_queries": 10835,
+    "current_queries": 10870,
+    "stable": 0.9262015666120009,
+    "random": 0.09611061888858086,
+    "gap": 0.8300909477234201,
+    "interval": [
+      0.824418700106112,
+      0.8354990307233734
+    ]
+  }
+}

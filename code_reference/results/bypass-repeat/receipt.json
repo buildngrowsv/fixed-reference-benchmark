@@ -1,0 +1,9 @@
+{
+  "job": "sealed-bypass-repeat",
+  "revision": "d1705d228feca1c9a2f2139eca6b91c7647c9acd",
+  "attempt": 1,
+  "started": "2026-11-20T00:49:50+00:00",
+  "status": "done",
+  "finished": "2026-11-20T01:09:24+00:00",
+  "exit": 0
+}

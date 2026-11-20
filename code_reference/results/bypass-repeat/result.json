@@ -1,0 +1,31 @@
+{
+  "decision": "complete",
+  "seed": 211,
+  "arms": {
+    "sealed": {
+      "parameters": 26830464,
+      "training_seconds": 569.6894219999958,
+      "start": 0,
+      "val_bpb": 0.955618302848631,
+      "test_bpb": 1.0202316866727803
+    },
+    "readable": {
+      "parameters": 31992320,
+      "training_seconds": 600.6164532919938,
+      "start": 0,
+      "val_bpb": 0.9626340664284245,
+      "test_bpb": 1.0304071454743449
+    }
+  },
+  "intervals": {
+    "val": [
+      -0.011312523154918219,
+      0.0005205611877818414
+    ],
+    "test": [
+      -0.01772010393272483,
+      -0.0029007716711072305
+    ]
+  },
+  "qualifies": true
+}
