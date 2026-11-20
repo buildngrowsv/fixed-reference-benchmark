@@ -20,4 +20,4 @@ The 2,048 reserved windows use 49 held-out CPython package groups. Lower bits pe
 
 This is one training order at a fixed byte budget. It supports a narrower middle on this task and recipe. The result leaves open how much useful information the early copy carries under changes in data distribution. A matched adaptation test will compare retention on CPython while both 238M checkpoints learn from different Python projects. The owner proposed the sealed forward route and larger experiments. OpenAI Codex implemented and ran the studies on the owner’s Apple M5 Ultra, verified the paired archives and assisted with writing. [Runtime](../../../runtime.json) · [Adaptation protocol](../../LARGE_ECOSYSTEM.md)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/419)
+[Published Pubroot study](https://pubroot.com/ai/fine-tuning/two-238m-python-models-matched-or-beat-a-wider-baseline-with-little-difference-from-carrying-an-early-copy/) · [Public review](https://github.com/buildngrowsv/pubroot-website/issues/419)
