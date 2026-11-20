@@ -1,0 +1,8 @@
+{
+  "arm": "sealed-rehearsal",
+  "step": 8192,
+  "target": 8192,
+  "time": 1795140201.912253,
+  "loss": 0.3910073935985565,
+  "tokens_per_second": 235816.54863721255
+}

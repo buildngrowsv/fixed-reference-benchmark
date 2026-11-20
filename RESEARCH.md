@@ -4,6 +4,8 @@ The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons,
 
 ## Studio queue and current evidence
 
+In a second previously adapted recipient, the compact donor switched both correct answers in 2,018 of 2,022 eligible pairs. Reordering independent registers separately cost the original trained hybrid 13.09 recall points. In Python adaptation, replaying one original CPython batch in eight removed 87.27% of prior forgetting and improved all six external project losses. [Portable memory and schedule controls](register_routing/portability_study/README.md) · [Paired rehearsal study](code_reference/rehearsal_study/README.md)
+
 The [live queue and controls](studio_queue/README.md) show what is running, what can run next and which branches closed. The public [experiment manifest](studio_queue/queue.json) records the precommitted code and conditions.
 
 **Fixed reference on real code.** At 16,384 updates, the 32M-parameter fixed arm scored 1.02012 versus 1.02210 held-out bits per byte. The paired package interval crossed zero. On 1,024 identifier pairs, exchanging the protected values erased 16 previously correct pairs, compared with 98 after exchanging 64 neighboring values. The independent training gate closed. Seven applications of a shared block also missed the step-matched four-block control while taking 2.23 times as long. [Study and public evidence](code_reference/README.md)

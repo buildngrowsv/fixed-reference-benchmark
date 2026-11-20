@@ -1,0 +1,9 @@
+{
+  "job": "interleaved-register-schedule",
+  "revision": "d57a216ce9940d3bd2751876e5f3b6a011723288",
+  "attempt": 1,
+  "started": "2026-11-20T01:58:32+00:00",
+  "status": "done",
+  "finished": "2026-11-20T01:58:35+00:00",
+  "exit": 0
+}

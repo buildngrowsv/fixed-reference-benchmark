@@ -1,0 +1,9 @@
+{
+  "job": "compact-donor-portability",
+  "revision": "e0896cf605e18cbe36b29578b43b9795db868ee7",
+  "attempt": 1,
+  "started": "2026-11-20T02:06:02+00:00",
+  "status": "done",
+  "finished": "2026-11-20T02:06:08+00:00",
+  "exit": 0
+}
