@@ -1,0 +1,20 @@
+{
+  "decision": "complete",
+  "panel_seed": 621789,
+  "supported": true,
+  "arms": {
+    "stable": {
+      "pairs": 2048,
+      "clean": 2020,
+      "double_switch_init": 2016,
+      "double_switch_write": 0,
+      "delta": 0.984375,
+      "interval": [
+        0.97900390625,
+        0.9892578125
+      ],
+      "correct_after_init": 0,
+      "correct_after_write": 2020
+    }
+  }
+}

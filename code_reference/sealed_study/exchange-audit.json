@@ -1,0 +1,50 @@
+{
+  "101": {
+    "clean_pairs": 951,
+    "clean_top_one_pairs": 468,
+    "double_reversals": {
+      "clean": 0,
+      "reference": 0,
+      "working": 0,
+      "full_site": 74,
+      "whole": 951
+    },
+    "exact_partner_answers": {
+      "clean": 0,
+      "reference": 0,
+      "working": 0,
+      "full_site": 18,
+      "whole": 468
+    },
+    "difference": 0.0,
+    "interval": [
+      0.0,
+      0.0
+    ],
+    "meets_threshold": false
+  },
+  "211": {
+    "clean_pairs": 949,
+    "clean_top_one_pairs": 568,
+    "double_reversals": {
+      "clean": 0,
+      "reference": 0,
+      "working": 0,
+      "full_site": 267,
+      "whole": 949
+    },
+    "exact_partner_answers": {
+      "clean": 0,
+      "reference": 0,
+      "working": 0,
+      "full_site": 71,
+      "whole": 568
+    },
+    "difference": 0.0,
+    "interval": [
+      0.0,
+      0.0
+    ],
+    "meets_threshold": false
+  }
+}

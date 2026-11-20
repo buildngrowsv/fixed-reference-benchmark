@@ -1,0 +1,9 @@
+{
+  "job": "working-exit-repeat",
+  "revision": "9e9a62ed64b174936d51917dc23fba3e7e3f160f",
+  "attempt": 1,
+  "started": "2026-11-20T01:19:20+00:00",
+  "status": "done",
+  "finished": "2026-11-20T01:29:47+00:00",
+  "exit": 0
+}

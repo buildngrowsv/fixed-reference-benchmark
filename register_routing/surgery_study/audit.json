@@ -1,0 +1,57 @@
+{
+  "accuracy": {
+    "donor_full": 0.9208043653036153,
+    "native": 0.1045255608085697,
+    "graft": 0.13683441388359155,
+    "donor_removed": 0.08157326597604822
+  },
+  "effects": {
+    "native": {
+      "delta": 0.03230885307502185,
+      "interval": [
+        0.025647579435870267,
+        0.03939207590650808
+      ]
+    },
+    "donor_removed": {
+      "delta": 0.05526114790754333,
+      "interval": [
+        0.04790736519594691,
+        0.06283287922870942
+      ]
+    }
+  },
+  "attribution": {
+    "original": {
+      "total": 5442,
+      "graft_new": 692,
+      "new_lost_when_removed": 583,
+      "gained_when_removed": 224,
+      "lost_relative_to_native": 267
+    },
+    "current": {
+      "total": 5416,
+      "graft_new": 139,
+      "new_lost_when_removed": 102,
+      "gained_when_removed": 295,
+      "lost_relative_to_native": 212
+    }
+  },
+  "queries": 10858,
+  "new": 831,
+  "dependent_new": 685,
+  "removed_rescues": 519,
+  "replicated_exchange": {
+    "pairs": 2048,
+    "clean": 2020,
+    "double_switch_init": 2016,
+    "double_switch_write": 0,
+    "delta": 0.984375,
+    "interval": [
+      0.97900390625,
+      0.9892578125
+    ],
+    "correct_after_init": 0,
+    "correct_after_write": 2020
+  }
+}

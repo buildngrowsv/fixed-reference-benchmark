@@ -1,0 +1,9 @@
+{
+  "job": "sealed-definition-exchange",
+  "revision": "0f174b6739e2f8dced3720181fb9825e09e3a50f",
+  "attempt": 1,
+  "started": "2026-11-20T01:30:15+00:00",
+  "status": "done",
+  "finished": "2026-11-20T01:30:17+00:00",
+  "exit": 0
+}

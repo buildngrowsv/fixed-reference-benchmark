@@ -1,0 +1,28 @@
+{
+  "decision": "complete",
+  "columns": [
+    "program",
+    "event",
+    "query_type",
+    "gold",
+    "native",
+    "graft",
+    "removed"
+  ],
+  "counts": {
+    "original": {
+      "total": 5442,
+      "graft_new": 692,
+      "new_lost_when_removed": 583,
+      "gained_when_removed": 224,
+      "lost_relative_to_native": 267
+    },
+    "current": {
+      "total": 5416,
+      "graft_new": 139,
+      "new_lost_when_removed": 102,
+      "gained_when_removed": 295,
+      "lost_relative_to_native": 212
+    }
+  }
+}
