@@ -200,5 +200,40 @@
     "after": {
       "nested-donor-graft": "replicate"
     }
+  },
+  {
+    "id": "cpython-lane-exchange",
+    "repo": "fixed-reference-benchmark",
+    "revision": "fb1be61a0417a3cd2e74059274b7f739792143ee",
+    "script": "code_reference/exchange.py",
+    "args": [],
+    "after": {
+      "cpython-reference-main": "any"
+    }
+  },
+  {
+    "id": "shared-depth-screen",
+    "repo": "fixed-reference-benchmark",
+    "revision": "7318624bb3d6bc491e33f4a18307740a9898ed69",
+    "script": "code_reference/shared.py",
+    "args": [
+      "screen"
+    ],
+    "after": {
+      "cpython-reference-mid": "advance"
+    }
+  },
+  {
+    "id": "shared-depth-main",
+    "repo": "fixed-reference-benchmark",
+    "revision": "7318624bb3d6bc491e33f4a18307740a9898ed69",
+    "script": "code_reference/shared.py",
+    "args": [
+      "main"
+    ],
+    "after": {
+      "shared-depth-screen": "advance",
+      "cpython-reference-main": "any"
+    }
   }
 ]
