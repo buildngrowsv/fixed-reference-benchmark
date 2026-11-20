@@ -36,3 +36,5 @@ Continuing the dense 227M checkpoint at the original learning rate, 0.00045, pro
 The owner proposed the scale revisit. OpenAI Codex implemented the experiments, operated the owner's Mac Studio over SSH, checked the released counts and assisted with writing. Run both verification scripts in this directory with Python and NumPy to reproduce the comparisons. [Width audit](audit.json) · [Graft audit counts](graft-audit.json)
 
 [Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/384)
+
+Pubroot’s automated review rejected this short-budget study. The wide models received about 0.0185 training tokens per parameter and the dense continuation became unstable. The host ran MLX 0.32.4 on an Apple M5 Ultra. [Review and methods qualification](../../FRONTIER_LARGE_MODELS.md) · [Recorded runtime](../../runtime.json)

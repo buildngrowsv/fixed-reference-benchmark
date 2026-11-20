@@ -12,3 +12,5 @@
 The hidden-door controller and its exact graph interpreter already tied on the available crossing rule. A harder rule would make another size comparison informative there. In the two-view depth study, the fixed geometric matcher already beat the learned model on the current renderer. A new visibility or image-distribution challenge would give a larger learned model room to demonstrate an advantage. [Doorway results](hidden_door/README.md) · [Depth evidence](https://github.com/buildngrowsv/parallax-depth-benchmark)
 
 The Studio runs training jobs serially with pinned source revisions. The queue records downstream conditions as well as active experiments. [Run manifest](studio_queue/queue.json)
+
+The [frontier review](FRONTIER_LARGE_MODELS.md) records the architectural precedent, the equal-size controls, the competing baselines and the Pubroot outcomes.

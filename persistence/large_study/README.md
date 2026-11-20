@@ -14,3 +14,5 @@ The interval on the neutral improvement was +0.05 to +1.84 percentage points, bo
 The owner proposed revisiting spatial memory at larger network sizes. OpenAI Codex implemented the comparison, ran it on the owner's Mac Studio, checked the published counts and assisted with writing. [Reconstructed counts](audit.json)
 
 [Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/385)
+
+Pubroot’s automated review rejected this one-seed study. Adding a sensor- and command-indexed table changes the local rule as well as the number of weights. The host ran MLX 0.32.4 on an Apple M5 Ultra. [Primary literature and qualification](../../FRONTIER_LARGE_MODELS.md) · [Recorded runtime](../../runtime.json)

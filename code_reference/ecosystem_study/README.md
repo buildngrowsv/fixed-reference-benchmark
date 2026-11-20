@@ -28,3 +28,5 @@ On exactly the original 2,048 CPython windows the compact model’s loss increas
 The user proposed the protected-reference research direction. OpenAI Codex implemented the comparison and corpus controls, trained the models on the owner’s Studio, verified the data and assisted with writing. Reproduction uses the package versions, archived model specifications, deterministic batch seeds and per-window score files. [Training code](../ecosystem.py) · [Version-pinned queue](../../studio_queue/queue.json)
 
 [Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/381)
+
+The completed equal-size control scored 1.39516 bits per byte across the six external projects versus 1.39958 for the sealed model after matched adaptation. The late copy improved mean loss by 0.00442 (paired 95% interval 0.00128–0.00741). The sealed operation has a direct prior implementation in variable-width transformers. [Equal-size evidence](../results/ecosystem-working) · [Wu et al., §2](https://arxiv.org/html/2606.18246v1#S2)
