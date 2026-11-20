@@ -925,5 +925,14 @@
     "after": {
       "qwen-numeric-computed-intervention": "computed_transfer"
     }
+  },
+  {
+    "id": "qwen-numeric-compose-two-operands",
+    "repo": "routed-expert-splice",
+    "revision": "b640590b733111878fc3d15497940e4913ab667e",
+    "script": "nested_surgery/identifier_numeric_composition.py",
+    "after": {
+      "qwen-numeric-operand-cross-model": "transfer"
+    }
   }
 ]
