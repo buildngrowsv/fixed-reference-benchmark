@@ -1,0 +1,30 @@
+{
+  "convolution-503": {
+    "programs": 1024,
+    "adapted_correct": 11427,
+    "frozen_correct": 9641,
+    "native_correct": 11365,
+    "checked": true
+  },
+  "recurrent-503": {
+    "programs": 1024,
+    "adapted_correct": 12085,
+    "frozen_correct": 10350,
+    "native_correct": 12035,
+    "checked": true
+  },
+  "convolution-607": {
+    "programs": 1024,
+    "adapted_correct": 11334,
+    "frozen_correct": 9599,
+    "native_correct": 11301,
+    "checked": true
+  },
+  "recurrent-607": {
+    "programs": 1024,
+    "adapted_correct": 12046,
+    "frozen_correct": 10365,
+    "native_correct": 12009,
+    "checked": true
+  }
+}

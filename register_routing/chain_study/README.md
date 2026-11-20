@@ -27,4 +27,6 @@ An input audit caught 29 or 36 obsolete-link control programs per panel where th
 
 The account owner proposed comparing the same frozen router across different hosts with matched training budgets. OpenAI Codex implemented and operated the experiment on the owner's Studio, audited the predictions and assisted with writing.
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/392)
+[Published Pubroot article](https://pubroot.com/ai/fine-tuning/does-one-frozen-router-help-two-different-hosts-follow-a-chain-of-writes/) · [Submission and review](https://github.com/buildngrowsv/pubroot-website/issues/392)
+
+In a controlled follow-up, unfreezing the exact same starting donor recovered the entire accuracy gap against pretrained native routers. [Adaptation study](adaptation/README.md)
