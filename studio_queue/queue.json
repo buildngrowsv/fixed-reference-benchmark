@@ -20,5 +20,65 @@
     "repo": "fixed-reference-benchmark",
     "revision": "597c5cd74c1f8f0bce62c492d4a9fa32383c1774",
     "script": "spatial_graft/run.py"
+  },
+  {
+    "id": "reference-transformer-pilot",
+    "args": [
+      "pilot",
+      "101",
+      "none"
+    ],
+    "repo": "fixed-reference-benchmark",
+    "revision": "1a5021a0a213093e0078a043e9582f5b12072b2f",
+    "script": "reference_lm/train.py"
+  },
+  {
+    "id": "reference-transformer-main",
+    "args": [
+      "main",
+      "101",
+      "reference-transformer-pilot"
+    ],
+    "after": {
+      "reference-transformer-pilot": "scale"
+    },
+    "repo": "fixed-reference-benchmark",
+    "revision": "1a5021a0a213093e0078a043e9582f5b12072b2f",
+    "script": "reference_lm/train.py"
+  },
+  {
+    "id": "reference-transformer-replication",
+    "args": [
+      "replication",
+      "211",
+      "none"
+    ],
+    "after": {
+      "reference-transformer-main": "replicate"
+    },
+    "repo": "fixed-reference-benchmark",
+    "revision": "1a5021a0a213093e0078a043e9582f5b12072b2f",
+    "script": "reference_lm/train.py"
+  },
+  {
+    "id": "third-camera-occlusion",
+    "args": [
+      "pilot"
+    ],
+    "repo": "parallax-depth-benchmark",
+    "revision": "a9cb3f003df5397e3b225970e3c20857f673fba0",
+    "script": "occlusion/run.py"
+  },
+  {
+    "id": "third-camera-confirmation",
+    "args": [
+      "confirm"
+    ],
+    "after": {
+      "third-camera-occlusion": "confirm"
+    },
+    "repo": "parallax-depth-benchmark",
+    "revision": "a9cb3f003df5397e3b225970e3c20857f673fba0",
+    "script": "occlusion/run.py"
   }
 ]

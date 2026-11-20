@@ -25,18 +25,18 @@ class Projection(nn.Linear):
         return x@self.weight.astype(x.dtype).T
 
 class Block(nn.Module):
-    def __init__(self,protected):
+    def __init__(self,protected,width=WIDTH):
         super().__init__()
-        self.qkv=Projection(WIDTH,3*WIDTH,bias=False);self.out=Projection(WIDTH,WIDTH,bias=False)
-        self.up=Projection(WIDTH,4*WIDTH,bias=False);self.down=Projection(4*WIDTH,WIDTH,bias=False)
-        self.norm1=nn.RMSNorm(WIDTH);self.norm2=nn.RMSNorm(WIDTH)
+        self.qkv=Projection(width,3*width,bias=False);self.out=Projection(width,width,bias=False)
+        self.up=Projection(width,4*width,bias=False);self.down=Projection(4*width,width,bias=False)
+        self.norm1=nn.RMSNorm(width);self.norm2=nn.RMSNorm(width)
         if protected:
             for proj in (self.out,self.down):
                 proj.weight=mx.concatenate([proj.weight[:-64],mx.zeros_like(proj.weight[-64:])])
     def __call__(self,x,protect):
         n,t,d=x.shape
         q,k,v=mx.split(self.qkv(self.norm1(x).astype(x.dtype)),3,axis=-1)
-        def heads(z):return z.reshape(n,t,6,64).transpose(0,2,1,3)
+        def heads(z):return z.reshape(n,t,d//64,64).transpose(0,2,1,3)
         attended=mx.fast.scaled_dot_product_attention(heads(q),heads(k),heads(v),scale=.125,mask="causal")
         def add(h,inc):
             if protect:return mx.concatenate([h[...,:-64]+inc[...,:-64],h[...,-64:]],axis=-1)
