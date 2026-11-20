@@ -800,5 +800,11 @@
     "after": {
       "large-qwen-paired-input-calibration": "ordinary"
     }
+  },
+  {
+    "id": "qwen-identifier-source-intervention",
+    "repo": "routed-expert-splice",
+    "revision": "78c3181ae1f7dc2c044ad8b8a14ef73c46ae2731",
+    "script": "nested_surgery/identifier_baseline.py"
   }
 ]

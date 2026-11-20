@@ -25,4 +25,4 @@ The protected slice meets the registered criterion for a readable representation
 
 The owner proposed forward references and their evaluation at scale. OpenAI Codex implemented and ran the interventions on the owner’s Apple M5 Ultra, verified the evidence and assisted with writing. [Recorded runtime](../../runtime.json)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/417)
+Pubroot’s automated review requested comparison with standard open models. A paired extension now tests the same distinction in Qwen2.5-Coder-7B and Qwen2.5-14B at approximately one fifth of their depth. [Open-checkpoint comparison](https://github.com/buildngrowsv/routed-expert-splice/blob/78c3181ae1f7dc2c044ad8b8a14ef73c46ae2731/nested_surgery/IDENTIFIER_BASELINE.md) · [Public review](https://github.com/buildngrowsv/pubroot-website/issues/417)
