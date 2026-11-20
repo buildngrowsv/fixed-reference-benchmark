@@ -10,9 +10,10 @@ from mlx.utils import tree_flatten
 from train_code import CodeLM, Block, Corpus, OUT, RUNS, evaluate, interval, snapshot, restore, write
 
 class Bypass(CodeLM):
-    def __init__(self, working_exit=False):
+    def __init__(self, working_exit=False, magnitude_exit=False):
         super().__init__()
         self.working_exit=working_exit
+        self.magnitude_exit=magnitude_exit
         for i in range(2,9):
             src=self.blocks[i]
             b=Block(False,448)
@@ -33,22 +34,28 @@ class Bypass(CodeLM):
             x=block(x,False)
         if self.working_exit:
             lane=x[...,-64:]
+            if self.magnitude_exit:
+                lane=mx.abs(lane)
         x=self.blocks[-1](mx.concatenate([x,lane],axis=-1),False)
         return self.read(self.norm(x).astype(x.dtype)).astype(mx.float32)
 
 def main():
     phase=sys.argv[1]
-    working_exit=sys.argv[2:] == ["working-exit"]
+    magnitude_exit=sys.argv[2:] == ["magnitude-exit"]
+    working_exit=magnitude_exit or sys.argv[2:] == ["working-exit"]
     name="working-exit" if working_exit else "sealed"
+    if magnitude_exit:
+        name="magnitude-exit"
+        assert phase=="main"
     end=4096 if phase=="screen" else 16384
     corpus=Corpus()
     mx.random.seed(101)
-    model=Bypass(working_exit)
+    model=Bypass(working_exit,magnitude_exit)
     params=sum(w.size for _,w in tree_flatten(model.parameters()))
     opt=optim.AdamW(lambda s:.0004*mx.minimum(1.,(s.astype(mx.float32)+1)/128),weight_decay=.03,bias_correction=True)
     path=OUT/"bypass.safetensors"
     start=restore(model,opt,path) if path.exists() else 0
-    if not start and phase=="main":
+    if not start and phase=="main" and not magnitude_exit:
         parent_id="working-exit-screen" if working_exit else "sealed-bypass-screen"
         start=restore(model,opt,RUNS/parent_id/path.name)
     def objective(m,x,y):return nn.losses.cross_entropy(m(x),y,reduction="mean")
@@ -88,6 +95,11 @@ def main():
                 np.testing.assert_array_equal(ref["windows"],w)
                 np.testing.assert_array_equal(ref["groups"],g)
                 result["sealed"]=dict(delta=float((v[:,0]-ref["scores"][:,0]).mean()/512),ci=interval(v,ref["scores"],g))
+        if magnitude_exit:
+            with np.load(RUNS/"working-exit-main"/(file+".npz")) as ref:
+                np.testing.assert_array_equal(ref["windows"],w)
+                np.testing.assert_array_equal(ref["groups"],g)
+                result["duplicate"]=dict(delta=float((v[:,0]-ref["scores"][:,0]).mean()/512),ci=interval(v,ref["scores"],g))
         metrics[split]=result
     go=params<=.9*31992320 and metrics["val"]["fixed"]["ci"][1]<=.05
     if working_exit:
