@@ -699,5 +699,14 @@
       "large-python-width-rate-mid": "advance",
       "cpython-reference-main": "any"
     }
+  },
+  {
+    "id": "large-qwen-donor-location",
+    "repo": "routed-expert-splice",
+    "revision": "cb610736843c43fec6babaf572f15fecb45fc167",
+    "script": "nested_surgery/donor_location.py",
+    "after": {
+      "large-qwen-fresh-panel-reference": "complete"
+    }
   }
 ]

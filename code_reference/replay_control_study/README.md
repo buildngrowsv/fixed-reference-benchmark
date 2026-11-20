@@ -23,4 +23,4 @@ Subtracting the early-copy replay effect from the current-state effect gave −0
 
 Old-data replay has precedent in continued language-model training. Here the intervention isolates whether our earlier benefit required transporting the early state. The owner proposed the underlying forward-reference research. OpenAI Codex implemented and ran the comparisons on the owner's Apple M5 Ultra and assisted with verification and writing. [Ibrahim et al.](https://arxiv.org/abs/2403.08763) · [Run environment](../../runtime.json)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/401)
+Pubroot rejected the submission. The pinned repository contains the per-window scores and reconstruction script. [Public review](https://github.com/buildngrowsv/pubroot-website/issues/401)
