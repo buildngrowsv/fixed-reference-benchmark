@@ -15,11 +15,11 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/"reference_lm"))
 from train import Block,Projection,snapshot,restore,write,OUT,RUNS
 
 class CodeLM(nn.Module):
-    def __init__(self):
+    def __init__(self,width=512,protected_width=64):
         super().__init__()
-        self.tokens=nn.Embedding(256,512);self.pos=nn.Embedding(512,512)
-        self.blocks=[Block(2<=j<9,512) for j in range(10)]
-        self.norm=nn.RMSNorm(512);self.read=Projection(512,256,bias=False)
+        self.tokens=nn.Embedding(256,width);self.pos=nn.Embedding(512,width)
+        self.blocks=[Block(2<=j<9,width,protected_width) for j in range(10)]
+        self.norm=nn.RMSNorm(width);self.read=Projection(width,256,bias=False)
     def __call__(self,ids,fixed):
         x=(self.tokens(ids)+self.pos(mx.arange(ids.shape[1]))).astype(mx.bfloat16)
         for j,block in enumerate(self.blocks):x=block(x,fixed and 2<=j<9)

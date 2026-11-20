@@ -29,7 +29,7 @@ class RoutedModel(Model):
         for j,b in enumerate(self.blocks):
             if j!=3:x=b(x,False);continue
             n,t,d=x.shape
-            q,k,v=[z.reshape(n,t,6,64).transpose(0,2,1,3) for z in mx.split(b.qkv(b.norm1(x).astype(x.dtype)),3,axis=-1)]
+            q,k,v=[z.reshape(n,t,d//64,64).transpose(0,2,1,3) for z in mx.split(b.qkv(b.norm1(x).astype(x.dtype)),3,axis=-1)]
             a=mx.fast.scaled_dot_product_attention(q[:,:1],k[:,:1],v[:,:1],scale=.125,mask=mask)
             if first_head is not None:
                 a=first_head

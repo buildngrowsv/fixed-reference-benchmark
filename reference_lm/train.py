@@ -25,31 +25,32 @@ class Projection(nn.Linear):
         return x@self.weight.astype(x.dtype).T
 
 class Block(nn.Module):
-    def __init__(self,protected,width=WIDTH):
+    def __init__(self,protected,width=WIDTH,protected_width=64):
         super().__init__()
+        self.protected_width=protected_width
         self.qkv=Projection(width,3*width,bias=False);self.out=Projection(width,width,bias=False)
         self.up=Projection(width,4*width,bias=False);self.down=Projection(4*width,width,bias=False)
         self.norm1=nn.RMSNorm(width);self.norm2=nn.RMSNorm(width)
         if protected:
             for proj in (self.out,self.down):
-                proj.weight=mx.concatenate([proj.weight[:-64],mx.zeros_like(proj.weight[-64:])])
+                proj.weight=mx.concatenate([proj.weight[:-protected_width],mx.zeros_like(proj.weight[-protected_width:])])
     def __call__(self,x,protect):
         n,t,d=x.shape
         q,k,v=mx.split(self.qkv(self.norm1(x).astype(x.dtype)),3,axis=-1)
         def heads(z):return z.reshape(n,t,d//64,64).transpose(0,2,1,3)
         attended=mx.fast.scaled_dot_product_attention(heads(q),heads(k),heads(v),scale=.125,mask="causal")
         def add(h,inc):
-            if protect:return mx.concatenate([h[...,:-64]+inc[...,:-64],h[...,-64:]],axis=-1)
+            if protect:return mx.concatenate([h[...,:-self.protected_width]+inc[...,:-self.protected_width],h[...,-self.protected_width:]],axis=-1)
             return h+inc
         x=add(x,self.out(attended.transpose(0,2,1,3).reshape(n,t,d)))
         return add(x,self.down(nn.gelu(self.up(self.norm2(x).astype(x.dtype)))))
 
 class Model(nn.Module):
-    def __init__(self):
+    def __init__(self,width=WIDTH):
         super().__init__()
-        self.tokens=nn.Embedding(54,WIDTH);self.pos=nn.Embedding(256,WIDTH)
-        self.blocks=[Block(2<=j<7) for j in range(8)]
-        self.read=Projection(WIDTH,32,bias=False);self.norm=nn.RMSNorm(WIDTH)
+        self.tokens=nn.Embedding(54,width);self.pos=nn.Embedding(256,width)
+        self.blocks=[Block(2<=j<7,width) for j in range(8)]
+        self.read=Projection(width,32,bias=False);self.norm=nn.RMSNorm(width)
     def __call__(self,ids,fixed,swap=False):
         x=(self.tokens(ids)+self.pos(mx.arange(ids.shape[1]))).astype(mx.bfloat16)
         for j,b in enumerate(self.blocks):
