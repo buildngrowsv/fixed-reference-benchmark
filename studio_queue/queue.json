@@ -1083,5 +1083,15 @@
     "after": {
       "spatial-4096-long-hold": "long_hold_leakage"
     }
+  },
+  {
+    "id": "qwen-borrowed-two-operands-32b",
+    "repo": "routed-expert-splice",
+    "revision": "f0fc062c821766701472077421ec9cc02c6d11e6",
+    "script": "nested_surgery/identifier_numeric_carry_32b.py",
+    "after": {
+      "qwen-two-operands-carry": "carry_composes",
+      "qwen-one-pass-scalar-32b": "answer_free_gain"
+    }
   }
 ]
