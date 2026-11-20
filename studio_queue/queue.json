@@ -1330,5 +1330,17 @@
     "after": {
       "spatial-fixed-probe-count-7077888": "fixed_probe_count_scales"
     }
+  },
+  {
+    "id": "spatial-sampled-witness-routing-7077888",
+    "repo": "fixed-reference-benchmark",
+    "revision": "4a1efc1b06daed1d250ce4edc79f9860234951cb",
+    "script": "spatial_references/sampled_witness_routing.py",
+    "args": [
+      "--large"
+    ],
+    "after": {
+      "spatial-sampled-witness-routing-884736": "same_probes_support_routing"
+    }
   }
 ]
