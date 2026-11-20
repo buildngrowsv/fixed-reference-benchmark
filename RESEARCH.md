@@ -10,7 +10,7 @@ In a second previously adapted recipient, the compact donor switched both correc
 
 The [live queue and controls](studio_queue/README.md) show what is running, what can run next and which branches closed. The public [experiment manifest](studio_queue/queue.json) records the precommitted code and conditions.
 
-**Fixed reference on real code.** At 285M and 4,096 updates the fixed and writable models scored 5.737 and 5.079 validation bits per byte. Both missed the learning gate. A matched lower-rate recovery is underway. If both recovery arms reach basic competence, the 238M equal-size early- versus late-copy test can reuse the recovered readable baseline. [Sealed-copy comparison](code_reference/LARGE_SEALED.md) [Wide-stage audit](code_reference/large_study/README.md)
+**Fixed reference on real code.** Reducing the learning rate threefold brought the 285M fixed and writable models from 5.737 and 5.079 to 1.02025 and 1.01431 validation bits per byte at identical data exposure. Both qualified for the held-out continuation and the matched-rate 238M sealed versus late-copy screen. [Paired recovery and raw scores](code_reference/large_study/recovery/README.md) · [Sealed-copy comparison](code_reference/LARGE_SEALED.md)
 
 At 16,384 updates, the 32M-parameter fixed arm scored 1.02012 versus 1.02210 held-out bits per byte. The paired package interval crossed zero. On 1,024 identifier pairs, exchanging the protected values erased 16 previously correct pairs, compared with 98 after exchanging 64 neighboring values. The independent training gate closed. Seven applications of a shared block also missed the step-matched four-block control while taking 2.23 times as long. [Study and public evidence](code_reference/README.md)
 

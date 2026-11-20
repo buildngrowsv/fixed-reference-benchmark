@@ -1,0 +1,9 @@
+{
+  "arm": "writable",
+  "step": 4096,
+  "target": 4096,
+  "parameters": 284720640,
+  "loss": 0.5932839512825012,
+  "time": 1795146309.734794,
+  "tokens_per_second": 42849.581940134056
+}

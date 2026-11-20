@@ -1,0 +1,73 @@
+{
+  "windows": 1024,
+  "packages": 42,
+  "performance": {
+    "original_fixed": {
+      "bpb": 5.737040727913559,
+      "accuracy": 0.13199996948242188
+    },
+    "original_writable": {
+      "bpb": 5.079112809501008,
+      "accuracy": 0.29527854919433594
+    },
+    "recovery_fixed": {
+      "bpb": 1.020251827195647,
+      "accuracy": 0.801422119140625
+    },
+    "recovery_writable": {
+      "bpb": 1.0143089302220618,
+      "accuracy": 0.8019676208496094
+    },
+    "small_fixed": {
+      "bpb": 1.0354869361830126,
+      "accuracy": 0.7980175018310547
+    },
+    "small_writable": {
+      "bpb": 1.0425327907937143,
+      "accuracy": 0.7969760894775391
+    }
+  },
+  "reduced_minus_original_rate": {
+    "fixed": {
+      "delta": -4.716788900717912,
+      "interval": [
+        -4.909310551686706,
+        -4.619564948375125
+      ],
+      "packages": 42
+    },
+    "writable": {
+      "delta": -4.064803879278945,
+      "interval": [
+        -4.196647287098226,
+        -3.996453206368949
+      ],
+      "packages": 42
+    }
+  },
+  "fixed_minus_writable": {
+    "delta": 0.005942896973585289,
+    "interval": [
+      0.002167322124212567,
+      0.007901299796396671
+    ],
+    "packages": 42
+  },
+  "size_interaction": {
+    "delta": 0.012988751584286792,
+    "interval": [
+      0.0067664330193651,
+      0.016865704536158994
+    ],
+    "packages": 42
+  },
+  "change_in_fixed_minus_writable_between_rates": {
+    "delta": -0.6519850214389662,
+    "interval": [
+      -0.7379680374078754,
+      -0.6081448452397057
+    ],
+    "packages": 42
+  },
+  "passed": true
+}
