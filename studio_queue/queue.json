@@ -480,5 +480,15 @@
     "after": {
       "displaced-prefix-surgery": "replicate"
     }
+  },
+  {
+    "id": "displaced-independent-host",
+    "repo": "fixed-reference-benchmark",
+    "revision": "0ca9128e61a7a4f8f049592fc39afb94c8bf299f",
+    "script": "register_routing/independent_host.py",
+    "after": {
+      "displaced-prefix-surgery": "replicate",
+      "register-stable-random-second-seed": "any"
+    }
   }
 ]
