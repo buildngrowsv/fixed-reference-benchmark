@@ -22,3 +22,5 @@ After seeing the result, we took each model's saved highest-scoring write positi
 The CPU training and evaluation ran in 62.52 seconds on an Apple M5 Ultra, peaking at 302 MB resident memory, using Python 3.12.16, MLX 0.32.4 and NumPy 2.5.5. The release retains new predictions and fresh program records. In the repository root, set `STUDIO_JOB_DIR` to a new writable directory and run `python register_routing/paired_edits.py`. Audit the fresh inputs and all paired metrics with `python register_routing/verify_paired_edits.py register_routing/chain_study/paired_edits/results register_routing/chain_study/results register_routing/chain_study/adaptation/results`. [Run receipt](results/receipt.json) · [Verifier](../../verify_paired_edits.py)
 
 The account owner requested the paired-edit test under a fixed update budget. OpenAI Codex implemented it, ran it over SSH on the owner's Studio, and checked the results.
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/396)
