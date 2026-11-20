@@ -1,0 +1,173 @@
+{
+  "decision": "dedicated_probes_restore_routing",
+  "counts": [
+    [
+      [
+        21235431,
+        21029055,
+        169869312,
+        123252594,
+        21023469,
+        8960256
+      ],
+      [
+        21235431,
+        21029625,
+        169869312,
+        110822595,
+        21023469,
+        13056384
+      ]
+    ],
+    [
+      [
+        21235431,
+        21029241,
+        169869312,
+        119753103,
+        21023469,
+        9823872
+      ],
+      [
+        21235431,
+        21029283,
+        169869312,
+        119826261,
+        21023469,
+        9786816
+      ]
+    ],
+    [
+      [
+        21235431,
+        21029055,
+        169869312,
+        123252594,
+        21023469,
+        8960256
+      ],
+      [
+        21235431,
+        21029184,
+        169869312,
+        123241176,
+        21023469,
+        8960256
+      ]
+    ]
+  ],
+  "rates": {
+    "fixed": {
+      "aligned": {
+        "retention": 0.725573045236093,
+        "legitimate": 0.9900184743130479,
+        "false_writes": 0.05274793836805555
+      },
+      "shifted": {
+        "retention": 0.652399151413529,
+        "legitimate": 0.9900184743130479,
+        "false_writes": 0.07686134620949074
+      }
+    },
+    "inferred": {
+      "aligned": {
+        "retention": 0.7049719669200756,
+        "legitimate": 0.9900184743130479,
+        "false_writes": 0.057831940827546294
+      },
+      "shifted": {
+        "retention": 0.7054026391771104,
+        "legitimate": 0.9900184743130479,
+        "false_writes": 0.05761379665798611
+      }
+    },
+    "known": {
+      "aligned": {
+        "retention": 0.725573045236093,
+        "legitimate": 0.9900184743130479,
+        "false_writes": 0.05274793836805555
+      },
+      "shifted": {
+        "retention": 0.7255058288574219,
+        "legitimate": 0.9900184743130479,
+        "false_writes": 0.05274793836805555
+      }
+    }
+  },
+  "boundary_accuracy": {
+    "aligned": {
+      "exact": 0.78125,
+      "within_four": 0.796875
+    },
+    "shifted": {
+      "exact": 0.7760416666666666,
+      "within_four": 0.796875
+    }
+  },
+  "inferred_minus_fixed": {
+    "aligned": {
+      "mean": -0.02060107831601743,
+      "interval": [
+        -0.02465556595060553,
+        -0.016821238729688836
+      ]
+    },
+    "shifted": {
+      "mean": 0.053003487763581436,
+      "interval": [
+        0.03606100612216526,
+        0.07126972984384604
+      ]
+    }
+  },
+  "cells": 884736,
+  "worlds": 8,
+  "transitions": 256,
+  "probes_per_plane": 64,
+  "anchors_per_region": 1024,
+  "sample_fraction_upper": 0.057870370370370364,
+  "paired_minus_dense": {
+    "aligned": {
+      "mean": -0.0010671615600585938,
+      "interval": [
+        -0.001714100219585335,
+        -0.0004420103850187873
+      ]
+    },
+    "shifted": {
+      "mean": -0.002020341378671131,
+      "interval": [
+        -0.0033058859683848586,
+        -0.0008104372907567407
+      ]
+    }
+  },
+  "paired_minus_shared": {
+    "aligned": {
+      "mean": 0.02878484019526728,
+      "interval": [
+        0.022610790641219604,
+        0.03491024529492423
+      ]
+    },
+    "shifted": {
+      "mean": 0.02817817970558445,
+      "interval": [
+        0.02408993773990205,
+        0.03283969605410543
+      ]
+    }
+  },
+  "frozen_checkpoints": {
+    "101": "ae2a23ea08ab472b835057a9da54a845ee35f68f841a20148f6ac3eae9335fd9",
+    "211": "077cc996a3ef0d988c774b2c1a74a91ee1d1ac5c31c1a953ba2067aa44c6f060",
+    "307": "05d814c3e9d768c48454fbaf694573c1b84a8a9d89f18be059e1887f7bc980d8"
+  },
+  "comparator_sha256": {
+    "spatial-stratified-region-probes": "eb800214487a2d19ddc6a286e77ae7300b27df5f3ba01f6ab21e1e061f6474ea",
+    "spatial-sampled-witness-routing-884736": "77e659e19f7e77c4fe8f3d29b03a2a15e47ba91ad9131096243e41082300d6ce"
+  },
+  "runtime_s": 142.03358237500652,
+  "peak_mlx_bytes": 1791591008,
+  "archived_controls_and_boundaries_match": true
+}
