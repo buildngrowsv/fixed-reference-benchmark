@@ -1132,5 +1132,18 @@
     "after": {
       "qwen-borrowed-two-operands-32b": "unresolved"
     }
+  },
+  {
+    "id": "qwen-cross-width-method-control-32b",
+    "repo": "routed-expert-splice",
+    "revision": "9cef06213271ed3e72e8c089ae89af82f917238d",
+    "script": "nested_surgery/identifier_numeric_width_72b.py",
+    "args": [
+      "--recipient",
+      "32b"
+    ],
+    "after": {
+      "qwen-one-pass-scalar-32b": "answer_free_gain"
+    }
   }
 ]
