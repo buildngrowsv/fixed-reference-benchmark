@@ -729,5 +729,17 @@
     "after": {
       "large-python-width-rate-mid": "advance"
     }
+  },
+  {
+    "id": "large-python-qualified-lane-exchange",
+    "repo": "fixed-reference-benchmark",
+    "revision": "671f31066e9c0588869a8dda102374bb7cc6d7c7",
+    "script": "code_reference/exchange.py",
+    "args": [
+      "--wide"
+    ],
+    "after": {
+      "large-python-width-rate-main": "complete"
+    }
   }
 ]
