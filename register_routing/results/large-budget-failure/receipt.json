@@ -1,0 +1,9 @@
+{
+  "job": "large-register-long-budget",
+  "revision": "0452989282dbdbbb073cae0d1b7de2ab74be25c1",
+  "attempt": 2,
+  "started": "2026-11-20T02:10:31+00:00",
+  "status": "failed",
+  "finished": "2026-11-20T02:10:51+00:00",
+  "exit": 1
+}

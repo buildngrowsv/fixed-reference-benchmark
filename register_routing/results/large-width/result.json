@@ -1,0 +1,52 @@
+{
+  "decision": "complete",
+  "parameters": {
+    "dense": 227043840,
+    "rotated": 227043840
+  },
+  "width": 1536,
+  "accuracy": {
+    "small_dense": [
+      0.11962441314553991,
+      0.05731188759474949
+    ],
+    "small_rotated": [
+      0.9924882629107982,
+      0.8526529857644666
+    ],
+    "large_dense": [
+      0.030422535211267605,
+      0.030134960251432797
+    ],
+    "large_rotated": [
+      0.044131455399061034,
+      0.036790534294694026
+    ]
+  },
+  "gaps": {
+    "small": 0.8341024739674877,
+    "large": 0.010182247115527326
+  },
+  "large_gap_interval": [
+    0.004471725432511003,
+    0.016269203665114626
+  ],
+  "change_in_gap": -0.8239202268519604,
+  "change_interval": [
+    -0.8335317629863241,
+    -0.8142158774601242
+  ],
+  "swap": {
+    "pairs": 1024,
+    "clean": 1,
+    "double_switch_init": 1,
+    "double_switch_write": 0,
+    "delta": 0.0009765625,
+    "interval": [
+      0.0,
+      0.0029296875
+    ],
+    "correct_after_init": 0,
+    "correct_after_write": 1
+  }
+}

@@ -1,0 +1,22 @@
+Traceback (most recent call last):
+  File "/Users/ak/research/architecture-queue/sources/0452989282dbdbbb073cae0d1b7de2ab74be25c1/register_routing/large_budget.py", line 28, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/Users/ak/research/architecture-queue/sources/0452989282dbdbbb073cae0d1b7de2ab74be25c1/register_routing/large_budget.py", line 15, in main
+    model,count=fit(arm,4096,parent)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ak/research/architecture-queue/sources/0452989282dbdbbb073cae0d1b7de2ab74be25c1/register_routing/large_revisit.py", line 42, in fit
+    if not np.isfinite(loss.item()):raise ValueError("nonfinite training loss")
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: nonfinite training loss
+Traceback (most recent call last):
+  File "/Users/ak/research/architecture-queue/sources/0452989282dbdbbb073cae0d1b7de2ab74be25c1/register_routing/large_budget.py", line 28, in <module>
+    if __name__=="__main__":main()
+                            ^^^^^^
+  File "/Users/ak/research/architecture-queue/sources/0452989282dbdbbb073cae0d1b7de2ab74be25c1/register_routing/large_budget.py", line 15, in main
+    model,count=fit(arm,4096,parent)
+                ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ak/research/architecture-queue/sources/0452989282dbdbbb073cae0d1b7de2ab74be25c1/register_routing/large_revisit.py", line 42, in fit
+    if not np.isfinite(loss.item()):raise ValueError("nonfinite training loss")
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+ValueError: nonfinite training loss

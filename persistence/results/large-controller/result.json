@@ -1,0 +1,29 @@
+{
+  "decision": "stop",
+  "weights": 57812,
+  "arms": {
+    "persistent": {
+      "validation": 0.19666666666666666,
+      "read_bank": 0,
+      "large": 0.06724547023295945,
+      "small": 0.057754529767040555,
+      "improvement_interval": [
+        0.0005368273032651185,
+        0.018415054632803494
+      ],
+      "selective_disruption": 0.01057964535836686
+    },
+    "biased": {
+      "validation": 1.0,
+      "read_bank": 1,
+      "large": 1.0,
+      "small": 1.0,
+      "improvement_interval": [
+        0.0,
+        0.0
+      ],
+      "selective_disruption": 1.0
+    }
+  },
+  "large_grid": {}
+}

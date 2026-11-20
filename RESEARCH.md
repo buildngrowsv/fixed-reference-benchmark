@@ -1,5 +1,7 @@
 # Open experiments and decisions
 
+The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons, the numerical stability follow-up, the 285M Python run and the 7B/14B coding qualification.
+
 ## Studio queue and current evidence
 
 The [live queue and controls](studio_queue/README.md) show what is running, what can run next and which branches closed. The public [experiment manifest](studio_queue/queue.json) records the precommitted code and conditions.

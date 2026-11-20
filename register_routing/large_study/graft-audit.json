@@ -1,0 +1,12 @@
+{
+  "queries": 10938,
+  "all_on_to_off_losses": 6,
+  "paired_off_interval": [
+    -0.0015382671100006645,
+    0.00018087314337608917
+  ],
+  "graft_new": 333,
+  "new_lost_off": 4,
+  "native_solves_lost": 297,
+  "off_rescues": 13
+}

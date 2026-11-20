@@ -1,0 +1,22 @@
+{
+  "persistent": {
+    "words": 18544,
+    "large_correct": 1247,
+    "small_correct": 1071,
+    "improvement_interval": [
+      0.0005368273032651185,
+      0.018415054632803494
+    ],
+    "selective_disruption": 0.01057964535836686
+  },
+  "biased": {
+    "words": 18544,
+    "large_correct": 18544,
+    "small_correct": 18544,
+    "improvement_interval": [
+      0.0,
+      0.0
+    ],
+    "selective_disruption": 1.0
+  }
+}

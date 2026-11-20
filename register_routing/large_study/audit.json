@@ -1,0 +1,28 @@
+{
+  "parameters": [
+    14293632,
+    227043840
+  ],
+  "programs": 1024,
+  "original_queries": 5325,
+  "current_queries": 5409,
+  "balanced": {
+    "small_dense": 0.0884681503701447,
+    "small_rotated": 0.9225706243376324,
+    "large_dense": 0.0302787477313502,
+    "large_rotated": 0.04046099484687753
+  },
+  "large_gap_interval": [
+    0.004471725432511003,
+    0.016269203665114623
+  ],
+  "change_interval": [
+    -0.8335317629863243,
+    -0.8142158774601242
+  ],
+  "clean_pairs": 1,
+  "switches": [
+    1,
+    0
+  ]
+}
