@@ -573,6 +573,12 @@
     }
   },
   {
+    "id": "large-qwen-opener-qualification",
+    "repo": "routed-expert-splice",
+    "revision": "07daabb4ff4b6bf11928cc40fd84b426ecaca952",
+    "script": "nested_surgery/large_opener.py"
+  },
+  {
     "id": "large-python-reference-mid",
     "repo": "fixed-reference-benchmark",
     "revision": "7cbf2c50f8d2d72cf372c3f9b1d81a119062d5ab",
