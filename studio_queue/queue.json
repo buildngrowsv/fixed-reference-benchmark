@@ -667,5 +667,14 @@
     "after": {
       "large-qwen-opener-qualification": "advance"
     }
+  },
+  {
+    "id": "large-register-budget-baseline",
+    "repo": "fixed-reference-benchmark",
+    "revision": "21378bb91f893ae54cd0c30f1e92701f26efa682",
+    "script": "register_routing/large_before.py",
+    "after": {
+      "large-register-quarter-rate": "complete"
+    }
   }
 ]
