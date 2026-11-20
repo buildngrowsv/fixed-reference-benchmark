@@ -23,7 +23,7 @@ def routing(ids,wrong):
     return mx.where(is_query[:,:,None],use|self_edge[None,:,:],causal[None,:,:])[:,None,:,:]
 
 class RoutedModel(Model):
-    def __call__(self,ids,fixed=False,wrong=False,mask=None,exchange=None):
+    def __call__(self,ids,fixed=False,wrong=False,mask=None,exchange=None,first_head=None):
         x=(self.tokens(ids)+self.pos(mx.arange(ids.shape[1]))).astype(mx.bfloat16)
         if mask is None:mask=routing(ids,wrong)
         for j,b in enumerate(self.blocks):
@@ -31,6 +31,8 @@ class RoutedModel(Model):
             n,t,d=x.shape
             q,k,v=[z.reshape(n,t,6,64).transpose(0,2,1,3) for z in mx.split(b.qkv(b.norm1(x).astype(x.dtype)),3,axis=-1)]
             a=mx.fast.scaled_dot_product_attention(q[:,:1],k[:,:1],v[:,:1],scale=.125,mask=mask)
+            if first_head is not None:
+                a=first_head
             if exchange is not None:
                 slots,partners=exchange
                 target=(mx.arange(t)[None,:]==slots[:,None])[:,None,:,None]

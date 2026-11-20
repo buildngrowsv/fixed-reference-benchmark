@@ -57,6 +57,39 @@ def smoke():
     print("Verified head identity, reversibility and trainable weights", freeze_except_receiver(host))
 
 
+def adapt(model, arm, source=None):
+    opt = optimizer()
+    count = freeze_except_receiver(model)
+    path = OUT / (arm + ".safetensors")
+    start = restore(model, opt, path) if path.exists() else 0
+    def objective(m, x, y, op):
+        head = None if source is None else mx.stop_gradient(source(x))
+        logits = m(x, wrong=True, first_head=head)
+        loss = nn.losses.cross_entropy(logits, y, reduction="none")
+        use = op >= 2
+        return (loss * use).sum() / mx.maximum(use.sum(), 1)
+    grad = nn.value_and_grad(model, objective)
+    state = [model.state, opt.state]
+    @partial(mx.compile, inputs=state, outputs=state)
+    def update(x, y, op):
+        value, grads = grad(model, x, y, op)
+        grads, _ = optim.clip_grad_norm(grads, 1.)
+        opt.update(model, grads)
+        return value
+    since = time.monotonic()
+    for t in range(start + 1, 1025):
+        ids, targets, operations, _, _ = batch([717139, t])
+        loss = update(mx.array(ids), mx.array(targets), mx.array(operations))
+        mx.eval(loss, state)
+        if t % 64 == 0:
+            if not np.isfinite(loss.item()):
+                raise ValueError("nonfinite training loss")
+            snapshot(model, opt, t, path)
+            write("progress.json", dict(arm=arm, step=t, target=1024, loss=loss.item(), time=time.time(),
+                  tokens_per_second=(t-start)*8192/(time.monotonic()-since)))
+    return count
+
+
 def main():
     if sys.argv[1:] == ["smoke"]:
         smoke()
@@ -71,34 +104,7 @@ def main():
         model = load_model(HOST)
         if arm == "graft":
             install_head(model, donor)
-        opt = optimizer()
-        count = freeze_except_receiver(model)
-        path = OUT / (arm + ".safetensors")
-        start = restore(model, opt, path) if path.exists() else 0
-        def objective(m, x, y, op):
-            logits = m(x, wrong=True)
-            loss = nn.losses.cross_entropy(logits, y, reduction="none")
-            use = op >= 2
-            return (loss * use).sum() / mx.maximum(use.sum(), 1)
-        grad = nn.value_and_grad(model, objective)
-        state = [model.state, opt.state]
-        @partial(mx.compile, inputs=state, outputs=state)
-        def update(x, y, op):
-            value, grads = grad(model, x, y, op)
-            grads, _ = optim.clip_grad_norm(grads, 1.)
-            opt.update(model, grads)
-            return value
-        since = time.monotonic()
-        for t in range(start + 1, 1025):
-            ids, targets, operations, _, _ = batch([717139, t])
-            loss = update(mx.array(ids), mx.array(targets), mx.array(operations))
-            mx.eval(loss, state)
-            if t % 64 == 0:
-                if not np.isfinite(loss.item()):
-                    raise ValueError("nonfinite training loss")
-                snapshot(model, opt, t, path)
-                write("progress.json", dict(arm=arm, step=t, target=1024, loss=loss.item(), time=time.time(),
-                      tokens_per_second=(t-start)*8192/(time.monotonic()-since)))
+        count = adapt(model, arm)
         counts[arm] = evaluate(model, "rotated", 482731)
         if arm == "graft":
             install_head(model, native)
