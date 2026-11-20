@@ -1354,5 +1354,14 @@
     "after": {
       "qwen-dictionary-key-order-72b": "key_order_restores_whole_state_routing"
     }
+  },
+  {
+    "id": "spatial-anchored-witness-routing-884736",
+    "repo": "fixed-reference-benchmark",
+    "revision": "9cf49311e47fd8a28ca3b7eb08dd5078cd835a15",
+    "script": "spatial_references/anchored_witness_routing.py",
+    "after": {
+      "spatial-sampled-witness-routing-884736": "unresolved"
+    }
   }
 ]
