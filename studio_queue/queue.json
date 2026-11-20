@@ -977,5 +977,14 @@
     "after": {
       "qwen-identifier-attention-paths": "routing_resolved"
     }
+  },
+  {
+    "id": "qwen-two-operands-full-vocabulary",
+    "repo": "routed-expert-splice",
+    "revision": "0305bacfd0837e0ed6d7b15c781fc57ab3dca28a",
+    "script": "nested_surgery/identifier_numeric_composition_open.py",
+    "after": {
+      "qwen-two-operand-native-qualification": "composes"
+    }
   }
 ]
