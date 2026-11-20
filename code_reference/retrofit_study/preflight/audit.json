@@ -1,0 +1,46 @@
+{
+  "decision": "preflight",
+  "checkpoint": "cpython-reference-mid",
+  "width": 512,
+  "lane": 64,
+  "tokens_per_window": 128,
+  "validation_seed": 493210,
+  "validation_windows": 16,
+  "validation_bpb": {
+    "native": 1.4093615946004208,
+    "selected": 1.4522031124908295,
+    "random": 1.455349723194389
+  },
+  "contrasts": {
+    "selected_minus_native": {
+      "delta": 0.04284151789040852,
+      "interval": [
+        -0.00043720446744340994,
+        0.07045907612818346
+      ]
+    },
+    "random_minus_selected": {
+      "delta": 0.0031466107035594895,
+      "interval": [
+        -0.029325859841696087,
+        0.024328026998349777
+      ]
+    }
+  },
+  "clean_pairs": {
+    "native": 8,
+    "selected": 8,
+    "random": 7
+  },
+  "test_pairs": 8,
+  "eligible_pairs": 7,
+  "target_switches": {
+    "selected": 0,
+    "random": 0
+  },
+  "switch_advantage": 0.0,
+  "switch_interval": [
+    0.0,
+    0.0
+  ]
+}
