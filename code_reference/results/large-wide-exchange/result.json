@@ -1,0 +1,94 @@
+{
+  "decision": "complete",
+  "models": {
+    "fixed": {
+      "modes": {
+        "clean": {
+          "pairs": 935,
+          "n": 1024,
+          "top1": 1183,
+          "mean_log_odds": 8.170263402163982,
+          "lost": 0,
+          "gained": 0
+        },
+        "designated": {
+          "pairs": 933,
+          "n": 1024,
+          "top1": 1177,
+          "mean_log_odds": 8.130517777986825,
+          "lost": 2,
+          "gained": 0
+        },
+        "neighbor": {
+          "pairs": 822,
+          "n": 1024,
+          "top1": 1011,
+          "mean_log_odds": 5.882276028394699,
+          "lost": 113,
+          "gained": 0
+        },
+        "whole": {
+          "pairs": 0,
+          "n": 1024,
+          "top1": 12,
+          "mean_log_odds": -8.170263402163982,
+          "lost": 935,
+          "gained": 0
+        }
+      },
+      "extra_designated_losses": -111,
+      "interval": [
+        -0.1279296875,
+        -0.0888671875
+      ],
+      "qualified": false
+    },
+    "writable": {
+      "modes": {
+        "clean": {
+          "pairs": 941,
+          "n": 1024,
+          "top1": 1277,
+          "mean_log_odds": 9.429175242781639,
+          "lost": 0,
+          "gained": 0
+        },
+        "designated": {
+          "pairs": 863,
+          "n": 1024,
+          "top1": 1156,
+          "mean_log_odds": 7.61537856515497,
+          "lost": 78,
+          "gained": 0
+        },
+        "neighbor": {
+          "pairs": 842,
+          "n": 1024,
+          "top1": 1117,
+          "mean_log_odds": 7.17665109410882,
+          "lost": 99,
+          "gained": 0
+        },
+        "whole": {
+          "pairs": 0,
+          "n": 1024,
+          "top1": 16,
+          "mean_log_odds": -9.429175242781639,
+          "lost": 941,
+          "gained": 0
+        }
+      },
+      "extra_designated_losses": -21,
+      "interval": [
+        -0.029296875,
+        -0.01171875
+      ],
+      "qualified": false
+    }
+  },
+  "pairs": 1024,
+  "width": 1536,
+  "lane": 192,
+  "checkpoint": "large-python-width-rate-main",
+  "seed_scheme": "cpython-ref-swap-20261119"
+}

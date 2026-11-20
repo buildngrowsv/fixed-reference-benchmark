@@ -1,0 +1,46 @@
+{
+  "decision": "stop",
+  "checkpoint": "large-python-width-rate-mid",
+  "width": 1536,
+  "lane": 192,
+  "tokens_per_window": 512,
+  "validation_seed": 584134,
+  "validation_windows": 512,
+  "validation_bpb": {
+    "native": 1.0260784140664774,
+    "selected": 1.0748834507816982,
+    "random": 1.045715014410667
+  },
+  "contrasts": {
+    "selected_minus_native": {
+      "delta": 0.04880503671522103,
+      "interval": [
+        0.04377415508764935,
+        0.057850050400773304
+      ]
+    },
+    "random_minus_selected": {
+      "delta": -0.02916843637103141,
+      "interval": [
+        -0.034818386984495735,
+        -0.02575582336118815
+      ]
+    }
+  },
+  "clean_pairs": {
+    "native": 503,
+    "selected": 486,
+    "random": 498
+  },
+  "test_pairs": 512,
+  "eligible_pairs": 482,
+  "target_switches": {
+    "selected": 0,
+    "random": 0
+  },
+  "switch_advantage": 0.0,
+  "switch_interval": [
+    0.0,
+    0.0
+  ]
+}

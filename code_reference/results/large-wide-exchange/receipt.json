@@ -1,0 +1,9 @@
+{
+  "job": "large-python-qualified-lane-exchange",
+  "revision": "671f31066e9c0588869a8dda102374bb7cc6d7c7",
+  "attempt": 1,
+  "started": "2026-11-20T05:05:31+00:00",
+  "status": "done",
+  "finished": "2026-11-20T05:05:40+00:00",
+  "exit": 0
+}

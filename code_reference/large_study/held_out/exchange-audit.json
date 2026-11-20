@@ -1,0 +1,138 @@
+{
+  "small": {
+    "fixed": {
+      "outcomes": {
+        "clean": {
+          "solved": 960,
+          "lost": 0,
+          "gained": 0,
+          "both_switched": 0
+        },
+        "designated": {
+          "solved": 944,
+          "lost": 16,
+          "gained": 0,
+          "both_switched": 0
+        },
+        "neighbor": {
+          "solved": 862,
+          "lost": 98,
+          "gained": 0,
+          "both_switched": 0
+        },
+        "whole": {
+          "solved": 0,
+          "lost": 960,
+          "gained": 0,
+          "both_switched": 960
+        }
+      },
+      "excess_fixed_losses": -82,
+      "interval": [
+        -0.0966796875,
+        -0.064453125
+      ]
+    },
+    "writable": {
+      "outcomes": {
+        "clean": {
+          "solved": 922,
+          "lost": 0,
+          "gained": 0,
+          "both_switched": 0
+        },
+        "designated": {
+          "solved": 859,
+          "lost": 63,
+          "gained": 0,
+          "both_switched": 0
+        },
+        "neighbor": {
+          "solved": 837,
+          "lost": 85,
+          "gained": 0,
+          "both_switched": 0
+        },
+        "whole": {
+          "solved": 0,
+          "lost": 922,
+          "gained": 0,
+          "both_switched": 922
+        }
+      },
+      "excess_fixed_losses": -22,
+      "interval": [
+        -0.0341796875,
+        -0.009765625
+      ]
+    }
+  },
+  "large": {
+    "fixed": {
+      "outcomes": {
+        "clean": {
+          "solved": 935,
+          "lost": 0,
+          "gained": 0,
+          "both_switched": 0
+        },
+        "designated": {
+          "solved": 933,
+          "lost": 2,
+          "gained": 0,
+          "both_switched": 0
+        },
+        "neighbor": {
+          "solved": 822,
+          "lost": 113,
+          "gained": 0,
+          "both_switched": 0
+        },
+        "whole": {
+          "solved": 0,
+          "lost": 935,
+          "gained": 0,
+          "both_switched": 935
+        }
+      },
+      "excess_fixed_losses": -111,
+      "interval": [
+        -0.1279296875,
+        -0.0888671875
+      ]
+    },
+    "writable": {
+      "outcomes": {
+        "clean": {
+          "solved": 941,
+          "lost": 0,
+          "gained": 0,
+          "both_switched": 0
+        },
+        "designated": {
+          "solved": 863,
+          "lost": 78,
+          "gained": 0,
+          "both_switched": 0
+        },
+        "neighbor": {
+          "solved": 842,
+          "lost": 99,
+          "gained": 0,
+          "both_switched": 0
+        },
+        "whole": {
+          "solved": 0,
+          "lost": 941,
+          "gained": 0,
+          "both_switched": 941
+        }
+      },
+      "excess_fixed_losses": -21,
+      "interval": [
+        -0.029296875,
+        -0.01171875
+      ]
+    }
+  }
+}
