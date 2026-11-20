@@ -57,7 +57,7 @@ def smoke():
     print("Verified head identity, reversibility and trainable weights", freeze_except_receiver(host))
 
 
-def adapt(model, arm, source=None):
+def adapt(model, arm, source=None, training_seed=717139):
     opt = optimizer()
     count = freeze_except_receiver(model)
     path = OUT / (arm + ".safetensors")
@@ -78,7 +78,7 @@ def adapt(model, arm, source=None):
         return value
     since = time.monotonic()
     for t in range(start + 1, 1025):
-        ids, targets, operations, _, _ = batch([717139, t])
+        ids, targets, operations, _, _ = batch([training_seed, t])
         loss = update(mx.array(ids), mx.array(targets), mx.array(operations))
         mx.eval(loss, state)
         if t % 64 == 0:
