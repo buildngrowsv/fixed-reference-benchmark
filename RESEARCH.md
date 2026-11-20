@@ -4,6 +4,8 @@ The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons,
 
 ## Studio queue and current evidence
 
+**Branch selection at 72B.** A single donor edit changes the selector value while leaving both candidate payloads intact. Two mirrored programs require answers to switch in opposite directions, and a third requires the same edit to preserve the answer. The run uses the archived alignment and tests native, whole-state and equal-norm orthogonal controls. [Registered protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/19cee73af47266e6e6099d494cc831f5960970f1/nested_surgery/NUMERIC_ROUTE_72B.md)
+
 [Literature and significance](FRONTIER.md) · [Large-model frontier review](FRONTIER_LARGE_MODELS.md)
 
 In a second previously adapted recipient, the compact donor switched both correct answers in 2,018 of 2,022 eligible pairs. Reordering independent registers separately cost the original trained hybrid 13.09 recall points. In Python adaptation, replaying one original CPython batch in eight removed 87.27% of prior forgetting and improved all six external project losses. [Portable memory and schedule controls](register_routing/portability_study/README.md) · [Paired rehearsal study](code_reference/rehearsal_study/README.md)
