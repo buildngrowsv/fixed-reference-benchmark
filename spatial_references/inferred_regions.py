@@ -67,7 +67,7 @@ def distributed_positions(rng, side):
 
 
 def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False, stratified=False,
-             sampled_routes=None, device_router=None):
+             sampled_routes=None, device_router=None, boundary_jump=False):
     rng = np.random.default_rng(931622 + world)
     observer = np.random.default_rng(790133 + world)
     probes = None
@@ -100,12 +100,16 @@ def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False
     memory = mx.broadcast_to(work, (len(POLICIES), *size, 32))
     origin = saved = np.arange(side**3, dtype=np.int32).reshape(shape)
     known = np.stack((np.zeros(3, dtype=int), rng.choice(np.arange(4, half, 4), size=3)))
+    fixed = known.copy() if boundary_jump else np.zeros_like(known)
     directions = rng.permutation(np.repeat([0, 1, 2], [3, 3, 2]))
     step, measure = compiled
     unrestricted = np.ones((len(POLICIES), *size), dtype=bool)
     counts, shifts = [], []
 
-    for _ in range(rounds):
+    for round_index in range(rounds):
+        if boundary_jump and round_index == rounds//2:
+            known = known.copy()
+            known[1] = (known[1] + half//2) % half
         selected = rng.random(shape) < .125
         delivered = selected & (rng.random(shape) >= .01)
         regions = [np.moveaxis(fault_mask(rng, half)[1], 2, a) for a in directions]
@@ -130,7 +134,7 @@ def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False
                 else:
                     decisions = np.stack([direct(previous[i]) for i in range(len(STIMULI))])
                     inferred, choices = decisions[:, :3], decisions[:, 3:]
-                offsets = np.stack((np.zeros_like(known), inferred, known))
+                offsets = np.stack((fixed, inferred, known))
                 policies = []
                 for i, (rule, arm) in enumerate(zip(witness_rules, offsets, strict=True)):
                     if choices is not None and POLICIES[i] == "inferred":
