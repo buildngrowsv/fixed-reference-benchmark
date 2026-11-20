@@ -591,6 +591,30 @@
     }
   },
   {
+    "id": "large-register-quarter-rate",
+    "repo": "fixed-reference-benchmark",
+    "revision": "2c800d516717c8cb4b6953a4961e1c56df837359",
+    "script": "register_routing/large_stability.py",
+    "args": [
+      "quarter-rate"
+    ],
+    "after": {
+      "large-register-dense-vs-displaced": "complete"
+    }
+  },
+  {
+    "id": "large-register-original-routed",
+    "repo": "fixed-reference-benchmark",
+    "revision": "2c800d516717c8cb4b6953a4961e1c56df837359",
+    "script": "register_routing/large_stability.py",
+    "args": [
+      "finish-original"
+    ],
+    "after": {
+      "large-register-dense-vs-displaced": "complete"
+    }
+  },
+  {
     "id": "large-python-reference-main",
     "repo": "fixed-reference-benchmark",
     "revision": "7cbf2c50f8d2d72cf372c3f9b1d81a119062d5ab",
