@@ -1557,5 +1557,14 @@
     "repo": "parallax-depth-benchmark",
     "revision": "a0bffd5f97b2aff5b4f1c495058b3fd8e44287f7",
     "script": "dtu/stereo_fusion.py"
+  },
+  {
+    "id": "spatial-witness-common-start-7077888",
+    "repo": "fixed-reference-benchmark",
+    "revision": "06b0d79fea62aad422522880344f9cbfa6b1d25b",
+    "script": "spatial_references/witness_common_start.py",
+    "after": {
+      "spatial-witness-staggered-jumps-7077888": "unresolved"
+    }
   }
 ]
