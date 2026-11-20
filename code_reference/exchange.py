@@ -1,5 +1,5 @@
 """Interchange the putative read-only lane across paired executable programs."""
-import json
+import argparse
 import string
 import random
 import numpy as np
@@ -27,11 +27,27 @@ def logits(model,h,idx):
     y=model.read(model.norm(x[mx.arange(len(idx)),mx.array(idx)]).astype(x.dtype)).astype(mx.float32)
     return np.array(y)
 
+def exchanged_states(x, partner, lane):
+    start = x.shape[-1] - lane
+    neighbor = start - lane
+    return {
+        "clean": x,
+        "designated": mx.concatenate([x[..., :start], partner[..., start:]], axis=-1),
+        "neighbor": mx.concatenate([x[..., :neighbor], partner[..., neighbor:start], x[..., start:]], axis=-1),
+        "whole": partner,
+    }
+
+
 def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--wide", action="store_true")
+    args = parser.parse_args()
+    width, lane = (1536, 192) if args.wide else (512, 64)
+    training_run = "large-python-width-rate-main" if args.wide else "cpython-reference-main"
     batch=list(pairs(1024));details={}
     for arm in ("fixed","writable"):
-        model=CodeLM()
-        data=mx.load(str(RUNS/"cpython-reference-main"/(arm+".safetensors")))
+        model=CodeLM(width=width, protected_width=lane)
+        data=mx.load(str(RUNS/training_run/(arm+".safetensors")))
         model.load_weights([(k[8:],v) for k,v in data.items() if k.startswith("weights.")])
         assert int(data["step"].item())==16384
         del data
@@ -48,10 +64,14 @@ def main():
             x=(model.tokens(mx.array(ids))+model.pos(mx.arange(ids.shape[1]))).astype(mx.bfloat16)
             for j,b in enumerate(model.blocks[:-1]):x=b(x,arm=="fixed" and 2<=j<9)
             other=x[mx.array(ix)]
-            hidden={"clean":x,"designated":mx.concatenate([x[...,:448],other[...,448:]],axis=-1),
-                "neighbor":mx.concatenate([x[...,:384],other[...,384:448],x[...,448:]],axis=-1),"whole":other}
+            hidden=exchanged_states(x,other,lane)
             z={k:logits(model,h,lengths-1) for k,h in hidden.items()}
             np.testing.assert_array_equal(z["clean"][ix],z["whole"])
+            if args.wide and offset == 0:
+                forward = model(mx.array(ids), arm == "fixed")
+                actual = np.array(forward[mx.arange(len(ids)), mx.array(lengths - 1)])
+                np.testing.assert_allclose(z["clean"], actual, rtol=.002, atol=.06)
+                np.testing.assert_array_equal(z["clean"].argmax(1), actual.argmax(1))
             for k,v in z.items():
                 margin=v[np.arange(len(v)),gold]-v[np.arange(len(v)),gold[ix]]
                 rows=np.stack([gold,v.argmax(1),margin],axis=1).reshape(2,size,3).transpose(1,0,2)
@@ -66,6 +86,6 @@ def main():
             mean_log_odds=float(v[:,:,2].mean()),lost=int((both["clean"]&~both[k]).sum()),
             gained=int((~both["clean"]&both[k]).sum())) for k,v in arr.items()},
             extra_designated_losses=int(diff.sum()),interval=ci,qualified=bool(both["clean"].mean()>.50 and diff.sum()>=32 and ci[0]>0))
-    write("result.json",dict(decision="complete",models=details,pairs=len(batch),seed_scheme="cpython-ref-swap-20261119"))
+    write("result.json",dict(decision="complete",models=details,pairs=len(batch),width=width,lane=lane,checkpoint=training_run,seed_scheme="cpython-ref-swap-20261119"))
 if __name__=="__main__":main()
 
