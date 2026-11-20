@@ -1234,5 +1234,17 @@
     "after": {
       "qwen-opposite-operator-72b": "benchmark_below_floor"
     }
+  },
+  {
+    "id": "spatial-stratified-region-probes",
+    "repo": "fixed-reference-benchmark",
+    "revision": "24739b3275db87b8e1d05a0a9b7cc861381f0e73",
+    "script": "spatial_references/inferred_regions.py",
+    "args": [
+      "--stratified"
+    ],
+    "after": {
+      "spatial-sparse-inferred-regions-884736": "unresolved"
+    }
   }
 ]
