@@ -962,5 +962,11 @@
     "after": {
       "qwen-numeric-compose-two-operands": "unresolved"
     }
+  },
+  {
+    "id": "orthogonal-view-depth-alias",
+    "repo": "parallax-depth-benchmark",
+    "revision": "6e4d97bfbd639239d597fd06b78082068573d0c6",
+    "script": "orthogonal/run.py"
   }
 ]
