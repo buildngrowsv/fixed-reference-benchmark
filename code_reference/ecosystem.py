@@ -82,7 +82,7 @@ def difference(a,b):
         draws.append(numer[sample].sum(1)/denom[sample].sum(1));means.append(float(diff[use].mean()))
     return dict(project_differences=means,macro=float(np.mean(means)),interval=np.quantile(np.mean(draws,axis=0),[.025,.975]).tolist())
 
-def train(model,arm,projects):
+def train(model,arm,projects,rehearsal=None):
     opt=optim.AdamW(lambda t:.0002*mx.minimum(1.,(t.astype(mx.float32)+1)/128),weight_decay=.03,bias_correction=True)
     path=OUT/(arm+".safetensors")
     def objective(m,x,y):return nn.losses.cross_entropy(m(x,True),y,reduction="mean")
@@ -94,7 +94,10 @@ def train(model,arm,projects):
     since=time.monotonic()
     for t in range(start+1,STEPS+1):
         rng=np.random.default_rng([638151,t]);names=projects.splits["adapt"]
-        data,_,_=projects.sample(names[rng.integers(len(names))],rng,16)
+        if rehearsal is not None and t%8==0:
+            data,*_=rehearsal.batch("train",[629147,t],16)
+        else:
+            data,_,_=projects.sample(names[rng.integers(len(names))],rng,16)
         loss=step(mx.array(data[:,:-1]),mx.array(data[:,1:]));mx.eval(loss,state)
         if t%64==0:
             if not np.isfinite(loss.item()):raise ValueError("nonfinite training loss")
