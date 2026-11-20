@@ -4,6 +4,8 @@ The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons,
 
 ## Studio queue and current evidence
 
+**Selected versus unused assignments.** The 7B donor edit switched 245 of 250 native-qualified groups at the read assignment in the frozen 72B host. It preserved 246 groups at the unused assignment. The same-size orthogonal edit switched zero. The saved-value follow-up tests whether the model still tracks the original assignment after an overwrite. [Verified outcome](https://github.com/buildngrowsv/routed-expert-splice/tree/5105b5059b969a9aab7aefcc336f009e279565e9/nested_surgery/numeric_select_72b_study) · [Saved-value protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/cf12ac324612d1779b7eeb6e380968474e5a337b/nested_surgery/NUMERIC_SNAPSHOT_72B.md)
+
 **Branch selection at 72B.** A single donor edit changes the selector value while leaving both candidate payloads intact. Two mirrored programs require answers to switch in opposite directions, and a third requires the same edit to preserve the answer. The run uses the archived alignment and tests native, whole-state and equal-norm orthogonal controls. [Registered protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/19cee73af47266e6e6099d494cc831f5960970f1/nested_surgery/NUMERIC_ROUTE_72B.md)
 
 [Literature and significance](FRONTIER.md) · [Large-model frontier review](FRONTIER_LARGE_MODELS.md)
