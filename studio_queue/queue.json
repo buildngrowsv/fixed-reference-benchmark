@@ -1297,5 +1297,17 @@
     "after": {
       "spatial-stratified-region-probes": "unresolved"
     }
+  },
+  {
+    "id": "qwen-context-matched-overwrite-72b",
+    "repo": "routed-expert-splice",
+    "revision": "b5a8e086a68aeac4808d9bc14d9c79a722d0ac6c",
+    "script": "nested_surgery/identifier_snapshot_overwrite_72b.py",
+    "model_snapshots": [
+      "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+    ],
+    "after": {
+      "qwen-saved-value-vs-overwrite-72b": "unresolved"
+    }
   }
 ]
