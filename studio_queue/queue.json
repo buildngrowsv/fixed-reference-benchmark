@@ -376,5 +376,18 @@
     "after": {
       "register-random-address": "any"
     }
+  },
+  {
+    "id": "working-exit-repeat",
+    "repo": "fixed-reference-benchmark",
+    "revision": "9e9a62ed64b174936d51917dc23fba3e7e3f160f",
+    "script": "code_reference/bypass_repeat.py",
+    "args": [
+      "working-exit"
+    ],
+    "after": {
+      "working-exit-screen": "advance",
+      "sealed-bypass-repeat": "any"
+    }
   }
 ]
