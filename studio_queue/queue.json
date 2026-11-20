@@ -825,5 +825,14 @@
     "after": {
       "large-qwen-recalibrated-graft": "stop"
     }
+  },
+  {
+    "id": "qwen-learned-identifier-subspace",
+    "repo": "routed-expert-splice",
+    "revision": "9744af55c991b08c1db5a0880d099513c078c242",
+    "script": "nested_surgery/identifier_subspace.py",
+    "after": {
+      "qwen-identifier-source-intervention": "complete"
+    }
   }
 ]
