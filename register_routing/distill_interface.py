@@ -15,11 +15,18 @@ class Student(nn.Module):
         self.tokens=nn.Embedding(54,128);self.pos=nn.Embedding(256,128)
         self.context=Block(False,128);self.norm=nn.RMSNorm(128)
         self.read=Projection(128,3*64,bias=False)
-    def __call__(self,x):
+    def __call__(self,x,exchange=None):
         h=(self.tokens(x)+self.pos(mx.arange(x.shape[1]))).astype(mx.bfloat16)
         h=self.context(h,False)
         q,k,v=mx.split(self.read(self.norm(h).astype(h.dtype)),3,axis=-1)
-        return mx.fast.scaled_dot_product_attention(q[:,None],k[:,None],v[:,None],scale=.125,mask=routing(x,True))
+        mask=routing(x,True)
+        attention=mx.fast.scaled_dot_product_attention(q[:,None],k[:,None],v[:,None],scale=.125,mask=mask)
+        if exchange is None:return attention
+        slots,partners=exchange
+        site=(mx.arange(x.shape[1])[None,:]==slots[:,None])[:,:,None]
+        changed=mx.where(site,v[partners],v)
+        alt=mx.fast.scaled_dot_product_attention(q[:,None],k[:,None],changed[:,None],scale=.125,mask=mask)
+        return mx.concatenate([attention[:,:,:-1],alt[:,:,-1:]],axis=2)
 
 def objective(m,x,target,queries):
     error=mx.square(m(x).astype(mx.float32)-target.astype(mx.float32)).mean(axis=(1,3))

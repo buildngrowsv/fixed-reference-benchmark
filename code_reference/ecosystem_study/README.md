@@ -26,3 +26,5 @@ Each project has equal weight in the reported mean. Before adaptation the compac
 On exactly the original 2,048 CPython windows the compact model’s loss increased by 0.21198 bits per byte and the larger model’s by 0.21604. These measurements show a change in prediction quality under this budget and training mixture. A separate registered test replaces every eighth adaptation batch with original CPython training data to measure how much of the loss can be recovered at fixed compute. [Rehearsal protocol](../REHEARSAL.md)
 
 The user proposed the protected-reference research direction. OpenAI Codex implemented the comparison and corpus controls, trained the models on the owner’s Studio, verified the data and assisted with writing. Reproduction uses the package versions, archived model specifications, deterministic batch seeds and per-window score files. [Training code](../ecosystem.py) · [Version-pinned queue](../../studio_queue/queue.json)
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/381)
