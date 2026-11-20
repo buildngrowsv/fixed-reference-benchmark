@@ -1726,5 +1726,17 @@
     "after": {
       "spatial-sheared-witness-7077888": "unresolved"
     }
+  },
+  {
+    "id": "large-qwen-graft-constant-control",
+    "repo": "routed-expert-splice",
+    "revision": "131020da906d6f8c546e3aa43e9272c3b264548d",
+    "script": "nested_surgery/frozen_graft_constant_control.py",
+    "model_snapshots": [
+      "97e1e76335b7017d8f67c08a19d103c0504298c9"
+    ],
+    "after": {
+      "large-qwen-graft-early-exit": "unresolved"
+    }
   }
 ]
