@@ -20,4 +20,4 @@ The far-minus-near gain under compact faults was **29.32 points**, with a paired
 
 Run `uv run --with numpy python spatial_references/witness_study/verify.py` to check checkpoint identities, recover the counts and recompute paired intervals. The Studio run took 43.83 seconds and reached 531 MB in peak MLX allocation. It used an Apple M5 Ultra with 80 GPU cores and 256 GiB unified memory, macOS 27.2, Python 3.12.16, MLX 0.32.4 and NumPy 2.5.5. The frozen gate scores and 32-value activations are float32. The account owner proposed larger volumetric tests of protected references. OpenAI Codex implemented, ran and verified this comparison and assisted with writing. [Version-pinned receipt](results/receipt.json)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/483)
+[Published Pubroot article](https://pubroot.com/ai/fine-tuning/spacing-write-witnesses-eight-cells-apart-rescued-memory-under-compact-faults/) · [Submission and review](https://github.com/buildngrowsv/pubroot-website/issues/483)
