@@ -1059,5 +1059,14 @@
     "after": {
       "qwen-numeric-identifier-route-transfer": "unresolved"
     }
+  },
+  {
+    "id": "qwen-one-pass-scalar-32b",
+    "repo": "routed-expert-splice",
+    "revision": "f00e012434a769932da68c89e832b43644f1b1f4",
+    "script": "nested_surgery/identifier_numeric_scalar_32b.py",
+    "after": {
+      "qwen-one-pass-raw-32b": "unresolved"
+    }
   }
 ]
