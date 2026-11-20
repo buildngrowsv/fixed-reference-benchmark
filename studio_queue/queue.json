@@ -421,5 +421,18 @@
       "sealed-bypass-repeat": "any",
       "working-exit-main": "any"
     }
+  },
+  {
+    "id": "magnitude-exit-main",
+    "repo": "fixed-reference-benchmark",
+    "revision": "ab8dffa615c296a1615a8828275d6c0d49e12589",
+    "script": "code_reference/bypass.py",
+    "args": [
+      "main",
+      "magnitude-exit"
+    ],
+    "after": {
+      "working-exit-main": "any"
+    }
   }
 ]
