@@ -1,0 +1,90 @@
+{
+  "receiver": {
+    "before_donor": 0.2907566515933665,
+    "after_donor": 0.9036047984040244,
+    "before_host": 0.09771154475810125,
+    "after_host": 0.09954236423851298
+  },
+  "donor_source_gain": {
+    "delta": 0.6128481468106579,
+    "interval": [
+      0.6074790059126537,
+      0.6184073008690073
+    ]
+  },
+  "interaction": {
+    "delta": 0.6110173273302463,
+    "interval": [
+      0.6052140554774782,
+      0.6169212810989539
+    ]
+  },
+  "both_required": 25141,
+  "queries": 43305,
+  "qualified": true,
+  "independent": {
+    "donor": 0.9161625314808344,
+    "native_on_displaced_mask": 0.0923926811256152,
+    "before": 0.0925806795900907,
+    "trained": 0.8988316758735018,
+    "source_removed": 0.06786927040207674,
+    "initial": 0.10110344305218201
+  },
+  "independent_contrasts": {
+    "initial": {
+      "delta": 0.7977282328213198,
+      "interval": [
+        0.7896437434846354,
+        0.8058898526434928
+      ]
+    },
+    "source_removed": {
+      "delta": 0.8309624054714251,
+      "interval": [
+        0.8232883577109712,
+        0.8382443610641881
+      ]
+    },
+    "before": {
+      "delta": 0.806250996283411,
+      "interval": [
+        0.7984766433307678,
+        0.8143796990633337
+      ]
+    }
+  },
+  "independent_qualified": true,
+  "distilled": {
+    "balanced": {
+      "teacher": 0.901168733053354,
+      "aligned": 0.9029036145707028,
+      "permuted": 0.06983416711500834
+    },
+    "contrasts": {
+      "teacher": {
+        "delta": 0.0017348815173487964,
+        "interval": [
+          -0.0006381995381827515,
+          0.004090399388681502
+        ]
+      },
+      "permuted": {
+        "delta": 0.8330694474556944,
+        "interval": [
+          0.8257072028269767,
+          0.8404882535921391
+        ]
+      }
+    },
+    "weights": [
+      261248,
+      5503872
+    ],
+    "fraction_saved": 0.9525337798553455,
+    "median_batch_ms": {
+      "teacher": 7.732562495220918,
+      "aligned": 5.6883545039454475
+    },
+    "observed_speed_ratio": 1.3593671930709674
+  }
+}
