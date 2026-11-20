@@ -1363,5 +1363,17 @@
     "after": {
       "spatial-sampled-witness-routing-884736": "unresolved"
     }
+  },
+  {
+    "id": "qwen-late-key-donor-fresh-72b",
+    "repo": "routed-expert-splice",
+    "revision": "ad2451d54e4b6c70aa73749686402a0f317a4897",
+    "script": "nested_surgery/identifier_lookup_order_fresh_72b.py",
+    "model_snapshots": [
+      "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+    ],
+    "after": {
+      "qwen-late-key-donor-transfer-72b": "late_key_donor_transfer"
+    }
   }
 ]
