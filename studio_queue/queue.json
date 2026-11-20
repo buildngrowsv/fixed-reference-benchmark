@@ -1198,5 +1198,17 @@
     "after": {
       "spatial-regional-witness-884736": "regional_beats_global"
     }
+  },
+  {
+    "id": "qwen-opposite-operator-72b",
+    "repo": "routed-expert-splice",
+    "revision": "cdc5370107f699e70d27036dea94e8226ff27172",
+    "script": "nested_surgery/identifier_numeric_operator_72b.py",
+    "model_snapshots": [
+      "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+    ],
+    "after": {
+      "qwen-aligned-two-operands-72b": "carry_composes"
+    }
   }
 ]
