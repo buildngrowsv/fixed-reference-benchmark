@@ -1145,5 +1145,14 @@
     "after": {
       "qwen-one-pass-scalar-32b": "answer_free_gain"
     }
+  },
+  {
+    "id": "spatial-adaptive-witness-axis",
+    "repo": "fixed-reference-benchmark",
+    "revision": "fa50ff22dd0e799a056f713525ea85e61936393d",
+    "script": "spatial_references/adaptive_witness.py",
+    "after": {
+      "spatial-262144-separated-witness": "geometry_matters"
+    }
   }
 ]
