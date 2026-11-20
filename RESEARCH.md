@@ -6,6 +6,8 @@ The [live queue and controls](studio_queue/README.md) show what is running, what
 
 **Fixed reference on real code.** Two 31,992,320-parameter models train from scratch on the same CPython byte windows. One preserves 64 values per token from the exit of block 2 through block 9. The matched model can rewrite them. After 4,096 updates, the fixed arm scored 1.0355 and the writable arm 1.0425 validation bits per byte. Both passed the learning gate for the full 16,384 updates. The primary comparison and independent-order replication threshold are fixed in the [protocol](code_reference/PLAN.md).
 
+**Independent work in reserve.** The [depth-reuse comparison](code_reference/SHARED.md) tests whether a protected, repeated block saves weights at a useful accuracy. [The exchange intervention](code_reference/EXCHANGE.md) asks whether exchanging only the protected values changes a learned prediction. [The nested Python repair study](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery) qualifies a smaller pretrained donor on new code forms before spending an adaptation run.
+
 **Register memory.** Neither 14.3M-parameter arm cleared the minimum accuracy for longer training. The [next test](register_routing/PLAN.md) gives one attention head the addresses of earlier writes to the requested register. A shifted-address control gets the same number of possible reads.
 
 **Doorway transplant.** The learned gate with a trainable sensor adapter solved 0/2,048 paired writes. A fresh controller and the analytic gate each solved all 2,048. The performance-triggered replication closed. [Design and endpoint](spatial_graft/PLAN.md)

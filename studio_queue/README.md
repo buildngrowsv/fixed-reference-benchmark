@@ -4,7 +4,7 @@
 
 The Studio checks the queue immediately after each exit. It runs one experiment at a time and chooses the highest-priority eligible entry. A failed scientific threshold closes only the follow-ups that require that outcome. Independent work remains eligible. A process failure gets one retry. The queue can drain if there is no justified experiment or a research dependency fails. The recurring research review checks the backlog every ten minutes while available, replenishes it with targeted comparisons, and reviews scientific decisions separately from dispatch.
 
-The Studio worker runs under the logged-in user's launchd session. Closing the browser or the controlling SSH session leaves dispatch running. The web interface on the controlling Mac uses SSH to read or edit the queue and listens only on loopback. Training and model checkpoints stay on the Studio.
+The Studio worker runs under the logged-in user's launchd session. Each live experiment holds a macOS idle-sleep assertion tied to its process. The display can sleep, and the assertion expires when the process exits. Closing the browser or the controlling SSH session leaves dispatch running. The web interface on the controlling Mac uses SSH to read or edit the queue and listens only on loopback. Training and model checkpoints stay on the Studio.
 
 ## Change what runs
 

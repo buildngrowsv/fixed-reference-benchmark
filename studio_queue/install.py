@@ -53,6 +53,12 @@ def main():
     upload((HERE/"queue.json").read_bytes(),root/"queue.json")
     uid=ssh("id -u",capture_output=True,text=True).stdout.strip()
     ssh(f"launchctl print gui/{uid}/{LABEL} >/dev/null 2>&1 || launchctl bootstrap gui/{uid} "+q(str(plist)))
+    awake_label=LABEL+"-awake"
+    awake_plist=plist.with_name(awake_label+".plist")
+    upload((HERE/"awake.py").read_bytes(),root/"awake.py")
+    upload(plistlib.dumps(dict(Label=awake_label,ProgramArguments=[str(py),str(root/"awake.py")],
+          RunAtLoad=True,KeepAlive=True,ThrottleInterval=8,StandardErrorPath=str(root/"awake.err"))),awake_plist)
+    ssh(f"launchctl print gui/{uid}/{awake_label} >/dev/null 2>&1 || launchctl bootstrap gui/{uid} "+q(str(awake_plist)))
     print(f"Deployed {len(queue)} entries to {args.host}.")
 if __name__=="__main__":main()
 
