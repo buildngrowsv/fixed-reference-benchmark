@@ -1659,5 +1659,34 @@
     "repo": "fixed-reference-benchmark",
     "revision": "2315111632a69a9e901e01d9f4d796ce401045eb",
     "script": "spatial_references/sheared_witness.py"
+  },
+  {
+    "id": "large-qwen-frozen-live-route-smoke",
+    "repo": "routed-expert-splice",
+    "revision": "4042f0fd1d2f1d84744a32571e19253912c7a3ed",
+    "script": "nested_surgery/frozen_graft_live_route.py",
+    "model_snapshots": [
+      "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+      "97e1e76335b7017d8f67c08a19d103c0504298c9"
+    ],
+    "args": [
+      "--smoke"
+    ],
+    "after": {
+      "large-qwen-frozen-graft-route-confirmation": "sparse_fusion_adds_repairs"
+    }
+  },
+  {
+    "id": "large-qwen-frozen-live-route-timing",
+    "repo": "routed-expert-splice",
+    "revision": "4042f0fd1d2f1d84744a32571e19253912c7a3ed",
+    "script": "nested_surgery/frozen_graft_live_route.py",
+    "model_snapshots": [
+      "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+      "97e1e76335b7017d8f67c08a19d103c0504298c9"
+    ],
+    "after": {
+      "large-qwen-frozen-live-route-smoke": "smoke_complete"
+    }
   }
 ]
