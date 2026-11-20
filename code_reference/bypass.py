@@ -10,8 +10,9 @@ from mlx.utils import tree_flatten
 from train_code import CodeLM, Block, Corpus, OUT, RUNS, evaluate, interval, snapshot, restore, write
 
 class Bypass(CodeLM):
-    def __init__(self):
+    def __init__(self, working_exit=False):
         super().__init__()
+        self.working_exit=working_exit
         for i in range(2,9):
             src=self.blocks[i]
             b=Block(False,448)
@@ -30,20 +31,26 @@ class Bypass(CodeLM):
         x,lane=mx.split(x,[448],axis=-1)
         for block in self.blocks[2:9]:
             x=block(x,False)
+        if self.working_exit:
+            lane=x[...,-64:]
         x=self.blocks[-1](mx.concatenate([x,lane],axis=-1),False)
         return self.read(self.norm(x).astype(x.dtype)).astype(mx.float32)
 
 def main():
     phase=sys.argv[1]
+    working_exit=sys.argv[2:] == ["working-exit"]
+    name="working-exit" if working_exit else "sealed"
     end=4096 if phase=="screen" else 16384
     corpus=Corpus()
     mx.random.seed(101)
-    model=Bypass()
+    model=Bypass(working_exit)
     params=sum(w.size for _,w in tree_flatten(model.parameters()))
     opt=optim.AdamW(lambda s:.0004*mx.minimum(1.,(s.astype(mx.float32)+1)/128),weight_decay=.03,bias_correction=True)
     path=OUT/"bypass.safetensors"
     start=restore(model,opt,path) if path.exists() else 0
-    if not start and phase=="main":start=restore(model,opt,RUNS/"sealed-bypass-screen"/path.name)
+    if not start and phase=="main":
+        parent_id="working-exit-screen" if working_exit else "sealed-bypass-screen"
+        start=restore(model,opt,RUNS/parent_id/path.name)
     def objective(m,x,y):return nn.losses.cross_entropy(m(x),y,reduction="mean")
     vg=nn.value_and_grad(model,objective)
     state=[model.state,opt.state]
@@ -60,7 +67,7 @@ def main():
         if t%64==0:
             if not np.isfinite(loss.item()):raise ValueError("nonfinite loss")
             snapshot(model,opt,t,path)
-            write("progress.json",dict(arm="sealed",step=t,target=end,parameters=params,time=time.time(),
+            write("progress.json",dict(arm=name,step=t,target=end,parameters=params,time=time.time(),
                 tokens_per_second=(t-start)*8192/(time.monotonic()-clock),loss=loss.item()))
     training_seconds=time.monotonic()-clock
     parent=RUNS/("cpython-reference-mid" if phase=="screen" else "cpython-reference-main")
@@ -75,8 +82,16 @@ def main():
                 np.testing.assert_array_equal(ref["windows"],w)
                 np.testing.assert_array_equal(ref["groups"],g)
                 result[arm]=dict(delta=float((v[:,0]-ref["scores"][:,0]).mean()/512),ci=interval(v,ref["scores"],g))
+        if working_exit:
+            sealed=RUNS/("sealed-bypass-"+phase)/(file+".npz")
+            with np.load(sealed) as ref:
+                np.testing.assert_array_equal(ref["windows"],w)
+                np.testing.assert_array_equal(ref["groups"],g)
+                result["sealed"]=dict(delta=float((v[:,0]-ref["scores"][:,0]).mean()/512),ci=interval(v,ref["scores"],g))
         metrics[split]=result
     go=params<=.9*31992320 and metrics["val"]["fixed"]["ci"][1]<=.05
-    write("result.json",dict(decision="advance" if phase=="screen" and go else "complete",metrics=metrics,
+    if working_exit:
+        go=metrics["val"]["sealed"]["ci"][1]<=.05
+    write("result.json",dict(arm=name,decision="advance" if phase=="screen" and go else "complete",metrics=metrics,
         parameters=params,steps=end,start_step=start,training_seconds_this_invocation=training_seconds))
 if __name__=="__main__":main()
