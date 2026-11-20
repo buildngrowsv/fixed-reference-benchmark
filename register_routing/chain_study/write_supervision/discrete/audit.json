@@ -1,0 +1,146 @@
+{
+  "convolution-503": {
+    "programs": 2048,
+    "queries_per_edit_type": 4096,
+    "decisions": {
+      "donor_clean_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      },
+      "donor_write_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      },
+      "scratch_clean_discrete": {
+        "clears_edits": false,
+        "edit_intervals_clear": false,
+        "clean_held": true
+      },
+      "scratch_write_discrete": {
+        "clears_edits": false,
+        "edit_intervals_clear": false,
+        "clean_held": false
+      },
+      "pretrained_clean_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      },
+      "pretrained_write_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      }
+    }
+  },
+  "recurrent-503": {
+    "programs": 2048,
+    "queries_per_edit_type": 4096,
+    "decisions": {
+      "donor_clean_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      },
+      "donor_write_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      },
+      "scratch_clean_discrete": {
+        "clears_edits": false,
+        "edit_intervals_clear": false,
+        "clean_held": false
+      },
+      "scratch_write_discrete": {
+        "clears_edits": false,
+        "edit_intervals_clear": false,
+        "clean_held": false
+      },
+      "pretrained_clean_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      },
+      "pretrained_write_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      }
+    }
+  },
+  "convolution-607": {
+    "programs": 2048,
+    "queries_per_edit_type": 4096,
+    "decisions": {
+      "donor_clean_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      },
+      "donor_write_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      },
+      "scratch_clean_discrete": {
+        "clears_edits": false,
+        "edit_intervals_clear": false,
+        "clean_held": true
+      },
+      "scratch_write_discrete": {
+        "clears_edits": false,
+        "edit_intervals_clear": false,
+        "clean_held": true
+      },
+      "pretrained_clean_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      },
+      "pretrained_write_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      }
+    }
+  },
+  "recurrent-607": {
+    "programs": 2048,
+    "queries_per_edit_type": 4096,
+    "decisions": {
+      "donor_clean_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      },
+      "donor_write_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      },
+      "scratch_clean_discrete": {
+        "clears_edits": false,
+        "edit_intervals_clear": false,
+        "clean_held": true
+      },
+      "scratch_write_discrete": {
+        "clears_edits": false,
+        "edit_intervals_clear": false,
+        "clean_held": false
+      },
+      "pretrained_clean_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      },
+      "pretrained_write_discrete": {
+        "clears_edits": true,
+        "edit_intervals_clear": true,
+        "clean_held": true
+      }
+    }
+  }
+}

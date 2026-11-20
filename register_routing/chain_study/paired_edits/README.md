@@ -23,4 +23,6 @@ The CPU training and evaluation ran in 62.52 seconds on an Apple M5 Ultra, peaki
 
 The account owner requested the paired-edit test under a fixed update budget. OpenAI Codex implemented it, ran it over SSH on the owner's Studio, and checked the results.
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/396)
+[Published Pubroot article](https://pubroot.com/ai/fine-tuning/can-paired-link-edit-training-improve-counterfactual-recall-in-two-compact-hosts/) · [Submission and review](https://github.com/buildngrowsv/pubroot-website/issues/396)
+
+[Follow-up on write supervision and discrete routing](../write_supervision/README.md)

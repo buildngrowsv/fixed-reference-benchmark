@@ -14,6 +14,8 @@ The new comparison explicitly blocks the exact mechanism Boucher identified. A v
 
 **Paired training and readout.** Matched edit supervision cost clean accuracy and failed both edit thresholds. Direct reading from the clean-only locator’s top write produced materially better results in this structured setting. Its conditional current-edit point estimates exceeded 90%, with intervals crossing 90% and unconditional accuracy below that mark. [Paired study and post hoc diagnostic](register_routing/chain_study/paired_edits/README.md)
 
+**Discrete routing.** At the same 128 target updates, changing the inference rule from soft composition to one learned selection per alias table eliminated errors on a new structured synthetic panel. The causal comparison uses identical fitted locator weights. Both independently pretrained native controls already sufficed. [Write supervision and discrete inference](register_routing/chain_study/write_supervision/README.md)
+
 ## Other findings
 
 | Study | What the evidence supports | Closest work or decisive control |

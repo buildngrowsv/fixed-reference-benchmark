@@ -1,0 +1,2213 @@
+{
+  "decision": "complete",
+  "fits": {
+    "convolution-503": {
+      "primary": {
+        "scores": {
+          "donor_clean_soft": {
+            "clean": {
+              "accuracy": 0.882232666015625,
+              "correct": 28909,
+              "queries": 32768,
+              "interval": [
+                0.878082275390625,
+                0.8863533020019532
+              ]
+            },
+            "current": {
+              "accuracy": 0.87451171875,
+              "correct": 3582,
+              "queries": 4096,
+              "interval": [
+                0.861572265625,
+                0.88671875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.876708984375,
+              "correct": 3591,
+              "queries": 4096,
+              "interval": [
+                0.86474609375,
+                0.888916015625
+              ]
+            },
+            "both_edits": 0.76708984375,
+            "complete_edited_program": 0.67822265625
+          },
+          "donor_clean_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          },
+          "donor_write_soft": {
+            "clean": {
+              "accuracy": 0.878021240234375,
+              "correct": 28771,
+              "queries": 32768,
+              "interval": [
+                0.873748779296875,
+                0.882232666015625
+              ]
+            },
+            "current": {
+              "accuracy": 0.869873046875,
+              "correct": 3563,
+              "queries": 4096,
+              "interval": [
+                0.856927490234375,
+                0.88232421875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.87353515625,
+              "correct": 3578,
+              "queries": 4096,
+              "interval": [
+                0.861328125,
+                0.885986328125
+              ]
+            },
+            "both_edits": 0.760009765625,
+            "complete_edited_program": 0.6708984375
+          },
+          "donor_write_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          },
+          "scratch_clean_soft": {
+            "clean": {
+              "accuracy": 0.049072265625,
+              "correct": 1608,
+              "queries": 32768,
+              "interval": [
+                0.04718017578125,
+                0.05087356567382813
+              ]
+            },
+            "current": {
+              "accuracy": 0.055419921875,
+              "correct": 227,
+              "queries": 4096,
+              "interval": [
+                0.048583984375,
+                0.062744140625
+              ]
+            },
+            "stale": {
+              "accuracy": 0.04736328125,
+              "correct": 194,
+              "queries": 4096,
+              "interval": [
+                0.041015625,
+                0.053955078125
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "scratch_clean_discrete": {
+            "clean": {
+              "accuracy": 0.050140380859375,
+              "correct": 1643,
+              "queries": 32768,
+              "interval": [
+                0.048095703125,
+                0.05206375122070313
+              ]
+            },
+            "current": {
+              "accuracy": 0.05419921875,
+              "correct": 222,
+              "queries": 4096,
+              "interval": [
+                0.047119140625,
+                0.061279296875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.047607421875,
+              "correct": 195,
+              "queries": 4096,
+              "interval": [
+                0.041015625,
+                0.05419921875
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "scratch_write_soft": {
+            "clean": {
+              "accuracy": 0.04852294921875,
+              "correct": 1590,
+              "queries": 32768,
+              "interval": [
+                0.046630859375,
+                0.05038528442382813
+              ]
+            },
+            "current": {
+              "accuracy": 0.05615234375,
+              "correct": 230,
+              "queries": 4096,
+              "interval": [
+                0.04931640625,
+                0.063232421875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.043701171875,
+              "correct": 179,
+              "queries": 4096,
+              "interval": [
+                0.03759765625,
+                0.0498046875
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "scratch_write_discrete": {
+            "clean": {
+              "accuracy": 0.048431396484375,
+              "correct": 1587,
+              "queries": 32768,
+              "interval": [
+                0.04638671875,
+                0.050445556640625
+              ]
+            },
+            "current": {
+              "accuracy": 0.05810546875,
+              "correct": 238,
+              "queries": 4096,
+              "interval": [
+                0.051025390625,
+                0.06591796875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.0478515625,
+              "correct": 196,
+              "queries": 4096,
+              "interval": [
+                0.041259765625,
+                0.054443359375
+              ]
+            },
+            "both_edits": 0.000244140625,
+            "complete_edited_program": 0.0
+          },
+          "pretrained_clean_soft": {
+            "clean": {
+              "accuracy": 0.88134765625,
+              "correct": 28880,
+              "queries": 32768,
+              "interval": [
+                0.877105712890625,
+                0.885528564453125
+              ]
+            },
+            "current": {
+              "accuracy": 0.873291015625,
+              "correct": 3577,
+              "queries": 4096,
+              "interval": [
+                0.8603515625,
+                0.885498046875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.876708984375,
+              "correct": 3591,
+              "queries": 4096,
+              "interval": [
+                0.86474609375,
+                0.888916015625
+              ]
+            },
+            "both_edits": 0.765869140625,
+            "complete_edited_program": 0.67626953125
+          },
+          "pretrained_clean_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          },
+          "pretrained_write_soft": {
+            "clean": {
+              "accuracy": 0.87689208984375,
+              "correct": 28734,
+              "queries": 32768,
+              "interval": [
+                0.872589111328125,
+                0.881103515625
+              ]
+            },
+            "current": {
+              "accuracy": 0.86865234375,
+              "correct": 3558,
+              "queries": 4096,
+              "interval": [
+                0.855712890625,
+                0.881109619140625
+              ]
+            },
+            "stale": {
+              "accuracy": 0.871337890625,
+              "correct": 3569,
+              "queries": 4096,
+              "interval": [
+                0.859130859375,
+                0.8837890625
+              ]
+            },
+            "both_edits": 0.7568359375,
+            "complete_edited_program": 0.666015625
+          },
+          "pretrained_write_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          }
+        },
+        "changes": {
+          "donor_clean_discrete": {
+            "clean": {
+              "delta": 0.117767333984375,
+              "interval": [
+                0.11364669799804687,
+                0.121917724609375
+              ]
+            },
+            "current": {
+              "delta": 0.12548828125,
+              "interval": [
+                0.11328125,
+                0.138427734375
+              ]
+            },
+            "stale": {
+              "delta": 0.123291015625,
+              "interval": [
+                0.111083984375,
+                0.13525390625
+              ]
+            }
+          },
+          "donor_write_discrete": {
+            "clean": {
+              "delta": 0.117767333984375,
+              "interval": [
+                0.11364669799804687,
+                0.121917724609375
+              ]
+            },
+            "current": {
+              "delta": 0.12548828125,
+              "interval": [
+                0.11328125,
+                0.138427734375
+              ]
+            },
+            "stale": {
+              "delta": 0.123291015625,
+              "interval": [
+                0.111083984375,
+                0.13525390625
+              ]
+            }
+          },
+          "scratch_clean_discrete": {
+            "clean": {
+              "delta": 0.001068115234375,
+              "interval": [
+                -0.0007942199707031247,
+                0.002960205078125
+              ]
+            },
+            "current": {
+              "delta": -0.001220703125,
+              "interval": [
+                -0.00830078125,
+                0.005859375
+              ]
+            },
+            "stale": {
+              "delta": 0.000244140625,
+              "interval": [
+                -0.006103515625,
+                0.006591796875
+              ]
+            }
+          },
+          "scratch_write_discrete": {
+            "clean": {
+              "delta": -0.000640869140625,
+              "interval": [
+                -0.002716064453125,
+                0.001495361328125
+              ]
+            },
+            "current": {
+              "delta": 0.002685546875,
+              "interval": [
+                -0.0048828125,
+                0.010009765625
+              ]
+            },
+            "stale": {
+              "delta": 0.00048828125,
+              "interval": [
+                -0.0068359375,
+                0.0078125
+              ]
+            }
+          },
+          "pretrained_clean_discrete": {
+            "clean": {
+              "delta": 0.11865234375,
+              "interval": [
+                0.114471435546875,
+                0.122894287109375
+              ]
+            },
+            "current": {
+              "delta": 0.126708984375,
+              "interval": [
+                0.114501953125,
+                0.1396484375
+              ]
+            },
+            "stale": {
+              "delta": 0.123291015625,
+              "interval": [
+                0.111083984375,
+                0.13525390625
+              ]
+            }
+          },
+          "pretrained_write_discrete": {
+            "clean": {
+              "delta": 0.11865234375,
+              "interval": [
+                0.114471435546875,
+                0.122894287109375
+              ]
+            },
+            "current": {
+              "delta": 0.126708984375,
+              "interval": [
+                0.114501953125,
+                0.1396484375
+              ]
+            },
+            "stale": {
+              "delta": 0.123291015625,
+              "interval": [
+                0.111083984375,
+                0.13525390625
+              ]
+            }
+          }
+        },
+        "decision": {
+          "donor_clean_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          },
+          "donor_write_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          },
+          "scratch_clean_discrete": {
+            "clears_edits": false,
+            "edit_intervals_clear": false,
+            "clean_held": true
+          },
+          "scratch_write_discrete": {
+            "clears_edits": false,
+            "edit_intervals_clear": false,
+            "clean_held": false
+          },
+          "pretrained_clean_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          },
+          "pretrained_write_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          }
+        }
+      },
+      "archive_sha256": "3463acec2ec31de74e12a9a106d96e693e6953da909475d23665bade545fdffa"
+    },
+    "recurrent-503": {
+      "primary": {
+        "scores": {
+          "donor_clean_soft": {
+            "clean": {
+              "accuracy": 0.88348388671875,
+              "correct": 28950,
+              "queries": 32768,
+              "interval": [
+                0.87939453125,
+                0.8875740051269532
+              ]
+            },
+            "current": {
+              "accuracy": 0.87646484375,
+              "correct": 3590,
+              "queries": 4096,
+              "interval": [
+                0.86376953125,
+                0.888427734375
+              ]
+            },
+            "stale": {
+              "accuracy": 0.87744140625,
+              "correct": 3594,
+              "queries": 4096,
+              "interval": [
+                0.865716552734375,
+                0.889404296875
+              ]
+            },
+            "both_edits": 0.769775390625,
+            "complete_edited_program": 0.68017578125
+          },
+          "donor_clean_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          },
+          "donor_write_soft": {
+            "clean": {
+              "accuracy": 0.8779296875,
+              "correct": 28768,
+              "queries": 32768,
+              "interval": [
+                0.873687744140625,
+                0.882110595703125
+              ]
+            },
+            "current": {
+              "accuracy": 0.869873046875,
+              "correct": 3563,
+              "queries": 4096,
+              "interval": [
+                0.856927490234375,
+                0.88232421875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.873291015625,
+              "correct": 3577,
+              "queries": 4096,
+              "interval": [
+                0.861083984375,
+                0.8857421875
+              ]
+            },
+            "both_edits": 0.759765625,
+            "complete_edited_program": 0.67041015625
+          },
+          "donor_write_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          },
+          "scratch_clean_soft": {
+            "clean": {
+              "accuracy": 0.04962158203125,
+              "correct": 1626,
+              "queries": 32768,
+              "interval": [
+                0.04775924682617187,
+                0.051422119140625
+              ]
+            },
+            "current": {
+              "accuracy": 0.0537109375,
+              "correct": 220,
+              "queries": 4096,
+              "interval": [
+                0.046875,
+                0.060791015625
+              ]
+            },
+            "stale": {
+              "accuracy": 0.047119140625,
+              "correct": 193,
+              "queries": 4096,
+              "interval": [
+                0.040771484375,
+                0.053466796875
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "scratch_clean_discrete": {
+            "clean": {
+              "accuracy": 0.049407958984375,
+              "correct": 1619,
+              "queries": 32768,
+              "interval": [
+                0.047454833984375,
+                0.05126953125
+              ]
+            },
+            "current": {
+              "accuracy": 0.05078125,
+              "correct": 208,
+              "queries": 4096,
+              "interval": [
+                0.044189453125,
+                0.0576171875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.05029296875,
+              "correct": 206,
+              "queries": 4096,
+              "interval": [
+                0.0439453125,
+                0.056884765625
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "scratch_write_soft": {
+            "clean": {
+              "accuracy": 0.048614501953125,
+              "correct": 1593,
+              "queries": 32768,
+              "interval": [
+                0.04672164916992187,
+                0.05047607421875
+              ]
+            },
+            "current": {
+              "accuracy": 0.056640625,
+              "correct": 232,
+              "queries": 4096,
+              "interval": [
+                0.0498046875,
+                0.063720703125
+              ]
+            },
+            "stale": {
+              "accuracy": 0.0439453125,
+              "correct": 180,
+              "queries": 4096,
+              "interval": [
+                0.03759765625,
+                0.050048828125
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "scratch_write_discrete": {
+            "clean": {
+              "accuracy": 0.048675537109375,
+              "correct": 1595,
+              "queries": 32768,
+              "interval": [
+                0.046630859375,
+                0.0506591796875
+              ]
+            },
+            "current": {
+              "accuracy": 0.05810546875,
+              "correct": 238,
+              "queries": 4096,
+              "interval": [
+                0.05078125,
+                0.065673828125
+              ]
+            },
+            "stale": {
+              "accuracy": 0.0478515625,
+              "correct": 196,
+              "queries": 4096,
+              "interval": [
+                0.04150390625,
+                0.054443359375
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "pretrained_clean_soft": {
+            "clean": {
+              "accuracy": 0.88226318359375,
+              "correct": 28910,
+              "queries": 32768,
+              "interval": [
+                0.87811279296875,
+                0.886383056640625
+              ]
+            },
+            "current": {
+              "accuracy": 0.87451171875,
+              "correct": 3582,
+              "queries": 4096,
+              "interval": [
+                0.861572265625,
+                0.88671875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.87646484375,
+              "correct": 3590,
+              "queries": 4096,
+              "interval": [
+                0.86474609375,
+                0.888671875
+              ]
+            },
+            "both_edits": 0.76708984375,
+            "complete_edited_program": 0.67822265625
+          },
+          "pretrained_clean_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          },
+          "pretrained_write_soft": {
+            "clean": {
+              "accuracy": 0.876861572265625,
+              "correct": 28733,
+              "queries": 32768,
+              "interval": [
+                0.87255859375,
+                0.8810432434082032
+              ]
+            },
+            "current": {
+              "accuracy": 0.86865234375,
+              "correct": 3558,
+              "queries": 4096,
+              "interval": [
+                0.855712890625,
+                0.881109619140625
+              ]
+            },
+            "stale": {
+              "accuracy": 0.871337890625,
+              "correct": 3569,
+              "queries": 4096,
+              "interval": [
+                0.859130859375,
+                0.8837890625
+              ]
+            },
+            "both_edits": 0.7568359375,
+            "complete_edited_program": 0.666015625
+          },
+          "pretrained_write_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          }
+        },
+        "changes": {
+          "donor_clean_discrete": {
+            "clean": {
+              "delta": 0.11651611328125,
+              "interval": [
+                0.11242599487304687,
+                0.12060546875
+              ]
+            },
+            "current": {
+              "delta": 0.12353515625,
+              "interval": [
+                0.111572265625,
+                0.13623046875
+              ]
+            },
+            "stale": {
+              "delta": 0.12255859375,
+              "interval": [
+                0.110595703125,
+                0.13428344726562502
+              ]
+            }
+          },
+          "donor_write_discrete": {
+            "clean": {
+              "delta": 0.11651611328125,
+              "interval": [
+                0.11242599487304687,
+                0.12060546875
+              ]
+            },
+            "current": {
+              "delta": 0.12353515625,
+              "interval": [
+                0.111572265625,
+                0.13623046875
+              ]
+            },
+            "stale": {
+              "delta": 0.12255859375,
+              "interval": [
+                0.110595703125,
+                0.13428344726562502
+              ]
+            }
+          },
+          "scratch_clean_discrete": {
+            "clean": {
+              "delta": -0.000213623046875,
+              "interval": [
+                -0.00189208984375,
+                0.00152587890625
+              ]
+            },
+            "current": {
+              "delta": -0.0029296875,
+              "interval": [
+                -0.0087890625,
+                0.002685546875
+              ]
+            },
+            "stale": {
+              "delta": 0.003173828125,
+              "interval": [
+                -0.00244140625,
+                0.009033203125
+              ]
+            }
+          },
+          "scratch_write_discrete": {
+            "clean": {
+              "delta": -0.000946044921875,
+              "interval": [
+                -0.00299072265625,
+                0.0010986328125
+              ]
+            },
+            "current": {
+              "delta": 0.00439453125,
+              "interval": [
+                -0.00341796875,
+                0.01171875
+              ]
+            },
+            "stale": {
+              "delta": 0.000732421875,
+              "interval": [
+                -0.006591796875,
+                0.008056640625
+              ]
+            }
+          },
+          "pretrained_clean_discrete": {
+            "clean": {
+              "delta": 0.11773681640625,
+              "interval": [
+                0.113616943359375,
+                0.12188720703125
+              ]
+            },
+            "current": {
+              "delta": 0.12548828125,
+              "interval": [
+                0.11328125,
+                0.138427734375
+              ]
+            },
+            "stale": {
+              "delta": 0.12353515625,
+              "interval": [
+                0.111328125,
+                0.13525390625
+              ]
+            }
+          },
+          "pretrained_write_discrete": {
+            "clean": {
+              "delta": 0.11773681640625,
+              "interval": [
+                0.113616943359375,
+                0.12188720703125
+              ]
+            },
+            "current": {
+              "delta": 0.12548828125,
+              "interval": [
+                0.11328125,
+                0.138427734375
+              ]
+            },
+            "stale": {
+              "delta": 0.12353515625,
+              "interval": [
+                0.111328125,
+                0.13525390625
+              ]
+            }
+          }
+        },
+        "decision": {
+          "donor_clean_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          },
+          "donor_write_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          },
+          "scratch_clean_discrete": {
+            "clears_edits": false,
+            "edit_intervals_clear": false,
+            "clean_held": false
+          },
+          "scratch_write_discrete": {
+            "clears_edits": false,
+            "edit_intervals_clear": false,
+            "clean_held": false
+          },
+          "pretrained_clean_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          },
+          "pretrained_write_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          }
+        }
+      },
+      "archive_sha256": "19ff6c9e2d415e78bbf70bf56d1449b704cec86dc7256be00c2b21806b33815a"
+    },
+    "convolution-607": {
+      "primary": {
+        "scores": {
+          "donor_clean_soft": {
+            "clean": {
+              "accuracy": 0.883026123046875,
+              "correct": 28935,
+              "queries": 32768,
+              "interval": [
+                0.8791191101074218,
+                0.8868408203125
+              ]
+            },
+            "current": {
+              "accuracy": 0.88720703125,
+              "correct": 3634,
+              "queries": 4096,
+              "interval": [
+                0.87548828125,
+                0.8984375
+              ]
+            },
+            "stale": {
+              "accuracy": 0.88671875,
+              "correct": 3632,
+              "queries": 4096,
+              "interval": [
+                0.874749755859375,
+                0.89794921875
+              ]
+            },
+            "both_edits": 0.784912109375,
+            "complete_edited_program": 0.69775390625
+          },
+          "donor_clean_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          },
+          "donor_write_soft": {
+            "clean": {
+              "accuracy": 0.87896728515625,
+              "correct": 28802,
+              "queries": 32768,
+              "interval": [
+                0.875030517578125,
+                0.88287353515625
+              ]
+            },
+            "current": {
+              "accuracy": 0.88330078125,
+              "correct": 3618,
+              "queries": 4096,
+              "interval": [
+                0.871337890625,
+                0.894775390625
+              ]
+            },
+            "stale": {
+              "accuracy": 0.8818359375,
+              "correct": 3612,
+              "queries": 4096,
+              "interval": [
+                0.869384765625,
+                0.893310546875
+              ]
+            },
+            "both_edits": 0.778076171875,
+            "complete_edited_program": 0.69091796875
+          },
+          "donor_write_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          },
+          "scratch_clean_soft": {
+            "clean": {
+              "accuracy": 0.048309326171875,
+              "correct": 1583,
+              "queries": 32768,
+              "interval": [
+                0.046417236328125,
+                0.05014114379882813
+              ]
+            },
+            "current": {
+              "accuracy": 0.05322265625,
+              "correct": 218,
+              "queries": 4096,
+              "interval": [
+                0.046142578125,
+                0.060302734375
+              ]
+            },
+            "stale": {
+              "accuracy": 0.050537109375,
+              "correct": 207,
+              "queries": 4096,
+              "interval": [
+                0.043701171875,
+                0.05712890625
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "scratch_clean_discrete": {
+            "clean": {
+              "accuracy": 0.049072265625,
+              "correct": 1608,
+              "queries": 32768,
+              "interval": [
+                0.04699630737304687,
+                0.051055908203125
+              ]
+            },
+            "current": {
+              "accuracy": 0.046875,
+              "correct": 192,
+              "queries": 4096,
+              "interval": [
+                0.040283203125,
+                0.0537109375
+              ]
+            },
+            "stale": {
+              "accuracy": 0.0517578125,
+              "correct": 212,
+              "queries": 4096,
+              "interval": [
+                0.044921875,
+                0.05859375
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "scratch_write_soft": {
+            "clean": {
+              "accuracy": 0.050567626953125,
+              "correct": 1657,
+              "queries": 32768,
+              "interval": [
+                0.048675537109375,
+                0.05242919921875
+              ]
+            },
+            "current": {
+              "accuracy": 0.05419921875,
+              "correct": 222,
+              "queries": 4096,
+              "interval": [
+                0.047119140625,
+                0.061279296875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.050048828125,
+              "correct": 205,
+              "queries": 4096,
+              "interval": [
+                0.04345703125,
+                0.056640625
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "scratch_write_discrete": {
+            "clean": {
+              "accuracy": 0.04888916015625,
+              "correct": 1602,
+              "queries": 32768,
+              "interval": [
+                0.046905517578125,
+                0.050933837890625
+              ]
+            },
+            "current": {
+              "accuracy": 0.0498046875,
+              "correct": 204,
+              "queries": 4096,
+              "interval": [
+                0.043450927734375006,
+                0.056640625
+              ]
+            },
+            "stale": {
+              "accuracy": 0.050537109375,
+              "correct": 207,
+              "queries": 4096,
+              "interval": [
+                0.043701171875,
+                0.057373046875
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "pretrained_clean_soft": {
+            "clean": {
+              "accuracy": 0.88250732421875,
+              "correct": 28918,
+              "queries": 32768,
+              "interval": [
+                0.878570556640625,
+                0.8863525390625
+              ]
+            },
+            "current": {
+              "accuracy": 0.886474609375,
+              "correct": 3631,
+              "queries": 4096,
+              "interval": [
+                0.874755859375,
+                0.897705078125
+              ]
+            },
+            "stale": {
+              "accuracy": 0.88623046875,
+              "correct": 3630,
+              "queries": 4096,
+              "interval": [
+                0.8740234375,
+                0.8974609375
+              ]
+            },
+            "both_edits": 0.783935546875,
+            "complete_edited_program": 0.6962890625
+          },
+          "pretrained_clean_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          },
+          "pretrained_write_soft": {
+            "clean": {
+              "accuracy": 0.878021240234375,
+              "correct": 28771,
+              "queries": 32768,
+              "interval": [
+                0.87408447265625,
+                0.8819580078125
+              ]
+            },
+            "current": {
+              "accuracy": 0.882080078125,
+              "correct": 3613,
+              "queries": 4096,
+              "interval": [
+                0.8701171875,
+                0.8935546875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.8818359375,
+              "correct": 3612,
+              "queries": 4096,
+              "interval": [
+                0.869384765625,
+                0.893310546875
+              ]
+            },
+            "both_edits": 0.777099609375,
+            "complete_edited_program": 0.689453125
+          },
+          "pretrained_write_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          }
+        },
+        "changes": {
+          "donor_clean_discrete": {
+            "clean": {
+              "delta": 0.116973876953125,
+              "interval": [
+                0.1131591796875,
+                0.12088088989257813
+              ]
+            },
+            "current": {
+              "delta": 0.11279296875,
+              "interval": [
+                0.1015625,
+                0.12451171875
+              ]
+            },
+            "stale": {
+              "delta": 0.11328125,
+              "interval": [
+                0.10205078125,
+                0.12525024414062502
+              ]
+            }
+          },
+          "donor_write_discrete": {
+            "clean": {
+              "delta": 0.116973876953125,
+              "interval": [
+                0.1131591796875,
+                0.12088088989257813
+              ]
+            },
+            "current": {
+              "delta": 0.11279296875,
+              "interval": [
+                0.1015625,
+                0.12451171875
+              ]
+            },
+            "stale": {
+              "delta": 0.11328125,
+              "interval": [
+                0.10205078125,
+                0.12525024414062502
+              ]
+            }
+          },
+          "scratch_clean_discrete": {
+            "clean": {
+              "delta": 0.000762939453125,
+              "interval": [
+                -0.00128173828125,
+                0.00274658203125
+              ]
+            },
+            "current": {
+              "delta": -0.00634765625,
+              "interval": [
+                -0.012939453125,
+                0.00048828125
+              ]
+            },
+            "stale": {
+              "delta": 0.001220703125,
+              "interval": [
+                -0.005615234375,
+                0.008544921875
+              ]
+            }
+          },
+          "scratch_write_discrete": {
+            "clean": {
+              "delta": 0.000579833984375,
+              "interval": [
+                -0.0015869140625,
+                0.002777099609375
+              ]
+            },
+            "current": {
+              "delta": -0.00341796875,
+              "interval": [
+                -0.010986328125,
+                0.00390625
+              ]
+            },
+            "stale": {
+              "delta": 0.0,
+              "interval": [
+                -0.007568359375,
+                0.007568359375
+              ]
+            }
+          },
+          "pretrained_clean_discrete": {
+            "clean": {
+              "delta": 0.11749267578125,
+              "interval": [
+                0.1136474609375,
+                0.121429443359375
+              ]
+            },
+            "current": {
+              "delta": 0.113525390625,
+              "interval": [
+                0.102294921875,
+                0.125244140625
+              ]
+            },
+            "stale": {
+              "delta": 0.11376953125,
+              "interval": [
+                0.1025390625,
+                0.1259765625
+              ]
+            }
+          },
+          "pretrained_write_discrete": {
+            "clean": {
+              "delta": 0.11749267578125,
+              "interval": [
+                0.1136474609375,
+                0.121429443359375
+              ]
+            },
+            "current": {
+              "delta": 0.113525390625,
+              "interval": [
+                0.102294921875,
+                0.125244140625
+              ]
+            },
+            "stale": {
+              "delta": 0.11376953125,
+              "interval": [
+                0.1025390625,
+                0.1259765625
+              ]
+            }
+          }
+        },
+        "decision": {
+          "donor_clean_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          },
+          "donor_write_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          },
+          "scratch_clean_discrete": {
+            "clears_edits": false,
+            "edit_intervals_clear": false,
+            "clean_held": true
+          },
+          "scratch_write_discrete": {
+            "clears_edits": false,
+            "edit_intervals_clear": false,
+            "clean_held": true
+          },
+          "pretrained_clean_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          },
+          "pretrained_write_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          }
+        }
+      },
+      "archive_sha256": "2ba07c8bf04b88cb5c84bbe647d6bf57d93f173a71443b46d4f3654c319cc35d"
+    },
+    "recurrent-607": {
+      "primary": {
+        "scores": {
+          "donor_clean_soft": {
+            "clean": {
+              "accuracy": 0.88372802734375,
+              "correct": 28958,
+              "queries": 32768,
+              "interval": [
+                0.879791259765625,
+                0.8875732421875
+              ]
+            },
+            "current": {
+              "accuracy": 0.88720703125,
+              "correct": 3634,
+              "queries": 4096,
+              "interval": [
+                0.87548828125,
+                0.8984375
+              ]
+            },
+            "stale": {
+              "accuracy": 0.886962890625,
+              "correct": 3633,
+              "queries": 4096,
+              "interval": [
+                0.875,
+                0.898193359375
+              ]
+            },
+            "both_edits": 0.78515625,
+            "complete_edited_program": 0.6982421875
+          },
+          "donor_clean_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          },
+          "donor_write_soft": {
+            "clean": {
+              "accuracy": 0.87890625,
+              "correct": 28800,
+              "queries": 32768,
+              "interval": [
+                0.874969482421875,
+                0.8828125
+              ]
+            },
+            "current": {
+              "accuracy": 0.88330078125,
+              "correct": 3618,
+              "queries": 4096,
+              "interval": [
+                0.871337890625,
+                0.894775390625
+              ]
+            },
+            "stale": {
+              "accuracy": 0.8818359375,
+              "correct": 3612,
+              "queries": 4096,
+              "interval": [
+                0.869384765625,
+                0.893310546875
+              ]
+            },
+            "both_edits": 0.778076171875,
+            "complete_edited_program": 0.69091796875
+          },
+          "donor_write_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          },
+          "scratch_clean_soft": {
+            "clean": {
+              "accuracy": 0.049102783203125,
+              "correct": 1609,
+              "queries": 32768,
+              "interval": [
+                0.047210693359375,
+                0.050933837890625
+              ]
+            },
+            "current": {
+              "accuracy": 0.05126953125,
+              "correct": 210,
+              "queries": 4096,
+              "interval": [
+                0.044677734375,
+                0.057861328125
+              ]
+            },
+            "stale": {
+              "accuracy": 0.056884765625,
+              "correct": 233,
+              "queries": 4096,
+              "interval": [
+                0.049560546875,
+                0.06396484375
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "scratch_clean_discrete": {
+            "clean": {
+              "accuracy": 0.04986572265625,
+              "correct": 1634,
+              "queries": 32768,
+              "interval": [
+                0.04791259765625,
+                0.0517578125
+              ]
+            },
+            "current": {
+              "accuracy": 0.04833984375,
+              "correct": 198,
+              "queries": 4096,
+              "interval": [
+                0.041748046875,
+                0.055419921875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.0546875,
+              "correct": 224,
+              "queries": 4096,
+              "interval": [
+                0.047607421875,
+                0.0615234375
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "scratch_write_soft": {
+            "clean": {
+              "accuracy": 0.050323486328125,
+              "correct": 1649,
+              "queries": 32768,
+              "interval": [
+                0.048431396484375,
+                0.05218505859375
+              ]
+            },
+            "current": {
+              "accuracy": 0.0537109375,
+              "correct": 220,
+              "queries": 4096,
+              "interval": [
+                0.046875,
+                0.060791015625
+              ]
+            },
+            "stale": {
+              "accuracy": 0.050048828125,
+              "correct": 205,
+              "queries": 4096,
+              "interval": [
+                0.04345703125,
+                0.05664672851562502
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "scratch_write_discrete": {
+            "clean": {
+              "accuracy": 0.0489501953125,
+              "correct": 1604,
+              "queries": 32768,
+              "interval": [
+                0.046966552734375,
+                0.051025390625
+              ]
+            },
+            "current": {
+              "accuracy": 0.050048828125,
+              "correct": 205,
+              "queries": 4096,
+              "interval": [
+                0.043701171875,
+                0.056640625
+              ]
+            },
+            "stale": {
+              "accuracy": 0.050537109375,
+              "correct": 207,
+              "queries": 4096,
+              "interval": [
+                0.043701171875,
+                0.057373046875
+              ]
+            },
+            "both_edits": 0.0,
+            "complete_edited_program": 0.0
+          },
+          "pretrained_clean_soft": {
+            "clean": {
+              "accuracy": 0.882965087890625,
+              "correct": 28933,
+              "queries": 32768,
+              "interval": [
+                0.879058837890625,
+                0.88677978515625
+              ]
+            },
+            "current": {
+              "accuracy": 0.88720703125,
+              "correct": 3634,
+              "queries": 4096,
+              "interval": [
+                0.87548828125,
+                0.8984375
+              ]
+            },
+            "stale": {
+              "accuracy": 0.88671875,
+              "correct": 3632,
+              "queries": 4096,
+              "interval": [
+                0.874749755859375,
+                0.89794921875
+              ]
+            },
+            "both_edits": 0.784912109375,
+            "complete_edited_program": 0.69775390625
+          },
+          "pretrained_clean_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          },
+          "pretrained_write_soft": {
+            "clean": {
+              "accuracy": 0.878021240234375,
+              "correct": 28771,
+              "queries": 32768,
+              "interval": [
+                0.87408447265625,
+                0.8819580078125
+              ]
+            },
+            "current": {
+              "accuracy": 0.882080078125,
+              "correct": 3613,
+              "queries": 4096,
+              "interval": [
+                0.8701171875,
+                0.8935546875
+              ]
+            },
+            "stale": {
+              "accuracy": 0.881591796875,
+              "correct": 3611,
+              "queries": 4096,
+              "interval": [
+                0.869140625,
+                0.89306640625
+              ]
+            },
+            "both_edits": 0.77685546875,
+            "complete_edited_program": 0.68896484375
+          },
+          "pretrained_write_discrete": {
+            "clean": {
+              "accuracy": 1.0,
+              "correct": 32768,
+              "queries": 32768,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "current": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "stale": {
+              "accuracy": 1.0,
+              "correct": 4096,
+              "queries": 4096,
+              "interval": [
+                1.0,
+                1.0
+              ]
+            },
+            "both_edits": 1.0,
+            "complete_edited_program": 1.0
+          }
+        },
+        "changes": {
+          "donor_clean_discrete": {
+            "clean": {
+              "delta": 0.11627197265625,
+              "interval": [
+                0.1124267578125,
+                0.120208740234375
+              ]
+            },
+            "current": {
+              "delta": 0.11279296875,
+              "interval": [
+                0.1015625,
+                0.12451171875
+              ]
+            },
+            "stale": {
+              "delta": 0.113037109375,
+              "interval": [
+                0.101806640625,
+                0.125
+              ]
+            }
+          },
+          "donor_write_discrete": {
+            "clean": {
+              "delta": 0.11627197265625,
+              "interval": [
+                0.1124267578125,
+                0.120208740234375
+              ]
+            },
+            "current": {
+              "delta": 0.11279296875,
+              "interval": [
+                0.1015625,
+                0.12451171875
+              ]
+            },
+            "stale": {
+              "delta": 0.113037109375,
+              "interval": [
+                0.101806640625,
+                0.125
+              ]
+            }
+          },
+          "scratch_clean_discrete": {
+            "clean": {
+              "delta": 0.000762939453125,
+              "interval": [
+                -0.001190185546875,
+                0.00274658203125
+              ]
+            },
+            "current": {
+              "delta": -0.0029296875,
+              "interval": [
+                -0.009521484375,
+                0.003662109375
+              ]
+            },
+            "stale": {
+              "delta": -0.002197265625,
+              "interval": [
+                -0.008544921875,
+                0.004150390625
+              ]
+            }
+          },
+          "scratch_write_discrete": {
+            "clean": {
+              "delta": -0.000152587890625,
+              "interval": [
+                -0.00225830078125,
+                0.002044677734375
+              ]
+            },
+            "current": {
+              "delta": -0.001220703125,
+              "interval": [
+                -0.00830078125,
+                0.006103515625
+              ]
+            },
+            "stale": {
+              "delta": -0.00634765625,
+              "interval": [
+                -0.013427734375,
+                0.0009765625
+              ]
+            }
+          },
+          "pretrained_clean_discrete": {
+            "clean": {
+              "delta": 0.117034912109375,
+              "interval": [
+                0.11322021484375,
+                0.120941162109375
+              ]
+            },
+            "current": {
+              "delta": 0.11279296875,
+              "interval": [
+                0.1015625,
+                0.12451171875
+              ]
+            },
+            "stale": {
+              "delta": 0.11328125,
+              "interval": [
+                0.10205078125,
+                0.12525024414062502
+              ]
+            }
+          },
+          "pretrained_write_discrete": {
+            "clean": {
+              "delta": 0.117034912109375,
+              "interval": [
+                0.11322021484375,
+                0.120941162109375
+              ]
+            },
+            "current": {
+              "delta": 0.11279296875,
+              "interval": [
+                0.1015625,
+                0.12451171875
+              ]
+            },
+            "stale": {
+              "delta": 0.11328125,
+              "interval": [
+                0.10205078125,
+                0.12525024414062502
+              ]
+            }
+          }
+        },
+        "decision": {
+          "donor_clean_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          },
+          "donor_write_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          },
+          "scratch_clean_discrete": {
+            "clears_edits": false,
+            "edit_intervals_clear": false,
+            "clean_held": true
+          },
+          "scratch_write_discrete": {
+            "clears_edits": false,
+            "edit_intervals_clear": false,
+            "clean_held": false
+          },
+          "pretrained_clean_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          },
+          "pretrained_write_discrete": {
+            "clears_edits": true,
+            "edit_intervals_clear": true,
+            "clean_held": true
+          }
+        }
+      },
+      "archive_sha256": "6fed6361e6ec8cdcade10996c9009dbdb4c29671e62637570825c91dedeadbe9"
+    }
+  },
+  "steps": 128,
+  "donor_witness_sha256": "8876ad242557fc3341643e502aaaf0b9a5aed31f29f46b50e513ecb71e5aa30d",
+  "device": "Device(cpu, 0)",
+  "hardware": "Apple M5 Ultra"
+}
