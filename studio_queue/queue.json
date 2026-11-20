@@ -645,5 +645,18 @@
       "scientific-python-equal-size": "complete",
       "sealed-python-rehearsal": "complete"
     }
+  },
+  {
+    "id": "large-python-width-rate-mid",
+    "repo": "fixed-reference-benchmark",
+    "revision": "28c77b8f9be5e1b281354e26e234d4e044d1046b",
+    "script": "code_reference/large_fixed.py",
+    "args": [
+      "mid",
+      "--width-rate"
+    ],
+    "after": {
+      "large-python-reference-mid": "stop"
+    }
   }
 ]
