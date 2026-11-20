@@ -1022,5 +1022,14 @@
     "after": {
       "qwen-identifier-selected-edge": "unresolved"
     }
+  },
+  {
+    "id": "qwen-one-pass-affine-32b",
+    "repo": "routed-expert-splice",
+    "revision": "ea4014f0edf250fa8abf5d0bb52657371998aea3",
+    "script": "nested_surgery/identifier_numeric_scale.py",
+    "after": {
+      "qwen-numeric-one-pass-affine": "one_pass_transfer"
+    }
   }
 ]
