@@ -4,6 +4,10 @@ The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons,
 
 ## Studio queue and current evidence
 
+**Dictionary key order at 72B.** The entire key state switched both mirrored lookups in 138 of 139 shared-native groups when the declaration followed the dictionary, up from 74. Native solves over the 256 groups declined from 183 to 155. The same donor is now being tested at the late site. [Verified dictionary comparison](https://github.com/buildngrowsv/routed-expert-splice/blob/fbd3b83/nested_surgery/numeric_lookup_order_72b_study/README.md)
+
+**Reuse of sparse boundary lines.** Estimating the witness axis from the boundary probes reduced shifted word retention by 3.02 points while boundary estimates and control counts matched exactly. The larger replication was skipped. The next comparison allocates points to the witness statistic while keeping the boundary probes fixed. [Paired outcome](spatial_references/sampled_witness_study/README.md) · [Dedicated regional samples](spatial_references/ANCHORED_WITNESS_ROUTING.md)
+
 **Matched overwrite control at 72B.** The donor and a context-matched full-state swap each changed all current-value answers in 145 of 146 groups. Editing the irrelevant overwrite produced its exact answer in four donor groups and zero full-state groups. That 2.74-point difference fell below the three-point criterion. Overall saved-answer preservation was similar. [Verified result](https://github.com/buildngrowsv/routed-expert-splice/blob/c6bd415/nested_surgery/numeric_overwrite_72b_study/README.md)
 
 **Seven-million-cell spatial result.** At 192³, a fixed 64-probe budget recovered 69.58% of words under shifted faults, versus 70.35% under full observation and 63.02% with fixed boundaries. The paired deficit versus full was 0.77 points, with its lower bound above the two-point margin. The probes used at most 0.521% of the detector field for boundary localization. [Result and independent verification](spatial_references/probe_scale_study/README.md)
