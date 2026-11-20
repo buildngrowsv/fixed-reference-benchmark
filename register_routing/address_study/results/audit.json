@@ -1,0 +1,20 @@
+{
+  "101": {
+    "programs": 1024,
+    "queries": 16384,
+    "graft_answers": 14518,
+    "hard_read_at_graft_argmax": 14961,
+    "target_replaced": 14244,
+    "stale_preserved": 14246,
+    "recomputed": true
+  },
+  "211": {
+    "programs": 1024,
+    "queries": 16384,
+    "graft_answers": 14076,
+    "hard_read_at_graft_argmax": 14481,
+    "target_replaced": 13794,
+    "stale_preserved": 13799,
+    "recomputed": true
+  }
+}

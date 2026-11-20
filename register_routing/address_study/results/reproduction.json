@@ -1,0 +1,17 @@
+{
+  "job": "learned-address-transfer",
+  "revision": "1902494f837c7c53ca4ab460709ad9ac919ff354",
+  "started": "2026-11-20T02:24:00Z",
+  "finished": "2026-11-20T02:24:03Z",
+  "status": "done",
+  "exit": 0,
+  "device": "cpu",
+  "replicated_identical_arrays": [
+    "paired-101.npz",
+    "paired-211.npz"
+  ],
+  "metrics_identical_excluding_timing": true,
+  "memory_bytes": 105988096,
+  "seconds": 3.34,
+  "note": "Re-executed after the first launcher failed to write its exit receipt. The archived original predictions reproduced exactly."
+}

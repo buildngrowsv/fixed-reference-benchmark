@@ -1,0 +1,275 @@
+{
+  "decision": "complete",
+  "location_transfer": false,
+  "native_advantage": false,
+  "hardware": "Apple M5 Ultra",
+  "device": "Device(cpu, 0)",
+  "seeds": {
+    "101": {
+      "timing": {
+        "donor": 1.1078175000002375,
+        "graft": 0.12337933300295845,
+        "native": 0.1713551249995362,
+        "untrained": 0.12437012500595301
+      },
+      "held_out": {
+        "arms": {
+          "donor": {
+            "source": 0.91314697265625,
+            "accuracy": 0.89764404296875,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.9007568359375,
+            "latest": 0.89453125
+          },
+          "graft": {
+            "source": 0.91314697265625,
+            "accuracy": 0.8861083984375,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.8873291015625,
+            "latest": 0.8848876953125
+          },
+          "native": {
+            "source": 0.99664306640625,
+            "accuracy": 0.89111328125,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.8946533203125,
+            "latest": 0.8875732421875
+          },
+          "untrained": {
+            "source": 0.02349853515625,
+            "accuracy": 0.01556396484375,
+            "route_ties": 1.0,
+            "answer_ties": 0.0,
+            "first": 0.0155029296875,
+            "latest": 0.015625
+          },
+          "permuted": {
+            "source": 0.001708984375,
+            "accuracy": 0.0018310546875,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.001953125,
+            "latest": 0.001708984375
+          }
+        },
+        "programs": 1024,
+        "contrast": {
+          "permuted": {
+            "delta": 0.88427734375,
+            "interval": [
+              0.87835693359375,
+              0.889892578125
+            ]
+          },
+          "native": {
+            "delta": -0.0050048828125,
+            "interval": [
+              -0.01190185546875,
+              0.00164794921875
+            ]
+          },
+          "untrained": {
+            "delta": 0.87054443359375,
+            "interval": [
+              0.8646240234375,
+              0.87628173828125
+            ]
+          }
+        },
+        "counterfactual": {
+          "key_switched": 1594,
+          "key_pairs": 2037,
+          "time_switched": 6895,
+          "time_pairs": 8192,
+          "clean_correct": 14518,
+          "queries": 16384,
+          "target_replaced": 14244,
+          "stale_preserved": 14246,
+          "target_unconditional": 14533,
+          "stale_unconditional": 14517
+        }
+      },
+      "familiar": {
+        "arms": {
+          "donor": {
+            "source": 1.0,
+            "accuracy": 0.98974609375,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.99072265625,
+            "latest": 0.98876953125
+          },
+          "graft": {
+            "source": 1.0,
+            "accuracy": 0.9814453125,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.98291015625,
+            "latest": 0.97998046875
+          },
+          "native": {
+            "source": 1.0,
+            "accuracy": 0.90087890625,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.90234375,
+            "latest": 0.8994140625
+          },
+          "untrained": {
+            "source": 0.046875,
+            "accuracy": 0.028564453125,
+            "route_ties": 1.0,
+            "answer_ties": 0.0,
+            "first": 0.02880859375,
+            "latest": 0.0283203125
+          },
+          "permuted": {
+            "source": 0.0,
+            "accuracy": 0.0,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.0,
+            "latest": 0.0
+          }
+        },
+        "programs": 256
+      }
+    },
+    "211": {
+      "timing": {
+        "donor": 0.9942940830078442,
+        "graft": 0.12317895899468567,
+        "native": 0.1694272919994546,
+        "untrained": 0.1252212499966845
+      },
+      "held_out": {
+        "arms": {
+          "donor": {
+            "source": 0.88385009765625,
+            "accuracy": 0.8695068359375,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.8692626953125,
+            "latest": 0.8697509765625
+          },
+          "graft": {
+            "source": 0.88385009765625,
+            "accuracy": 0.859130859375,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.857177734375,
+            "latest": 0.861083984375
+          },
+          "native": {
+            "source": 1.0,
+            "accuracy": 0.9027099609375,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.903076171875,
+            "latest": 0.90234375
+          },
+          "untrained": {
+            "source": 0.02484130859375,
+            "accuracy": 0.01763916015625,
+            "route_ties": 1.0,
+            "answer_ties": 0.0,
+            "first": 0.0181884765625,
+            "latest": 0.01708984375
+          },
+          "permuted": {
+            "source": 0.00238037109375,
+            "accuracy": 0.00299072265625,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.003173828125,
+            "latest": 0.0028076171875
+          }
+        },
+        "programs": 1024,
+        "contrast": {
+          "permuted": {
+            "delta": 0.85614013671875,
+            "interval": [
+              0.849609375,
+              0.862548828125
+            ]
+          },
+          "native": {
+            "delta": -0.0435791015625,
+            "interval": [
+              -0.05072021484375,
+              -0.036376953125
+            ]
+          },
+          "untrained": {
+            "delta": 0.84149169921875,
+            "interval": [
+              0.8348983764648438,
+              0.84796142578125
+            ]
+          }
+        },
+        "counterfactual": {
+          "key_switched": 1516,
+          "key_pairs": 2042,
+          "time_switched": 6619,
+          "time_pairs": 8192,
+          "clean_correct": 14076,
+          "queries": 16384,
+          "target_replaced": 13794,
+          "stale_preserved": 13799,
+          "target_unconditional": 14088,
+          "stale_unconditional": 14044
+        }
+      },
+      "familiar": {
+        "arms": {
+          "donor": {
+            "source": 1.0,
+            "accuracy": 0.989013671875,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.98779296875,
+            "latest": 0.990234375
+          },
+          "graft": {
+            "source": 1.0,
+            "accuracy": 0.97900390625,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.97705078125,
+            "latest": 0.98095703125
+          },
+          "native": {
+            "source": 1.0,
+            "accuracy": 0.90869140625,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.91064453125,
+            "latest": 0.90673828125
+          },
+          "untrained": {
+            "source": 0.04345703125,
+            "accuracy": 0.025634765625,
+            "route_ties": 1.0,
+            "answer_ties": 0.0,
+            "first": 0.03125,
+            "latest": 0.02001953125
+          },
+          "permuted": {
+            "source": 0.0,
+            "accuracy": 0.0,
+            "route_ties": 0.0,
+            "answer_ties": 0.0,
+            "first": 0.0,
+            "latest": 0.0
+          }
+        },
+        "programs": 256
+      }
+    }
+  }
+}
