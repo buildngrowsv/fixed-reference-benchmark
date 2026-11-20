@@ -1031,5 +1031,15 @@
     "after": {
       "qwen-numeric-one-pass-affine": "one_pass_transfer"
     }
+  },
+  {
+    "id": "qwen-numeric-identifier-route-transfer",
+    "repo": "routed-expert-splice",
+    "revision": "2a11706fb2ee80eb9394f3dab5a003e5a706512f",
+    "script": "nested_surgery/identifier_numeric_attention.py",
+    "after": {
+      "qwen-identifier-sparse-edge-sets": "sparse_attention_resolved",
+      "qwen-numeric-one-pass-affine": "one_pass_transfer"
+    }
   }
 ]
