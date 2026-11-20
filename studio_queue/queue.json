@@ -1074,5 +1074,14 @@
     "repo": "fixed-reference-benchmark",
     "revision": "15ad0bd92a7bd0b1132aefcdfc2cbd712e030294",
     "script": "spatial_references/long_hold.py"
+  },
+  {
+    "id": "spatial-32768-write-confirmation",
+    "repo": "fixed-reference-benchmark",
+    "revision": "4f035fbadbedc2eefc604cda23af6fe1eafb54bf",
+    "script": "spatial_references/write_confirmation.py",
+    "after": {
+      "spatial-4096-long-hold": "long_hold_leakage"
+    }
   }
 ]
