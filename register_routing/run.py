@@ -23,9 +23,9 @@ def routing(ids,wrong):
     return mx.where(is_query[:,:,None],use|self_edge[None,:,:],causal[None,:,:])[:,None,:,:]
 
 class RoutedModel(Model):
-    def __call__(self,ids,fixed=False,wrong=False):
+    def __call__(self,ids,fixed=False,wrong=False,mask=None):
         x=(self.tokens(ids)+self.pos(mx.arange(ids.shape[1]))).astype(mx.bfloat16)
-        mask=routing(ids,wrong)
+        if mask is None:mask=routing(ids,wrong)
         for j,b in enumerate(self.blocks):
             if j!=3:x=b(x,False);continue
             n,t,d=x.shape
