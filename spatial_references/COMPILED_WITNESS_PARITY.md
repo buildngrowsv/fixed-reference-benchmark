@@ -1,0 +1,5 @@
+# Can the compiled observer preserve the full simulation's decisions and outcomes?
+
+Direct gathers gave identical outputs on 48 detector frames and a 4.13× estimator speedup. That implementation still computed the boundary and witness statistics in NumPy. Keep both statistics on the MLX device in one compiled observer. Only the three inferred offsets and eight axis choices leave that observer. The compiled observer reads the same detector positions and uses integer disagreement and co-activation counts, with the same tie rule. [Timing result](device_witness_timing_study/README.md)
+
+Run all eight matched 192³ worlds from the released dedicated-probe comparison using the first frozen checkpoint. Use the revised observer at both routing decision ticks and under both fault layouts. Archive all 512 vectors of 11 decisions and compare every retention and write tally and inferred offset with the earlier world archive. Require exact equality. The fixed and supplied-region controls still receive dense detector materialization. This is a paired outcome parity test inside the recurrent simulation, with no end-to-end speed threshold at this stage.

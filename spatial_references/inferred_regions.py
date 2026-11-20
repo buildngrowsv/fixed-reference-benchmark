@@ -67,7 +67,7 @@ def distributed_positions(rng, side):
 
 
 def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False, stratified=False,
-             sampled_routes=None):
+             sampled_routes=None, device_router=None):
     rng = np.random.default_rng(931622 + world)
     observer = np.random.default_rng(790133 + world)
     probes = None
@@ -85,6 +85,11 @@ def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False
             return witness_field(fault, active, shift, distance, selected=selected)
 
         witness_rules[POLICIES.index("inferred")] = sampled_witness
+    direct = None
+    if device_router is not None:
+        if not stratified or sampled_routes is not None:
+            raise ValueError("device routing requires its own stratified observer")
+        direct = device_router(probes)
     shape = (1, side, side, side)
     size = (2, *shape[1:])
     half = side // 2
@@ -118,13 +123,24 @@ def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False
             elif tick in (9, 10):
                 pulses = faults
                 observed = np.array(previous)
-                inferred = np.stack([infer_boundaries(active) if probes is None
-                                     else infer_with_probes(active, probes) for active in observed])
+                if direct is None:
+                    inferred = np.stack([infer_boundaries(active) if probes is None
+                                         else infer_with_probes(active, probes) for active in observed])
+                    choices = None
+                else:
+                    decisions = np.stack([direct(previous[i]) for i in range(len(STIMULI))])
+                    inferred, choices = decisions[:, :3], decisions[:, 3:]
                 offsets = np.stack((np.zeros_like(known), inferred, known))
-                witness = np.stack([np.stack([
-                    rule(fault, act, shift, distance)
-                    for fault, act, shift in zip(faults, observed, arm, strict=True)
-                ]) for rule, arm in zip(witness_rules, offsets, strict=True)])
+                policies = []
+                for i, (rule, arm) in enumerate(zip(witness_rules, offsets, strict=True)):
+                    if choices is not None and POLICIES[i] == "inferred":
+                        values = [witness_field(fault, None, shift, distance, selected=axes)
+                                  for fault, shift, axes in zip(faults, arm, choices, strict=True)]
+                    else:
+                        values = [rule(fault, act, shift, distance)
+                                  for fault, act, shift in zip(faults, observed, arm, strict=True)]
+                    policies.append(np.stack(values))
+                witness = np.stack(policies)
             else:
                 pulses = np.zeros(size, dtype=bool)
                 witness = unrestricted
