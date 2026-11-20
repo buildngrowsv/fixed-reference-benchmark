@@ -28,3 +28,5 @@ This is a single training seed and program format. The confidence intervals resa
 The experiments used Apple M5 Ultra, macOS 27.2, Python 3.12.16, MLX 0.32.4 and NumPy 2.5.5. The queue records source revisions, the parent checkpoint and exact execution receipts. The public evidence includes per-program counts for all arms and interventions. From the repository root, run `python register_routing/verify.py register_routing/results` and `python register_routing/verify_random.py register_routing/results/random register_routing/results`. The second audit matches archived predictions at the count level and independently reproduces the paired interval. [Training and fixed routing](run.py) · [Random control](unpredictable.py) · [Audit output](results/random/audit.json) · [Execution manifest](../studio_queue/queue.json)
 
 The account owner proposed testing routed, protected pathways in neural networks. OpenAI Codex designed and implemented the comparisons, ran them over SSH on the owner's Studio, verified the public score evidence and assisted with writing.
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/368)

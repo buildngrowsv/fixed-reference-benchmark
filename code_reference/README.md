@@ -41,3 +41,5 @@ The study used an Apple M5 Ultra, macOS 27.2, Python 3.12.16, MLX 0.32.4 and Num
 The account owner proposed testing a forward-only fixed reference within a neural network. OpenAI Codex implemented the comparisons, ran training over SSH on the owner's Studio, audited the retained evidence and assisted with the manuscript.
 
 [Published Pubroot paper](https://pubroot.com/ai/fine-tuning/does-a-read-only-reference-improve-a-small-language-model-trained-on-python/) · [Submission and review](https://github.com/buildngrowsv/pubroot-website/issues/363)
+
+A subsequent physically sealed 448-wide middle network used 16.13% fewer weights and scored 1.01799 bits per byte on the same test windows, versus 1.02012 for the full readable reference. The package-paired difference was −0.00213 [−0.00736, +0.00202]. This first-seed result qualified an independent training pair on validation alone. [Run evidence](results/bypass-main/result.json) · [Score audit](results/bypass-main/audit.json) · [Replication plan](BYPASS_REPEAT.md)
