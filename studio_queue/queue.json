@@ -1399,5 +1399,14 @@
     "after": {
       "qwen-late-key-donor-fresh-72b": "late_key_donor_transfer"
     }
+  },
+  {
+    "id": "spatial-direct-witness-observation-timing",
+    "repo": "fixed-reference-benchmark",
+    "revision": "1b375f271a66ad1307b40511acd1cf5fd8568be8",
+    "script": "spatial_references/device_witness_timing.py",
+    "after": {
+      "spatial-anchored-witness-routing-7077888": "dedicated_probes_scale"
+    }
   }
 ]
