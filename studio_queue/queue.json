@@ -1688,5 +1688,34 @@
     "after": {
       "large-qwen-frozen-live-route-smoke": "smoke_complete"
     }
+  },
+  {
+    "id": "large-qwen-graft-early-exit-smoke",
+    "repo": "routed-expert-splice",
+    "revision": "872dbf3e6f9027bb3abd60f2a6eff78413955344",
+    "script": "nested_surgery/frozen_graft_early_exit.py",
+    "model_snapshots": [
+      "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+      "97e1e76335b7017d8f67c08a19d103c0504298c9"
+    ],
+    "args": [
+      "--smoke"
+    ],
+    "after": {
+      "large-qwen-frozen-graft-decoys": "frozen_donor_adds_decoy_repairs"
+    }
+  },
+  {
+    "id": "large-qwen-graft-early-exit",
+    "repo": "routed-expert-splice",
+    "revision": "872dbf3e6f9027bb3abd60f2a6eff78413955344",
+    "script": "nested_surgery/frozen_graft_early_exit.py",
+    "model_snapshots": [
+      "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+      "97e1e76335b7017d8f67c08a19d103c0504298c9"
+    ],
+    "after": {
+      "large-qwen-graft-early-exit-smoke": "smoke_complete"
+    }
   }
 ]
