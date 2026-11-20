@@ -23,3 +23,5 @@ Changing the continuation rate in the routed model changed balanced recall by +0
 ## What remains unresolved
 
 The comparison has one training draw and uses synthetic programs. Paired intervals capture held-out program sampling. A width-aware training recipe from the first update, a more competent comparison model, or a different routed fraction could materially change the result. This study retires these checkpoint continuations. It does not estimate the best achievable 227M performance or whether adding a route would help a well-trained large model. All runs used an Apple M5 Ultra with MLX 0.32.4. The owner proposed revisiting the mechanism at scale. OpenAI Codex implemented and ran the continuations, verified the per-program evidence and assisted with writing. [Independent audit](verify.py) · [Reconstructed counts](audit.json) · [Recorded environment](../../runtime.json)
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/400)

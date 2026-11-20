@@ -685,5 +685,19 @@
     "after": {
       "large-qwen-block27-graft": "any"
     }
+  },
+  {
+    "id": "large-python-width-rate-main",
+    "repo": "fixed-reference-benchmark",
+    "revision": "28c77b8f9be5e1b281354e26e234d4e044d1046b",
+    "script": "code_reference/large_fixed.py",
+    "args": [
+      "main",
+      "--width-rate"
+    ],
+    "after": {
+      "large-python-width-rate-mid": "advance",
+      "cpython-reference-main": "any"
+    }
   }
 ]
