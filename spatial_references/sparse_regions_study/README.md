@@ -18,3 +18,5 @@ The sampled rule gained **5.12 points** over fixed boundaries on translated faul
 Run `uv run --with numpy python spatial_references/sparse_regions_study/verify.py` from the repository root to check the checkpoint hashes, paired offsets, exact controls and bootstrap. The test took 138.51 seconds and ran float32 state updates on an Apple M5 Ultra with 80 GPU cores, 256 GiB memory, Metal 4, macOS 27.2, Python 3.12.16, MLX 0.32.4 and NumPy 2.5.5. The owner proposed exploring spatially structured fixed references. OpenAI Codex implemented and ran the paired test, audited the results and assisted with writing. [Pinned receipt](results/receipt.json)
 
 [Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/502)
+
+[Expanded study with a matched stratified-probe arm and the three raw archives](../stratified_regions_study/README.md)

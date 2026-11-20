@@ -1,0 +1,244 @@
+{
+  "voxels": 884736,
+  "worlds": 8,
+  "transitions": 256,
+  "frozen_checkpoints": {
+    "101": "ae2a23ea08ab472b835057a9da54a845ee35f68f841a20148f6ac3eae9335fd9",
+    "211": "077cc996a3ef0d988c774b2c1a74a91ee1d1ac5c31c1a953ba2067aa44c6f060",
+    "307": "05d814c3e9d768c48454fbaf694573c1b84a8a9d89f18be059e1887f7bc980d8"
+  },
+  "runtime_s": 144.88832870799524,
+  "peak_mlx_bytes": 1791591008,
+  "decision": "unresolved",
+  "counts": [
+    [
+      [
+        21235431,
+        21029055,
+        169869312,
+        123252594,
+        21023469,
+        8960256
+      ],
+      [
+        21235431,
+        21029625,
+        169869312,
+        110822595,
+        21023469,
+        13056384
+      ]
+    ],
+    [
+      [
+        21235431,
+        21029235,
+        169869312,
+        119934381,
+        21023469,
+        9749568
+      ],
+      [
+        21235431,
+        21029277,
+        169869312,
+        120169455,
+        21023469,
+        9694080
+      ]
+    ],
+    [
+      [
+        21235431,
+        21029055,
+        169869312,
+        123252594,
+        21023469,
+        8960256
+      ],
+      [
+        21235431,
+        21029184,
+        169869312,
+        123241176,
+        21023469,
+        8960256
+      ]
+    ]
+  ],
+  "rates": {
+    "fixed": {
+      "aligned": {
+        "retention": 0.725573045236093,
+        "legitimate": 0.9900184743130479,
+        "false_writes": 0.05274793836805555
+      },
+      "shifted": {
+        "retention": 0.652399151413529,
+        "legitimate": 0.9900184743130479,
+        "false_writes": 0.07686134620949074
+      }
+    },
+    "inferred": {
+      "aligned": {
+        "retention": 0.7060391284801342,
+        "legitimate": 0.9900184743130479,
+        "false_writes": 0.05739452220775463
+      },
+      "shifted": {
+        "retention": 0.7074229805557816,
+        "legitimate": 0.9900184743130479,
+        "false_writes": 0.05706787109375
+      }
+    },
+    "known": {
+      "aligned": {
+        "retention": 0.725573045236093,
+        "legitimate": 0.9900184743130479,
+        "false_writes": 0.05274793836805555
+      },
+      "shifted": {
+        "retention": 0.7255058288574219,
+        "legitimate": 0.9900184743130479,
+        "false_writes": 0.05274793836805555
+      }
+    }
+  },
+  "boundary_accuracy": {
+    "aligned": {
+      "exact": 0.78125,
+      "within_four": 0.796875
+    },
+    "shifted": {
+      "exact": 0.7760416666666666,
+      "within_four": 0.796875
+    }
+  },
+  "inferred_minus_fixed": {
+    "aligned": {
+      "mean": -0.019533916755958836,
+      "interval": [
+        -0.023617216834315533,
+        -0.015542530571972905
+      ]
+    },
+    "shifted": {
+      "mean": 0.05502382914225257,
+      "interval": [
+        0.03832350262889159,
+        0.07323854852605749
+      ]
+    }
+  },
+  "probes_per_plane": 64,
+  "sampled_upper_fraction": 0.020833333333333332,
+  "sparse_minus_full": {
+    "aligned": {
+      "mean": -0.011804192154495796,
+      "interval": [
+        -0.015837918387519016,
+        -0.007529544388806438
+      ]
+    },
+    "shifted": {
+      "mean": -0.010407412493670498,
+      "interval": [
+        -0.014252154473905158,
+        -0.006734596799921055
+      ]
+    }
+  },
+  "stratified_minus_random": {
+    "aligned": {
+      "mean": 0.0033107863532172432,
+      "interval": [
+        -0.001395772563086603,
+        0.008341347729718285
+      ]
+    },
+    "shifted": {
+      "mean": 0.0038453561288338545,
+      "interval": [
+        -0.0005017443939491273,
+        0.008667624879766437
+      ]
+    }
+  },
+  "strata_per_axis": 8,
+  "noninferiority_gate": true,
+  "placement_gate": false,
+  "comparators": {
+    "full": {
+      "rates": {
+        "aligned": {
+          "retention": 0.71784332063463,
+          "legitimate": 0.9900184743130479,
+          "false_writes": 0.05495876736111111
+        },
+        "shifted": {
+          "retention": 0.7178303930494521,
+          "legitimate": 0.9900184743130479,
+          "false_writes": 0.05496780960648148
+        }
+      },
+      "boundary": {
+        "aligned": {
+          "exact": 0.9010416666666666,
+          "within_four": 0.9010416666666666
+        },
+        "shifted": {
+          "exact": 0.8958333333333334,
+          "within_four": 0.8958333333333334
+        }
+      }
+    },
+    "random": {
+      "rates": {
+        "aligned": {
+          "retention": 0.7027283421269169,
+          "legitimate": 0.9900184743130479,
+          "false_writes": 0.05875198929398148
+        },
+        "shifted": {
+          "retention": 0.7035776244269477,
+          "legitimate": 0.9900184743130479,
+          "false_writes": 0.05962682653356482
+        }
+      },
+      "boundary": {
+        "aligned": {
+          "exact": 0.7395833333333334,
+          "within_four": 0.765625
+        },
+        "shifted": {
+          "exact": 0.6927083333333334,
+          "within_four": 0.7395833333333334
+        }
+      }
+    },
+    "stratified": {
+      "rates": {
+        "aligned": {
+          "retention": 0.7060391284801342,
+          "legitimate": 0.9900184743130479,
+          "false_writes": 0.05739452220775463
+        },
+        "shifted": {
+          "retention": 0.7074229805557816,
+          "legitimate": 0.9900184743130479,
+          "false_writes": 0.05706787109375
+        }
+      },
+      "boundary": {
+        "aligned": {
+          "exact": 0.78125,
+          "within_four": 0.796875
+        },
+        "shifted": {
+          "exact": 0.7760416666666666,
+          "within_four": 0.796875
+        }
+      }
+    }
+  }
+}
