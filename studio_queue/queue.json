@@ -461,5 +461,15 @@
     "after": {
       "displaced-prefix-surgery": "replicate"
     }
+  },
+  {
+    "id": "scientific-python-transfer",
+    "repo": "fixed-reference-benchmark",
+    "revision": "aa3d31f0a51d6e78994ad31d0620814cbec1244f",
+    "script": "code_reference/ecosystem.py",
+    "after": {
+      "sealed-bypass-main": "any",
+      "cpython-reference-main": "any"
+    }
   }
 ]
