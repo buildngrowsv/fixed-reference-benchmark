@@ -62,6 +62,12 @@ In the smaller model, seven strict repairs disappeared in the first published do
 
 **Cross-scale operand transfer.** The frozen 32B recipient reversed 92/507 pairs with the raw borrowed edit, 414 with a per-prompt matched norm and 434 with a single gain measured from separate 14B/32B input-state contrasts. The equal-norm random direction reversed zero. The next test reuses the same gain on two assignment sites to change complete decimal answers. [Published study](https://pubroot.com/ai/fine-tuning/one-answer-free-gain-restored-the-borrowed-32b-operand-edit-on-434-of-507-pairs/)
 
+**Write confirmation geometry.** On a 262,144-voxel grid, separating the sensor locations by eight cells raised exact retention from 39.37% to 68.69% under compact false signals, at the same legitimate write acceptance. Aligned columns erased the gain. [Audited geometry study](spatial_references/witness_study/README.md)
+
+**32B two-operand carry.** The same single gain at two assignment sites produced complete answers in 358/512 groups, compared with 0 for orthogonal directions and 454 for exchanging both full native states. The borrowed interface missed its 80% target. [Complete carry evidence](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_carry_32b_study)
+
+**Image-selected stereo.** A baseline chosen from only the first image beat the strongest fixed direction by 0.53 and 0.61 points on clean and noisy synthetic panels at the same one-additional-camera budget. [Active acquisition evidence](https://github.com/buildngrowsv/parallax-depth-benchmark/tree/main/active_view)
+
 ## What opens the other paths
 
 - **Expert surgery.** The off-the-shelf coding donor's semantic validation lead over a task-trained host was below the prespecified threshold and disappeared on final test. A specialized donor with a demonstrated advantage on an unsaturated task would justify another transplant. The small trained spatial write controller offers an auditable donor whose input-output rule is independently verifiable. First check whether a matched fresh controller can relearn the rule at the same budget. [Semantic qualification](https://github.com/buildngrowsv/routed-expert-splice/tree/d2062a8f88e4bb82f12c442461cd1bf601dd69dd/semantic)

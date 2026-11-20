@@ -1,0 +1,135 @@
+{
+  "physical_shape": [
+    64,
+    64,
+    64
+  ],
+  "voxels": 262144,
+  "transitions": 256,
+  "worlds": 8,
+  "word_bits": 32,
+  "frozen_checkpoints": {
+    "101": "ae2a23ea08ab472b835057a9da54a845ee35f68f841a20148f6ac3eae9335fd9",
+    "211": "077cc996a3ef0d988c774b2c1a74a91ee1d1ac5c31c1a953ba2067aa44c6f060",
+    "307": "05d814c3e9d768c48454fbaf694573c1b84a8a9d89f18be059e1887f7bc980d8"
+  },
+  "runtime_s": 43.82592225000553,
+  "peak_mlx_bytes": 530842208,
+  "decision": "geometry_matters",
+  "counts": [
+    [
+      [
+        6289587,
+        6289587,
+        50331648,
+        15028848,
+        6289587,
+        12582912
+      ],
+      [
+        6289587,
+        6289587,
+        50331648,
+        15032004,
+        6289587,
+        12582912
+      ]
+    ],
+    [
+      [
+        6289587,
+        6229632,
+        50331648,
+        19813113,
+        6226920,
+        10222032
+      ],
+      [
+        6289587,
+        6229926,
+        50331648,
+        14901108,
+        6226920,
+        12582912
+      ]
+    ],
+    [
+      [
+        6289587,
+        6228729,
+        50331648,
+        34571289,
+        6226920,
+        3153984
+      ],
+      [
+        6289587,
+        6229926,
+        50331648,
+        14901108,
+        6226920,
+        12582912
+      ]
+    ]
+  ],
+  "rates": {
+    "two_ticks": {
+      "tiles": {
+        "authorized_acceptance": 1.0,
+        "after_legitimate": 1.0,
+        "after_faults": 0.2985963821411133,
+        "false_write_fraction": 0.25
+      },
+      "columns": {
+        "authorized_acceptance": 1.0,
+        "after_legitimate": 1.0,
+        "after_faults": 0.298659086227417,
+        "false_write_fraction": 0.25
+      }
+    },
+    "near": {
+      "tiles": {
+        "authorized_acceptance": 0.990036388716779,
+        "after_legitimate": 0.9904675776008822,
+        "after_faults": 0.39365118741989136,
+        "false_write_fraction": 0.2030935287475586
+      },
+      "columns": {
+        "authorized_acceptance": 0.990036388716779,
+        "after_legitimate": 0.9905143215285837,
+        "after_faults": 0.29605841636657715,
+        "false_write_fraction": 0.25
+      }
+    },
+    "far": {
+      "tiles": {
+        "authorized_acceptance": 0.990036388716779,
+        "after_legitimate": 0.9903240069657991,
+        "after_faults": 0.6868698000907898,
+        "false_write_fraction": 0.06266403198242188
+      },
+      "columns": {
+        "authorized_acceptance": 0.990036388716779,
+        "after_legitimate": 0.9905143215285837,
+        "after_faults": 0.29605841636657715,
+        "false_write_fraction": 0.25
+      }
+    }
+  },
+  "far_minus_near": {
+    "tiles": {
+      "mean": 0.29321861267089844,
+      "interval": [
+        0.2904292866587639,
+        0.2962773397564888
+      ]
+    },
+    "columns": {
+      "mean": 0.0,
+      "interval": [
+        0.0,
+        0.0
+      ]
+    }
+  }
+}
