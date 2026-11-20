@@ -1288,5 +1288,14 @@
     "after": {
       "qwen-mirrored-branch-selector-72b": "benchmark_below_floor"
     }
+  },
+  {
+    "id": "spatial-fixed-probe-count-7077888",
+    "repo": "fixed-reference-benchmark",
+    "revision": "a3392ce86577280a96aa94f6aad5e9519576c60b",
+    "script": "spatial_references/probe_scale.py",
+    "after": {
+      "spatial-stratified-region-probes": "unresolved"
+    }
   }
 ]
