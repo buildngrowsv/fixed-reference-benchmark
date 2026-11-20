@@ -29,4 +29,4 @@ The experiments used Apple M5 Ultra, macOS 27.2, Python 3.12.16, MLX 0.32.4 and 
 
 The account owner proposed testing routed, protected pathways in neural networks. OpenAI Codex designed and implemented the comparisons, ran them over SSH on the owner's Studio, verified the public score evidence and assisted with writing.
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/368)
+[Published Pubroot paper](https://pubroot.com/ai/fine-tuning/does-a-register-memory-transformer-need-the-right-address-or-a-stable-address/) · [Submission and review](https://github.com/buildngrowsv/pubroot-website/issues/368)
