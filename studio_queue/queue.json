@@ -1595,5 +1595,47 @@
     "after": {
       "large-qwen-frozen-graft-route-smoke": "smoke_complete"
     }
+  },
+  {
+    "id": "qwen-dictionary-alias-midpoint-32b",
+    "repo": "routed-expert-splice",
+    "revision": "8d6d1a1fd0a0886dfbab2a381b73e4bed6683758",
+    "script": "nested_surgery/identifier_lookup_alias_midpoint_32b.py",
+    "model_snapshots": [
+      "1818d35814b8319459f4bd55ed1ac8709630f003"
+    ],
+    "after": {
+      "qwen-dictionary-order-second-host-32b": "late_key_control_replicates_at_32b",
+      "qwen-dictionary-alias-depth-72b": "alias_gap_persists_at_viable_cuts"
+    }
+  },
+  {
+    "id": "large-qwen-frozen-graft-route-smoke-mx-indices",
+    "revision": "45ffd5c9d0dca431774d7e02d677aa05a0233749",
+    "repo": "routed-expert-splice",
+    "script": "nested_surgery/frozen_graft_route.py",
+    "model_snapshots": [
+      "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+      "97e1e76335b7017d8f67c08a19d103c0504298c9"
+    ],
+    "args": [
+      "--smoke"
+    ],
+    "after": {
+      "large-qwen-frozen-graft-decoys": "frozen_donor_adds_decoy_repairs"
+    }
+  },
+  {
+    "id": "large-qwen-frozen-graft-route-v2",
+    "revision": "45ffd5c9d0dca431774d7e02d677aa05a0233749",
+    "repo": "routed-expert-splice",
+    "script": "nested_surgery/frozen_graft_route.py",
+    "model_snapshots": [
+      "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+      "97e1e76335b7017d8f67c08a19d103c0504298c9"
+    ],
+    "after": {
+      "large-qwen-frozen-graft-route-smoke-mx-indices": "smoke_complete"
+    }
   }
 ]
