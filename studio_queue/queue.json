@@ -676,5 +676,14 @@
     "after": {
       "large-register-quarter-rate": "complete"
     }
+  },
+  {
+    "id": "large-qwen-fresh-panel-reference",
+    "repo": "routed-expert-splice",
+    "revision": "f4e1e0d02e7621bb8148f5fbf69c357d959adedb",
+    "script": "nested_surgery/large_graft_reference.py",
+    "after": {
+      "large-qwen-block27-graft": "any"
+    }
   }
 ]
