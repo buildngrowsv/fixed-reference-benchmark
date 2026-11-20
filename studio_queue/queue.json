@@ -1273,5 +1273,20 @@
     "after": {
       "qwen-selected-vs-unused-72b": "selective_operand_use"
     }
+  },
+  {
+    "id": "qwen-indexed-address-72b",
+    "repo": "routed-expert-splice",
+    "revision": "ddcca579733367d0282894afd3dc752b47a74bc0",
+    "script": "nested_surgery/identifier_numeric_route_72b.py",
+    "args": [
+      "--lookup"
+    ],
+    "model_snapshots": [
+      "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+    ],
+    "after": {
+      "qwen-mirrored-branch-selector-72b": "benchmark_below_floor"
+    }
   }
 ]
