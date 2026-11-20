@@ -1,5 +1,7 @@
 # Open experiments and decisions
 
+**The ten-block source matched the full graft's count and missed a control.** On 512 decoy groups, both early and full features solved 166, with 119 in common. The shuffled-target map solved 143, leaving a +4.49-point early-map advantage with interval crossing zero. The held-out control rules out claiming the registered transfer gate from equal totals. [Verified feature and repair outcomes](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/frozen_graft_early_exit_study)
+
 **Sparse routing reduced measured decoy-batch latency by 1.70×.** On all 2,304 decoy groups, selective execution solved 1,482 against 1,375 standalone. It reproduced every call and differed from offline candidate vectors in one decoy group and three neutral groups. Median decoy-batch latency was 235.76 ms selective, 420.11 ms always blend and 134.72 ms standalone. [Live execution benchmark](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/frozen_graft_live_route_study)
 
 **Tilt alone did not help.** The sparse 192³ observer estimated every scored tilt correctly, but only 26 of 64 complete offset vectors. It retained 68.79%, versus 69.48% using the same budget with axis-aligned partitions and 70.26% with exact geometry. The next run pools prior-frame offset evidence and reproduces the two matched controls. [Tilt study](spatial_references/sheared_witness_study/README.md) · [Offset-history protocol](spatial_references/SHEARED_HISTORY.md)

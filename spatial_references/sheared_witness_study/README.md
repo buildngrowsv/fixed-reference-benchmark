@@ -25,3 +25,5 @@ The recovered angle was insufficient to make the routing policy better. The gap 
 ## Reproduction
 
 The run took 625.16 seconds at 14.33 GB peak MLX allocation on an arm64 Apple M5 Ultra with 256 GiB unified memory, macOS build 26B118, Python 3.12.16, MLX 0.32.4 and NumPy 2.5.5. Run `python spatial_references/sheared_witness_study/verify.py` from the repository root to check the source and weight identities, exact shear, offset accuracy and paired statistics. On Apple Silicon, recreate the full run with the frozen weights and `STUDIO_JOB_DIR="$(mktemp -d)" python spatial_references/sheared_witness.py`. The owner proposed spatial reference and wall experiments. OpenAI Codex registered, ran, audited and documented this comparison. [Receipt](results/receipt.json) · [Environment](results/studio-environment.txt) · [Verifier](verify.py)
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/562)
