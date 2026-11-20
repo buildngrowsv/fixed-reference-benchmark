@@ -325,5 +325,32 @@
     "after": {
       "sealed-bypass-repeat-decision": "replicate"
     }
+  },
+  {
+    "id": "working-exit-screen",
+    "repo": "fixed-reference-benchmark",
+    "revision": "300b2bff02b30286fd9d54a872a3a0f896538714",
+    "script": "code_reference/bypass.py",
+    "args": [
+      "screen",
+      "working-exit"
+    ],
+    "after": {
+      "sealed-bypass-screen": "any"
+    }
+  },
+  {
+    "id": "working-exit-main",
+    "repo": "fixed-reference-benchmark",
+    "revision": "300b2bff02b30286fd9d54a872a3a0f896538714",
+    "script": "code_reference/bypass.py",
+    "args": [
+      "main",
+      "working-exit"
+    ],
+    "after": {
+      "working-exit-screen": "advance",
+      "sealed-bypass-main": "any"
+    }
   }
 ]
