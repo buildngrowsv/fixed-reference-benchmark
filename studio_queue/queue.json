@@ -1653,5 +1653,11 @@
     "after": {
       "large-qwen-frozen-graft-route-v2": "unresolved"
     }
+  },
+  {
+    "id": "spatial-sheared-witness-7077888",
+    "repo": "fixed-reference-benchmark",
+    "revision": "2315111632a69a9e901e01d9f4d796ce401045eb",
+    "script": "spatial_references/sheared_witness.py"
   }
 ]
