@@ -1222,5 +1222,17 @@
     "after": {
       "spatial-inferred-regions-884736": "inferred_boundaries_help"
     }
+  },
+  {
+    "id": "qwen-selected-vs-unused-72b",
+    "repo": "routed-expert-splice",
+    "revision": "1d24543e9b451368dbeefedbb881e55588a6b256",
+    "script": "nested_surgery/identifier_numeric_select_72b.py",
+    "model_snapshots": [
+      "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+    ],
+    "after": {
+      "qwen-opposite-operator-72b": "benchmark_below_floor"
+    }
   }
 ]
