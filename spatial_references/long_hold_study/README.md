@@ -33,4 +33,4 @@ The write grammar and local topology are supplied, and only the original gate an
 
 Run `uv run --with numpy python spatial_references/long_hold_study/verify.py` to verify the receipts and checkpoint digests and reproduce the counts and fault interval independently of MLX. The owner proposed revisiting the protected reference at much larger volume. OpenAI Codex designed and ran the studies over SSH on the owner's M5 Ultra, verified the results and assisted with writing. The long wait and fault runs took 3.95 and 18.86 seconds with 303 MB and 142 MB peak MLX allocation. [Verifier](verify.py) · [Audit output](audit.json)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/478)
+[Published Pubroot article](https://pubroot.com/ai/fine-tuning/pulse-timing-determined-whether-32-768-writable-references-survived-false-signals/) · [Submission and review](https://github.com/buildngrowsv/pubroot-website/issues/478)

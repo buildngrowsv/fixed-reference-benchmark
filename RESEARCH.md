@@ -60,6 +60,8 @@ In the smaller model, seven strict repairs disappeared in the first published do
 
 **Fixed references under false writes.** Thresholding the original trained local gate kept all 770,637 eligible pairs through the long read on 4,096 voxels. The soft gate retained zero. On 32,768 voxels with repeated legitimate writes, two positive ticks retained 100% under separated false pulses. The soft two-tick arm retained 98.79%, and all three scored 29.91% when false pulses arrived consecutively. [Audited spatial retention study](spatial_references/long_hold_study/README.md)
 
+**Cross-scale operand transfer.** The frozen 32B recipient reversed 92/507 pairs with the raw borrowed edit, 414 with a per-prompt matched norm and 434 with a single gain measured from separate 14B/32B input-state contrasts. The equal-norm random direction reversed zero. The next test reuses the same gain on two assignment sites to change complete decimal answers. [Published study](https://pubroot.com/ai/fine-tuning/one-answer-free-gain-restored-the-borrowed-32b-operand-edit-on-434-of-507-pairs/)
+
 ## What opens the other paths
 
 - **Expert surgery.** The off-the-shelf coding donor's semantic validation lead over a task-trained host was below the prespecified threshold and disappeared on final test. A specialized donor with a demonstrated advantage on an unsaturated task would justify another transplant. The small trained spatial write controller offers an auditable donor whose input-output rule is independently verifiable. First check whether a matched fresh controller can relearn the rule at the same budget. [Semantic qualification](https://github.com/buildngrowsv/routed-expert-splice/tree/d2062a8f88e4bb82f12c442461cd1bf601dd69dd/semantic)
