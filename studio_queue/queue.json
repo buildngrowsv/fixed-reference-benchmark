@@ -861,5 +861,23 @@
     "after": {
       "qwen-learned-identifier-subspace": "complete"
     }
+  },
+  {
+    "id": "qwen-binding-selective-reference",
+    "repo": "routed-expert-splice",
+    "revision": "27a2e3bbccfd7eeda6a8acdc6bf46a5ae69ed934",
+    "script": "nested_surgery/identifier_binding.py",
+    "after": {
+      "qwen-fixed-identifier-subspace": "complete"
+    }
+  },
+  {
+    "id": "qwen-transfer-identifier-subspace-dose-fix",
+    "repo": "routed-expert-splice",
+    "revision": "27a2e3bbccfd7eeda6a8acdc6bf46a5ae69ed934",
+    "script": "nested_surgery/identifier_transfer.py",
+    "after": {
+      "qwen-fixed-identifier-subspace": "complete"
+    }
   }
 ]
