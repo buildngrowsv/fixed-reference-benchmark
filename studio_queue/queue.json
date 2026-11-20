@@ -708,5 +708,14 @@
     "after": {
       "large-qwen-fresh-panel-reference": "complete"
     }
+  },
+  {
+    "id": "large-qwen-donor-location-archive-fix",
+    "repo": "routed-expert-splice",
+    "revision": "3dd5365e92529eee6b532b9da97cafad105038df",
+    "script": "nested_surgery/donor_location.py",
+    "after": {
+      "large-qwen-fresh-panel-reference": "complete"
+    }
   }
 ]
