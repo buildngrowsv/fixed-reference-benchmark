@@ -21,3 +21,5 @@ The correct-wiring row is a diagnostic added after the four planned arms complet
 An independent NumPy implementation loaded the public checkpoints, checked that every pretrained donor weight retained its original value, ran all 64 source inputs, reconstructed both sensor worlds, and reproduced every saved individual success indicator on validation and test. Its direct-wiring diagnostic solves every pair. Run `python spatial_graft/verify.py spatial_graft/results hidden_door/results/both_ends-101.safetensors` with NumPy and safetensors. [Audit](results/audit.json) · [Predictions and weights](results) · [Audit implementation](verify.py)
 
 The account owner proposed testing transfers between protected regions. OpenAI Codex implemented the study, ran it over SSH on the owner's Apple M5 Ultra, audited the individual outcomes and assisted with this manuscript.
+
+[Pubroot submission and review record](https://github.com/buildngrowsv/pubroot-website/issues/360)
