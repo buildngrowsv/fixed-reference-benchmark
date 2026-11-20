@@ -4,7 +4,9 @@ The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons,
 
 ## Studio queue and current evidence
 
-**Dictionary key placement in a second host.** The 32B whole-state exchange switched 151 of 151 groups after the dictionary, versus 84 at the early key. The late key with the early token distance switched 149 of 150 groups in the three-layout cohort. A 72B control now blocks pre-edit access to the original key. [Verified 32B result](https://github.com/buildngrowsv/routed-expert-splice/blob/53b7481/nested_surgery/numeric_lookup_order_32b_study/README.md)
+**Original-key attention mask.** Blocking all later reads of the original numeral before the edit reduced native coverage from 173 to 17 of 256 groups. Whole-state switching gained one group in the tiny shared cohort, below the registered requirements. A narrower mask for dictionary tokens alone is queued. [Verified control](https://github.com/buildngrowsv/routed-expert-splice/blob/328b770/nested_surgery/numeric_lookup_preedit_attention_72b_study/README.md)
+
+**Dictionary key placement in a second host.** The 32B whole-state exchange switched 151 of 151 groups after the dictionary, versus 84 at the early key. The late key with the early token distance switched 149 of 150 groups in the three-layout cohort. The global blocking comparison is complete. [Verified 32B result](https://github.com/buildngrowsv/routed-expert-splice/blob/53b7481/nested_surgery/numeric_lookup_order_32b_study/README.md)
 
 **Boundary and witness selection below 1%.** The 192³ dedicated-probe run retained 69.27% under shifted faults, 0.31 points below dense witness selection with the same boundaries. In a separate timing test, direct MLX gathers reproduced all 48 frame decisions and gave a 4.13× paired estimator speedup. [Retention and scale](spatial_references/anchored_witness_scale_study/README.md) · [Direct-observation timing](spatial_references/device_witness_timing_study/README.md)
 
