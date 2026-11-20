@@ -1102,5 +1102,14 @@
     "after": {
       "spatial-32768-write-confirmation": "separated_pulses_rejected"
     }
+  },
+  {
+    "id": "stereo-reference-chooses-view",
+    "repo": "parallax-depth-benchmark",
+    "revision": "f095af9d7158dd4fa07cc7a03b951b816267aa90",
+    "script": "active_view/run.py",
+    "after": {
+      "orthogonal-view-depth-alias": "orthogonal_resolves_alias"
+    }
   }
 ]
