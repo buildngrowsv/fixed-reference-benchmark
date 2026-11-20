@@ -986,5 +986,14 @@
     "after": {
       "qwen-two-operand-native-qualification": "composes"
     }
+  },
+  {
+    "id": "qwen-identifier-selected-edge",
+    "repo": "routed-expert-splice",
+    "revision": "3e428e7a2e955398056e38a56193e42f4877b579",
+    "script": "nested_surgery/identifier_attention_single.py",
+    "after": {
+      "qwen-identifier-edge-timing": "timing_resolved"
+    }
   }
 ]
