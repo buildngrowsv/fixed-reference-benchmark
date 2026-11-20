@@ -40,4 +40,4 @@ The study used an Apple M5 Ultra, macOS 27.2, Python 3.12.16, MLX 0.32.4 and Num
 
 The account owner proposed testing a forward-only fixed reference within a neural network. OpenAI Codex implemented the comparisons, ran training over SSH on the owner's Studio, audited the retained evidence and assisted with the manuscript.
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/363)
+[Published Pubroot paper](https://pubroot.com/ai/fine-tuning/does-a-read-only-reference-improve-a-small-language-model-trained-on-python/) · [Submission and review](https://github.com/buildngrowsv/pubroot-website/issues/363)
