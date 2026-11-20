@@ -508,5 +508,14 @@
     "after": {
       "scientific-python-transfer": "any"
     }
+  },
+  {
+    "id": "interleaved-register-schedule",
+    "repo": "fixed-reference-benchmark",
+    "revision": "d57a216ce9940d3bd2751876e5f3b6a011723288",
+    "script": "register_routing/interleaved_programs.py",
+    "after": {
+      "displaced-prefix-surgery": "replicate"
+    }
   }
 ]
