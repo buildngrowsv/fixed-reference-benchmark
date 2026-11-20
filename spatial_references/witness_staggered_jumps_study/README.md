@@ -38,4 +38,4 @@ STUDIO_JOB_DIR="$(mktemp -d)" python spatial_references/witness_staggered_jumps.
 python spatial_references/witness_staggered_jumps_study/verify.py
 ```
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/542)
+[Published Pubroot article](https://pubroot.com/cs/algorithms/sparse-boundary-sensing-gained-1-47-points-in-the-first-round-after-staggered-jumps/) · [Public review](https://github.com/buildngrowsv/pubroot-website/issues/542)

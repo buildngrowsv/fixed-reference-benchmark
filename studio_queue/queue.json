@@ -1538,5 +1538,18 @@
       "qwen-dictionary-late-alias-site-72b": "unresolved",
       "qwen-late-key-donor-fresh-72b": "late_key_donor_transfer"
     }
+  },
+  {
+    "id": "large-qwen-frozen-graft-decoys",
+    "repo": "routed-expert-splice",
+    "revision": "3b8de95dcafd35d53694d9ed53a88183fd746304",
+    "script": "nested_surgery/learned_output_port_decoys.py",
+    "model_snapshots": [
+      "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+      "97e1e76335b7017d8f67c08a19d103c0504298c9"
+    ],
+    "after": {
+      "large-qwen-learned-output-port": "unresolved"
+    }
   }
 ]
