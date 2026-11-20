@@ -1,0 +1,465 @@
+{
+  "decision": "complete",
+  "donor_archive_sha256": "8876ad242557fc3341643e502aaaf0b9a5aed31f29f46b50e513ecb71e5aa30d",
+  "donor_weights": 2306,
+  "source_steps": 768,
+  "target_steps": 128,
+  "fits": {
+    "convolution-503": {
+      "held_out": {
+        "arms": {
+          "graft": {
+            "accuracy": 0.58843994140625,
+            "address_accuracy": 0.85345458984375
+          },
+          "scratch": {
+            "accuracy": 0.02447509765625,
+            "address_accuracy": 0.05023193359375
+          },
+          "pretrained": {
+            "accuracy": 0.69366455078125,
+            "address_accuracy": 0.88018798828125
+          },
+          "rolled": {
+            "accuracy": 0.00897216796875,
+            "address_accuracy": 0.00274658203125
+          }
+        },
+        "programs": 1024,
+        "queries": 16384,
+        "contrasts": {
+          "scratch": {
+            "delta": 0.56396484375,
+            "interval": [
+              0.5555419921875,
+              0.57220458984375
+            ]
+          },
+          "pretrained": {
+            "delta": -0.105224609375,
+            "interval": [
+              -0.11041259765625,
+              -0.10015869140625
+            ]
+          },
+          "rolled": {
+            "delta": 0.5794677734375,
+            "interval": [
+              0.5713485717773438,
+              0.5875244140625
+            ]
+          }
+        },
+        "causal": {
+          "current": {
+            "clean_correct": 1230,
+            "both_correct": 807,
+            "correct_unconditional": 1256,
+            "all_queries": 2048
+          },
+          "stale": {
+            "clean_correct": 1230,
+            "both_correct": 1021,
+            "correct_unconditional": 1191,
+            "all_queries": 2048
+          }
+        }
+      },
+      "familiar": {
+        "arms": {
+          "graft": {
+            "accuracy": 0.594482421875,
+            "address_accuracy": 0.8564453125
+          },
+          "scratch": {
+            "accuracy": 0.032958984375,
+            "address_accuracy": 0.0791015625
+          },
+          "pretrained": {
+            "accuracy": 0.7001953125,
+            "address_accuracy": 0.88427734375
+          },
+          "rolled": {
+            "accuracy": 0.005859375,
+            "address_accuracy": 0.003662109375
+          }
+        },
+        "programs": 256,
+        "queries": 4096,
+        "contrasts": {
+          "scratch": {
+            "delta": 0.5615234375,
+            "interval": [
+              0.546380615234375,
+              0.577642822265625
+            ]
+          },
+          "pretrained": {
+            "delta": -0.105712890625,
+            "interval": [
+              -0.11669921875,
+              -0.09545288085937498
+            ]
+          },
+          "rolled": {
+            "delta": 0.588623046875,
+            "interval": [
+              0.57421875,
+              0.603759765625
+            ]
+          }
+        }
+      },
+      "passes": false,
+      "weights": 16834,
+      "seconds": {
+        "graft": 0.5487277920037741,
+        "scratch": 1.1676224169932539,
+        "pretrained": 1.0720990000118036
+      }
+    },
+    "recurrent-503": {
+      "held_out": {
+        "arms": {
+          "graft": {
+            "accuracy": 0.6317138671875,
+            "address_accuracy": 0.85345458984375
+          },
+          "scratch": {
+            "accuracy": 0.0224609375,
+            "address_accuracy": 0.0509033203125
+          },
+          "pretrained": {
+            "accuracy": 0.73455810546875,
+            "address_accuracy": 0.88116455078125
+          },
+          "rolled": {
+            "accuracy": 0.0072021484375,
+            "address_accuracy": 0.00274658203125
+          }
+        },
+        "programs": 1024,
+        "queries": 16384,
+        "contrasts": {
+          "scratch": {
+            "delta": 0.6092529296875,
+            "interval": [
+              0.6014389038085938,
+              0.61737060546875
+            ]
+          },
+          "pretrained": {
+            "delta": -0.10284423828125,
+            "interval": [
+              -0.10784912109375,
+              -0.09796142578125
+            ]
+          },
+          "rolled": {
+            "delta": 0.62451171875,
+            "interval": [
+              0.61676025390625,
+              0.632568359375
+            ]
+          }
+        },
+        "causal": {
+          "current": {
+            "clean_correct": 1271,
+            "both_correct": 885,
+            "correct_unconditional": 1355,
+            "all_queries": 2048
+          },
+          "stale": {
+            "clean_correct": 1271,
+            "both_correct": 1067,
+            "correct_unconditional": 1286,
+            "all_queries": 2048
+          }
+        }
+      },
+      "familiar": {
+        "arms": {
+          "graft": {
+            "accuracy": 0.6494140625,
+            "address_accuracy": 0.8564453125
+          },
+          "scratch": {
+            "accuracy": 0.031982421875,
+            "address_accuracy": 0.0810546875
+          },
+          "pretrained": {
+            "accuracy": 0.75927734375,
+            "address_accuracy": 0.88623046875
+          },
+          "rolled": {
+            "accuracy": 0.008544921875,
+            "address_accuracy": 0.003662109375
+          }
+        },
+        "programs": 256,
+        "queries": 4096,
+        "contrasts": {
+          "scratch": {
+            "delta": 0.617431640625,
+            "interval": [
+              0.600830078125,
+              0.634039306640625
+            ]
+          },
+          "pretrained": {
+            "delta": -0.10986328125,
+            "interval": [
+              -0.120849609375,
+              -0.09912109375
+            ]
+          },
+          "rolled": {
+            "delta": 0.640869140625,
+            "interval": [
+              0.624755859375,
+              0.657232666015625
+            ]
+          }
+        }
+      },
+      "passes": false,
+      "weights": 16898,
+      "seconds": {
+        "graft": 1.9110168330080342,
+        "scratch": 2.2269920419930713,
+        "pretrained": 2.2893917909968877
+      }
+    },
+    "convolution-607": {
+      "held_out": {
+        "arms": {
+          "graft": {
+            "accuracy": 0.58587646484375,
+            "address_accuracy": 0.85784912109375
+          },
+          "scratch": {
+            "accuracy": 0.02374267578125,
+            "address_accuracy": 0.049072265625
+          },
+          "pretrained": {
+            "accuracy": 0.68975830078125,
+            "address_accuracy": 0.88458251953125
+          },
+          "rolled": {
+            "accuracy": 0.009765625,
+            "address_accuracy": 0.003173828125
+          }
+        },
+        "programs": 1024,
+        "queries": 16384,
+        "contrasts": {
+          "scratch": {
+            "delta": 0.5621337890625,
+            "interval": [
+              0.5538314819335938,
+              0.5703125
+            ]
+          },
+          "pretrained": {
+            "delta": -0.1038818359375,
+            "interval": [
+              -0.10888824462890626,
+              -0.098876953125
+            ]
+          },
+          "rolled": {
+            "delta": 0.57611083984375,
+            "interval": [
+              0.567626953125,
+              0.5841079711914062
+            ]
+          }
+        },
+        "causal": {
+          "current": {
+            "clean_correct": 1181,
+            "both_correct": 747,
+            "correct_unconditional": 1219,
+            "all_queries": 2048
+          },
+          "stale": {
+            "clean_correct": 1181,
+            "both_correct": 958,
+            "correct_unconditional": 1184,
+            "all_queries": 2048
+          }
+        }
+      },
+      "familiar": {
+        "arms": {
+          "graft": {
+            "accuracy": 0.600341796875,
+            "address_accuracy": 0.862548828125
+          },
+          "scratch": {
+            "accuracy": 0.0361328125,
+            "address_accuracy": 0.08154296875
+          },
+          "pretrained": {
+            "accuracy": 0.70654296875,
+            "address_accuracy": 0.89453125
+          },
+          "rolled": {
+            "accuracy": 0.010986328125,
+            "address_accuracy": 0.004638671875
+          }
+        },
+        "programs": 256,
+        "queries": 4096,
+        "contrasts": {
+          "scratch": {
+            "delta": 0.564208984375,
+            "interval": [
+              0.548828125,
+              0.58056640625
+            ]
+          },
+          "pretrained": {
+            "delta": -0.106201171875,
+            "interval": [
+              -0.11572265625,
+              -0.096435546875
+            ]
+          },
+          "rolled": {
+            "delta": 0.58935546875,
+            "interval": [
+              0.57373046875,
+              0.60546875
+            ]
+          }
+        }
+      },
+      "passes": false,
+      "weights": 16834,
+      "seconds": {
+        "graft": 0.7923523339995882,
+        "scratch": 1.0328030839882558,
+        "pretrained": 1.1206404999975348
+      }
+    },
+    "recurrent-607": {
+      "held_out": {
+        "arms": {
+          "graft": {
+            "accuracy": 0.63262939453125,
+            "address_accuracy": 0.85784912109375
+          },
+          "scratch": {
+            "accuracy": 0.0238037109375,
+            "address_accuracy": 0.04901123046875
+          },
+          "pretrained": {
+            "accuracy": 0.73297119140625,
+            "address_accuracy": 0.8853759765625
+          },
+          "rolled": {
+            "accuracy": 0.0084228515625,
+            "address_accuracy": 0.003173828125
+          }
+        },
+        "programs": 1024,
+        "queries": 16384,
+        "contrasts": {
+          "scratch": {
+            "delta": 0.60882568359375,
+            "interval": [
+              0.6008285522460938,
+              0.616943359375
+            ]
+          },
+          "pretrained": {
+            "delta": -0.100341796875,
+            "interval": [
+              -0.10498046875,
+              -0.09552001953125
+            ]
+          },
+          "rolled": {
+            "delta": 0.62420654296875,
+            "interval": [
+              0.61602783203125,
+              0.63226318359375
+            ]
+          }
+        },
+        "causal": {
+          "current": {
+            "clean_correct": 1259,
+            "both_correct": 827,
+            "correct_unconditional": 1255,
+            "all_queries": 2048
+          },
+          "stale": {
+            "clean_correct": 1259,
+            "both_correct": 1049,
+            "correct_unconditional": 1275,
+            "all_queries": 2048
+          }
+        }
+      },
+      "familiar": {
+        "arms": {
+          "graft": {
+            "accuracy": 0.657470703125,
+            "address_accuracy": 0.862548828125
+          },
+          "scratch": {
+            "accuracy": 0.0361328125,
+            "address_accuracy": 0.0830078125
+          },
+          "pretrained": {
+            "accuracy": 0.744873046875,
+            "address_accuracy": 0.8955078125
+          },
+          "rolled": {
+            "accuracy": 0.01123046875,
+            "address_accuracy": 0.004638671875
+          }
+        },
+        "programs": 256,
+        "queries": 4096,
+        "contrasts": {
+          "scratch": {
+            "delta": 0.621337890625,
+            "interval": [
+              0.60498046875,
+              0.63671875
+            ]
+          },
+          "pretrained": {
+            "delta": -0.08740234375,
+            "interval": [
+              -0.096435546875,
+              -0.078857421875
+            ]
+          },
+          "rolled": {
+            "delta": 0.646240234375,
+            "interval": [
+              0.6298828125,
+              0.661376953125
+            ]
+          }
+        }
+      },
+      "passes": false,
+      "weights": 16898,
+      "seconds": {
+        "graft": 1.783717832993716,
+        "scratch": 2.0600245419918792,
+        "pretrained": 2.2136679159884807
+      }
+    }
+  },
+  "advantage_replicates": false,
+  "elapsed_seconds": 26.4759786670038,
+  "device": "Device(cpu, 0)",
+  "hardware": "Apple M5 Ultra"
+}

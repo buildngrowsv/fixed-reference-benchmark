@@ -1,0 +1,37 @@
+{
+  "original_receipt": {
+    "job": "chain-transfer-two-hosts",
+    "revision": "816619f9c7bf3b07cad7c897b1a73cf2cbdf817b",
+    "started": "2026-11-20T02:40:44Z",
+    "finished": "2026-11-20T02:41:15Z",
+    "status": "done",
+    "device": "cpu",
+    "exit": 0
+  },
+  "fits": {
+    "convolution-503": {
+      "clean_arrays_identical": 18,
+      "first_run_sha256": "df9bed19bbb3be7cbc6e0f32245f4eac134b947d991a87b6b9644bc6b07098b9",
+      "old_noop_controls": 29,
+      "corrected_noop_controls": 0
+    },
+    "convolution-607": {
+      "clean_arrays_identical": 18,
+      "first_run_sha256": "863f84b3a6d7ca41328fb354b3e957e3104c4edbd3b4a0b52d4944f97181e4c9",
+      "old_noop_controls": 36,
+      "corrected_noop_controls": 0
+    },
+    "recurrent-503": {
+      "clean_arrays_identical": 18,
+      "first_run_sha256": "a94106de1af0a7105dc3d419a41a50f27809b4b0c839325b3b62671eb61ba19f",
+      "old_noop_controls": 29,
+      "corrected_noop_controls": 0
+    },
+    "recurrent-607": {
+      "clean_arrays_identical": 18,
+      "first_run_sha256": "40a07e89999450812c39384754684289bd570880121475e9350fa85c3feaeb66",
+      "old_noop_controls": 36,
+      "corrected_noop_controls": 0
+    }
+  }
+}

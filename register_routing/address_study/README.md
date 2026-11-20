@@ -30,4 +30,4 @@ The Studio used Python 3.12.16, MLX 0.32.4 and NumPy 2.5.5. From the repository 
 
 The account owner proposed testing learned addressing and transferable memory. OpenAI Codex designed and implemented the experiment, ran it over SSH on the owner's Mac Studio, verified the predictions and assisted with writing.
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/388)
+[Published Pubroot article](https://pubroot.com/ai/fine-tuning/can-a-frozen-attention-router-transfer-where-to-read-without-sending-the-answer/) · [Submission and review](https://github.com/buildngrowsv/pubroot-website/issues/388) · [Follow-up across two host architectures](../chain_study/README.md)

@@ -1,0 +1,30 @@
+{
+  "convolution-503": {
+    "programs": 1024,
+    "queries": 16384,
+    "clean_graft": 9641,
+    "clean_with_own_pretraining": 11365,
+    "verified": true
+  },
+  "recurrent-503": {
+    "programs": 1024,
+    "queries": 16384,
+    "clean_graft": 10350,
+    "clean_with_own_pretraining": 12035,
+    "verified": true
+  },
+  "convolution-607": {
+    "programs": 1024,
+    "queries": 16384,
+    "clean_graft": 9599,
+    "clean_with_own_pretraining": 11301,
+    "verified": true
+  },
+  "recurrent-607": {
+    "programs": 1024,
+    "queries": 16384,
+    "clean_graft": 10365,
+    "clean_with_own_pretraining": 12009,
+    "verified": true
+  }
+}

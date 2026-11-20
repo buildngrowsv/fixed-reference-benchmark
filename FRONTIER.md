@@ -10,6 +10,8 @@ Cross-model components and activation interventions are established research. Ba
 
 The new comparison explicitly blocks the exact mechanism Boucher identified. A value-blind router emits position scores only. The host chooses from its independently encoded payloads. Cyclic shifting of the scores and source-versus-stale value replacement confirm the causal role of those scores. Results of 88.61% and 85.91% are substantial on a compound shift from 36 to 60 writes and unseen composite keys. The joint success criterion failed. Native location accuracy was near perfect and the native end-to-end result was at least as high in both fits. Thus the evidence supports transfer of **which write to read**, in an interface designed for that purpose. A competitive research claim would require a benefit over the native and symbolic components under a harder distribution, a broader family of receivers, or a setting with ordinary input streams and an emergent interface. [Prespecified benchmark](register_routing/ADDRESS_TRANSFER.md) · [Audited outcomes](register_routing/address_study/README.md)
 
+**Two hosts and two alias hops.** One reconstructed frozen router worked in convolutional and GRU hosts on held-out 60-write programs. It substantially beat from-scratch routers with matching target supervision. Independent native locators with matched one-hop pretraining and target adaptation beat the graft by 10.0–10.5 points across all four fits. These controls bound the claimed portability to reuse under a short target budget. [Cross-host test](register_routing/chain_study/README.md)
+
 ## Other findings
 
 | Study | What the evidence supports | Closest work or decisive control |
