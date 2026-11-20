@@ -443,5 +443,14 @@
     "after": {
       "working-exit-main": "any"
     }
+  },
+  {
+    "id": "displaced-prefix-surgery",
+    "repo": "fixed-reference-benchmark",
+    "revision": "cc7e5138276f01ff224adca88d2c5bc7d5cbed07",
+    "script": "register_routing/prefix_surgery.py",
+    "after": {
+      "displaced-head-surgery": "stop"
+    }
   }
 ]
