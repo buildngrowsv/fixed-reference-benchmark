@@ -1772,5 +1772,19 @@
     "after": {
       "qwen-cross-width-72b": "cross_width_transfer"
     }
+  },
+  {
+    "id": "flagship-held-out-loop-72b",
+    "repo": "routed-expert-splice",
+    "revision": "56c672d83651745c0c9eef764ac28efb31a4e57d",
+    "script": "nested_surgery/flagship_transfer.py",
+    "args": ["--qualified-loop"],
+    "model_snapshots": [
+      "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+      "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+    ],
+    "after": {
+      "flagship-exact-transfer-72b": "native_screen_below_floor"
+    }
   }
 ]
