@@ -1,0 +1,28 @@
+{
+  "decision": "advance",
+  "stage": "validation",
+  "updates": 4096,
+  "parameters_per_compact_arm": 238269312,
+  "peak_rate": 0.00013333333333333334,
+  "baseline_run": "large-python-width-rate-mid",
+  "bpb": {
+    "sealed": 1.0227293567046156,
+    "working": 1.0145334962119508
+  },
+  "sealed_minus_readable": {
+    "delta": 0.0024775295089687257,
+    "interval": [
+      -0.003014815100950089,
+      0.006445743764740265
+    ],
+    "packages": 42
+  },
+  "sealed_minus_working": {
+    "delta": 0.008195860492665193,
+    "interval": [
+      0.0036316698918468964,
+      0.010288802514492802
+    ],
+    "packages": 42
+  }
+}

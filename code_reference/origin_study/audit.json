@@ -1,0 +1,22 @@
+{
+  "decision": "complete",
+  "test_pairs": 512,
+  "clean": 461,
+  "checkpoint": "large-python-width-rate-main",
+  "readout_correct": {
+    "reference": 512,
+    "neighbor": 512
+  },
+  "switches": {
+    "reference": 0,
+    "neighbor": 0,
+    "whole_site": 458,
+    "whole_state": 461
+  },
+  "fixed_minus_neighbor": 0.0,
+  "interval": [
+    0.0,
+    0.0
+  ],
+  "readable_low_use": true
+}

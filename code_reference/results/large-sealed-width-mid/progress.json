@@ -1,0 +1,9 @@
+{
+  "arm": "working",
+  "step": 4096,
+  "target": 4096,
+  "parameters": 238269312,
+  "loss": 0.602240800857544,
+  "time": 1795152525.305865,
+  "tokens_per_second": 48900.95529087308
+}
