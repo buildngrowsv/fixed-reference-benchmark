@@ -26,3 +26,5 @@ For each clean program we selected pairs that changed only the request from orig
 The experiment ran on the CPU of an Apple M5 Ultra while the GPU continued a separate run. The measured runs took 3.59 and 3.34 seconds, with peak resident memory of 99 and 106 MB. The launcher failed to save the first exit receipt after the predictions had been written. An exact rerun reproduced every saved prediction array and every reported accuracy measure. Its temporary files were removed and it wrote no weight checkpoints. The source revision and the rerun's exit are recorded. The independent NumPy audit reconstructs interpreter answers, all paired confidence intervals and conditional counts. [Verification script](../verify_learned_address.py) · [Reproduction receipt](results/reproduction.json)
 
 The account owner proposed testing learned addressing and transferable memory. OpenAI Codex designed and implemented the experiment, ran it over SSH on the owner's Mac Studio, verified the forecasts and assisted with writing.
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/388)
