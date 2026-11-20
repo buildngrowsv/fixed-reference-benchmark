@@ -423,6 +423,15 @@
     }
   },
   {
+    "id": "displaced-head-answer-attribution",
+    "repo": "fixed-reference-benchmark",
+    "revision": "94012c9d6325ededc044197eb3ab882dca8f368f",
+    "script": "register_routing/head_attribution.py",
+    "after": {
+      "displaced-head-surgery": "any"
+    }
+  },
+  {
     "id": "magnitude-exit-main",
     "repo": "fixed-reference-benchmark",
     "revision": "ab8dffa615c296a1615a8828275d6c0d49e12589",
