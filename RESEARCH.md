@@ -1,12 +1,14 @@
 # Open experiments and decisions
 
+**Selective graft calls.** The intact 7B and frozen graft had complementary successes among bracket decoys. The registered test calls the 14B graft only below a fixed margin from the intact 7B scores and compares that policy against budget-matched random selection. The 32B run separately checks the productive 72B alias contrast at the midpoint of a second recipient. [Graft routing protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/3306d50/nested_surgery/FROZEN_GRAFT_ROUTE.md) · [32B midpoint protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/8d6d1a1/nested_surgery/NUMERIC_LOOKUP_ALIAS_MIDPOINT_32B.md)
+
 **The frozen graft added skill under bracket decoys.** On 256 fresh matched triplets, the aligned graft solved 63 compared with 33 using host features, 18 with shuffled donor features and zero with the donor off. Thirty groups met all attribution criteria. The intact specialist still led at 150. [Paired evidence](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/learned_output_port_decoys_study)
 
 **72B alias at depth.** At the registered midpoint, the relocated definition switched 117 of 143 shared-native groups while the late alias and its original numeral each switched zero. All three edits switched zero at block 60, closing the positive control at that cut. [Depth comparison](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_lookup_alias_depth_72b_study)
 
 **Real-photo depth evidence.** Joint calibrated matching on DTU gained 10.60 and 6.23 points against the best control on the two scans. Joint matching recovered 784 depths that both individual views missed. [Matched DTU evidence](https://github.com/buildngrowsv/parallax-depth-benchmark/tree/main/dtu/stereo_fusion_study)
 
-**Common saved state.** The Studio now replays the staggered 192³ jumps from the same saved-word bank in every arm at each event. The comparison keeps detector signals and geometry fixed to measure dependence on prior writes. [Protocol](spatial_references/WITNESS_COMMON_START.md)
+**Common saved state.** Equalizing the saved words before each jump changed the sparse-minus-stale first-round gain from 1.47 to 1.37 points. The paired difference was +0.096 points with its interval within ±1. The third-jump gap fell from 4.94 to 2.70 points. All detector and write counts matched. [Controlled replay](spatial_references/witness_common_start_study/README.md)
 
 **The learned graft used the donor.** The aligned bridge solved 256 of 256 fresh repair groups, versus 30 after donor ablation and 253 for a matched bridge fed by the host's own features. The specialist cleared the donor-use check and missed the comparative capability gate. A frozen follow-up uses matched strings and comments with misleading bracket characters. [Bridge result](https://github.com/buildngrowsv/routed-expert-splice/blob/ff1ab2c/nested_surgery/learned_output_port_study/README.md) · [Decoy protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/3b8de95/nested_surgery/LEARNED_OUTPUT_PORT_DECOYS.md)
 
