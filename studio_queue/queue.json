@@ -658,5 +658,14 @@
     "after": {
       "large-python-reference-mid": "stop"
     }
+  },
+  {
+    "id": "large-qwen-block27-graft",
+    "repo": "routed-expert-splice",
+    "revision": "8c024115c7646af78a843979b4fef6b721c7a3dd",
+    "script": "nested_surgery/large_graft.py",
+    "after": {
+      "large-qwen-opener-qualification": "advance"
+    }
   }
 ]
