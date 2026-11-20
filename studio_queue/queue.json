@@ -1759,5 +1759,18 @@
     "after": {
       "spatial-sheared-offset-history-7077888": "history_repairs_tilted_offsets"
     }
+  },
+  {
+    "id": "flagship-exact-transfer-72b",
+    "repo": "routed-expert-splice",
+    "revision": "be55503fb1560375e66547d28d74e250485111da",
+    "script": "nested_surgery/flagship_transfer.py",
+    "model_snapshots": [
+      "0396a76181e127dfc13e5c5ec48a8cee09938b02",
+      "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+    ],
+    "after": {
+      "qwen-cross-width-72b": "cross_width_transfer"
+    }
   }
 ]

@@ -1,6 +1,8 @@
-# Open experiments and decisions
+# Research decisions and archive
 
-**The copied key stayed inert at its 72B use site.** Swapping the alias token, its closing bracket or both together switched zero of 143 complete groups. The same midpoint intervention on the relocated definition switched 117. The Studio is now running the moving-wall reset comparison. [Use-site study](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_lookup_alias_use_72b_study)
+The program is now focused on cross-model activation transfer. Publication is consolidated at study level. The earlier entries below are an archive. [Research policy](RESEARCH_POLICY.md)
+
+**The copied key stayed inert at its 72B use site.** Swapping the alias token, its closing bracket or both together switched zero of 143 complete groups. The same midpoint intervention on the relocated definition switched 117. [Use-site study](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_lookup_alias_use_72b_study)
 
 **Accumulated detector evidence recovered tilted offsets.** Pooling earlier rounds recovered all 64 offset vectors against 26 for the same-frame observer. Shifted retention improved from 68.79% to 70.18%, within 0.08 points of supplied geometry. The next test introduces a boundary jump and compares persistent pooling to a two-observation reset. [Pooled-offset study](spatial_references/sheared_history_study/README.md) · [Moving-wall reset](spatial_references/SHEARED_HISTORY_RESET.md)
 
