@@ -1189,5 +1189,14 @@
       "qwen-cross-width-72b": "cross_width_transfer",
       "qwen-two-operands-carry": "carry_composes"
     }
+  },
+  {
+    "id": "spatial-inferred-regions-884736",
+    "repo": "fixed-reference-benchmark",
+    "revision": "198240fb667f2c1d2c6f5b70a9a28929d825b809",
+    "script": "spatial_references/inferred_regions.py",
+    "after": {
+      "spatial-regional-witness-884736": "regional_beats_global"
+    }
   }
 ]
