@@ -1,6 +1,6 @@
 # Open experiments and decisions
 
-The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons, the numerical stability follow-up, the 285M Python run and the 7B/14B coding qualification.
+The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons, the numerical stability follow-up, the 285M Python validation result and the 7B/14B coding qualification.
 
 ## Studio queue and current evidence
 
@@ -10,7 +10,9 @@ In a second previously adapted recipient, the compact donor switched both correc
 
 The [live queue and controls](studio_queue/README.md) show what is running, what can run next and which branches closed. The public [experiment manifest](studio_queue/queue.json) records the precommitted code and conditions.
 
-**Fixed reference on real code.** At 16,384 updates, the 32M-parameter fixed arm scored 1.02012 versus 1.02210 held-out bits per byte. The paired package interval crossed zero. On 1,024 identifier pairs, exchanging the protected values erased 16 previously correct pairs, compared with 98 after exchanging 64 neighboring values. The independent training gate closed. Seven applications of a shared block also missed the step-matched four-block control while taking 2.23 times as long. [Study and public evidence](code_reference/README.md)
+**Fixed reference on real code.** At 285M and 4,096 updates the fixed and writable models scored 5.737 and 5.079 validation bits per byte. Both missed the learning gate, and a matched lower-rate run is queued. [Wide-stage audit](code_reference/large_study/README.md)
+
+At 16,384 updates, the 32M-parameter fixed arm scored 1.02012 versus 1.02210 held-out bits per byte. The paired package interval crossed zero. On 1,024 identifier pairs, exchanging the protected values erased 16 previously correct pairs, compared with 98 after exchanging 64 neighboring values. The independent training gate closed. Seven applications of a shared block also missed the step-matched four-block control while taking 2.23 times as long. [Study and public evidence](code_reference/README.md)
 
 **Sealed reference on real Python.** A sealed model used 16.13% fewer weights than the full readable model and met the 0.02 bits-per-byte margin on two training orders. At identical compact size, the early copy gained 0.00888 and 0.00226 bits per byte over duplicating late coordinates. The second interval included zero. Swapping 64 reference coordinates only at the defining byte reversed zero identifier pairs on either seed. Swapping the whole state there reversed 74 and 267. Using final feature magnitudes improved on duplication by 0.00613 bits per byte and finished 0.00275 behind the early copy. The interval crossed the 0.005 decision margin, closing the feature-map comparison as inconclusive. Across six unrelated third-party Python libraries, the compact model scored 1.39958 versus 1.39934 bits per byte after adaptation. CPython loss rose by 0.212 and 0.216 respectively. [External-project study](code_reference/ecosystem_study/README.md) [Cross-project protocol](code_reference/ECOSYSTEM.md) [Two-seed study and raw evidence](code_reference/sealed_study/README.md) · [Magnitude control](code_reference/MAGNITUDE_EXIT.md)
 

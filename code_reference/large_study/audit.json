@@ -1,0 +1,57 @@
+{
+  "validation_windows": 1024,
+  "validation_packages": 42,
+  "performance": {
+    "small_fixed": {
+      "bpb": 1.0354869361830126,
+      "next_byte_accuracy": 0.7980175018310547
+    },
+    "small_writable": {
+      "bpb": 1.0425327907937143,
+      "next_byte_accuracy": 0.7969760894775391
+    },
+    "large_fixed": {
+      "bpb": 5.737040727913559,
+      "next_byte_accuracy": 0.13199996948242188
+    },
+    "large_writable": {
+      "bpb": 5.079112809501008,
+      "next_byte_accuracy": 0.29527854919433594
+    },
+    "unigram": {
+      "bpb": 4.547447784675494,
+      "next_byte_accuracy": 0.2891502380371094
+    },
+    "bigram": {
+      "bpb": 3.369628395381171,
+      "next_byte_accuracy": 0.4006767272949219
+    }
+  },
+  "fixed_minus_writable": {
+    "small": {
+      "delta": -0.007045854610701502,
+      "interval": [
+        -0.011589679718299202,
+        -0.003040837485887688
+      ],
+      "packages": 42
+    },
+    "large": {
+      "delta": 0.6579279184125515,
+      "interval": [
+        0.6151024041260905,
+        0.7417174692934321
+      ],
+      "packages": 42
+    },
+    "size_interaction": {
+      "delta": 0.664973773023253,
+      "interval": [
+        0.6225996757881117,
+        0.7487124583834537
+      ],
+      "packages": 42
+    }
+  },
+  "passed_competence_gate": false
+}

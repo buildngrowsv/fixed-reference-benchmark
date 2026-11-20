@@ -1,0 +1,42 @@
+{
+  "decision": "stop",
+  "updates": 4096,
+  "arms": {
+    "fixed": {
+      "parameters": 284720640,
+      "validation_bpb": 5.737040727913559
+    },
+    "writable": {
+      "parameters": 284720640,
+      "validation_bpb": 5.079112809501008
+    }
+  },
+  "contrasts": {
+    "validation": {
+      "small": {
+        "delta": -0.007045854610701502,
+        "interval": [
+          -0.011589679718299202,
+          -0.003040837485887688
+        ],
+        "packages": 42
+      },
+      "large": {
+        "delta": 0.6579279184125515,
+        "interval": [
+          0.6151024041260906,
+          0.7417174692934321
+        ],
+        "packages": 42
+      },
+      "size_interaction": {
+        "delta": 0.664973773023253,
+        "interval": [
+          0.6225996757881118,
+          0.7487124583834538
+        ],
+        "packages": 42
+      }
+    }
+  }
+}
