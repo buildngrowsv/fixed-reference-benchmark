@@ -1,15 +1,22 @@
 """Single-value-vector interchange at a learned, displaced register read."""
+import sys
 import numpy as np
 from run import RoutedModel, OUT, RUNS, batch, mx, optimizer, restore, routing, write
 
 def main():
     report={}
-    for name,shift in (("rotated",1),("matched",0)):
+    repeat = sys.argv[1:] == ["repeat"]
+    if sys.argv[1:] and not repeat:
+        raise ValueError("expected no arguments or repeat")
+    arms = (("stable",1),) if repeat else (("rotated",1),("matched",0))
+    parent = RUNS / ("register-stable-random-second-seed" if repeat else "register-addressing")
+    panel_seed = 621789 if repeat else 152843
+    for name,shift in arms:
         model=RoutedModel()
-        restore(model,optimizer(),RUNS/"register-addressing"/(name+".safetensors"))
+        restore(model,optimizer(),parent/(name+".safetensors"))
         rows=[]
-        for i in range(64):
-            a,b=batch([152843,i],32,True)
+        for i in range(128 if repeat else 64):
+            a,b=batch([panel_seed,i],32,True)
             # Even generator rows request the original register value.
             first,second=a[0][::2],b[0][::2]
             assert (a[2][::2,-1]==2).all()
@@ -44,6 +51,6 @@ def main():
         report[name]=dict(pairs=len(clean),clean=int(clean.sum()),double_switch_init=int(source.sum()),
             double_switch_write=int(ctrl.sum()),delta=float(d.mean()),interval=ci,
             correct_after_init=int((arr[:,2]==gold).all(1).sum()),correct_after_write=int((arr[:,3]==gold).all(1).sum()))
-    r=report["rotated"]
-    write("result.json",dict(decision="complete",supported=bool(r["delta"]>=.25 and r["interval"][0]>0),arms=report))
+    r=report["stable" if repeat else "rotated"]
+    write("result.json",dict(decision="complete",panel_seed=panel_seed,supported=bool(r["delta"]>=.25 and r["interval"][0]>0),arms=report))
 if __name__=="__main__":main()

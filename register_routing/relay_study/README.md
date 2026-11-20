@@ -26,3 +26,5 @@ We independently initialized the stable and random arms with seed 211 and traine
 ## Reproduction and scope
 
 Both tests use the same synthetic instruction language. Register identities enter the mask explicitly. An interpreter given the same events can solve the task exactly. The scientific question is what a learned model puts at the displaced location and whether that state can change its answer. Variation across larger models and natural code remains unmeasured. The public audit regenerates paired labels from the generator, checks program-level query counts, and reconstructs both bootstrap intervals from the saved predictions. Run `python register_routing/relay_study/verify.py` with NumPy from the repository root. The MLX jobs ran on the owner’s Mac Studio. The owner proposed the research direction and OpenAI Codex implemented the comparisons, operated the experiments, verified the evidence and assisted with writing. [Audit script](verify.py) · [Pinned execution manifest](../../studio_queue/queue.json)
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/372)
