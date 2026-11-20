@@ -24,3 +24,5 @@ For the causal test, swap the reference, neighboring slice, or complete vector a
 The protected slice meets the registered criterion for a readable representation with little effect on the model’s answer under this intervention. The adjacent slice gives the same result. The whole-site effect means the destination computation can carry an edit from this byte onward. A single slice can fail because the answer depends on other channels, because the model uses redundant traces, or because a partial swap is inconsistent with the rest of the state. Partial swaps that leave the winner unchanged can still shift probabilities. This test measures one checkpoint and synthetic task. [Margins, fitted readouts and receipt](../results/large-reference-origin) · [Independent verification](verify.py)
 
 The owner proposed forward references and their evaluation at scale. OpenAI Codex implemented and ran the interventions on the owner’s Apple M5 Ultra, verified the evidence and assisted with writing. [Recorded runtime](../../runtime.json)
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/417)
