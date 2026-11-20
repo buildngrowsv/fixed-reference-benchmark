@@ -1,20 +1,21 @@
 """Scale the original readable fixed-versus-writable comparison at matched data exposure."""
+import argparse
 from functools import partial
-import sys,time
+import time
 import numpy as np
 from train_code import CodeLM,Corpus,OUT,RUNS,mx,nn,optim,tree_flatten,restore,snapshot,evaluate,write
 from verify import grouped_difference
 
-def fit(arm,corpus,phase,end,make_model=None):
+def fit(arm,corpus,phase,end,make_model=None,peak_rate=.0004,mid_run="large-python-reference-mid"):
     mx.random.seed(101)
     model=CodeLM(width=1536,protected_width=192) if make_model is None else make_model()
     count=sum(v.size for _,v in tree_flatten(model.parameters()))
-    opt=optim.AdamW(lambda t:.0004*mx.minimum(1.,(t.astype(mx.float32)+1)/128),weight_decay=.03,bias_correction=True)
+    opt=optim.AdamW(lambda t:peak_rate*mx.minimum(1.,(t.astype(mx.float32)+1)/128),weight_decay=.03,bias_correction=True)
     path=OUT/(arm+".safetensors")
     start=0
     if path.exists():start=restore(model,opt,path)
     elif phase=="main":
-        start=restore(model,opt,RUNS/"large-python-reference-mid"/path.name)
+        start=restore(model,opt,RUNS/mid_run/path.name)
         assert start==4096
     fixed=arm=="fixed"
     def objective(m,x,y):return nn.losses.cross_entropy(m(x,fixed),y,reduction="mean")
@@ -34,12 +35,19 @@ def fit(arm,corpus,phase,end,make_model=None):
     return model,count
 
 def main():
-    phase=sys.argv[1];end={"mid":4096,"main":16384}[phase]
+    parser=argparse.ArgumentParser()
+    parser.add_argument("phase",choices=("mid","main"))
+    parser.add_argument("--width-rate",action="store_true")
+    args=parser.parse_args()
+    phase=args.phase
+    end={"mid":4096,"main":16384}[phase]
+    rate=.0004/3 if args.width_rate else .0004
+    mid_run="large-python-width-rate-mid" if args.width_rate else "large-python-reference-mid"
     corpus=Corpus();arms={};arrays={}
     panels=[("validation","val",1024)]
     if phase=="main":panels.append(("test","test",2048))
     for arm in ("fixed","writable"):
-        model,count=fit(arm,corpus,phase,end)
+        model,count=fit(arm,corpus,phase,end,peak_rate=rate,mid_run=mid_run)
         arms[arm]={"parameters":count}
         for label,split,n in panels:
             v,g,w=evaluate(model,arm=="fixed",corpus,split,n)
@@ -50,6 +58,11 @@ def main():
                 np.testing.assert_array_equal(w,ref["windows"]);np.testing.assert_array_equal(g,ref["groups"])
                 arrays["small_"+arm,label]=ref["scores"][:,0]
             arrays["groups",label]=g
+            if args.width_rate and phase=="mid":
+                with np.load(RUNS/"large-python-reference-mid"/(arm+"-"+label+".npz")) as original:
+                    np.testing.assert_array_equal(w,original["windows"])
+                    np.testing.assert_array_equal(g,original["groups"])
+                    arms[arm]["lower_minus_original_rate_bpb"]=grouped_difference(v[:,0],original["scores"][:,0],g)
         del model
     results={}
     for label,_,_ in panels:
@@ -59,6 +72,7 @@ def main():
                             size_interaction=grouped_difference(f-w,sf-sw,g))
     outcome="complete"
     if phase=="mid":outcome="advance" if max(v["validation_bpb"] for v in arms.values())<3.24 else "stop"
-    write("result.json",dict(decision=outcome,updates=end,arms=arms,contrasts=results))
+    write("result.json",dict(decision=outcome,updates=end,peak_rate=rate,arms=arms,contrasts=results,
+          rates_matched_across_sizes=not args.width_rate))
 
 if __name__=="__main__":main()

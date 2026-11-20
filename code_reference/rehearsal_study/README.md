@@ -22,4 +22,4 @@ Ibrahim and colleagues reported benefits from old-data replay during continued l
 
 The run used an Apple M5 Ultra with MLX 0.32.4. Run the NumPy verification script from this directory to reproduce the paired endpoints and intervals. The owner proposed the continuing research program. OpenAI Codex implemented and operated the comparison and assisted with analysis and writing. [Recorded environment](../../runtime.json) · [Audit results](audit.json)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/387)
+[Published Pubroot paper](https://pubroot.com/ai/fine-tuning/replaying-one-cpython-batch-in-eight-improved-both-retention-and-external-python-prediction/) · [Public review](https://github.com/buildngrowsv/pubroot-website/issues/387)

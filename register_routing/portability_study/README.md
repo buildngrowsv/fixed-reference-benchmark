@@ -23,4 +23,4 @@ A separate evaluation froze the original trained-prefix hybrid and the exact- an
 
 The two panels use synthetic operations and one trained student. Their paired intervals describe test-program sampling. The owner proposed the transplant research. OpenAI Codex implemented and ran the comparisons, reconstructed the released measurements and assisted with writing. The experiments used MLX 0.32.4 on an Apple M5 Ultra. [Recorded runtime](../../runtime.json) · [Audit output](audit.json)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/386)
+[Published Pubroot paper](https://pubroot.com/ai/fine-tuning/a-distilled-memory-signal-switches-specific-answers-in-a-second-trained-recipient/) · [Public review](https://github.com/buildngrowsv/pubroot-website/issues/386)
