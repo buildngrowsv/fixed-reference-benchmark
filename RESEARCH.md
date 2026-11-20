@@ -1,5 +1,13 @@
 # Open experiments and decisions
 
+**The frozen graft added skill under bracket decoys.** On 256 fresh matched triplets, the aligned graft solved 63 compared with 33 using host features, 18 with shuffled donor features and zero with the donor off. Thirty groups met all attribution criteria. The intact specialist still led at 150. [Paired evidence](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/learned_output_port_decoys_study)
+
+**72B alias at depth.** At the registered midpoint, the relocated definition switched 117 of 143 shared-native groups while the late alias and its original numeral each switched zero. All three edits switched zero at block 60, closing the positive control at that cut. [Depth comparison](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_lookup_alias_depth_72b_study)
+
+**Real-photo depth evidence.** Joint calibrated matching on DTU gained 10.60 and 6.23 points against the best control on the two scans. Joint matching recovered 784 depths that both individual views missed. [Matched DTU evidence](https://github.com/buildngrowsv/parallax-depth-benchmark/tree/main/dtu/stereo_fusion_study)
+
+**Common saved state.** The Studio now replays the staggered 192³ jumps from the same saved-word bank in every arm at each event. The comparison keeps detector signals and geometry fixed to measure dependence on prior writes. [Protocol](spatial_references/WITNESS_COMMON_START.md)
+
 **The learned graft used the donor.** The aligned bridge solved 256 of 256 fresh repair groups, versus 30 after donor ablation and 253 for a matched bridge fed by the host's own features. The specialist cleared the donor-use check and missed the comparative capability gate. A frozen follow-up uses matched strings and comments with misleading bracket characters. [Bridge result](https://github.com/buildngrowsv/routed-expert-splice/blob/ff1ab2c/nested_surgery/learned_output_port_study/README.md) · [Decoy protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/3b8de95/nested_surgery/LEARNED_OUTPUT_PORT_DECOYS.md)
 
 **Immediate response to staggered boundaries.** Across 24 jumps in eight fresh 192³ worlds, the sparse policy retained 72.90% on the first affected round, versus 71.44% stale and 74.48% supplied. The +1.47-point improvement missed the four-point requirement. The sampled arm reached 68.83% versus 63.89% stale at the third jump, when accumulated retention already differed. [Staggered evidence](spatial_references/witness_staggered_jumps_study/README.md)
