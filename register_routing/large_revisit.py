@@ -8,12 +8,17 @@ from relay import exchange
 
 WIDTH=1536
 
-def fit(arm):
+def fit(arm,target=512,parent=None):
     mx.random.seed(101)
     model=Model(WIDTH) if arm=="dense" else RoutedModel(WIDTH)
     opt=optimizer()
     path=OUT/(arm+".safetensors")
-    start=restore(model,opt,path) if path.exists() else 0
+    start=0
+    if path.exists():
+        start=restore(model,opt,path)
+    elif parent is not None:
+        start=restore(model,opt,parent/path.name)
+        assert start==512
     def objective(m,x,y,ops):
         logits=m(x,False) if arm=="dense" else m(x,wrong=True)
         use=ops>=2
@@ -29,14 +34,14 @@ def fit(arm):
         return loss
     count=sum(v.size for _,v in tree_flatten(model.parameters()))
     clock=time.monotonic()
-    for t in range(start+1,513):
+    for t in range(start+1,target+1):
         ids,y,ops,_,_=batch([101,27491,t])
         loss=step(mx.array(ids),mx.array(y),mx.array(ops))
         mx.eval(loss,state)
         if t==1 or t%16==0:
             if not np.isfinite(loss.item()):raise ValueError("nonfinite training loss")
             if t%256==0:snapshot(model,opt,t,path)
-            write("progress.json",dict(arm=arm,step=t,target=512,parameters=count,loss=loss.item(),time=time.time(),
+            write("progress.json",dict(arm=arm,step=t,target=target,parameters=count,loss=loss.item(),time=time.time(),
                   tokens_per_second=(t-start)*8192/(time.monotonic()-clock)))
     return model,count
 
