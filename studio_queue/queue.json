@@ -879,5 +879,14 @@
     "after": {
       "qwen-fixed-identifier-subspace": "complete"
     }
+  },
+  {
+    "id": "qwen-identifier-one-token-doorway",
+    "repo": "routed-expert-splice",
+    "revision": "addc988df65c36b6ed09cb49f91f48efbbc06269",
+    "script": "nested_surgery/identifier_doorway.py",
+    "after": {
+      "qwen-binding-selective-reference": "binding_sensitive"
+    }
   }
 ]
