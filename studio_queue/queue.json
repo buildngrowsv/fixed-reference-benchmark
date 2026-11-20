@@ -791,5 +791,14 @@
     "after": {
       "large-python-qualified-lane-exchange": "complete"
     }
+  },
+  {
+    "id": "large-qwen-recalibrated-graft",
+    "repo": "routed-expert-splice",
+    "revision": "23d035eb6928d5a3c306a23d8ebf206faee0f8d1",
+    "script": "nested_surgery/recalibrated_graft.py",
+    "after": {
+      "large-qwen-paired-input-calibration": "ordinary"
+    }
   }
 ]
