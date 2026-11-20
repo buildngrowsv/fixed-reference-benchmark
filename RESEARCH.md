@@ -78,7 +78,7 @@ In the smaller model, seven strict repairs disappeared in the first published do
 
 **Moving relative reference.** Preserving only the donor's original displacement along the evolving native state recovered 332/512 complete 32B carry groups, compared with 333 for the constant projection and 358 for the one-shot edit. All 512 native groups qualified. Close the two tested seven-block hold policies on this task. [Published follow-up](https://pubroot.com/ai/fine-tuning/a-moving-reference-left-the-seven-block-transplant-penalty-intact-in-32b/)
 
-**Real camera geometry.** The ETH3D qualification found zero same-strength horizontal/vertical triplets across 172 cameras in four scenes. Most references offered a horizontal candidate and only four offered a vertical one within the registered lateral and overlap limits. [Pinned calibration audit](https://github.com/buildngrowsv/parallax-depth-benchmark/tree/main/eth3d)
+**Real camera geometry.** The ETH3D qualification found zero same-strength horizontal/vertical triplets across 172 cameras in four scenes. Most references offered a horizontal candidate and only four offered a vertical one within the registered lateral and overlap limits. On the official DTU robot path, all 49 screened poses met the matched direction criteria. Two sample scenes are being staged for common-visibility qualification. [ETH3D calibration audit](https://github.com/buildngrowsv/parallax-depth-benchmark/tree/main/eth3d) · [DTU pose qualification](https://github.com/buildngrowsv/parallax-depth-benchmark/tree/main/dtu)
 
 ## What opens the other paths
 
