@@ -1408,5 +1408,17 @@
     "after": {
       "spatial-anchored-witness-routing-7077888": "dedicated_probes_scale"
     }
+  },
+  {
+    "id": "qwen-dictionary-order-second-host-32b",
+    "repo": "routed-expert-splice",
+    "revision": "4d0348e77fafbb3a0a6c12015f20cc341197288f",
+    "script": "nested_surgery/identifier_lookup_order_32b.py",
+    "model_snapshots": [
+      "1818d35814b8319459f4bd55ed1ac8709630f003"
+    ],
+    "after": {
+      "qwen-late-key-donor-fresh-72b": "late_key_donor_transfer"
+    }
   }
 ]
