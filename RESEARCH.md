@@ -4,6 +4,8 @@ The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons,
 
 ## Studio queue and current evidence
 
+**Fresh dictionary replication.** The same seven-coordinate donor switched 135 of 137 native-shared groups after the table and 86 before it, a paired 35.77-point gain. It preserved every constant-table response. The next control restores the exact early token gap while leaving the late key's causal prefix fixed. [Fresh evidence](https://github.com/buildngrowsv/routed-expert-splice/blob/b263893/nested_surgery/numeric_lookup_fresh_72b_study/README.md) · [Matched-gap protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/c2367e9/nested_surgery/NUMERIC_LOOKUP_MATCHED_GAP_72B.md)
+
 **Seven-coordinate transfer at the late key.** The same donor switched 134/139 shared groups at the relocated key, up from 71 at the early assignment. It preserved all 139 constant-table answers. A disjoint panel is running. [Verified donor result](https://github.com/buildngrowsv/routed-expert-splice/blob/3b8148d/nested_surgery/numeric_lookup_transfer_72b_study/README.md)
 
 **Dedicated samples recover witness selection.** At 96³, allocating 1,024 detector anchors per inferred region raised shifted retention to 70.54% with a combined 5.79% field budget. Dense routing retained 70.74%. The same absolute sample count is queued at 192³, where it uses at most 0.984% of the field. [Verified witness result](spatial_references/anchored_witness_study/README.md)
