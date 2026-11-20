@@ -352,5 +352,20 @@
       "working-exit-screen": "advance",
       "sealed-bypass-main": "any"
     }
+  },
+  {
+    "id": "opener-verified-summary",
+    "repo": "routed-expert-splice",
+    "revision": "1cdbf71dc9ffd83c183abfb4a30e64dbe9c2959b",
+    "script": "nested_surgery/opener_report.py"
+  },
+  {
+    "id": "displaced-register-interchange",
+    "repo": "fixed-reference-benchmark",
+    "revision": "a904dd303b5d0697a71900dcde1e42f0f334cb98",
+    "script": "register_routing/relay.py",
+    "after": {
+      "register-random-address": "any"
+    }
   }
 ]
