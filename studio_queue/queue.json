@@ -1525,5 +1525,18 @@
     "after": {
       "large-qwen-learned-output-port-smoke": "smoke_complete"
     }
+  },
+  {
+    "id": "qwen-dictionary-alias-depth-72b",
+    "repo": "routed-expert-splice",
+    "revision": "346a3c0401050b0078e2a4a21e346e37dd851a09",
+    "script": "nested_surgery/identifier_lookup_alias_depth_72b.py",
+    "model_snapshots": [
+      "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+    ],
+    "after": {
+      "qwen-dictionary-late-alias-site-72b": "unresolved",
+      "qwen-late-key-donor-fresh-72b": "late_key_donor_transfer"
+    }
   }
 ]
