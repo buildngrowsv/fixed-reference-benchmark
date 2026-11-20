@@ -782,5 +782,14 @@
       "large-sealed-width-rate-mid": "advance",
       "large-python-width-rate-main": "complete"
     }
+  },
+  {
+    "id": "large-python-reference-origin",
+    "repo": "fixed-reference-benchmark",
+    "revision": "23bec78b27f28ec4b762d2d173e5e2c54792a5ff",
+    "script": "code_reference/reference_origin.py",
+    "after": {
+      "large-python-qualified-lane-exchange": "complete"
+    }
   }
 ]
