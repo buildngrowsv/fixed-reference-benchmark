@@ -6,8 +6,8 @@ import numpy as np
 import mlx.core as mx
 from train_code import CodeLM, OUT, RUNS, write
 
-def pairs(count):
-    for i in range(count):
+def pairs(count, start=0):
+    for i in range(start, start+count):
         rng=random.Random(f"cpython-ref-swap-20261119-{i}")
         stem="item_"+"".join(rng.choices(string.ascii_lowercase,k=5))
         a,b=rng.sample(string.ascii_lowercase,2)
