@@ -1041,5 +1041,14 @@
       "qwen-identifier-sparse-edge-sets": "sparse_attention_resolved",
       "qwen-numeric-one-pass-affine": "one_pass_transfer"
     }
+  },
+  {
+    "id": "qwen-one-pass-raw-32b",
+    "repo": "routed-expert-splice",
+    "revision": "92686641e3d180b0d1ffcd86359688b39eedf4ec",
+    "script": "nested_surgery/identifier_numeric_raw_32b.py",
+    "after": {
+      "qwen-one-pass-affine-32b": "scales_to_32b"
+    }
   }
 ]
