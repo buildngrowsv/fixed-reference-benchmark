@@ -18,4 +18,4 @@ The 4,608 recorded tallies include the sampled, fixed and supplied-location arms
 
 Run `uv run --with numpy python spatial_references/compiled_witness_parity_study/verify.py` to verify data shapes, checkpoint and archive hashes, and exact parity. The Studio run took 602 seconds at 14.33 GB peak MLX allocation. The environment capture records an arm64 Apple M5 Ultra with 256 GiB unified memory, macOS build 26B118, Python 3.12.16, MLX 0.32.4 and NumPy 2.5.5. The owner proposed the spatial memory research. OpenAI Codex implemented, ran, verified and documented the comparison. [Independent verifier](verify.py) · [Execution receipt](results/receipt.json) · [Studio environment capture](results/studio-environment.txt)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/535)
+[Pubroot review declined](https://github.com/buildngrowsv/pubroot-website/issues/535) · [Paired compiled-observer latency protocol](../COMPILED_WITNESS_TIMING.md)
