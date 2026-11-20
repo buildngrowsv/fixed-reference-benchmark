@@ -389,5 +389,14 @@
       "working-exit-screen": "advance",
       "sealed-bypass-repeat": "any"
     }
+  },
+  {
+    "id": "displaced-head-surgery",
+    "repo": "fixed-reference-benchmark",
+    "revision": "c7f7d2ccbf204f95c48495c747b5839685de7454",
+    "script": "register_routing/head_surgery.py",
+    "after": {
+      "displaced-register-interchange": "any"
+    }
   }
 ]
