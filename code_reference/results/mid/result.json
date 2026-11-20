@@ -1,0 +1,28 @@
+{
+  "decision": "advance",
+  "phase": "mid",
+  "validation_interval": [
+    -0.011589679718299202,
+    -0.003040837485887688
+  ],
+  "models": {
+    "fixed": {
+      "validation_bpb": 1.0354869361830126,
+      "parameters": 31992320
+    },
+    "writable": {
+      "validation_bpb": 1.0425327907937143,
+      "parameters": 31992320
+    }
+  },
+  "validation_control": {
+    "unigram_bpb": 4.5474477846754935,
+    "suffix_bpb": null,
+    "suffix_accuracy": null
+  },
+  "test_control": null,
+  "steps": 4096,
+  "seed": 101,
+  "seconds_this_invocation": 277.89553337500547,
+  "device": "Apple M5 Ultra"
+}
