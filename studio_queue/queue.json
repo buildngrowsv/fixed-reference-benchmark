@@ -943,5 +943,15 @@
     "after": {
       "qwen-numeric-operand-cross-model": "transfer"
     }
+  },
+  {
+    "id": "qwen-identifier-attention-paths",
+    "repo": "routed-expert-splice",
+    "revision": "51ab60744b7a82b90e7d1a9641ec2b8382eb387a",
+    "script": "nested_surgery/identifier_attention_paths.py",
+    "after": {
+      "qwen-identifier-query-relay": "unresolved",
+      "qwen-binding-selective-reference": "binding_sensitive"
+    }
   }
 ]
