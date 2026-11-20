@@ -74,14 +74,18 @@ def counterfactuals(p):
     assert np.all(obsolete<current)
     next_key=p.a_links[row,(current+1)%p.a_links.shape[1]].copy()
     used=p.a_links[row,current]
-    # Current alias maps are bijective, so any other destination changes the final key.
-    same=(next_key==used).all(1)
-    if same.any():
-        other=(p.a_links[same]!=used[same,None,:]).any(2).argmax(1)
-        next_key[same]=p.a_links[row[same],other]
+    old=p.a_links[row,obsolete]
+    # Change either record by one real edit. Current maps are bijective.
+    invalid=(next_key==used).all(1)|(next_key==old).all(1)
+    if invalid.any():
+        choices=p.a_links[invalid]
+        eligible=(choices!=used[invalid,None,:]).any(2)&(choices!=old[invalid,None,:]).any(2)
+        assert eligible.any(1).all()
+        next_key[invalid]=choices[np.arange(len(choices)),eligible.argmax(1)]
     variants=[]
     for location in (current,obsolete):
         changed=p.a_links.copy()
+        assert (changed[row,location]!=next_key).any(1).all()
         changed[row,location]=next_key
         variants.append(p._replace(a_links=changed))
     assert np.all(oracle(variants[0])[2]!=expected)
