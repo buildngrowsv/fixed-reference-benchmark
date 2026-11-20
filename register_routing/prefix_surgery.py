@@ -4,7 +4,7 @@ import numpy as np
 from head_surgery import (DONOR, HOST, adapt, install_head, load_model)
 from run import (OUT,RUNS,RoutedModel,batch,evaluate,mx,routing,scores,uncertainty,write)
 
-def source_head(prefix, donor, ids):
+def source_head(prefix, donor, ids, exchange=None):
     x=(prefix.tokens(ids)+prefix.pos(mx.arange(ids.shape[1]))).astype(mx.bfloat16)
     for block in prefix.blocks[:3]:
         x=block(x,False)
@@ -12,7 +12,16 @@ def source_head(prefix, donor, ids):
     q,k,v=mx.split(b.qkv(b.norm1(x).astype(x.dtype)),3,axis=-1)
     def first(z):
         return z[:,:,:64][:,None,:,:]
-    return mx.fast.scaled_dot_product_attention(first(q),first(k),first(v),scale=.125,mask=routing(ids,True))
+    query, key, value = first(q), first(k), first(v)
+    mask = routing(ids,True)
+    attention = mx.fast.scaled_dot_product_attention(query,key,value,scale=.125,mask=mask)
+    if exchange is None:
+        return attention
+    slots,partners = exchange
+    marker = (mx.arange(ids.shape[1])[None,:] == slots[:,None])[:,None,:,None]
+    replaced = mx.where(marker,value[partners],value)
+    alternate = mx.fast.scaled_dot_product_attention(query,key,replaced,scale=.125,mask=mask)
+    return mx.concatenate([attention[:,:,:-1],alternate[:,:,-1:]],axis=2)
 
 
 def main():
