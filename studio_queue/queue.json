@@ -235,5 +235,29 @@
       "shared-depth-screen": "advance",
       "cpython-reference-main": "any"
     }
+  },
+  {
+    "id": "nested-donor-full-forward",
+    "repo": "routed-expert-splice",
+    "revision": "9b8476bac3ace016621d434ccc95f1fcff42bb97",
+    "script": "nested_surgery/run.py",
+    "args": [
+      "fit"
+    ],
+    "after": {
+      "nested-donor-qualification": "graft"
+    }
+  },
+  {
+    "id": "nested-donor-full-forward-repeat",
+    "repo": "routed-expert-splice",
+    "revision": "9b8476bac3ace016621d434ccc95f1fcff42bb97",
+    "script": "nested_surgery/run.py",
+    "args": [
+      "repeat"
+    ],
+    "after": {
+      "nested-donor-full-forward": "replicate"
+    }
   }
 ]
