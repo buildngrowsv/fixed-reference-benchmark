@@ -16,7 +16,9 @@ def main():
         write("result.json",dict(decision="replicate" if passed else "stop",parameters=initial["parameters"],validation_upper=upper))
         return
     corpus=Corpus();arms={};samples={};end=16384;groups={}
-    for name,modeltype in (("sealed",Bypass),("readable",CodeLM)):
+    working_only = sys.argv[1] == "working-exit"
+    models = (("working", partial(Bypass, working_exit=True)),) if working_only else (("sealed",Bypass),("readable",CodeLM))
+    for name,modeltype in models:
         mx.random.seed(211)
         m=modeltype()
         opt=optim.AdamW(lambda t:.0004*mx.minimum(1.,(t.astype(mx.float32)+1)/128),weight_decay=.03,bias_correction=True)
@@ -45,6 +47,18 @@ def main():
             np.savez_compressed(OUT/(name+"-"+split+".npz"),scores=v,groups=g,windows=w)
             arms[name][split+"_bpb"]=float(v[:,0].mean()/512)
             samples[(name,split)]=v
+    if working_only:
+        comparisons = {}
+        for split, (g, w) in groups.items():
+            with np.load(RUNS/"sealed-bypass-repeat"/("sealed-"+split+".npz")) as ref:
+                np.testing.assert_array_equal(ref["groups"], g)
+                np.testing.assert_array_equal(ref["windows"], w)
+                working, sealed = samples["working",split], ref["scores"]
+                comparisons[split] = dict(delta=float((working[:,0]-sealed[:,0]).mean()/512),
+                                           interval=interval(working, sealed, g))
+        assert arms["working"]["parameters"] == 26830464
+        write("result.json",dict(decision="complete",seed=211,arms=arms,working_minus_sealed=comparisons))
+        return
     ci={s:interval(samples["sealed",s],samples["readable",s],groups[s][0]) for s in groups}
     write("result.json",dict(decision="complete",seed=211,arms=arms,intervals=ci,
         qualifies=qualifies(arms["sealed"]["parameters"],ci["test"][1])))
