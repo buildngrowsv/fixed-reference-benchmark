@@ -367,5 +367,14 @@
     "after": {
       "register-random-address": "any"
     }
+  },
+  {
+    "id": "register-stable-random-second-seed",
+    "repo": "fixed-reference-benchmark",
+    "revision": "c4e2714c89bf65ef955bfd6115b67c3525410326",
+    "script": "register_routing/second_order.py",
+    "after": {
+      "register-random-address": "any"
+    }
   }
 ]
