@@ -1,8 +1,16 @@
 # Open experiments and decisions
 
-## Next Studio experiment
+## Studio queue and current evidence
 
-**Next Studio run. Transplant a verified spatial expert into a new memory task.** Reuse the 129-parameter two-ended doorway gate whose complete local truth table was verified. In the recipient, that gate should control writing a protected reference that a later command restores, rather than moving a word through a wall. Give every host the full sensor readings. Apply a fixed new ordering of input sensor channels so that the recipient must learn an interface. Precommit a small common target-training budget and a separate validation stop rule. Compare the intact frozen expert to a fully observed fresh trainable controller and to a corrupted donor that preserves its output frequency. Include a hand-coded source gate with the same learnable interface as a cheap reference. Use paired final 32-bit words whose correct values differ only when a write occurs. Record gains and losses when disabling or replacing the expert in the same trained host. A native host already at the ceiling or an intact donor that merely ties the corrupted control closes the graft at this budget. A genuine improvement over the equally observed native control warrants a fresh, independently seeded replication. The pretrained donor has extra source supervision; distinguish that from a benefit unique to the learned implementation.
+The [live queue and controls](studio_queue/README.md) show what is running, what can run next and which branches closed. The public [experiment manifest](studio_queue/queue.json) records the precommitted code and conditions.
+
+**Fixed reference on real code.** Two 31,992,320-parameter models train from scratch on the same CPython byte windows. One preserves 64 values per token from the exit of block 2 through block 9. The matched model can rewrite them. After 4,096 updates, the fixed arm scored 1.0355 and the writable arm 1.0425 validation bits per byte. Both passed the learning gate for the full 16,384 updates. The primary comparison and independent-order replication threshold are fixed in the [protocol](code_reference/PLAN.md).
+
+**Register memory.** Neither 14.3M-parameter arm cleared the minimum accuracy for longer training. The [next test](register_routing/PLAN.md) gives one attention head the addresses of earlier writes to the requested register. A shifted-address control gets the same number of possible reads.
+
+**Doorway transplant.** The learned gate with a trainable sensor adapter solved 0/2,048 paired writes. A fresh controller and the analytic gate each solved all 2,048. The performance-triggered replication closed. [Design and endpoint](spatial_graft/PLAN.md)
+
+**Third view.** The opposite camera recovered many surfaces hidden from the first camera on two synthetic depth panels, while overall accuracy fell. An independent test of routing the other view by a round-trip pixel check also lost aggregate accuracy at both camera spacings. [Protocols and evidence](https://github.com/buildngrowsv/parallax-depth-benchmark/tree/main/occlusion)
 
 **Attention experiment completed.** Allowing the smaller coding donor to train its entire final block gained 0.13 points over its archived feed-forward-only fit on fresh confirmation families (95% paired interval −1.37 to +1.17). The full donor solved 136–142/512 compared with 172–181 for the matched-update host. The output-count lookup reached 419/512 and all three qualification gates failed. Close the feed-forward graft on this task; keep the per-repair interventions and the output-only shortcut as benchmarks for future experimental design. [Whole-block study and artifacts](https://github.com/buildngrowsv/routed-expert-splice/tree/whole-donor-block-v1/donor_block)
 

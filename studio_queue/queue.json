@@ -82,6 +82,15 @@
     "script": "occlusion/run.py"
   },
   {
+    "id": "third-camera-visibility-route",
+    "repo": "parallax-depth-benchmark",
+    "revision": "057cae674d12c44d35967771a024809462738bf1",
+    "script": "occlusion/route.py",
+    "after": {
+      "third-camera-confirmation": "any"
+    }
+  },
+  {
     "id": "cpython-reference-screen",
     "args": [
       "screen",
@@ -133,5 +142,29 @@
     "after": {
       "cpython-reference-main": "replicate"
     }
+  },
+  {
+    "id": "register-addressing",
+    "args": [
+      "101"
+    ],
+    "after": {
+      "reference-transformer-pilot": "floor"
+    },
+    "repo": "fixed-reference-benchmark",
+    "revision": "72280721ae3b5c6dcc4573c5e2a037b4de63a690",
+    "script": "register_routing/run.py"
+  },
+  {
+    "id": "register-addressing-replication",
+    "args": [
+      "211"
+    ],
+    "after": {
+      "register-addressing": "replicate"
+    },
+    "repo": "fixed-reference-benchmark",
+    "revision": "72280721ae3b5c6dcc4573c5e2a037b4de63a690",
+    "script": "register_routing/run.py"
   }
 ]

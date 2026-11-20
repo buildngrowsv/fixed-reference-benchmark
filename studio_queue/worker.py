@@ -115,22 +115,31 @@ def dispatch(lease):
         time.sleep(3)
 
 def main():
-    p=argparse.ArgumentParser();p.add_argument("action",choices=("run","status","front","hold","resume"));p.add_argument("ids",nargs="*");a=p.parse_args()
+    p=argparse.ArgumentParser();p.add_argument("action",choices=("run","status","front","next","hold","resume"));p.add_argument("ids",nargs="*");a=p.parse_args()
     HOME.mkdir(parents=True,exist_ok=True)
     if a.action=="run":
         with (HOME/"worker.lock").open("a+") as lock:
             try:fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
             except BlockingIOError:return
             dispatch(lock.fileno())
-    elif a.action=="front":
+    elif a.action in ("front","next"):
         jobs,_=status()
         if len(a.ids)!=len(set(a.ids)) or set(a.ids)-{j["id"] for j in jobs}:p.error("unknown or duplicate job ID")
-        put(HOME/"priority.json",a.ids)
+        priority=a.ids
+        if a.action=="next":
+            priority+= [j["id"] for j in jobs if j["id"] not in priority]
+        put(HOME/"priority.json",priority)
     elif a.action=="hold":(HOME/"HOLD").touch()
     elif a.action=="resume":(HOME/"HOLD").unlink(missing_ok=True)
     else:
         jobs,states=status();active=read(HOME/"active.json")
         if active:states[active["job"]]="running"
-        print(json.dumps(dict(held=(HOME/"HOLD").exists(),active=active,jobs=[dict(id=j["id"],status=states[j["id"]]) for j in jobs]),indent=2))
+        items=[]
+        for j in jobs:
+            path=directory(j)
+            items.append(dict(id=j["id"],status=states[j["id"]],repo=j["repo"],after=j.get("after",{}),
+                              receipt=read(path/"receipt.json"),progress=read(path/"progress.json"),
+                              result=read(path/"result.json")))
+        print(json.dumps(dict(held=(HOME/"HOLD").exists(),active=active,jobs=items),indent=2))
 if __name__=="__main__":main()
 
