@@ -76,6 +76,10 @@ In the smaller model, seven strict repairs disappeared in the first published do
 
 **Regional confirmation.** Eight separate routing decisions recovered 72.32% on an 884,736-cell volume with different fault directions across regions. A single direction recovered 59.26%. The false-write fraction fell from 10.91% to 5.32%. [Regional benchmark](spatial_references/regional_witness_study/README.md)
 
+**Moving relative reference.** Preserving only the donor's original displacement along the evolving native state recovered 332/512 complete 32B carry groups, compared with 333 for the constant projection and 358 for the one-shot edit. All 512 native groups qualified. Close the two tested seven-block hold policies on this task. [Published follow-up](https://pubroot.com/ai/fine-tuning/a-moving-reference-left-the-seven-block-transplant-penalty-intact-in-32b/)
+
+**Real camera geometry.** The ETH3D qualification found zero same-strength horizontal/vertical triplets across 172 cameras in four scenes. Most references offered a horizontal candidate and only four offered a vertical one within the registered lateral and overlap limits. [Pinned calibration audit](https://github.com/buildngrowsv/parallax-depth-benchmark/tree/main/eth3d)
+
 ## What opens the other paths
 
 - **Expert surgery.** The off-the-shelf coding donor's semantic validation lead over a task-trained host was below the prespecified threshold and disappeared on final test. A specialized donor with a demonstrated advantage on an unsaturated task would justify another transplant. The small trained spatial write controller offers an auditable donor whose input-output rule is independently verifiable. First check whether a matched fresh controller can relearn the rule at the same budget. [Semantic qualification](https://github.com/buildngrowsv/routed-expert-splice/tree/d2062a8f88e4bb82f12c442461cd1bf601dd69dd/semantic)
