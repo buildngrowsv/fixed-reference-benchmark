@@ -759,5 +759,28 @@
     "after": {
       "large-python-width-rate-mid": "advance"
     }
+  },
+  {
+    "id": "large-qwen-paired-input-calibration",
+    "repo": "routed-expert-splice",
+    "revision": "e178e4b01c8890a1738d89da5d4e1b79bff56097",
+    "script": "nested_surgery/bridge_calibration.py",
+    "after": {
+      "large-qwen-native-vs-bridged-input": "attenuated"
+    }
+  },
+  {
+    "id": "large-sealed-width-rate-held-out",
+    "repo": "fixed-reference-benchmark",
+    "revision": "e05f72d45368621d6ab9a445b9c3c97beaff727e",
+    "script": "code_reference/large_sealed.py",
+    "args": [
+      "--width-rate",
+      "--continue-to-test"
+    ],
+    "after": {
+      "large-sealed-width-rate-mid": "advance",
+      "large-python-width-rate-main": "complete"
+    }
   }
 ]
