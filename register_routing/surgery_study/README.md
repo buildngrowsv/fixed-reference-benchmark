@@ -32,4 +32,4 @@ The public records identify each query by program and event and give the gold an
 
 All fits ran on the owner’s Studio. The account owner proposed testing neural transplants and donor-off controls. OpenAI Codex implemented the experiments and assisted with analysis and writing. The audit regenerates test labels, reconstructs each program’s correct-answer counts from query IDs, recomputes the paired bootstrap and checks the independent interchange against its paired targets. The same-width synthetic setup limits conclusions about transfer between pretrained coding models. [Audit script](verify.py) · [Execution manifest](../../studio_queue/queue.json)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/375)
+[Published Pubroot paper](https://pubroot.com/ai/fine-tuning/a-localized-memory-head-transfers-individual-answers-while-most-donor-skill-stays-behind/) · [Public review](https://github.com/buildngrowsv/pubroot-website/issues/375)

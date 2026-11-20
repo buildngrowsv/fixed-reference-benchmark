@@ -23,4 +23,4 @@ We froze both sealed models and generated 1,024 new pairs of executable function
 
 The research question came from the account owner’s proposal for forward-only protected references. OpenAI Codex implemented and operated the Studio experiments and assisted with the analysis and writing. The public NumPy audits recompute loss from the saved byte windows, check their package and window identities across arms, and reaggregate the intervention outcomes. The added magnitude-feature control will test the sensitivity of the compact comparison to duplicated final coordinates. [Score audit script](verify.py) · [Identifier audit script](verify_exchange.py) · [Subsequent control protocol](../MAGNITUDE_EXIT.md)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/374)
+[Published Pubroot paper](https://pubroot.com/ai/fine-tuning/a-sealed-64-channel-shortcut-preserves-python-byte-prediction-with-fewer-parameters/) · [Public review](https://github.com/buildngrowsv/pubroot-website/issues/374)
