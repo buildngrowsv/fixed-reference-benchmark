@@ -1004,5 +1004,14 @@
     "after": {
       "qwen-two-operands-full-vocabulary": "composition_unrestricted"
     }
+  },
+  {
+    "id": "qwen-numeric-one-pass-affine",
+    "repo": "routed-expert-splice",
+    "revision": "e29adff07c4d132863e855b93d1319ed5ebed808",
+    "script": "nested_surgery/identifier_numeric_absolute.py",
+    "after": {
+      "qwen-numeric-operand-open-vocabulary": "unrestricted_transfer"
+    }
   }
 ]
