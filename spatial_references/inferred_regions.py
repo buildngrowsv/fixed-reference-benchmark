@@ -67,7 +67,8 @@ def distributed_positions(rng, side):
 
 
 def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False, stratified=False,
-             sampled_routes=None, device_router=None, boundary_jump=False, boundary_steps=None):
+             sampled_routes=None, device_router=None, boundary_jump=False, boundary_steps=None,
+             reset_saved_at_boundary_steps=False):
     rng = np.random.default_rng(931622 + world)
     observer = np.random.default_rng(790133 + world)
     probes = None
@@ -111,6 +112,10 @@ def evaluate(compiled, world, side=SIDE, rounds=ROUNDS, distance=8, sparse=False
             known = known.copy()
             known[1] = (known[1] + half//2) % half
         if boundary_steps is not None and round_index in boundary_steps:
+            if reset_saved_at_boundary_steps:
+                supplied = POLICIES.index("known")
+                memory = mx.broadcast_to(memory[supplied:supplied + 1], memory.shape)
+                mx.eval(memory)
             known = known.copy()
             known[1] = (known[1] + boundary_steps[round_index]) % half
         selected = rng.random(shape) < .125
