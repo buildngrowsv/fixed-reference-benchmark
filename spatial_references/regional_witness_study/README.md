@@ -20,4 +20,4 @@ The regional gain was **13.06 percentage points** under heterogeneous faults, pa
 
 Run `uv run --with numpy python spatial_references/regional_witness_study/verify.py` to check the receipts, checkpoints, routing choices, word counts and paired bootstrap. The full comparison took 152.81 seconds and reached 1.79 GB peak MLX allocation. It ran float32 state updates on an Apple M5 Ultra with 80 GPU cores and 256 GiB unified memory, using macOS 27.2, Python 3.12.16, MLX 0.32.4 and NumPy 2.5.5. The owner proposed exploring much larger structured references. OpenAI Codex designed, ran and independently audited the benchmark and assisted with writing. [Execution receipt](results/receipt.json)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/492)
+[Published Pubroot article](https://pubroot.com/ai/fine-tuning/regional-routing-preserved-more-memory-when-faults-disagreed-across-a-3d-grid/) · [Submission and review](https://github.com/buildngrowsv/pubroot-website/issues/492)
