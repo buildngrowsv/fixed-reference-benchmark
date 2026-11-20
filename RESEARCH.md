@@ -1,5 +1,7 @@
 # Open experiments and decisions
 
+**The late-copy gap reproduced in two recipients.** At the 32B midpoint the relocated definition switched 137 of 145 groups and the alias switched zero. On the 115 groups solved natively by both checkpoints in both layouts, relocating switched 110 in 32B and 99 in 72B, while both alias exchanges scored zero. [Audit and exact ranks](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_lookup_alias_midpoint_32b_study)
+
 **Selective graft calls.** The intact 7B and frozen graft had complementary successes among bracket decoys. The registered test calls the 14B graft only below a fixed margin from the intact 7B scores and compares that policy against budget-matched random selection. The 32B run separately checks the productive 72B alias contrast at the midpoint of a second recipient. [Graft routing protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/3306d50/nested_surgery/FROZEN_GRAFT_ROUTE.md) · [32B midpoint protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/8d6d1a1/nested_surgery/NUMERIC_LOOKUP_ALIAS_MIDPOINT_32B.md)
 
 **The frozen graft added skill under bracket decoys.** On 256 fresh matched triplets, the aligned graft solved 63 compared with 33 using host features, 18 with shuffled donor features and zero with the donor off. Thirty groups met all attribution criteria. The intact specialist still led at 150. [Paired evidence](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/learned_output_port_decoys_study)
