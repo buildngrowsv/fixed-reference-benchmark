@@ -750,5 +750,14 @@
     "after": {
       "large-qwen-donor-location-archive-fix": "advance"
     }
+  },
+  {
+    "id": "large-python-retrofit-reference",
+    "repo": "fixed-reference-benchmark",
+    "revision": "82599984bd8674efcb2f59383c88a0726c49928f",
+    "script": "code_reference/retrofit.py",
+    "after": {
+      "large-python-width-rate-mid": "advance"
+    }
   }
 ]
