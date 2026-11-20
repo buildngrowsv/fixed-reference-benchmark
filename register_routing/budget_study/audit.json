@@ -1,0 +1,48 @@
+{
+  "programs": 1024,
+  "query_counts": [
+    5540,
+    5390
+  ],
+  "balanced": {
+    "quarter_dense": 0.03079191308948916,
+    "quarter_rotated": 0.03688405457358526,
+    "original_rotated": 0.03636012002437995
+  },
+  "paired_route_advantage": {
+    "delta": 0.006092141484096101,
+    "interval": [
+      0.0004418512916899687,
+      0.01170905842951713
+    ]
+  },
+  "quarter_minus_original_routed": {
+    "delta": 0.0005239345492053073,
+    "interval": [
+      -0.005163925560158445,
+      0.006089725155963754
+    ]
+  },
+  "matched_before_and_after": {
+    "rotated": {
+      "before": 0.0373353181114914,
+      "after_minus_before": {
+        "delta": -0.0004512635379061372,
+        "interval": [
+          -0.0008976781618017692,
+          -9.077663961250178e-05
+        ]
+      }
+    },
+    "dense": {
+      "before": 0.03079191308948916,
+      "after_minus_before": {
+        "delta": 0.0,
+        "interval": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  }
+}

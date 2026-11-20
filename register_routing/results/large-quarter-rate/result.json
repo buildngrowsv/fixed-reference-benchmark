@@ -1,0 +1,28 @@
+{
+  "decision": "complete",
+  "arms": {
+    "dense": {
+      "status": "complete",
+      "accuracy": [
+        0.03375451263537906,
+        0.027829313543599257
+      ]
+    },
+    "rotated": {
+      "status": "complete",
+      "accuracy": [
+        0.04259927797833935,
+        0.03116883116883117
+      ]
+    }
+  },
+  "resumed_from_update": 512,
+  "target": 4096,
+  "learning_rate": 0.0001125,
+  "gap": 0.006092141484096102,
+  "interval": [
+    0.00044185129168997013,
+    0.011709058429517132
+  ],
+  "recovered_benefit": false
+}

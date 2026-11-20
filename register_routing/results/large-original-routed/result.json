@@ -1,0 +1,15 @@
+{
+  "decision": "complete",
+  "arms": {
+    "rotated": {
+      "status": "complete",
+      "accuracy": [
+        0.04025270758122744,
+        0.032467532467532464
+      ]
+    }
+  },
+  "resumed_from_update": 512,
+  "target": 4096,
+  "learning_rate": 0.00045
+}

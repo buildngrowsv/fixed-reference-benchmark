@@ -1,0 +1,9 @@
+{
+  "arm": "rotated",
+  "step": 4096,
+  "target": 4096,
+  "parameters": 227043840,
+  "loss": 4.449820041656494,
+  "time": 1795143279.150381,
+  "tokens_per_second": 56122.10775280164
+}

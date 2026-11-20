@@ -1,0 +1,8 @@
+{
+  "arm": "working-rehearsal",
+  "step": 8192,
+  "target": 8192,
+  "time": 1795144177.378016,
+  "loss": 0.40465882420539856,
+  "tokens_per_second": 212609.26915213896
+}
