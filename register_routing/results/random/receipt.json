@@ -1,0 +1,9 @@
+{
+  "job": "register-random-address",
+  "revision": "97f5e293e5c657ae0e6acefc4ddfd436f1f46934",
+  "attempt": 1,
+  "started": "2026-11-20T00:49:02+00:00",
+  "status": "done",
+  "finished": "2026-11-20T00:49:16+00:00",
+  "exit": 0
+}
