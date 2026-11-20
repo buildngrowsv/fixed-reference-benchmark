@@ -995,5 +995,14 @@
     "after": {
       "qwen-identifier-edge-timing": "timing_resolved"
     }
+  },
+  {
+    "id": "qwen-two-operands-carry",
+    "repo": "routed-expert-splice",
+    "revision": "c4062f2af3d71f0167688c21b7bd786c9bc244b3",
+    "script": "nested_surgery/identifier_numeric_carry.py",
+    "after": {
+      "qwen-two-operands-full-vocabulary": "composition_unrestricted"
+    }
   }
 ]
