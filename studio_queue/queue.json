@@ -80,5 +80,58 @@
     "repo": "parallax-depth-benchmark",
     "revision": "a9cb3f003df5397e3b225970e3c20857f673fba0",
     "script": "occlusion/run.py"
+  },
+  {
+    "id": "cpython-reference-screen",
+    "args": [
+      "screen",
+      "101",
+      "none"
+    ],
+    "repo": "fixed-reference-benchmark",
+    "revision": "0fd91d736acba3b015167ebf7fc4b86464b44859",
+    "script": "code_reference/train_code.py"
+  },
+  {
+    "id": "cpython-reference-mid",
+    "args": [
+      "mid",
+      "101",
+      "cpython-reference-screen"
+    ],
+    "repo": "fixed-reference-benchmark",
+    "revision": "0fd91d736acba3b015167ebf7fc4b86464b44859",
+    "script": "code_reference/train_code.py",
+    "after": {
+      "cpython-reference-screen": "advance"
+    }
+  },
+  {
+    "id": "cpython-reference-main",
+    "args": [
+      "main",
+      "101",
+      "cpython-reference-mid"
+    ],
+    "repo": "fixed-reference-benchmark",
+    "revision": "0fd91d736acba3b015167ebf7fc4b86464b44859",
+    "script": "code_reference/train_code.py",
+    "after": {
+      "cpython-reference-mid": "advance"
+    }
+  },
+  {
+    "id": "cpython-reference-replication",
+    "args": [
+      "replication",
+      "211",
+      "none"
+    ],
+    "repo": "fixed-reference-benchmark",
+    "revision": "0fd91d736acba3b015167ebf7fc4b86464b44859",
+    "script": "code_reference/train_code.py",
+    "after": {
+      "cpython-reference-main": "replicate"
+    }
   }
 ]
