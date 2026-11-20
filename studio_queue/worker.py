@@ -11,6 +11,7 @@ import sys
 import time
 
 HOME = Path(os.environ.get("STUDIO_RESEARCH_QUEUE", Path.home()/"research"/"architecture-queue"))
+MODEL_CACHE = Path.home() / "research" / "routed-expert-splice" / "cache" / "large-opener"
 PYTHON = Path(os.environ.get("STUDIO_RESEARCH_PYTHON", Path.home()/"research"/"routed-expert-splice"/".venv"/"bin"/"python"))
 
 def now():
@@ -42,6 +43,8 @@ def load_queue():
         if not re.fullmatch("[a-z0-9-]+",name) or name in seen:raise ValueError(f"invalid job ID: {name}")
         if not re.fullmatch("[0-9a-f]{40}",j["revision"]):raise ValueError(f"unversioned source: {name}")
         if Path(j["script"]).is_absolute() or ".." in Path(j["script"]).parts:raise ValueError(name)
+        if any(not re.fullmatch("[0-9a-f]{40}", revision) for revision in j.get("model_snapshots", [])):
+            raise ValueError(f"invalid model snapshot revision: {name}")
         seen.add(name)
     if any(p not in seen for j in jobs for p in j.get("after",{})):raise ValueError("missing queue dependency")
     return jobs
@@ -56,6 +59,8 @@ def evaluate(job):
         if r.get("status")=="failed":return "blocked"
         if r.get("status")!="done":return "waiting"
         if condition!="any" and read(p/"result.json",{}).get("decision")!=condition:return "skipped"
+    if any(not (MODEL_CACHE / r / ".downloaded").is_file() for r in job.get("model_snapshots", [])):
+        return "waiting"
     return "ready"
 
 def status():

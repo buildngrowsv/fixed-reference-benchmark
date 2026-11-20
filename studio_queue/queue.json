@@ -1119,6 +1119,18 @@
     "script": "nested_surgery/identifier_numeric_width_72b.py",
     "after": {
       "qwen-one-pass-scalar-32b": "answer_free_gain"
+    },
+    "model_snapshots": [
+      "efba10c8e54e91e0d9570ab5f7b51a958474d4cb"
+    ]
+  },
+  {
+    "id": "qwen-fixed-two-operands-32b",
+    "repo": "routed-expert-splice",
+    "revision": "708db914683b86fcb7b1acf02fca18fdfd87131f",
+    "script": "nested_surgery/identifier_numeric_hold_32b.py",
+    "after": {
+      "qwen-borrowed-two-operands-32b": "unresolved"
     }
   }
 ]

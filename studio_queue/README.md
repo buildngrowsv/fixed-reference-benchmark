@@ -8,7 +8,7 @@ The Studio worker runs under the logged-in user's launchd session. Each live exp
 
 ## Change what runs
 
-Commit the protocol and runnable script first. Add its full source commit, repository, unique job ID and arguments to [queue.json](queue.json). An optional `after` maps prior jobs to the precise decision string required, or `any` for any successful completion. List dependencies before dependents. Use a new ID for revised experiments to preserve earlier receipts. Run the installer from this checkout.
+Commit the protocol and runnable script first. Add its full source commit, repository, unique job ID and arguments to [queue.json](queue.json). An optional `after` maps prior jobs to the precise decision string required, or `any` for any successful completion. List dependencies before dependents. For a large prefetched checkpoint, list its revision in `model_snapshots`. The worker leaves the job waiting until the shared cache marks the snapshot complete, so it can run other studies during the download. Use a new ID for revised experiments to preserve earlier receipts. Run the installer from this checkout.
 
 ```sh
 python3 studio_queue/install.py
