@@ -259,5 +259,29 @@
     "after": {
       "nested-donor-full-forward": "replicate"
     }
+  },
+  {
+    "id": "sealed-bypass-screen",
+    "repo": "fixed-reference-benchmark",
+    "revision": "dedfbfe3abbd2955776ca5867ed07c32425e5972",
+    "script": "code_reference/bypass.py",
+    "args": [
+      "screen"
+    ],
+    "after": {
+      "cpython-reference-main": "any"
+    }
+  },
+  {
+    "id": "sealed-bypass-main",
+    "repo": "fixed-reference-benchmark",
+    "revision": "dedfbfe3abbd2955776ca5867ed07c32425e5972",
+    "script": "code_reference/bypass.py",
+    "args": [
+      "main"
+    ],
+    "after": {
+      "sealed-bypass-screen": "advance"
+    }
   }
 ]
