@@ -23,3 +23,7 @@ ssh genflick-m5ultra '~/research/routed-expert-splice/.venv/bin/python ~/researc
 ```
 
 Each job writes in `~/research/architecture-queue/runs/<id>/` on the Studio. Its receipt records the source, attempt, timestamps and process outcome. Its result records the scientific decision. The append-only `events.jsonl` records handoffs. Model runs that implement checkpointing resume from their last complete checkpoint. A live hold defers new work. User-directed priority changes apply at the next handoff.
+
+## Reading the research documents
+
+From the research workspace, run `python3 fixed-reference-benchmark/studio_queue/render_documents.py` with Pandoc installed to rebuild the dark HTML editions of the local papers, protocols and results. Open `Research documents/index.html` in Chrome. Its links work offline, including links between documents and to their original figures.
