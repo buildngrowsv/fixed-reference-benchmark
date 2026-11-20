@@ -635,5 +635,15 @@
     "after": {
       "large-python-reference-mid": "advance"
     }
+  },
+  {
+    "id": "scientific-python-working-rehearsal",
+    "repo": "fixed-reference-benchmark",
+    "revision": "651e97e13a8c0ff96e3a11d4e73625f646b3b8a9",
+    "script": "code_reference/rehearsal_working.py",
+    "after": {
+      "scientific-python-equal-size": "complete",
+      "sealed-python-rehearsal": "complete"
+    }
   }
 ]
