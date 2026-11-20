@@ -34,7 +34,8 @@ def freeze_except_receiver(model):
     params = tree_flatten(model.trainable_parameters())
     assert all(k.startswith("blocks.4.") for k, _ in params)
     count = sum(v.size for _, v in params)
-    assert count == 12 * WIDTH**2 + 2 * WIDTH
+    width = model.blocks[4].norm1.weight.size
+    assert count == 12 * width**2 + 2 * width
     return count
 
 
@@ -57,7 +58,7 @@ def smoke():
     print("Verified head identity, reversibility and trainable weights", freeze_except_receiver(host))
 
 
-def adapt(model, arm, source=None, training_seed=717139):
+def adapt(model, arm, source=None, training_seed=717139, checkpoint_every=64):
     opt = optimizer()
     count = freeze_except_receiver(model)
     path = OUT / (arm + ".safetensors")
@@ -84,7 +85,8 @@ def adapt(model, arm, source=None, training_seed=717139):
         if t % 64 == 0:
             if not np.isfinite(loss.item()):
                 raise ValueError("nonfinite training loss")
-            snapshot(model, opt, t, path)
+            if t % checkpoint_every == 0 or t == 1024:
+                snapshot(model, opt, t, path)
             write("progress.json", dict(arm=arm, step=t, target=1024, loss=loss.item(), time=time.time(),
                   tokens_per_second=(t-start)*8192/(time.monotonic()-since)))
     return count
