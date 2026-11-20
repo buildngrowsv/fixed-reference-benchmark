@@ -545,5 +545,41 @@
     "after": {
       "register-addressing": "any"
     }
+  },
+  {
+    "id": "large-compact-donor-recipient",
+    "repo": "fixed-reference-benchmark",
+    "revision": "7cbf2c50f8d2d72cf372c3f9b1d81a119062d5ab",
+    "script": "register_routing/large_recipient.py",
+    "args": [],
+    "after": {
+      "large-register-dense-vs-displaced": "complete",
+      "distilled-memory-interface": "replicate"
+    }
+  },
+  {
+    "id": "large-python-reference-mid",
+    "repo": "fixed-reference-benchmark",
+    "revision": "7cbf2c50f8d2d72cf372c3f9b1d81a119062d5ab",
+    "script": "code_reference/large_fixed.py",
+    "args": [
+      "mid"
+    ],
+    "after": {
+      "cpython-reference-mid": "any"
+    }
+  },
+  {
+    "id": "large-python-reference-main",
+    "repo": "fixed-reference-benchmark",
+    "revision": "7cbf2c50f8d2d72cf372c3f9b1d81a119062d5ab",
+    "script": "code_reference/large_fixed.py",
+    "args": [
+      "main"
+    ],
+    "after": {
+      "large-python-reference-mid": "advance",
+      "cpython-reference-main": "any"
+    }
   }
 ]
