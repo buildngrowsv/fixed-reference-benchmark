@@ -490,5 +490,23 @@
       "displaced-prefix-surgery": "replicate",
       "register-stable-random-second-seed": "any"
     }
+  },
+  {
+    "id": "distilled-memory-interface",
+    "repo": "fixed-reference-benchmark",
+    "revision": "34d57effda9a229e2deb9f2bf6a418e0dba77359",
+    "script": "register_routing/distill_interface.py",
+    "after": {
+      "displaced-prefix-surgery": "replicate"
+    }
+  },
+  {
+    "id": "scientific-python-equal-size",
+    "repo": "fixed-reference-benchmark",
+    "revision": "34d57effda9a229e2deb9f2bf6a418e0dba77359",
+    "script": "code_reference/ecosystem_working.py",
+    "after": {
+      "scientific-python-transfer": "any"
+    }
   }
 ]
