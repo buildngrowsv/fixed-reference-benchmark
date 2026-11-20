@@ -267,6 +267,9 @@ def passes(v):
 
 
 def main():
+    if os.environ.get("STUDIO_ADDRESS_DEVICE") == "cpu":
+        mx.set_default_device(mx.cpu)
+    mx.set_cache_limit(64 * 1024 * 1024)
     all_runs = {}
     for donor_seed, host_seed in ((101,503),(211,607)):
         mx.random.seed(donor_seed)
@@ -293,7 +296,8 @@ def main():
     passed=all(passes(r["held_out"]) for r in all_runs.values())
     advantage=all(r["held_out"]["contrast"]["native"]["interval"][0]>.05 for r in all_runs.values())
     atomic_json("result.json",dict(decision="complete",location_transfer=passed,
-        native_advantage=passed and advantage,device=mx.device_info()["device_name"],seeds=all_runs))
+        native_advantage=passed and advantage,hardware=mx.device_info()["device_name"],
+        device=str(mx.default_device()),seeds=all_runs))
 
 
 if __name__=="__main__":
