@@ -526,5 +526,15 @@
     "after": {
       "scientific-python-transfer": "complete"
     }
+  },
+  {
+    "id": "compact-donor-portability",
+    "repo": "fixed-reference-benchmark",
+    "revision": "e0896cf605e18cbe36b29578b43b9795db868ee7",
+    "script": "register_routing/compact_portability.py",
+    "after": {
+      "distilled-memory-interface": "replicate",
+      "displaced-independent-host": "replicate"
+    }
   }
 ]
