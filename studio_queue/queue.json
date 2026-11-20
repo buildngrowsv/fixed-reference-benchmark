@@ -1163,5 +1163,18 @@
     "after": {
       "spatial-adaptive-witness-axis": "adapts_to_rotated_faults"
     }
+  },
+  {
+    "id": "qwen-relative-fixed-two-operands-32b",
+    "repo": "routed-expert-splice",
+    "revision": "b06d2e63f6b11790a22a5e66be66a08387982c51",
+    "script": "nested_surgery/identifier_numeric_hold_32b.py",
+    "args": [
+      "--reference",
+      "relative"
+    ],
+    "after": {
+      "qwen-fixed-two-operands-32b": "unresolved"
+    }
   }
 ]
