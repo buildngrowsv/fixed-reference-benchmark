@@ -43,3 +43,5 @@ Use Python 3.12 with MLX 0.32.4 and NumPy 2.5.5 on Apple Silicon. Run run.py, in
 [Long waits and false writes](long_hold_study/README.md) tests the original frozen checkpoints on 4,096 and 32,768 voxels.
 
 [Spatially separated confirmations](witness_study/README.md) reports the 262,144-voxel study on compact and aligned faults.
+
+[Adaptive confirmation direction](adaptive_witness_study/README.md) tests learning a new witness direction from seen sensor activity when faults rotate.

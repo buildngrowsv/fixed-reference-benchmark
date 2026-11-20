@@ -68,6 +68,12 @@ In the smaller model, seven strict repairs disappeared in the first published do
 
 **Image-selected stereo.** A baseline chosen from only the first image beat the strongest fixed direction by 0.53 and 0.61 points on clean and noisy synthetic panels at the same one-additional-camera budget. [Active acquisition evidence](https://github.com/buildngrowsv/parallax-depth-benchmark/tree/main/active_view)
 
+**Chronological fixed-reference comparison.** Holding both transplanted projections for seven more blocks changed complete 32B carry from 358 to 333 groups. All 512 native groups survived. The hold helped lengthening and hurt shortening on the same panel. [Audited 32B result](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_hold_32b_study)
+
+**Cross-width calibration.** The new contrast-only alignment reversed 426/507 groups in its same-width 32B control, compared with 426 for full-state replacement and 0 for matched random directions. The 72B arm is testing the same method on the same prompt panel. [Saved contrasts and audit](https://github.com/buildngrowsv/routed-expert-splice/tree/main/nested_surgery/numeric_width_study)
+
+**Adaptive write geometry.** On a 262,144-cell grid, routing the write witness using recent primary-detector co-activation retained 70.38% after the fault axis rotated. Freezing the axis from the calibration window retained 52.67%. [Adaptive geometry evidence](spatial_references/adaptive_witness_study/README.md)
+
 ## What opens the other paths
 
 - **Expert surgery.** The off-the-shelf coding donor's semantic validation lead over a task-trained host was below the prespecified threshold and disappeared on final test. A specialized donor with a demonstrated advantage on an unsaturated task would justify another transplant. The small trained spatial write controller offers an auditable donor whose input-output rule is independently verifiable. First check whether a matched fresh controller can relearn the rule at the same budget. [Semantic qualification](https://github.com/buildngrowsv/routed-expert-splice/tree/d2062a8f88e4bb82f12c442461cd1bf601dd69dd/semantic)
