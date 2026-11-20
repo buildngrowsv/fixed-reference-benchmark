@@ -1457,5 +1457,14 @@
     "after": {
       "qwen-dictionary-block-original-key-before-edit-72b": "unresolved"
     }
+  },
+  {
+    "id": "spatial-witness-boundary-jump-7077888",
+    "repo": "fixed-reference-benchmark",
+    "revision": "a6f918bd3edb95906ad46cc4d2cae0aa49693129",
+    "script": "spatial_references/witness_boundary_jump.py",
+    "after": {
+      "spatial-anchored-witness-routing-7077888": "dedicated_probes_scale"
+    }
   }
 ]
