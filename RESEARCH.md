@@ -4,7 +4,9 @@ The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons,
 
 ## Studio queue and current evidence
 
-**Original-key attention mask.** Blocking all later reads of the original numeral before the edit reduced native coverage from 173 to 17 of 256 groups. Whole-state switching gained one group in the tiny shared cohort, below the registered requirements. A narrower mask for dictionary tokens alone is queued. [Verified control](https://github.com/buildngrowsv/routed-expert-splice/blob/328b770/nested_surgery/numeric_lookup_preedit_attention_72b_study/README.md)
+**Compiled observer parity.** The MLX observer emitted 11 values per call while matching all 4,608 tallies and 1,536 archived coordinates across eight 192³ worlds at checkpoint 101. The fixed and known controls still stage dense observations. A new matched experiment changes the true partition halfway through each world. [Verified parity](spatial_references/compiled_witness_parity_study/README.md) · [Boundary-jump protocol](spatial_references/WITNESS_BOUNDARY_JUMP.md)
+
+**Original-key attention mask.** Blocking all later reads of the original numeral before the edit reduced native coverage from 173 to 17 of 256 groups. Whole-state switching gained one group in the tiny shared cohort, below the registered requirements. A narrower mask for dictionary tokens alone is running. [Verified control](https://github.com/buildngrowsv/routed-expert-splice/blob/328b770/nested_surgery/numeric_lookup_preedit_attention_72b_study/README.md)
 
 **Dictionary key placement in a second host.** The 32B whole-state exchange switched 151 of 151 groups after the dictionary, versus 84 at the early key. The late key with the early token distance switched 149 of 150 groups in the three-layout cohort. The global blocking comparison is complete. [Verified 32B result](https://github.com/buildngrowsv/routed-expert-splice/blob/53b7481/nested_surgery/numeric_lookup_order_32b_study/README.md)
 
