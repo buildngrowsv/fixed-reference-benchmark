@@ -888,5 +888,15 @@
     "after": {
       "qwen-binding-selective-reference": "binding_sensitive"
     }
+  },
+  {
+    "id": "qwen-transfer-across-binding-contexts",
+    "repo": "routed-expert-splice",
+    "revision": "3d0030edb7e7a778abe06400719b9b4335d51a5c",
+    "script": "nested_surgery/identifier_transfer_binding.py",
+    "after": {
+      "qwen-binding-selective-reference": "binding_sensitive",
+      "qwen-transfer-identifier-subspace-dose-fix": "transfer"
+    }
   }
 ]
