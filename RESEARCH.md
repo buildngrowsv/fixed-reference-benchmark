@@ -4,6 +4,8 @@ The [scale revisits](SCALE_REVISITS.md) track completed wider-model comparisons,
 
 ## Studio queue and current evidence
 
+**Seven-million-cell spatial result.** At 192³, a fixed 64-probe budget recovered 69.58% of words under shifted faults, versus 70.35% under full observation and 63.02% with fixed boundaries. The paired deficit versus full was 0.77 points, with its lower bound above the two-point margin. The probes used at most 0.521% of the detector field for boundary localization. [Result and independent verification](spatial_references/probe_scale_study/README.md)
+
 **Saved values at 72B.** The 7B edit switched 193 of 206 groups after a saved binding and later overwrite. Preservation was 195 of 206, one group below the 95% gate. All 14 misses following an irrelevant overwrite edit gave that edited value plus the offset. The new paired control exchanges the whole overwrite state from a history with the same original saved value. [Saved-binding study](https://github.com/buildngrowsv/routed-expert-splice/blob/ea7af33/nested_surgery/numeric_snapshot_72b_study/README.md) · [Matched overwrite protocol](https://github.com/buildngrowsv/routed-expert-splice/blob/b5a8e086a68aeac4808d9bc14d9c79a722d0ac6c/nested_surgery/NUMERIC_OVERWRITE_CONTROLS_72B.md)
 
 **Sparse spatial probes.** Stratifying 64 observations per plane met the two-point margin against full-field sensing. Estimated shifted-boundary coordinates were exact 77.60% of the time, versus 69.27% for random probes. Retention improved by 0.38 points over random, with the interval crossing zero. [Three-way comparison and audit](spatial_references/stratified_regions_study/README.md)
