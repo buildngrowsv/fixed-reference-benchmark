@@ -1068,5 +1068,11 @@
     "after": {
       "qwen-one-pass-raw-32b": "unresolved"
     }
+  },
+  {
+    "id": "spatial-4096-long-hold",
+    "repo": "fixed-reference-benchmark",
+    "revision": "15ad0bd92a7bd0b1132aefcdfc2cbd712e030294",
+    "script": "spatial_references/long_hold.py"
   }
 ]
