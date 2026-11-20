@@ -12,3 +12,5 @@ Both controllers stored two 32-value banks in each cell. They could read the sam
 The interval on the neutral improvement was +0.05 to +1.84 percentage points, bootstrapping pairs of test volumes. We also corrupted each bank separately by substituting its contents from another volume. Validation determined which bank should carry the memory. On test, corrupting that bank hurt the neutral controller only 1.06 points more than corrupting its partner. For the role-initialized controller the difference was 100 points. These measurements cover one training draw and one conditional parameterization. The prespecified 4,096-cell stress test did not run because the neutral controller missed its accuracy and selective-disruption thresholds. [Raw counts and receipt](../results/large-controller) · [Independent audit](verify.py)
 
 The owner proposed revisiting spatial memory at larger network sizes. OpenAI Codex implemented the comparison, ran it on the owner's Mac Studio, checked the published counts and assisted with writing. [Reconstructed counts](audit.json)
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/385)

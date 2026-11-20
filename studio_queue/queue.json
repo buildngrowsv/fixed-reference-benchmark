@@ -626,5 +626,14 @@
       "large-python-reference-mid": "advance",
       "cpython-reference-main": "any"
     }
+  },
+  {
+    "id": "large-python-sealed-vs-late",
+    "repo": "fixed-reference-benchmark",
+    "revision": "617b5cea92d332a40f699c21d35a5375f259caa9",
+    "script": "code_reference/large_sealed.py",
+    "after": {
+      "large-python-reference-mid": "advance"
+    }
   }
 ]

@@ -34,3 +34,5 @@ Across 10,938 held-out queries, the graft newly solved 333 queries relative to t
 Continuing the dense 227M checkpoint at the original learning rate, 0.00045, produced nonfinite loss before the 4,096-update target. The last recorded finite loss was at update 624. Retrying from the saved 512-update checkpoint again stopped at the finite-loss check. This limits any inference about what a well-trained wide model can learn. A follow-up continues both original checkpoints with a fourfold lower learning rate and finishes the missing original-rate routed arm separately. [Failure receipt and log](../results/large-budget-failure) · [Follow-up protocol](../LARGE_REVISIT.md)
 
 The owner proposed the scale revisit. OpenAI Codex implemented the experiments, operated the owner's Mac Studio over SSH, checked the released counts and assisted with writing. Run both verification scripts in this directory with Python and NumPy to reproduce the comparisons. [Width audit](audit.json) · [Graft audit counts](graft-audit.json)
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/384)
