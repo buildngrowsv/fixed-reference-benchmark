@@ -283,5 +283,14 @@
     "after": {
       "sealed-bypass-screen": "advance"
     }
+  },
+  {
+    "id": "register-random-address",
+    "repo": "fixed-reference-benchmark",
+    "revision": "97f5e293e5c657ae0e6acefc4ddfd436f1f46934",
+    "script": "register_routing/unpredictable.py",
+    "after": {
+      "register-addressing": "any"
+    }
   }
 ]
