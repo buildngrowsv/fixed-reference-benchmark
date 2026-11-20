@@ -21,3 +21,5 @@ The paired tilted deficit versus supplied geometry was −0.076 points (95% inte
 ## Reproduction
 
 The Studio used an arm64 Apple M5 Ultra with 256 GiB unified memory, macOS build 26B118, Python 3.12.16, MLX 0.32.4 and NumPy 2.5.5. The experiment took 610.20 seconds at 14.33 GB peak MLX allocation. Run `python spatial_references/sheared_history_study/verify.py` with NumPy from the repo root. Model replay uses the pinned code with `STUDIO_JOB_DIR` set to a fresh result directory and the prior public study result linked under `runs/spatial-sheared-witness-7077888` in `STUDIO_QUEUE_ROOT`. The owner proposed spatial reference and wall research. OpenAI Codex registered, implemented, ran, audited and documented the experiment. [Receipt](results/receipt.json) · [Environment](results/studio-environment.txt) · [Verifier](verify.py)
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/570)
