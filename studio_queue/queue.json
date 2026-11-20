@@ -806,5 +806,15 @@
     "repo": "routed-expert-splice",
     "revision": "78c3181ae1f7dc2c044ad8b8a14ef73c46ae2731",
     "script": "nested_surgery/identifier_baseline.py"
+  },
+  {
+    "id": "large-sealed-python-retention",
+    "repo": "fixed-reference-benchmark",
+    "revision": "9e09a37cf000f8d9d8297781394bef90cbb19ef7",
+    "script": "code_reference/large_ecosystem.py",
+    "after": {
+      "large-sealed-width-rate-held-out": "complete",
+      "scientific-python-transfer": "complete"
+    }
   }
 ]
