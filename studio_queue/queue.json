@@ -564,6 +564,15 @@
     "script": "persistence/large_controller.py"
   },
   {
+    "id": "large-register-long-budget",
+    "repo": "fixed-reference-benchmark",
+    "revision": "0452989282dbdbbb073cae0d1b7de2ab74be25c1",
+    "script": "register_routing/large_budget.py",
+    "after": {
+      "large-register-dense-vs-displaced": "complete"
+    }
+  },
+  {
     "id": "large-python-reference-mid",
     "repo": "fixed-reference-benchmark",
     "revision": "7cbf2c50f8d2d72cf372c3f9b1d81a119062d5ab",
