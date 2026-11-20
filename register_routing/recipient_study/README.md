@@ -27,4 +27,4 @@ On 1,024 fresh programs the aligned student scored 90.29%, the original branch 9
 
 The three panels come from one synthetic instruction language with a supplied register-dependent address mask. The uncertainty intervals resample programs within each fit. The CPU audit regenerates labels and counts, reconstructs per-program outcomes from the query ledger, checks paired intervals and derives the parameter and timing contrasts. The owner proposed donor transplantation and training the next host block around it. OpenAI Codex implemented the studies, ran them on the owner’s Studio, verified the outputs and assisted with writing. [Audit code](verify.py) · [Recomputed metrics](audit.json)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/380)
+[Published Pubroot paper](https://pubroot.com/ai/fine-tuning/two-hosts-learn-to-read-a-donated-memory-signal-and-a-small-student-can-reproduce-it/) · [Public review](https://github.com/buildngrowsv/pubroot-website/issues/380)
