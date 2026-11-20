@@ -843,5 +843,14 @@
     "after": {
       "large-qwen-donor-output-boundary": "any"
     }
+  },
+  {
+    "id": "qwen-fixed-identifier-subspace",
+    "repo": "routed-expert-splice",
+    "revision": "2a25de6f6e74cc491e881d2e6f8cfa640d5e9f9a",
+    "script": "nested_surgery/identifier_tunnel.py",
+    "after": {
+      "qwen-learned-identifier-subspace": "complete"
+    }
   }
 ]

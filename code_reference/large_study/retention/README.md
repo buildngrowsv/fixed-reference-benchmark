@@ -19,4 +19,4 @@ Both post-adaptation external results were close. The sealed-minus-late mean was
 
 The earlier 26.83M models saw longer adaptation and a different learning rate. Their original-domain loss increased more substantially. This wide run estimates the two architectures’ difference at one matched budget and one training draw. It leaves open whether a copy matters under stronger forgetting. The owner proposed the fixed reference and the scale revisits. OpenAI Codex implemented and ran the matched fits on the owner’s Apple M5 Ultra, verified the evidence and assisted with writing. [Earlier compact comparison](../../ecosystem_study/README.md) · [Recorded runtime](../../../runtime.json)
 
-[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/425)
+[Published Pubroot study](https://pubroot.com/ai/fine-tuning/two-238m-python-models-adapted-to-new-projects-with-similar-retention/) · [Public review](https://github.com/buildngrowsv/pubroot-website/issues/425)
