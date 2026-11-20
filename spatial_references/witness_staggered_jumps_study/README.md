@@ -37,3 +37,5 @@ python -m pip install mlx==0.32.4 numpy==2.5.5
 STUDIO_JOB_DIR="$(mktemp -d)" python spatial_references/witness_staggered_jumps.py
 python spatial_references/witness_staggered_jumps_study/verify.py
 ```
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/542)
