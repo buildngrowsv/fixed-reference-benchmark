@@ -93,10 +93,10 @@ class Convolution(nn.Module):
     def __init__(self):
         super().__init__()
         self.conv=nn.Conv1d(32,32,3,padding=1)
-        self.update=nn.Conv1d(32,32,3,padding=1)
+        self.second=nn.Conv1d(32,32,3,padding=1)
 
     def __call__(self, x):
-        return x + self.update(nn.gelu(self.conv(x)))
+        return x + self.second(nn.gelu(self.conv(x)))
 
 
 class Recurrent(nn.Module):
