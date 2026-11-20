@@ -1,0 +1,46 @@
+{
+  "decision": "compiled_observer_exact_parity",
+  "cells": 7077888,
+  "checkpoint": 101,
+  "checkpoint_digest": "ae2a23ea08ab472b835057a9da54a845ee35f68f841a20148f6ac3eae9335fd9",
+  "worlds": [
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39
+  ],
+  "source_archive_digest": "6cdbf9c21c4451a61a536be20f8d8edfa41c5bff2e71716f81e6a64738e1292b",
+  "transitions": 256,
+  "sampled_scalars": 69632,
+  "observer_output_scalars": 11,
+  "decisions": 512,
+  "counts_and_shifts_exact": true,
+  "elapsed_s": 601.7310392080108,
+  "peak_mlx_bytes": 14333264504,
+  "matched_tallies": 4608,
+  "matched_offset_coordinates": 1536,
+  "shifted_retention_by_world": [
+    0.6871739670082375,
+    0.6913601204201028,
+    0.6832093662685819,
+    0.6996438591568558,
+    0.6998760258709943,
+    0.6918635368347168,
+    0.6966634149904605,
+    0.6915247175428603
+  ],
+  "reference_retention_by_world": [
+    0.6871739670082375,
+    0.6913601204201028,
+    0.6832093662685819,
+    0.6996438591568558,
+    0.6998760258709943,
+    0.6918635368347168,
+    0.6966634149904605,
+    0.6915247175428603
+  ]
+}
