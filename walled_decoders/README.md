@@ -44,4 +44,4 @@ The screen used six layers at reference width 384, and the main models used twel
 
 The Studio executed revision `4982b3395c2cace1c4295be8e0a47d93b099218a`. The repository includes its readable training source and an archive, plus the exact fitted tokenizer and checksummed records for every arm. The independent CPU verifier recalculates main losses, removal indices, the two refit recoveries and Icelandic growth changes. Recreating the training weights requires the listed public data and a full run. [Reproduction commands](REPRODUCE.md) · [Registered protocol](source/protocols/E3.md) · [Training source](source/e3/trainer.py) · [Evidence and receipts](evidence.json) · [Verifier](verify.py) · [Source archive](source.zip)
 
-[First Pubroot review](https://github.com/buildngrowsv/pubroot-website/issues/577)
+[Revised Pubroot submission](https://github.com/buildngrowsv/pubroot-website/issues/578) · [First review](https://github.com/buildngrowsv/pubroot-website/issues/577)
