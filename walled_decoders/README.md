@@ -37,3 +37,5 @@ Training the new room alone recovered 86.1% of full fine-tuning’s Icelandic ga
 Hard connectivity constraints did not make the resulting rooms replaceable domain specialists at this budget. The shared door refit explains most of the observed transplant recovery. The result concerns this tokenizer, mixture and one donor–recipient seed pair. TopoLM uses a spatial smoothness objective on activations. The circular wiring-length penalty tested here follows a different choice closer to brain-inspired modular training. [TopoLM](https://arxiv.org/abs/2410.11516) · [Brain-inspired modular training](https://arxiv.org/abs/2305.08746)
 
 The Studio executed revision `4982b3395c2cace1c4295be8e0a47d93b099218a`. Run `python3 walled_decoders/verify.py` to recalculate the main losses, removal selectivity, transplant recoveries and growth changes from the saved reports. The source archive includes the registered protocol and runnable implementation at the execution revision. [Evidence and receipts](evidence.json) · [Verifier](verify.py) · [Source archive](source.zip)
+
+[Pubroot submission and review](https://github.com/buildngrowsv/pubroot-website/issues/577)
