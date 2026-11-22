@@ -1,0 +1,1448 @@
+{
+  "data": {
+    "receipt": {
+      "job": "prog-e3-data",
+      "revision": "4982b3395c2cace1c4295be8e0a47d93b099218a",
+      "attempt": 1,
+      "started": "2026-11-22T03:57:20+00:00",
+      "status": "done",
+      "finished": "2026-11-22T03:57:21+00:00",
+      "exit": 0
+    },
+    "result": {
+      "decision": "data_ready",
+      "job": "prog-e3-data",
+      "hours": 0.0,
+      "tokenizer": {
+        "vocab": 8192,
+        "chars_per_domain": 60000000,
+        "domains": [
+          "english",
+          "code",
+          "welsh"
+        ],
+        "sha256": "01517103ad0ddc537ba180afb39e71564c072a8834e3982e4ce5d6816c2abf6b"
+      },
+      "shards": {
+        "english.train": {
+          "tokens": 150000000,
+          "bytes_per_token": 3.556055
+        },
+        "code.train": {
+          "tokens": 150000000,
+          "bytes_per_token": 3.06811
+        },
+        "welsh.train": {
+          "tokens": 150000000,
+          "bytes_per_token": 3.377595
+        },
+        "icelandic.train": {
+          "tokens": 40000000,
+          "bytes_per_token": 1.74869
+        },
+        "english.val": {
+          "tokens": 2000000,
+          "bytes_per_token": 3.524395
+        },
+        "code.val": {
+          "tokens": 2000000,
+          "bytes_per_token": 3.0781
+        },
+        "welsh.val": {
+          "tokens": 2000000,
+          "bytes_per_token": 3.38008
+        },
+        "icelandic.val": {
+          "tokens": 2000000,
+          "bytes_per_token": 1.767485
+        }
+      },
+      "peak_memory_gb": 0.0
+    },
+    "result_sha256": "d3a7dc1da98d5f3618b3d420a43bd786ecc1767c5f8fe51ae4aa79f7d1c93a31"
+  },
+  "screen": {
+    "receipt": {
+      "job": "prog-e3-screen",
+      "revision": "4982b3395c2cace1c4295be8e0a47d93b099218a",
+      "attempt": 1,
+      "started": "2026-11-22T03:57:21+00:00",
+      "status": "done",
+      "finished": "2026-11-22T05:16:38+00:00",
+      "exit": 0
+    },
+    "result": {
+      "decision": "screen_no_selectivity",
+      "job": "prog-e3-screen",
+      "hours": 1.321,
+      "topo_lambda": 0.05,
+      "walled_max_selectivity": 0.3689970938348943,
+      "topographic_max_selectivity": 0.18294350321899466,
+      "arms": {
+        "dense": {
+          "mean_val": 2.9156486723158097,
+          "val": {
+            "english": 3.492279052734375,
+            "code": 2.1917455991109214,
+            "welsh": 3.0629213651021323,
+            "icelandic": 4.733851273854573
+          },
+          "cost_vs_dense": 0.0,
+          "max_selectivity": 0.24833870086702003,
+          "selective_domains": [],
+          "rooms": [
+            {
+              "room": 0,
+              "domain": "code",
+              "selectivity": 0.24833870086702003,
+              "ratio": 1.6607728804275854
+            },
+            {
+              "room": 1,
+              "domain": "code",
+              "selectivity": 0.031336258610871026,
+              "ratio": 1.0646999722853934
+            },
+            {
+              "room": 2,
+              "domain": "code",
+              "selectivity": 0.12881780012832,
+              "ratio": 1.295731019635833
+            },
+            {
+              "room": 3,
+              "domain": "code",
+              "selectivity": 0.13712098820119947,
+              "ratio": 1.3178220499658468
+            }
+          ],
+          "tokens_per_second": 292911.0897901023,
+          "params": {
+            "total": 16913280,
+            "embedding": 6291456,
+            "blocks": 10621824
+          }
+        },
+        "walled": {
+          "mean_val": 2.885502947701348,
+          "val": {
+            "english": 3.4618306954701743,
+            "code": 2.1731478373209634,
+            "welsh": 3.0215303103129068,
+            "icelandic": 4.643848578135173
+          },
+          "cost_vs_dense": -0.010339285696763345,
+          "max_selectivity": 0.3689970938348943,
+          "selective_domains": [],
+          "rooms": [
+            {
+              "room": 0,
+              "domain": "code",
+              "selectivity": 0.3689970938348943,
+              "ratio": 2.169557509893129
+            },
+            {
+              "room": 1,
+              "domain": "welsh",
+              "selectivity": 0.060882941708357764,
+              "ratio": 1.1296599634109736
+            },
+            {
+              "room": 2,
+              "domain": "welsh",
+              "selectivity": 0.17303897371150942,
+              "ratio": 1.4184936610329293
+            },
+            {
+              "room": 3,
+              "domain": "english",
+              "selectivity": 0.08391193402905638,
+              "ratio": 1.183196216927288
+            }
+          ],
+          "tokens_per_second": 104058.90294277779,
+          "params": {
+            "total": 24357392,
+            "embedding": 12845056,
+            "blocks": 11512336
+          }
+        },
+        "topographic-0.01": {
+          "mean_val": 2.9101050959693064,
+          "val": {
+            "english": 3.4820028146107993,
+            "code": 2.2000578244527182,
+            "welsh": 3.048254648844401,
+            "icelandic": 4.706242402394612
+          },
+          "cost_vs_dense": -0.0019013183581203519,
+          "max_selectivity": 0.12474568974776425,
+          "selective_domains": [],
+          "rooms": [
+            {
+              "room": 0,
+              "domain": "code",
+              "selectivity": 0.09268123075282475,
+              "ratio": 1.204296954706943
+            },
+            {
+              "room": 1,
+              "domain": "welsh",
+              "selectivity": 0.04857396943056653,
+              "ratio": 1.1021077159335124
+            },
+            {
+              "room": 2,
+              "domain": "code",
+              "selectivity": 0.12474568974776425,
+              "ratio": 1.285050158077632
+            },
+            {
+              "room": 3,
+              "domain": "code",
+              "selectivity": 0.11325320792366037,
+              "ratio": 1.2554352808166922
+            }
+          ],
+          "tokens_per_second": 294984.8887706909,
+          "params": {
+            "total": 16913280,
+            "embedding": 6291456,
+            "blocks": 10621824
+          }
+        },
+        "topographic-0.05": {
+          "mean_val": 2.9483036200205484,
+          "val": {
+            "english": 3.5280190308888755,
+            "code": 2.2327367464701333,
+            "welsh": 3.0841550827026367,
+            "icelandic": 4.731753667195638
+          },
+          "cost_vs_dense": 0.011199891130505124,
+          "max_selectivity": 0.18294350321899466,
+          "selective_domains": [],
+          "rooms": [
+            {
+              "room": 0,
+              "domain": "code",
+              "selectivity": 0.18294350321899466,
+              "ratio": 1.4478111463276908
+            },
+            {
+              "room": 1,
+              "domain": "code",
+              "selectivity": 0.02600827045676661,
+              "ratio": 1.0534055262850406
+            },
+            {
+              "room": 2,
+              "domain": "welsh",
+              "selectivity": 0.04445855948284503,
+              "ratio": 1.0930541734721275
+            },
+            {
+              "room": 3,
+              "domain": "code",
+              "selectivity": 0.14692536697486167,
+              "ratio": 1.344460757094232
+            }
+          ],
+          "tokens_per_second": 281848.3381707171,
+          "params": {
+            "total": 16913280,
+            "embedding": 6291456,
+            "blocks": 10621824
+          }
+        },
+        "routed": {
+          "mean_val": 2.8767324023776584,
+          "val": {
+            "english": 3.4453019301096597,
+            "code": 2.175154527028402,
+            "welsh": 3.0097407499949136,
+            "icelandic": 4.719419002532959
+          },
+          "cost_vs_dense": -0.013347379712673413,
+          "max_selectivity": 0.6729288728327224,
+          "selective_domains": [
+            "code"
+          ],
+          "rooms": [
+            {
+              "room": 0,
+              "domain": "english",
+              "selectivity": 0.1738126737163307,
+              "ratio": 1.4207585088436774
+            },
+            {
+              "room": 1,
+              "domain": "welsh",
+              "selectivity": 0.4739385359972632,
+              "ratio": 2.8018371176292725
+            },
+            {
+              "room": 2,
+              "domain": "code",
+              "selectivity": 0.6729288728327224,
+              "ratio": 5.11487787785413
+            },
+            {
+              "room": 3,
+              "domain": "welsh",
+              "selectivity": 0.1598018086829453,
+              "ratio": 1.380390746693819
+            }
+          ],
+          "tokens_per_second": 262694.56867694244,
+          "params": {
+            "total": 24000384,
+            "embedding": 6291456,
+            "blocks": 17708928
+          }
+        }
+      },
+      "peak_memory_gb": 17.0
+    },
+    "result_sha256": "676b056a6c07ce2c6e18ae1c7e7b01f5968a62be0c65c39da6cd44f5bb52d766"
+  },
+  "dense": {
+    "receipt": {
+      "job": "prog-e3-dense",
+      "revision": "4982b3395c2cace1c4295be8e0a47d93b099218a",
+      "attempt": 1,
+      "started": "2026-11-22T05:16:38+00:00",
+      "status": "done",
+      "finished": "2026-11-22T06:27:58+00:00",
+      "exit": 0
+    },
+    "result": {
+      "decision": "trained",
+      "job": "prog-e3-dense-s1",
+      "hours": 1.189,
+      "arm": "dense",
+      "scale": "main",
+      "seed": 1,
+      "lam": 0.0,
+      "steps": 6510,
+      "tokens": 399974400,
+      "params": {
+        "total": 97536768,
+        "embedding": 12582912,
+        "blocks": 84953856
+      },
+      "flops_per_token": 603979776.0,
+      "train_hours": 1.1880935572253333,
+      "tokens_per_second": 93514.52107818144,
+      "data_epochs": {
+        "english": 1.0,
+        "code": 1.0,
+        "welsh": 1.0
+      },
+      "val": {
+        "english": 3.1175894141197205,
+        "code": 1.847665548324585,
+        "welsh": 2.6658313870429993,
+        "icelandic": 4.430341005325317
+      },
+      "train_mean_val": 2.5436954498291016,
+      "removal": {
+        "base": {
+          "english": 3.1175894141197205,
+          "code": 1.847665548324585,
+          "welsh": 2.6658313870429993
+        },
+        "rooms": [
+          {
+            "room": 0,
+            "loss": {
+              "english": 3.583525538444519,
+              "code": 2.3497350215911865,
+              "welsh": 3.13846093416214
+            },
+            "increase": {
+              "english": 0.4659361243247986,
+              "code": 0.5020694732666016,
+              "welsh": 0.4726295471191406
+            },
+            "domain": "code",
+            "selectivity": 0.03375360025526816,
+            "meaningful": true,
+            "ratio": 1.0698654096184688
+          },
+          {
+            "room": 1,
+            "loss": {
+              "english": 3.564840793609619,
+              "code": 2.3422837257385254,
+              "welsh": 3.069290816783905
+            },
+            "increase": {
+              "english": 0.4472513794898987,
+              "code": 0.49461817741394043,
+              "welsh": 0.40345942974090576
+            },
+            "domain": "code",
+            "selectivity": 0.07528778450980461,
+            "meaningful": true,
+            "ratio": 1.16283505992163
+          },
+          {
+            "room": 2,
+            "loss": {
+              "english": 3.6030073165893555,
+              "code": 2.2830280661582947,
+              "welsh": 3.1567861437797546
+            },
+            "increase": {
+              "english": 0.485417902469635,
+              "code": 0.4353625178337097,
+              "welsh": 0.49095475673675537
+            },
+            "domain": "welsh",
+            "selectivity": 0.03212772196088947,
+            "meaningful": true,
+            "ratio": 1.06638835038437
+          },
+          {
+            "room": 3,
+            "loss": {
+              "english": 3.6876211166381836,
+              "code": 2.5083723068237305,
+              "welsh": 3.282202363014221
+            },
+            "increase": {
+              "english": 0.5700317025184631,
+              "code": 0.6607067584991455,
+              "welsh": 0.6163709759712219
+            },
+            "domain": "code",
+            "selectivity": 0.05383601826621718,
+            "meaningful": true,
+            "ratio": 1.1137984943530956
+          }
+        ],
+        "max_selectivity": 0.07528778450980461,
+        "domains_with_selective_room": []
+      },
+      "wiring_cost": null,
+      "peak_memory_gb": 13.65025012
+    },
+    "result_sha256": "099574ad9afc10e1e0813ab990b608e661bcce5d35c4c2f42d861db36cfa316a"
+  },
+  "walled_seed_1": {
+    "receipt": {
+      "job": "prog-e3-walled-s1",
+      "revision": "4982b3395c2cace1c4295be8e0a47d93b099218a",
+      "attempt": 1,
+      "started": "2026-11-22T06:27:58+00:00",
+      "status": "done",
+      "finished": "2026-11-22T10:03:08+00:00",
+      "exit": 0
+    },
+    "result": {
+      "decision": "trained",
+      "job": "prog-e3-walled-s1",
+      "hours": 3.586,
+      "arm": "walled",
+      "scale": "main",
+      "seed": 1,
+      "lam": 0.0,
+      "steps": 6510,
+      "tokens": 399974400,
+      "params": {
+        "total": 117744160,
+        "embedding": 25690112,
+        "blocks": 92054048
+      },
+      "flops_per_token": 742391808.0,
+      "train_hours": 3.5847642544905343,
+      "tokens_per_second": 30993.390949160217,
+      "data_epochs": {
+        "english": 1.0,
+        "code": 1.0,
+        "welsh": 1.0
+      },
+      "val": {
+        "english": 3.125027060508728,
+        "code": 1.852295845746994,
+        "welsh": 2.673911154270172,
+        "icelandic": 4.375786304473877
+      },
+      "train_mean_val": 2.5504113535086312,
+      "removal": {
+        "base": {
+          "english": 3.125027060508728,
+          "code": 1.852295845746994,
+          "welsh": 2.673911154270172
+        },
+        "rooms": [
+          {
+            "room": 0,
+            "loss": {
+              "english": 3.8580251932144165,
+              "code": 2.666469991207123,
+              "welsh": 3.5702272057533264
+            },
+            "increase": {
+              "english": 0.7329981327056885,
+              "code": 0.8141741454601288,
+              "welsh": 0.8963160514831543
+            },
+            "domain": "welsh",
+            "selectivity": 0.07349527001856482,
+            "meaningful": true,
+            "ratio": 1.1586506094146707
+          },
+          {
+            "room": 1,
+            "loss": {
+              "english": 3.4593120217323303,
+              "code": 2.4682497382164,
+              "welsh": 3.031852662563324
+            },
+            "increase": {
+              "english": 0.3342849612236023,
+              "code": 0.6159538924694061,
+              "welsh": 0.35794150829315186
+            },
+            "domain": "code",
+            "selectivity": 0.28048007262089975,
+            "meaningful": true,
+            "ratio": 1.779631145568316
+          },
+          {
+            "room": 2,
+            "loss": {
+              "english": 3.5194241404533386,
+              "code": 2.193713665008545,
+              "welsh": 2.9925107955932617
+            },
+            "increase": {
+              "english": 0.3943970799446106,
+              "code": 0.3414178192615509,
+              "welsh": 0.3185996413230896
+            },
+            "domain": "english",
+            "selectivity": 0.08888436390540669,
+            "meaningful": true,
+            "ratio": 1.1951110493205905
+          },
+          {
+            "room": 3,
+            "loss": {
+              "english": 3.4602888226509094,
+              "code": 2.2359734177589417,
+              "welsh": 2.923467695713043
+            },
+            "increase": {
+              "english": 0.3352617621421814,
+              "code": 0.38367757201194763,
+              "welsh": 0.2495565414428711
+            },
+            "domain": "code",
+            "selectivity": 0.13499513746673786,
+            "meaningful": true,
+            "ratio": 1.3121257308806096
+          }
+        ],
+        "max_selectivity": 0.28048007262089975,
+        "domains_with_selective_room": []
+      },
+      "wiring_cost": null,
+      "peak_memory_gb": 27.585479188
+    },
+    "result_sha256": "c5bb43c2588ca2c616109c2c09842b7e537e6622f442d6dc85662d8cff30fb48"
+  },
+  "walled_seed_2": {
+    "receipt": {
+      "job": "prog-e3-walled-s2",
+      "revision": "4982b3395c2cace1c4295be8e0a47d93b099218a",
+      "attempt": 1,
+      "started": "2026-11-22T10:03:08+00:00",
+      "status": "done",
+      "finished": "2026-11-22T13:49:33+00:00",
+      "exit": 0
+    },
+    "result": {
+      "decision": "trained",
+      "job": "prog-e3-walled-s2",
+      "hours": 3.774,
+      "arm": "walled",
+      "scale": "main",
+      "seed": 2,
+      "lam": 0.0,
+      "steps": 6510,
+      "tokens": 399974400,
+      "params": {
+        "total": 117744160,
+        "embedding": 25690112,
+        "blocks": 92054048
+      },
+      "flops_per_token": 742391808.0,
+      "train_hours": 3.77233041577869,
+      "tokens_per_second": 29452.35113426981,
+      "data_epochs": {
+        "english": 1.0,
+        "code": 1.0,
+        "welsh": 1.0
+      },
+      "val": {
+        "english": 3.1449803709983826,
+        "code": 1.8695766627788544,
+        "welsh": 2.689855396747589,
+        "icelandic": 4.395236968994141
+      },
+      "train_mean_val": 2.5681374768416085,
+      "removal": {
+        "base": {
+          "english": 3.1449803709983826,
+          "code": 1.8695766627788544,
+          "welsh": 2.689855396747589
+        },
+        "rooms": [
+          {
+            "room": 0,
+            "loss": {
+              "english": 3.7932741045951843,
+              "code": 2.512080430984497,
+              "welsh": 3.2413399815559387
+            },
+            "increase": {
+              "english": 0.6482937335968018,
+              "code": 0.6425037682056427,
+              "welsh": 0.5514845848083496
+            },
+            "domain": "english",
+            "selectivity": 0.04119493706923538,
+            "meaningful": true,
+            "ratio": 1.0859297445579092
+          },
+          {
+            "room": 1,
+            "loss": {
+              "english": 3.5124552249908447,
+              "code": 2.1405975222587585,
+              "welsh": 3.0407354831695557
+            },
+            "increase": {
+              "english": 0.36747485399246216,
+              "code": 0.2710208594799042,
+              "welsh": 0.35088008642196655
+            },
+            "domain": "english",
+            "selectivity": 0.0833170266449129,
+            "meaningful": true,
+            "ratio": 1.1817793698948504
+          },
+          {
+            "room": 2,
+            "loss": {
+              "english": 3.415537476539612,
+              "code": 2.1744824647903442,
+              "welsh": 2.9992523789405823
+            },
+            "increase": {
+              "english": 0.27055710554122925,
+              "code": 0.30490580201148987,
+              "welsh": 0.30939698219299316
+            },
+            "domain": "welsh",
+            "selectivity": 0.03628286162835758,
+            "meaningful": true,
+            "ratio": 1.0752977407658504
+          },
+          {
+            "room": 3,
+            "loss": {
+              "english": 3.500869929790497,
+              "code": 2.3382697105407715,
+              "welsh": 3.1155325174331665
+            },
+            "increase": {
+              "english": 0.35588955879211426,
+              "code": 0.4686930477619171,
+              "welsh": 0.4256771206855774
+            },
+            "domain": "code",
+            "selectivity": 0.09064787486439484,
+            "meaningful": true,
+            "ratio": 1.1993680387580932
+          }
+        ],
+        "max_selectivity": 0.09064787486439484,
+        "domains_with_selective_room": []
+      },
+      "wiring_cost": null,
+      "peak_memory_gb": 27.690417172
+    },
+    "result_sha256": "2fa5ae28de296604e423df4260f4b1fa71f6970c38212b0840b3856cb9571aca"
+  },
+  "topographic": {
+    "receipt": {
+      "job": "prog-e3-topographic",
+      "revision": "4982b3395c2cace1c4295be8e0a47d93b099218a",
+      "attempt": 1,
+      "started": "2026-11-22T13:49:33+00:00",
+      "status": "done",
+      "finished": "2026-11-22T15:03:21+00:00",
+      "exit": 0
+    },
+    "result": {
+      "decision": "trained",
+      "job": "prog-e3-topographic-s1",
+      "hours": 1.23,
+      "arm": "topographic",
+      "scale": "main",
+      "seed": 1,
+      "lam": 0.05,
+      "steps": 6510,
+      "tokens": 399974400,
+      "params": {
+        "total": 97536768,
+        "embedding": 12582912,
+        "blocks": 84953856
+      },
+      "flops_per_token": 603979776.0,
+      "train_hours": 1.2291394035683738,
+      "tokens_per_second": 90391.69981651277,
+      "data_epochs": {
+        "english": 1.0,
+        "code": 1.0,
+        "welsh": 1.0
+      },
+      "val": {
+        "english": 3.12634813785553,
+        "code": 1.848145216703415,
+        "welsh": 2.6771256923675537,
+        "icelandic": 4.401201128959656
+      },
+      "train_mean_val": 2.5505396823088327,
+      "removal": {
+        "base": {
+          "english": 3.12634813785553,
+          "code": 1.848145216703415,
+          "welsh": 2.6771256923675537
+        },
+        "rooms": [
+          {
+            "room": 0,
+            "loss": {
+              "english": 3.5367342829704285,
+              "code": 2.2850348353385925,
+              "welsh": 3.135680675506592
+            },
+            "increase": {
+              "english": 0.4103861451148987,
+              "code": 0.4368896186351776,
+              "welsh": 0.4585549831390381
+            },
+            "domain": "welsh",
+            "selectivity": 0.039579895336653854,
+            "meaningful": true,
+            "ratio": 1.0824220466532772
+          },
+          {
+            "room": 1,
+            "loss": {
+              "english": 3.528731346130371,
+              "code": 2.279298961162567,
+              "welsh": 3.093187391757965
+            },
+            "increase": {
+              "english": 0.4023832082748413,
+              "code": 0.4311537444591522,
+              "welsh": 0.4160616993904114
+            },
+            "domain": "code",
+            "selectivity": 0.02609699164624762,
+            "meaningful": true,
+            "ratio": 1.0535925886302804
+          },
+          {
+            "room": 2,
+            "loss": {
+              "english": 3.6929107904434204,
+              "code": 2.466539680957794,
+              "welsh": 3.2352123260498047
+            },
+            "increase": {
+              "english": 0.5665626525878906,
+              "code": 0.6183944642543793,
+              "welsh": 0.558086633682251
+            },
+            "domain": "code",
+            "selectivity": 0.047487857838836786,
+            "meaningful": true,
+            "ratio": 1.0997107663763555
+          },
+          {
+            "room": 3,
+            "loss": {
+              "english": 3.727022707462311,
+              "code": 2.450917601585388,
+              "welsh": 3.262449622154236
+            },
+            "increase": {
+              "english": 0.600674569606781,
+              "code": 0.6027723848819733,
+              "welsh": 0.5853239297866821
+            },
+            "domain": "code",
+            "selectivity": 0.008173078289053894,
+            "meaningful": true,
+            "ratio": 1.016480855903679
+          }
+        ],
+        "max_selectivity": 0.047487857838836786,
+        "domains_with_selective_room": []
+      },
+      "wiring_cost": 0.1895631342274289,
+      "peak_memory_gb": 14.223821196
+    },
+    "result_sha256": "d10aaeaad0685c94a2609763ca3fb19a6466aa8d1e19368f4ebb45c1d8d4d8ea"
+  },
+  "routed": {
+    "receipt": {
+      "job": "prog-e3-routed",
+      "revision": "4982b3395c2cace1c4295be8e0a47d93b099218a",
+      "attempt": 1,
+      "started": "2026-11-22T15:03:21+00:00",
+      "status": "done",
+      "finished": "2026-11-22T16:33:16+00:00",
+      "exit": 0
+    },
+    "result": {
+      "decision": "trained",
+      "job": "prog-e3-routed-s1",
+      "hours": 1.499,
+      "arm": "routed",
+      "scale": "main",
+      "seed": 1,
+      "lam": 0.0,
+      "steps": 6510,
+      "tokens": 399974400,
+      "params": {
+        "total": 154196736,
+        "embedding": 12582912,
+        "blocks": 141613824
+      },
+      "flops_per_token": 604200960.0,
+      "train_hours": 1.4976818472146989,
+      "tokens_per_second": 74183.97986636797,
+      "data_epochs": {
+        "english": 1.0,
+        "code": 1.0,
+        "welsh": 1.0
+      },
+      "val": {
+        "english": 3.074254631996155,
+        "code": 1.8319246172904968,
+        "welsh": 2.6359729766845703,
+        "icelandic": 4.404137015342712
+      },
+      "train_mean_val": 2.5140507419904075,
+      "removal": {
+        "base": {
+          "english": 3.074254631996155,
+          "code": 1.8319246172904968,
+          "welsh": 2.6359729766845703
+        },
+        "rooms": [
+          {
+            "room": 0,
+            "loss": {
+              "english": 4.491175651550293,
+              "code": 3.8890978693962097,
+              "welsh": 3.9165846705436707
+            },
+            "increase": {
+              "english": 1.4169210195541382,
+              "code": 2.057173252105713,
+              "welsh": 1.2806116938591003
+            },
+            "domain": "code",
+            "selectivity": 0.20799161957135187,
+            "meaningful": true,
+            "ratio": 1.5252258049562135
+          },
+          {
+            "room": 1,
+            "loss": {
+              "english": 4.419386982917786,
+              "code": 3.233777940273285,
+              "welsh": 5.096912622451782
+            },
+            "increase": {
+              "english": 1.3451323509216309,
+              "code": 1.401853322982788,
+              "welsh": 2.460939645767212
+            },
+            "domain": "welsh",
+            "selectivity": 0.28360045814231505,
+            "meaningful": true,
+            "ratio": 1.7917382454123711
+          },
+          {
+            "room": 2,
+            "loss": {
+              "english": 4.054023265838623,
+              "code": 3.1895206570625305,
+              "welsh": 3.593128025531769
+            },
+            "increase": {
+              "english": 0.9797686338424683,
+              "code": 1.3575960397720337,
+              "welsh": 0.9571550488471985
+            },
+            "domain": "code",
+            "selectivity": 0.16729342876040376,
+            "meaningful": true,
+            "ratio": 1.401806433474795
+          },
+          {
+            "room": 3,
+            "loss": {
+              "english": 4.447455525398254,
+              "code": 3.365752696990967,
+              "welsh": 3.9668503403663635
+            },
+            "increase": {
+              "english": 1.3732008934020996,
+              "code": 1.53382807970047,
+              "welsh": 1.3308773636817932
+            },
+            "domain": "code",
+            "selectivity": 0.06299283301716392,
+            "meaningful": true,
+            "ratio": 1.1344553920969482
+          }
+        ],
+        "max_selectivity": 0.28360045814231505,
+        "domains_with_selective_room": []
+      },
+      "wiring_cost": null,
+      "peak_memory_gb": 15.795157916
+    },
+    "result_sha256": "bb426686e600522dff0aa652017b38d4d348f44a120dbb957eda79468135acef"
+  },
+  "surgery": {
+    "receipt": {
+      "job": "prog-e3-surgery",
+      "revision": "4982b3395c2cace1c4295be8e0a47d93b099218a",
+      "attempt": 1,
+      "started": "2026-11-22T16:33:16+00:00",
+      "status": "done",
+      "finished": "2026-11-22T18:04:04+00:00",
+      "exit": 0
+    },
+    "result": {
+      "decision": "walls_null",
+      "job": "prog-e3-surgery",
+      "hours": 1.513,
+      "removal": {
+        "dense": {
+          "base": {
+            "english": 3.1175894141197205,
+            "code": 1.847665548324585,
+            "welsh": 2.6658313870429993
+          },
+          "rooms": [
+            {
+              "room": 0,
+              "loss": {
+                "english": 3.583525538444519,
+                "code": 2.3497350215911865,
+                "welsh": 3.13846093416214
+              },
+              "increase": {
+                "english": 0.4659361243247986,
+                "code": 0.5020694732666016,
+                "welsh": 0.4726295471191406
+              },
+              "domain": "code",
+              "selectivity": 0.03375360025526816,
+              "meaningful": true,
+              "ratio": 1.0698654096184688
+            },
+            {
+              "room": 1,
+              "loss": {
+                "english": 3.564840793609619,
+                "code": 2.3422837257385254,
+                "welsh": 3.069290816783905
+              },
+              "increase": {
+                "english": 0.4472513794898987,
+                "code": 0.49461817741394043,
+                "welsh": 0.40345942974090576
+              },
+              "domain": "code",
+              "selectivity": 0.07528778450980461,
+              "meaningful": true,
+              "ratio": 1.16283505992163
+            },
+            {
+              "room": 2,
+              "loss": {
+                "english": 3.6030073165893555,
+                "code": 2.2830280661582947,
+                "welsh": 3.1567861437797546
+              },
+              "increase": {
+                "english": 0.485417902469635,
+                "code": 0.4353625178337097,
+                "welsh": 0.49095475673675537
+              },
+              "domain": "welsh",
+              "selectivity": 0.03212772196088947,
+              "meaningful": true,
+              "ratio": 1.06638835038437
+            },
+            {
+              "room": 3,
+              "loss": {
+                "english": 3.6876211166381836,
+                "code": 2.5083723068237305,
+                "welsh": 3.282202363014221
+              },
+              "increase": {
+                "english": 0.5700317025184631,
+                "code": 0.6607067584991455,
+                "welsh": 0.6163709759712219
+              },
+              "domain": "code",
+              "selectivity": 0.05383601826621718,
+              "meaningful": true,
+              "ratio": 1.1137984943530956
+            }
+          ],
+          "max_selectivity": 0.07528778450980461,
+          "domains_with_selective_room": []
+        },
+        "walled": {
+          "base": {
+            "english": 3.125027060508728,
+            "code": 1.852295845746994,
+            "welsh": 2.673911154270172
+          },
+          "rooms": [
+            {
+              "room": 0,
+              "loss": {
+                "english": 3.8580251932144165,
+                "code": 2.666469991207123,
+                "welsh": 3.5702272057533264
+              },
+              "increase": {
+                "english": 0.7329981327056885,
+                "code": 0.8141741454601288,
+                "welsh": 0.8963160514831543
+              },
+              "domain": "welsh",
+              "selectivity": 0.07349527001856482,
+              "meaningful": true,
+              "ratio": 1.1586506094146707
+            },
+            {
+              "room": 1,
+              "loss": {
+                "english": 3.4593120217323303,
+                "code": 2.4682497382164,
+                "welsh": 3.031852662563324
+              },
+              "increase": {
+                "english": 0.3342849612236023,
+                "code": 0.6159538924694061,
+                "welsh": 0.35794150829315186
+              },
+              "domain": "code",
+              "selectivity": 0.28048007262089975,
+              "meaningful": true,
+              "ratio": 1.779631145568316
+            },
+            {
+              "room": 2,
+              "loss": {
+                "english": 3.5194241404533386,
+                "code": 2.193713665008545,
+                "welsh": 2.9925107955932617
+              },
+              "increase": {
+                "english": 0.3943970799446106,
+                "code": 0.3414178192615509,
+                "welsh": 0.3185996413230896
+              },
+              "domain": "english",
+              "selectivity": 0.08888436390540669,
+              "meaningful": true,
+              "ratio": 1.1951110493205905
+            },
+            {
+              "room": 3,
+              "loss": {
+                "english": 3.4602888226509094,
+                "code": 2.2359734177589417,
+                "welsh": 2.923467695713043
+              },
+              "increase": {
+                "english": 0.3352617621421814,
+                "code": 0.38367757201194763,
+                "welsh": 0.2495565414428711
+              },
+              "domain": "code",
+              "selectivity": 0.13499513746673786,
+              "meaningful": true,
+              "ratio": 1.3121257308806096
+            }
+          ],
+          "max_selectivity": 0.28048007262089975,
+          "domains_with_selective_room": []
+        },
+        "walled_s2": {
+          "base": {
+            "english": 3.1449803709983826,
+            "code": 1.8695766627788544,
+            "welsh": 2.689855396747589
+          },
+          "rooms": [
+            {
+              "room": 0,
+              "loss": {
+                "english": 3.7932741045951843,
+                "code": 2.512080430984497,
+                "welsh": 3.2413399815559387
+              },
+              "increase": {
+                "english": 0.6482937335968018,
+                "code": 0.6425037682056427,
+                "welsh": 0.5514845848083496
+              },
+              "domain": "english",
+              "selectivity": 0.04119493706923538,
+              "meaningful": true,
+              "ratio": 1.0859297445579092
+            },
+            {
+              "room": 1,
+              "loss": {
+                "english": 3.5124552249908447,
+                "code": 2.1405975222587585,
+                "welsh": 3.0407354831695557
+              },
+              "increase": {
+                "english": 0.36747485399246216,
+                "code": 0.2710208594799042,
+                "welsh": 0.35088008642196655
+              },
+              "domain": "english",
+              "selectivity": 0.0833170266449129,
+              "meaningful": true,
+              "ratio": 1.1817793698948504
+            },
+            {
+              "room": 2,
+              "loss": {
+                "english": 3.415537476539612,
+                "code": 2.1744824647903442,
+                "welsh": 2.9992523789405823
+              },
+              "increase": {
+                "english": 0.27055710554122925,
+                "code": 0.30490580201148987,
+                "welsh": 0.30939698219299316
+              },
+              "domain": "welsh",
+              "selectivity": 0.03628286162835758,
+              "meaningful": true,
+              "ratio": 1.0752977407658504
+            },
+            {
+              "room": 3,
+              "loss": {
+                "english": 3.500869929790497,
+                "code": 2.3382697105407715,
+                "welsh": 3.1155325174331665
+              },
+              "increase": {
+                "english": 0.35588955879211426,
+                "code": 0.4686930477619171,
+                "welsh": 0.4256771206855774
+              },
+              "domain": "code",
+              "selectivity": 0.09064787486439484,
+              "meaningful": true,
+              "ratio": 1.1993680387580932
+            }
+          ],
+          "max_selectivity": 0.09064787486439484,
+          "domains_with_selective_room": []
+        },
+        "topographic": {
+          "base": {
+            "english": 3.12634813785553,
+            "code": 1.848145216703415,
+            "welsh": 2.6771256923675537
+          },
+          "rooms": [
+            {
+              "room": 0,
+              "loss": {
+                "english": 3.5367342829704285,
+                "code": 2.2850348353385925,
+                "welsh": 3.135680675506592
+              },
+              "increase": {
+                "english": 0.4103861451148987,
+                "code": 0.4368896186351776,
+                "welsh": 0.4585549831390381
+              },
+              "domain": "welsh",
+              "selectivity": 0.039579895336653854,
+              "meaningful": true,
+              "ratio": 1.0824220466532772
+            },
+            {
+              "room": 1,
+              "loss": {
+                "english": 3.528731346130371,
+                "code": 2.279298961162567,
+                "welsh": 3.093187391757965
+              },
+              "increase": {
+                "english": 0.4023832082748413,
+                "code": 0.4311537444591522,
+                "welsh": 0.4160616993904114
+              },
+              "domain": "code",
+              "selectivity": 0.02609699164624762,
+              "meaningful": true,
+              "ratio": 1.0535925886302804
+            },
+            {
+              "room": 2,
+              "loss": {
+                "english": 3.6929107904434204,
+                "code": 2.466539680957794,
+                "welsh": 3.2352123260498047
+              },
+              "increase": {
+                "english": 0.5665626525878906,
+                "code": 0.6183944642543793,
+                "welsh": 0.558086633682251
+              },
+              "domain": "code",
+              "selectivity": 0.047487857838836786,
+              "meaningful": true,
+              "ratio": 1.0997107663763555
+            },
+            {
+              "room": 3,
+              "loss": {
+                "english": 3.727022707462311,
+                "code": 2.450917601585388,
+                "welsh": 3.262449622154236
+              },
+              "increase": {
+                "english": 0.600674569606781,
+                "code": 0.6027723848819733,
+                "welsh": 0.5853239297866821
+              },
+              "domain": "code",
+              "selectivity": 0.008173078289053894,
+              "meaningful": true,
+              "ratio": 1.016480855903679
+            }
+          ],
+          "max_selectivity": 0.047487857838836786,
+          "domains_with_selective_room": []
+        },
+        "routed": {
+          "base": {
+            "english": 3.074254631996155,
+            "code": 1.8319246172904968,
+            "welsh": 2.6359729766845703
+          },
+          "rooms": [
+            {
+              "room": 0,
+              "loss": {
+                "english": 4.491175651550293,
+                "code": 3.8890978693962097,
+                "welsh": 3.9165846705436707
+              },
+              "increase": {
+                "english": 1.4169210195541382,
+                "code": 2.057173252105713,
+                "welsh": 1.2806116938591003
+              },
+              "domain": "code",
+              "selectivity": 0.20799161957135187,
+              "meaningful": true,
+              "ratio": 1.5252258049562135
+            },
+            {
+              "room": 1,
+              "loss": {
+                "english": 4.419386982917786,
+                "code": 3.233777940273285,
+                "welsh": 5.096912622451782
+              },
+              "increase": {
+                "english": 1.3451323509216309,
+                "code": 1.401853322982788,
+                "welsh": 2.460939645767212
+              },
+              "domain": "welsh",
+              "selectivity": 0.28360045814231505,
+              "meaningful": true,
+              "ratio": 1.7917382454123711
+            },
+            {
+              "room": 2,
+              "loss": {
+                "english": 4.054023265838623,
+                "code": 3.1895206570625305,
+                "welsh": 3.593128025531769
+              },
+              "increase": {
+                "english": 0.9797686338424683,
+                "code": 1.3575960397720337,
+                "welsh": 0.9571550488471985
+              },
+              "domain": "code",
+              "selectivity": 0.16729342876040376,
+              "meaningful": true,
+              "ratio": 1.401806433474795
+            },
+            {
+              "room": 3,
+              "loss": {
+                "english": 4.447455525398254,
+                "code": 3.365752696990967,
+                "welsh": 3.9668503403663635
+              },
+              "increase": {
+                "english": 1.3732008934020996,
+                "code": 1.53382807970047,
+                "welsh": 1.3308773636817932
+              },
+              "domain": "code",
+              "selectivity": 0.06299283301716392,
+              "meaningful": true,
+              "ratio": 1.1344553920969482
+            }
+          ],
+          "max_selectivity": 0.28360045814231505,
+          "domains_with_selective_room": []
+        }
+      },
+      "walls_cost": 0.002640215313504113,
+      "transplant": {
+        "intact": {
+          "english": 3.125027060508728,
+          "code": 1.852295845746994,
+          "welsh": 2.673911154270172
+        },
+        "removed_before_refit": {
+          "english": 3.4604719281196594,
+          "code": 2.4692683815956116,
+          "welsh": 3.032895267009735
+        },
+        "removed_after_refit": {
+          "english": 3.2421109676361084,
+          "code": 2.0724275708198547,
+          "welsh": 2.8097168803215027
+        },
+        "transplant_before_refit": {
+          "english": 3.604557156562805,
+          "code": 2.580737292766571,
+          "welsh": 3.183997869491577
+        },
+        "transplant_after_refit": {
+          "english": 3.2423976063728333,
+          "code": 2.055996358394623,
+          "welsh": 2.8040895462036133
+        },
+        "room": 1,
+        "domain": "code",
+        "recovery": 0.6698386057534181,
+        "control_recovery": 0.6432066059957117
+      },
+      "growth": {
+        "grow_doors_initial_drift": 2.5033950805664062e-06,
+        "grow_doors": {
+          "before": {
+            "english": 3.1250295639038086,
+            "code": 1.8522973656654358,
+            "welsh": 2.6739104986190796,
+            "icelandic": 4.37578558921814
+          },
+          "after": {
+            "english": 3.4401872158050537,
+            "code": 2.2172685265541077,
+            "welsh": 4.094332218170166,
+            "icelandic": 2.0814772248268127
+          },
+          "icelandic_gain": 2.294308364391327,
+          "old_domain_change": {
+            "english": 0.3151576519012451,
+            "code": 0.3649711608886719,
+            "welsh": 1.4204217195510864
+          },
+          "trainable": 36910240
+        },
+        "grow_sealed_initial_drift": 2.5033950805664062e-06,
+        "grow_sealed": {
+          "before": {
+            "english": 3.1250295639038086,
+            "code": 1.8522973656654358,
+            "welsh": 2.6739104986190796,
+            "icelandic": 4.37578558921814
+          },
+          "after": {
+            "english": 3.2517924904823303,
+            "code": 2.0812833309173584,
+            "welsh": 3.376498818397522,
+            "icelandic": 2.23567134141922
+          },
+          "icelandic_gain": 2.1401142477989197,
+          "old_domain_change": {
+            "english": 0.12676292657852173,
+            "code": 0.2289859652519226,
+            "welsh": 0.7025883197784424
+          },
+          "trainable": 29304960
+        },
+        "full_finetune": {
+          "before": {
+            "english": 3.125027060508728,
+            "code": 1.852295845746994,
+            "welsh": 2.673911154270172,
+            "icelandic": 4.375786304473877
+          },
+          "after": {
+            "english": 3.574524462223053,
+            "code": 2.3634009957313538,
+            "welsh": 4.583262801170349,
+            "icelandic": 1.8900314569473267
+          },
+          "icelandic_gain": 2.4857548475265503,
+          "old_domain_change": {
+            "english": 0.44949740171432495,
+            "code": 0.5111051499843597,
+            "welsh": 1.909351646900177
+          },
+          "trainable": null
+        }
+      },
+      "criteria": {
+        "selective_room_per_domain": false,
+        "transplant_works": false,
+        "cost_within_3_percent": true
+      },
+      "peak_memory_gb": 36.3
+    },
+    "result_sha256": "7c1e62b567667a3e64d4c2dfaab9ebe572339e3b8ab1c683a5bffeecf76f866a"
+  }
+}
